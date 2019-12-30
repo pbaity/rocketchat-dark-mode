@@ -18,8 +18,6 @@ And when dark mode is active:
 
 ![Dark mode in action](images/dark-mode.png)
 
-(Note: dark mode does not automatically censor channel and user names. If that's what you're going for, you'll have to do that on your own.)
-
 ## Installation
 
 If you want to "install" this dark mode, here's all you need to do:
