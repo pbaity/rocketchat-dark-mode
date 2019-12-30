@@ -50,7 +50,9 @@
   .hljs-type,
   .hljs-literal, 
   .hljs-number, 
-  .hljs-tag .hljs-attr, 
+  .hljs-tag,
+  .hljs-name,
+  .hljs-attr, 
   .hljs-template-variable,
   .hljs-variable,
   .rc-message-box__container,
@@ -224,10 +226,15 @@
   
   body.dark-mode .hljs-literal, 
   body.dark-mode .hljs-number, 
-  body.dark-mode .hljs-tag .hljs-attr, 
+  body.dark-mode .hljs-attr, 
   body.dark-mode .hljs-template-variable, 
   body.dark-mode .hljs-variable {
     color: var(--color-dark-green);
+  }
+
+  body.dark-mode .hljs-tag,
+  body.dark-mode .hljs-name {
+    color: var(--color-light-blue);
   }
   
   body.dark-mode .hljs-selector-tag {
