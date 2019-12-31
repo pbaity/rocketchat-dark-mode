@@ -200,8 +200,7 @@
   }
 
   body.dark-mode rc-button rc-button--nude js-close {
-	border-color: var(--color-gray-medium);
-	border-width: var(--button-border-width);
+	border: var(--button-border-width) solid var(--color-gray-medium);
   }
   
   body.dark-mode .contextual-bar {
