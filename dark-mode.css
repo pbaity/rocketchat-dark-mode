@@ -170,7 +170,8 @@
     background-color: hsla(0, 0, 100%, 0.1);
   }
 
-  body.dark-mode .rc-modal .rc-modal__footer {
+  body.dark-mode .rc-modal,
+  body.dark-mode .rc-modal__footer {
     background: var(--color-darkest);
   }
 
