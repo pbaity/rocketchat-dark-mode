@@ -198,6 +198,10 @@
     border-color: #f5455c;
     border-color: var(--button-cancel-color);
   }
+
+  body.dark-mode .rc-button.rc-button--nude.js-close {
+	border: var(--button-border-width) solid var(--color-gray-medium);
+  }
   
   body.dark-mode .contextual-bar {
     background-color: var(--color-dark);
