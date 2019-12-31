@@ -121,6 +121,10 @@
   body.dark-mode .rc-old .rc-message-box .reply-preview {
     background-color: var(--color-dark);
   }
+
+  body.dark-mode .rc-switch__text {
+    color: var(--color-white);
+  }
   
   body.dark-mode .message-actions,
   body.dark-mode .rc-member-list__counter {
@@ -165,10 +169,25 @@
   body.dark-mode .rc-message-box__container {
     background-color: hsla(0, 0, 100%, 0.1);
   }
+
+  body.dark-mode .rc-modal {
+    background: var(--color-darkest);
+  }
+
+  body.dark-mode .rc-modal__content, 
+  body.dark-mode .rc-modal__header {
+    color: var(--color-white);
+  }
   
   body.dark-mode .rc-button {
     border-color: var(--color-gray-medium);
     color: var(--color-gray-medium);
+  }
+
+  body.dark-mode .rc-button:disabled {
+    border-color: var(--color-darkest);
+    color: var(--color-dark-70);
+    background-color: var(--color-dark-80);
   }
   
   /* Ensure that colors still come through on buttons in dark mode */
