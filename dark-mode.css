@@ -349,3 +349,4 @@ body.dark-mode .rcx-subtitle {
 
 body.dark-mode .rcx-button--primary:disabled {
 	color: var(--color-gray-medium);
+}
