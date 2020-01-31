@@ -133,6 +133,10 @@ body.dark-mode .rc-switch__text {
 	color: var(--color-white);
 }
 
+body.dark-mode .burger i {
+	background-color: var(--color-white);
+}
+
 body.dark-mode .message-actions,
 body.dark-mode .rc-member-list__counter {
 	color: var(--color-gray);
@@ -330,4 +334,14 @@ body.dark-mode .admin-table-row:nth-child(even) {
 
 body.dark-mode .permissions-manager .permission-grid .id-styler {
 	color: var(--info-font-color);
+}
+
+
+/*this is for the admin panel*/
+body.dark-mode .rcx-accordion-item__bar:hover {
+	background-color: var(--color-dark-30);
+}
+
+body.dark-mode .rcx-box--text-style-h1 {
+	color: var(--color-grey-lightest)
 }
