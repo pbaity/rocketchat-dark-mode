@@ -212,10 +212,11 @@ body.dark-mode .rc-button.rc-button--nude.js-close {
 
 body.dark-mode .contextual-bar {
 	background-color: var(--color-dark);
+	box-shadow: 0px 0px 2px var(--color-dark-20);
 }
 
 body.dark-mode .contextual-bar__header {
-	background-color: var(--color-darkest);
+	background-color: var(--color-dark);
 }
 
 body.dark-mode .contextual-bar__content {
@@ -228,10 +229,13 @@ body.dark-mode .message.editing {
 
 body.dark-mode .rc-popover__content {
 	background-color: var(--popover-item-color);
+	box-shadow: 0px 0px 2px var(--color-dark-20);
+
 }
 
 body.dark-mode .rc-popover__item-text,
-body.dark-mode .rc-popover__icon {
+body.dark-mode .rc-popover__icon,
+body.dark-mode .rc-popover__title{
 	color: var(--popover-background);
 }
 
