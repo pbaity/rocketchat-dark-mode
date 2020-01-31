@@ -177,6 +177,11 @@ body.dark-mode .rc-message-box__container {
 	background-color: hsla(0, 0, 100%, 0.1);
 }
 
+body.dark-mode .rc-message-box__typing,
+body.dark-mode .rc-message-box__typing-user {
+	color: var(--color-gray-lightest);
+}
+
 body.dark-mode .rc-modal,
 body.dark-mode .rc-modal__footer {
 	background: var(--color-darkest);
