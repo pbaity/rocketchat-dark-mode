@@ -17,53 +17,57 @@ const lightModeSymbol = `<svg id="icon-darkmode" viewBox="0 0 302.4 302.4" fill=
 const toggleButton = '<button class="sidebar__toolbar-button rc-tooltip rc-tooltip--down js-button" aria-label="Toggle Dark Mode">D</button>';
 
 function isDarkModeSet() {
-  return localStorage.getItem('dark-mode') === 'true';
+	return localStorage.getItem('dark-mode') === 'true';
 }
 
 function getDarkModeIcon() {
-  return `<svg class="rc-icon sidebar__toolbar-button-icon sidebar__toolbar-button-icon--darkmode" aria-hidden="true">
+	return `<svg class="rc-icon sidebar__toolbar-button-icon sidebar__toolbar-button-icon--darkmode" aria-hidden="true">
     <use xlink:href="#icon-darkmode"></use>
     ${isDarkModeSet() ? lightModeSymbol : darkModeSymbol}
   </svg>`;
 }
 
 function toggleDarkMode() {
-  document.body.classList.toggle('dark-mode');
-  const setting = (!isDarkModeSet()).toString();
-  localStorage.setItem('dark-mode', setting);
+	document.body.classList.toggle('dark-mode');
+	const setting = (!isDarkModeSet()).toString();
+	localStorage.setItem('dark-mode', setting);
 }
 
 function addDarkModeToggle() {
-  const sidebarToolbar = $('.sidebar__toolbar');
-  
-  // wait for the sidebar toolbar to be visible
-  // this will also be false if the toolbar doesn't exist yet
-  if(!sidebarToolbar.is(':visible')) {
-    setTimeout(addDarkModeToggle, 250);
-    return;
-  }
-  
-  var darkModeButton = $('.js-button[aria-label="Toggle Dark Mode"]');
-  
-  // do nothing if button is already on the screen
-  if (darkModeButton.is(':visible')) {
-  	return;	
-  }
-  
-  darkModeButton = $(toggleButton).prependTo(sidebarToolbar);
-  darkModeButton.html(getDarkModeIcon());
-  
-  darkModeButton.on('click', function() {
-    toggleDarkMode();
-    darkModeButton.html(getDarkModeIcon());
-  });
+	const sidebarToolbar = $('.sidebar__toolbar');
+
+	// wait for the sidebar toolbar to be visible
+	// this will also be false if the toolbar doesn't exist yet
+	if(!sidebarToolbar.is(':visible')) {
+		setTimeout(addDarkModeToggle, 250);
+		return;
+	}
+
+	var darkModeButton = $('.js-button[aria-label="Toggle Dark Mode"]');
+
+	// do nothing if button is already on the screen
+	if (darkModeButton.is(':visible')) {
+		return;
+	}
+
+	darkModeButton = $(toggleButton).prependTo(sidebarToolbar);
+	darkModeButton.html(getDarkModeIcon());
+
+	darkModeButton.on('click', function() {
+		toggleDarkMode();
+		darkModeButton.html(getDarkModeIcon());
+	});
 }
 
 if (darkModeDefault) {
-  if (localStorage.getItem('dark-mode') != 'false') {
-    localStorage.setItem('dark-mode', 'true');
-    document.body.classList.add('dark-mode');
-  }
+	if (localStorage.getItem("dark-mode") === null) {
+		localStorage.setItem('dark-mode', 'true');
+	}
 }
 
 $(addDarkModeToggle);
+
+// Apply dark mode immediately if it's been set previously
+if(localStorage.getItem('dark-mode') === 'true') {
+	document.body.classList.add('dark-mode');
+}
