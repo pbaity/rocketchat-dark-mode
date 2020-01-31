@@ -342,6 +342,10 @@ body.dark-mode .rcx-accordion-item__bar:hover {
 	background-color: var(--color-dark-30);
 }
 
-body.dark-mode .rcx-box--text-style-h1 {
-	color: var(--color-grey-lightest)
+body.dark-mode .rcx-box--text-style-h1,
+body.dark-mode .rcx-subtitle {
+	color: var(--color-gray-lightest);
 }
+
+body.dark-mode .rcx-button--primary:disabled {
+	color: var(--color-gray-medium);
