@@ -221,7 +221,8 @@ body.dark-mode .rc-button.rc-button--nude.js-close {
 
 body.dark-mode .contextual-bar {
 	background-color: var(--color-dark);
-	box-shadow: 0px 0px 2px var(--color-dark-20);
+	box-shadow: 0px 2px 2px var(--color-dark-20);
+
 }
 
 body.dark-mode .contextual-bar__header {
@@ -304,7 +305,7 @@ body.dark-mode .hljs-number {
 }
 
 body.dark-mode .sidebar-flex__header {
-	background-color: var(--color-darkest);
+	background-color: var(--color-dark);
 }
 
 body.dark-mode .sidebar-light {
@@ -312,12 +313,17 @@ body.dark-mode .sidebar-light {
 }
 
 body.dark-mode .rcx-accordion-item__title,
-body.dark-mode .rcx-label__text {
+body.dark-mode .rcx-label__text,
+body.dark-mode .rcx-field__label{
 	color: var(--color-white);
 }
 
 body.dark-mode .sidebar-flex__search .rc-input__element {
 	color: var(--color-dark);
+}
+
+body.dark-mode .rc-input__element:disabled{
+	background-color: var(--color-gray);
 }
 
 body.dark-mode .admin-table-row {
@@ -336,6 +342,22 @@ body.dark-mode .permissions-manager .permission-grid .id-styler {
 	color: var(--info-font-color);
 }
 
+body.dark-mode .rc-header--room {
+	box-shadow: 0px 0px 2px var(--color-gray-medium);
+}
+
+body.dark-mode .rc-form-legend,
+body.dark-mode .rc-form-label {
+	color: var(--rc-color-primary-light);
+}
+
+body.dark-mode .room-leader:hover {
+	background-color: var(--color-darkest);
+}
+
+body.dark-mode .chat-now {
+	color: var(--color-white)
+}
 
 /*this is for the admin panel*/
 body.dark-mode .rcx-accordion-item__bar:hover {
@@ -348,4 +370,5 @@ body.dark-mode .rcx-subtitle {
 }
 
 body.dark-mode .rcx-button--primary:disabled {
-	color: var(--color-gray-medium);
+	color: var(--color-gray);
+}
