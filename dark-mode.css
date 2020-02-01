@@ -147,6 +147,14 @@ body.dark-mode .rc-member-list__user:hover {
 	background-color: var(--color-darkest);
 }
 
+body.dark-mode .rc-user-info-details {
+  background-color: var(--color-dark-medium);
+}
+
+body.dark-mode .rc-user-info-details__info {
+  color: var(--color-white);
+}
+
 body.dark-mode select option {
 	color: var(--color-dark);
 }
