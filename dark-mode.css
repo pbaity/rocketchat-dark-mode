@@ -148,11 +148,11 @@ body.dark-mode .rc-member-list__user:hover {
 }
 
 body.dark-mode .rc-user-info-details {
-  background-color: var(--color-dark-medium);
+	background-color: var(--color-dark-medium);
 }
 
 body.dark-mode .rc-user-info-details__info {
-  color: var(--color-white);
+	color: var(--color-white);
 }
 
 body.dark-mode select option {
