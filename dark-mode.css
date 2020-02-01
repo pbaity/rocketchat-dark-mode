@@ -343,7 +343,7 @@ body.dark-mode .permissions-manager .permission-grid .id-styler {
 }
 
 body.dark-mode .rc-header--room {
-	box-shadow: 0px 0px 2px var(--color-gray-medium);
+	box-shadow: 0px 0px 3px var(--color-gray-medium);
 }
 
 body.dark-mode .rc-form-legend,
@@ -356,7 +356,7 @@ body.dark-mode .room-leader:hover {
 }
 
 body.dark-mode .chat-now {
-	color: var(--color-white)
+	color: var(--color-white);
 }
 
 /*this is for the admin panel*/
