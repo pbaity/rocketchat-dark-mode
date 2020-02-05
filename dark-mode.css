@@ -221,12 +221,12 @@ body.dark-mode .rc-button.rc-button--nude.js-close {
 
 body.dark-mode .contextual-bar {
 	background-color: var(--color-dark);
-	box-shadow: 0px 2px 2px var(--color-dark-20);
-
+  	border-left: 2px solid var(--color-dark-medium);
 }
 
 body.dark-mode .contextual-bar__header {
 	background-color: var(--color-dark);
+  	border-bottom: 1px solid var(--color-dark-medium);
 }
 
 body.dark-mode .contextual-bar__content {
