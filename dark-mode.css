@@ -103,6 +103,8 @@ body.dark-mode {
 
 	--mention-link-text-color: var(--color-light-blue);
 	--mention-link-background: var(--color-dark-medium);
+
+	--chip-background: var(--color-blue);
 }
 
 
@@ -162,6 +164,14 @@ body.dark-mode .rc-member-list__counter {
 body.dark-mode .rc-member-list__user.active,
 body.dark-mode .rc-member-list__user:hover {
 	background-color: var(--color-darkest);
+}
+
+body.dark-mode .rc-user-info-details {
+	background-color: var(--color-dark-medium);
+}
+
+body.dark-mode p.rc-user-info-details__info {
+	color: var(--color-white);
 }
 
 body.dark-mode select option {
