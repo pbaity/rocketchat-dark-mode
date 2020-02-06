@@ -1,3 +1,7 @@
+/******************************************
+ *************General Settings*************
+ ******************************************/
+
 :root {
 	--primary-font-color: #444;
 	--info-font-color: #a0a0a0;
@@ -24,9 +28,21 @@ select {
 	transition: filter 150ms;
 }
 
-/**
- * Transitions for a smooth change into dark mode
- */
+.sidebar__toolbar-button-icon--darkmode {
+	height: .9em;
+}
+
+@media (min-width: 1372px) {
+	.sidebar__toolbar-button {
+		margin: 0 3px;
+	}
+}
+
+
+
+/******************************************
+ ************Transition Effect*************
+ ******************************************/
 textarea,
 select,
 .color-primary-font-color,
@@ -66,9 +82,11 @@ select,
 	transition: opacity 300ms linear, color 150ms, background-color 150ms, border-color 150ms;
 }
 
-/**
- * Dark Mode Settings
- */
+
+
+/******************************************
+ *************Dark Mode Settings***********
+ ******************************************/
 body.dark-mode {
 	--header-background-color: var(--color-darkest);
 	--header-title-username-color-darker: var(--color-gray-lightest);
@@ -87,15 +105,14 @@ body.dark-mode {
 	--mention-link-background: var(--color-dark-medium);
 }
 
-.sidebar__toolbar-button-icon--darkmode {
-	height: .9em;
-}
 
-@media (min-width: 1372px) {
-	.sidebar__toolbar-button {
-		margin: 0 3px;
-	}
-}
+
+/******************************************
+ *********Manual Dark Theme Overrides******
+ ******************************************/
+
+
+/***************Main Chat*****************/
 
 body.dark-mode a {
 	color: var(--color-light-blue);
@@ -229,11 +246,12 @@ body.dark-mode .rc-button.rc-button--nude.js-close {
 
 body.dark-mode .contextual-bar {
 	background-color: var(--color-dark);
-	box-shadow: 0px 0px 2px var(--color-dark-20);
+  	border-left: 2px solid var(--color-dark-medium);
 }
 
 body.dark-mode .contextual-bar__header {
 	background-color: var(--color-dark);
+  	border-bottom: 1px solid var(--color-dark-medium);
 }
 
 body.dark-mode .contextual-bar__content {
@@ -256,11 +274,25 @@ body.dark-mode .rc-popover__title{
 	color: var(--popover-background);
 }
 
-/**
- * Code Highlighting
- *
- * Colors based on HipChat highlighting
- */
+body.dark-mode .rc-header--room {
+	box-shadow: 0px 0px 3px var(--color-dark-medium);
+}
+
+body.dark-mode .rc-form-legend,
+body.dark-mode .rc-form-label {
+	color: var(--rc-color-primary-light);
+}
+
+body.dark-mode .room-leader:hover {
+	background-color: var(--color-darkest);
+}
+
+body.dark-mode .chat-now {
+	color: var(--color-white);
+}
+
+
+/**************Code Highlights*****************/
 
 body.dark-mode .code-colors {
 	background: var(--color-dark-100);
@@ -304,15 +336,16 @@ body.dark-mode .hljs-number {
 	color: var(--color-orange);
 }
 
-/**
- * Admin specific settings
- */
+
+
+/**************Admin Panel******************/
+
 .page-list a:not(.rc-button), .page-settings a:not(.rc-button) {
 	color: var(--primary-font-color);
 }
 
 body.dark-mode .sidebar-flex__header {
-	background-color: var(--color-darkest);
+	background-color: var(--color-dark);
 }
 
 body.dark-mode .sidebar-light {
@@ -320,12 +353,17 @@ body.dark-mode .sidebar-light {
 }
 
 body.dark-mode .rcx-accordion-item__title,
-body.dark-mode .rcx-label__text {
+body.dark-mode .rcx-label__text,
+body.dark-mode .rcx-field__label{
 	color: var(--color-white);
 }
 
 body.dark-mode .sidebar-flex__search .rc-input__element {
 	color: var(--color-dark);
+}
+
+body.dark-mode .rc-input__element:disabled{
+	background-color: var(--color-gray);
 }
 
 body.dark-mode .admin-table-row {
@@ -344,8 +382,6 @@ body.dark-mode .permissions-manager .permission-grid .id-styler {
 	color: var(--info-font-color);
 }
 
-
-/*this is for the admin panel*/
 body.dark-mode .rcx-accordion-item__bar:hover {
 	background-color: var(--color-dark-30);
 }
@@ -356,5 +392,5 @@ body.dark-mode .rcx-subtitle {
 }
 
 body.dark-mode .rcx-button--primary:disabled {
-	color: var(--color-gray-medium);
+	color: var(--color-gray);
 }
