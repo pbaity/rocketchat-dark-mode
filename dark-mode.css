@@ -102,9 +102,9 @@ body.dark-mode {
 	--input-icon-color: var(--color-gray-lightest);
 
 	--mention-link-text-color: var(--color-light-blue);
-  --mention-link-background: var(--color-dark-medium);
+	--mention-link-background: var(--color-dark-medium);
 
-  --chip-background: var(--color-blue);
+	--chip-background: var(--color-blue);
 }
 
 
