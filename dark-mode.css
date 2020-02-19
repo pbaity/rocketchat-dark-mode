@@ -278,14 +278,23 @@ body.dark-mode .rc-popover__title{
 
 /* Fix Notifications settings text contrast issue */
 body.dark-mode .rc-popover__item-radio-label {
-color: var(--color-white);
+	color: var(--color-white);
 }
 
 /* Fix Room info text contrast issue */
 body.dark-mode .rc-switch-double {
-color: var(--color-white);
+	color: var(--color-white);
 }
 
+/* Fix Invite Users text in search field */
+body.dark-mode .rc-tags__input {
+	color: var(--color-white);
+}
+
+/* Fix dropdown area text in Invite Users */
+body.dark-mode .rc-popup-list {
+	color: var(--color-dark);
+}
 body.dark-mode .rc-header--room {
 	box-shadow: 0px 0px 3px var(--color-dark-medium);
 }
