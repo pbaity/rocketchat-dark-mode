@@ -276,6 +276,14 @@ body.dark-mode .rc-popover__title{
 	color: var(--popover-background);
 }
 
+body.dark-mode .rc-popover__item-radio-label {
+color: var(--color-white);
+}
+
+body.dark-mode .rc-switch-double {
+color: var(--color-white);
+}
+
 body.dark-mode .rc-header--room {
 	box-shadow: 0px 0px 3px var(--color-dark-medium);
 }
