@@ -276,12 +276,10 @@ body.dark-mode .rc-popover__title{
 	color: var(--popover-background);
 }
 
-/* Fix Notifications settings text contrast issue */
 body.dark-mode .rc-popover__item-radio-label {
 color: var(--color-white);
 }
 
-/* Fix Room info text contrast issue */
 body.dark-mode .rc-switch-double {
 color: var(--color-white);
 }
