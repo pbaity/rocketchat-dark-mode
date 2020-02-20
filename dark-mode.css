@@ -43,6 +43,7 @@ select {
 /******************************************
  ************Transition Effect*************
  ******************************************/
+input,
 textarea,
 select,
 .color-primary-font-color,
@@ -105,6 +106,14 @@ body.dark-mode {
 	--mention-link-background: var(--color-dark-medium);
 
 	--chip-background: var(--color-blue);
+
+	--tags-background: var(--color-blue);
+	--tags-text-color: var(--color-white);
+
+	--popup-list-background: var(--color-dark);
+	--popup-list-selected-background: var(--color-dark);
+	--popup-list-name-color: var(--color-white);
+	--popup-list-background-hover: var(--color-darkest);
 }
 
 
@@ -115,6 +124,10 @@ body.dark-mode {
 
 
 /***************Main Chat*****************/
+
+body.dark-mode input {
+	color: var(--color-white);
+}
 
 body.dark-mode a {
 	color: var(--color-light-blue);
