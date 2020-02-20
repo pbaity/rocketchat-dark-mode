@@ -290,11 +290,11 @@ body.dark-mode .rc-popover__title{
 }
 
 body.dark-mode .rc-popover__item-radio-label {
-color: var(--color-white);
+	color: var(--color-white);
 }
 
 body.dark-mode .rc-switch-double {
-color: var(--color-white);
+	color: var(--color-white);
 }
 
 body.dark-mode .rc-header--room {
