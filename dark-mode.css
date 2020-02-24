@@ -46,45 +46,7 @@ select {
 /******************************************
  ************Transition Effect*************
  ******************************************/
-input,
-textarea,
-select,
-.color-primary-font-color,
-.color-info-font-color,
-.background-info-font-color,
-.background-transparent-darker-before::before,
-.messages-box .message .body,
-.rc-header__name,
-.rc-header__wrap,
-.message .reactions>li,
-.message .title .is-bot,
-.message .title .role-tag,
-.message.new-day::before,
-.code-colors,
-.hljs-selector-id,
-.hljs-selector-tag,
-.hljs-attribute,
-.hljs-keyword,
-.hljs-title,
-.hljs-doctag,
-.hljs-string,
-.hljs-type,
-.hljs-literal,
-.hljs-number,
-.hljs-tag,
-.hljs-name,
-.hljs-attr,
-.hljs-template-variable,
-.hljs-variable,
-.rc-message-box__container,
-.messages-container .footer,
-.content-background-color,
-.message.new-day::after,
-.message .reactions>li,
-.border-component-color,
-.contextual-bar__header,
-.contextual-bar__content,
-.sidebar__footer {
+* {
 	transition: opacity 300ms linear, color 150ms, background-color 150ms, border-color 150ms;
 }
 
