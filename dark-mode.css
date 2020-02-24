@@ -206,6 +206,10 @@ body.dark-mode .border-component-color {
 	border-color: var(--rc-color-primary-lightest);
 }
 
+body.dark-mode .background-transparent-darker-before::before {
+    background-color: var(--color-dark-medium);
+}
+
 body.dark-mode .js-button[aria-label="Toggle Dark Mode"] {
 	filter: brightness(130%);
 }
