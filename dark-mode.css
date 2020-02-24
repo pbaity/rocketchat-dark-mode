@@ -51,6 +51,8 @@ textarea,
 select,
 .color-primary-font-color,
 .color-info-font-color,
+.background-info-font-color,
+.background-transparent-darker-before::before,
 .messages-box .message .body,
 .rc-header__name,
 .rc-header__wrap,
@@ -391,6 +393,14 @@ body.dark-mode .message.editing {
 
 body.dark-mode .rc-message-box__container {
 	background-color: var(--message-box-background);
+}
+
+body.dark-mode .background-transparent-darker-before::before {
+    background-color: var(--color-dark-medium);
+}
+
+body.dark-mode .background-info-font-color {
+    background-color: var(--color-dark-medium);
 }
 
 /* Modals */
