@@ -259,6 +259,10 @@ body.dark-mode .rc-button.rc-button--nude.js-close {
 	border: var(--button-border-width) solid var(--color-gray-medium);
 }
 
+body.dark-mode .rc-button.rc-button--secondary {
+	color: var(--color-dark);
+}
+
 body.dark-mode .contextual-bar {
 	background-color: var(--color-dark);
   	border-left: 2px solid var(--color-dark-medium);
