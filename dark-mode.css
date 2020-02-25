@@ -67,10 +67,8 @@ body.dark-mode {
 	 Variables with comments beside them
 	 are variables changed in dark mode
 	************************************/
-	 /*
-	 * General Colors
-	 */
-
+	 
+	/* General Colors */
 	 --rc-color-button-primary: var(--color-blue);
 	 --rc-color-button-primary-light: var(--color-dark-blue);
 
@@ -90,9 +88,7 @@ body.dark-mode {
 	 --rc-color-content: var(--color-white);
 	 --rc-color-link-active: var(--rc-color-button-primary);
  
-	 /*
-	 * Forms - Button
-	 */
+	 /* Forms - Button */
 	 --button-disabled-background: var(--color-gray-light);
 	 --button-disabled-text-color: var(--color-white);
 	 --button-primary-background: var(--rc-color-button-primary);
@@ -101,9 +97,7 @@ body.dark-mode {
 	 --button-secondary-background: var(--color-gray-medium);
 	 --button-secondary-text-color: var(--color-dark-medium);
  
-	 /*
-	 * Forms - Input
-	 */
+	 /* Forms - Input */
 	 --input-text-color: var(--color-gray-lightest); /* Used in certain inputs and selects (with class .rc-input) */
 	 --input-placeholder-color: var(--color-gray-medium);
 	 --input-icon-color: var(--color-gray-lightest); /* used in inputs with .rc-input_wrapper */
@@ -111,51 +105,37 @@ body.dark-mode {
 	 --input-description-text-color: var(--color-gray);
 	 --input-error-color: var(--rc-color-error);
  
-	 /*
-	 * Forms - popup list
-	 */
+	 /* Forms - popup list */
 	--popup-list-background: var(--color-dark); /* dark colors for popup lists */
 	--popup-list-background-hover: var(--color-darkest); /* dark colors for popup lists */
 	--popup-list-selected-background: var(--color-dark); /* dark colors for popup lists */
 	--popup-list-name-color: var(--color-white); /* dark colors for popup lists */
  
-	 /*
-	 * Forms - tags
-	 */
+	 /* Forms - tags */
 	 --tags-border-color: var(--color-gray-light);
 	 --tags-text-color: var(--color-white); /* tag (similar to chips) colors */
 	 --tags-background: var(--color-blue); /* tag (similar to chips) colors */
  
-	 /*
-	 * Forms - select avatar
-	 */
+	 /* Forms - select avatar */
 	 --select-avatar-upload-background: var(--color-gray-light);
 	 --select-avatar-upload-color: #2d343d;
  
-	 /*
-	 * Sidebar
-	 */
+	 /* Sidebar */
 	 --sidebar-background: var(--color-dark); /* override; otherwise uses --rc-color-primary */
 	 --sidebar-background-hover: var(--rc-color-primary-dark);
 	 --sidebar-background-light: var(--rc-color-primary-lightest);
 	 --sidebar-background-light-hover: var(--rc-color-primary-light); /* unused? */
  
-	 /*
-	 * Sidebar flex
-	 */
+	 /* Sidebar flex */
 	 --sidebar-flex-search-background: var(--color-white);
 	 --sidebar-flex-search-placeholder-color: var(--color-gray);
  
-	 /*
-	 * Sidebar Account
-	 */
+	 /* Sidebar Account */
 	 --sidebar-account-username-color: var(--color-white);
 	 --sidebar-account-username-color-darker: var(--color-dark);
 	 --sidebar-account-status-color: var(--color-gray);
  
-	 /*
-	 * Sidebar Item
-	 */
+	 /* Sidebar Item */
 	 --sidebar-item-text-color: var(--rc-color-primary-light);
 	 --sidebar-item-hover-background: var(--rc-color-primary-darkest);
 	 --sidebar-item-active-background: var(--rc-color-primary-dark);
@@ -163,45 +143,31 @@ body.dark-mode {
 	 --sidebar-item-unread-color: var(--rc-color-content);
 	 --sidebar-item-popup-background: var(--rc-color-primary-dark);
  
-	 /*
-	 * Modal
-	 */
+	 /* Modal */
 	 --modal-back-button-color: var(--color-gray);
  
-	 /*
-	 * Modal - Create Channel
-	 */
+	 /* Modal - Create Channel */
 	 --create-channel-title-color: var(--color-darkest);
 	 --create-channel-description-color: var(--color-gray);
  
-	 /*
-	 * Toolbar
-	 */
+	 /* Toolbar */
 	 --toolbar-placeholder-color: var(--color-gray);
  
-	 /*
-	 * Rooms list
-	 */
+	 /* Rooms list */
 	 --rooms-list-title-color: var(--rc-color-primary-light);
 	 --rooms-list-empty-text-color: var(--color-gray);
  
-	 /*
-	 * Chip
-	 */
+	 /* Chip */
 	 --chip-background: var(--color-blue); /* background color of "chips" (small labels) */
  
-	 /*
-	 * Badge
-	 */
+	 /* Badge */
 	 --badge-text-color: var(--color-white);
 	 --badge-background: var(--rc-color-primary-dark);
 	 --badge-unread-background: var(--rc-color-primary-dark);
 	 --badge-user-mentions-background: var(--color-dark-blue);
 	 --badge-group-mentions-background: var(--rc-color-primary-dark);
  
-	 /*
-	 * Mention link
-	 */
+	 /* Mention link */
 	 --mention-link-background: var(--color-dark-medium); /* colors on username mention tag */
 	 --mention-link-text-color: var(--color-light-blue); /* colors on username mention tag */
 	 --mention-link-me-background: var(--color-dark-blue);
@@ -209,9 +175,7 @@ body.dark-mode {
 	 --mention-link-group-background: var(--rc-color-primary-dark);
 	 --mention-link-group-text-color: var(--color-white);
  
-	 /*
-	 * Message box
-	 */
+	 /* Message box */
 	 --message-box-placeholder-color: var(--color-gray-medium);
 	 --message-box-markdown-color: var(--color-gray);
 	 --message-box-markdown-hover-color: var(--color-dark);
@@ -221,9 +185,7 @@ body.dark-mode {
 	 --message-box-editing-color: #fff5df;
 	 --message-box-popover-title-text-color: var(--color-gray);
  
-	 /*
-	 * Header
-	 */
+	 /* Header */
 	 --header-toggle-favorite-color: var(--color-gray-medium);
 	 --header-toggle-favorite-star-color: var(--rc-color-alert-light);
 	 --header-toggle-encryption-off-color: var(--color-gray-medium);
@@ -232,28 +194,20 @@ body.dark-mode {
 	 --header-title-status-color: var(--color-gray);
 	 --header-background-color: var(--color-darkest); /* The main chat screen and header */
  
-	 /*
-	 * Flex nav
-	 */
+	 /* Flex nav */
 	 --flex-nav-background: var(--color-gray-lightest);
  
-	 /*
-	 * Popover
-	 */
+	 /* Popover */
 	 --popover-background: var(--color-dark);
 	 --popover-title-color: var(--color-white);
 	 --popover-item-color: var(--color-white);
 	 --popover-divider-color: var(--color-gray-light);
  
-	 /*
-	 * Tooltip
-	 */
+	 /* Tooltip */
 	 --tooltip-background: var(--color-darkest);
 	 --tooltip-text-color: var(--color-white);
  
-	 /*
-	 * alert
-	 */
+	 /* alert */
 	 --alerts-background: #1d73f5;
 	 --alerts-color: var(--color-white);
 }
@@ -391,9 +345,7 @@ body.dark-mode .rc-button:disabled {
 }
 
 body.dark-mode .rc-button--cancel.rc-button--outline {
-	color: #f5455c;
 	color: var(--button-cancel-color);
-	border-color: #f5455c;
 	border-color: var(--button-cancel-color);
 }
 
