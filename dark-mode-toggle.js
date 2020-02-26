@@ -56,7 +56,7 @@ function addDarkModeToggle() {
 	darkModeButton.on('click', function() {
 		toggleDarkMode();
 		darkModeButton.html(getDarkModeIcon());
-		$(this).tooltip('hide');
+		$(this).blur();
 	});
 }
 
