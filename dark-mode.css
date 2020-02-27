@@ -64,116 +64,62 @@ body.dark-mode {
 	--button-outline-color: var(--color-gray-medium);
 	--button-close-color: var(--color-gray-medium);
  
-	
+
 	/********************** Overridden Rocket.Chat Variables **********************/
-	/* (see `app/theme/client/imports/general/variables.css` in Rocket.Chat repo) */
 	 
 	/* General Colors */
-	 --rc-color-alert-message-warning-background: hsl(352, 83%, 20%); /* make alert warning messages have red backgrounds */
-	 --rc-color-primary: var(--color-gray-lightest); /* Sidebar background, tags text color */
-	 --rc-color-primary-lightest: var(--color-dark-medium); /* sidebar background light */
- 
-	 /* Forms - Button */
-	 --button-disabled-background: var(--color-dark-70);
-	 --button-disabled-text-color: var(--color-dark-80);
-	 --button-primary-background: var(--rc-color-button-primary);
-	 --button-primary-text-color: var(--color-white);
-	 --button-cancel-color: var(--rc-color-error);
-	 --button-secondary-background: var(--color-gray-medium);
-	 --button-secondary-text-color: var(--color-dark-medium);
- 
-	 /* Forms - Input */
-	 --input-text-color: var(--color-gray-lightest); /* Used in certain inputs and selects (with class .rc-input) */
-	 --input-icon-color: var(--color-gray-lightest); /* used in inputs with .rc-input_wrapper */
- 
-	 /* Forms - popup list */
-	--popup-list-background: var(--color-dark); /* dark colors for popup lists */
-	--popup-list-background-hover: var(--color-darkest); /* dark colors for popup lists */
-	--popup-list-selected-background: var(--color-dark); /* dark colors for popup lists */
-	--popup-list-name-color: var(--color-white); /* dark colors for popup lists */
- 
-	 /* Forms - tags */
-	 --tags-text-color: var(--color-white); /* tag (similar to chips) colors */
-	 --tags-background: var(--color-blue); /* tag (similar to chips) colors */
- 
-	 /* Sidebar */
-	 --sidebar-background: var(--color-dark); /* override; otherwise uses --rc-color-primary */
- 
-	 /* Sidebar Item */
-	 --sidebar-item-text-color: var(--rc-color-primary-light);
-	 --sidebar-item-hover-background: var(--rc-color-primary-darkest);
-	 --sidebar-item-active-background: var(--rc-color-primary-dark);
-	 --sidebar-item-active-color: var(--sidebar-item-text-color);
-	 --sidebar-item-unread-color: var(--rc-color-content);
-	 --sidebar-item-popup-background: var(--rc-color-primary-dark);
- 
-	 /* Modal */
-	 --modal-back-button-color: var(--color-gray);
- 
-	 /* Modal - Create Channel */
-	 --create-channel-title-color: var(--color-darkest);
-	 --create-channel-description-color: var(--color-gray);
- 
-	 /* Toolbar */
-	 --toolbar-placeholder-color: var(--color-gray);
- 
-	 /* Rooms list */
-	 --rooms-list-title-color: var(--rc-color-primary-light);
-	 --rooms-list-empty-text-color: var(--color-gray);
- 
-	 /* Chip */
-	 --chip-background: var(--color-blue); /* background color of "chips" (small labels) */
- 
-	 /* Badge */
-	 --badge-text-color: var(--color-white);
-	 --badge-background: var(--rc-color-primary-dark);
-	 --badge-unread-background: var(--rc-color-primary-dark);
-	 --badge-user-mentions-background: var(--color-dark-blue);
-	 --badge-group-mentions-background: var(--rc-color-primary-dark);
- 
-	 /* Mention link */
-	 --mention-link-background: var(--color-dark-medium); /* colors on username mention tag */
-	 --mention-link-text-color: var(--color-light-blue); /* colors on username mention tag */
-	 --mention-link-me-background: var(--color-dark-blue);
-	 --mention-link-me-text-color: var(--color-white);
-	 --mention-link-group-background: var(--rc-color-primary-dark);
-	 --mention-link-group-text-color: var(--color-white);
- 
-	 /* Message box */
-	 --message-box-placeholder-color: var(--color-gray-medium);
-	 --message-box-markdown-color: var(--color-gray);
-	 --message-box-markdown-hover-color: var(--color-dark);
-	 --message-box-user-typing-color: var(--color-gray-lightest); /* user typing color */
-	 --message-box-user-typing-user-color: var(--color-gray-lightest); /* user typing color */
-	 --message-box-container-border-color: var(--color-gray-medium);
-	 --message-box-editing-color: #fff5df;
-	 --message-box-popover-title-text-color: var(--color-gray);
- 
-	 /* Header */
-	 --header-toggle-favorite-color: var(--color-gray-medium);
-	 --header-toggle-favorite-star-color: var(--rc-color-alert-light);
-	 --header-toggle-encryption-off-color: var(--color-gray-medium);
-	 --header-toggle-encryption-on-color: var(--rc-color-alert-message-secondary);
-	 --header-title-username-color-darker: var(--color-gray-lightest); /* channel and user names in header */
-	 --header-title-status-color: var(--color-gray);
-	 --header-background-color: var(--color-darkest); /* The main chat screen and header */
- 
-	 /* Flex nav */
-	 --flex-nav-background: var(--color-gray-lightest);
- 
-	 /* Popover */
-	 --popover-background: var(--color-dark);
-	 --popover-title-color: var(--color-white);
-	 --popover-item-color: var(--color-white);
-	 --popover-divider-color: var(--color-gray-light);
- 
-	 /* Tooltip */
-	 --tooltip-background: var(--color-darkest);
-	 --tooltip-text-color: var(--color-white);
- 
-	 /* alert */
-	 --alerts-background: #1d73f5;
-	 --alerts-color: var(--color-white);
+	--rc-color-alert-message-warning-background: hsl(352, 83%, 20%);
+	--rc-color-primary: var(--color-gray-lightest);
+	--rc-color-primary-lightest: var(--color-dark-medium);
+
+	/* Forms - Button */
+	--button-disabled-background: var(--color-dark-70);
+	--button-disabled-text-color: var(--color-dark-80);
+
+	/* Forms - Input */
+	--input-text-color: var(--color-gray-lightest);
+	--input-icon-color: var(--color-gray-lightest);
+
+	/* Forms - popup list */
+	--popup-list-background: var(--color-dark);
+	--popup-list-background-hover: var(--color-darkest);
+	--popup-list-selected-background: var(--color-dark);
+	--popup-list-name-color: var(--color-white);
+
+	/* Forms - tags */
+	--tags-text-color: var(--color-white);
+	--tags-background: var(--color-blue);
+
+	/* Sidebar */
+	--sidebar-background: var(--color-dark);
+
+	/* Chip */
+	--chip-background: var(--color-blue);
+
+	/* Mention link */
+	--mention-link-background: var(--color-dark-medium);
+	--mention-link-text-color: var(--color-light-blue);
+
+	/* Message box */
+	--message-box-user-typing-color: var(--color-gray-lightest);
+	--message-box-user-typing-user-color: var(--color-gray-lightest);
+
+	/* Header */
+	--header-title-username-color-darker: var(--color-gray-lightest);
+	--header-background-color: var(--color-darkest);
+
+	/* Popover */
+	--popover-background: var(--color-dark);
+	--popover-title-color: var(--color-white);
+	--popover-item-color: var(--color-white);
+
+	/* Tooltip */
+	--tooltip-background: var(--color-darkest);
+	--tooltip-text-color: var(--color-white);
+
+	/* alert */
+	--alerts-background: #1d73f5;
+	--alerts-color: var(--color-white);
 }
 
 
@@ -185,16 +131,32 @@ body.dark-mode {
 
 /***************Main Chat*****************/
 
-body.dark-mode input {
-	color: var(--color-white);
-}
-
 body.dark-mode a {
 	color: var(--color-light-blue);
 }
 
 body.dark-mode .sidebar-item > a {
 	color: inherit;
+}
+
+body.dark-mode input {
+	color: var(--color-white);
+}
+
+body.dark-mode select option {
+	color: var(--color-dark);
+}
+
+body.dark-mode .rc-switch__text {
+	color: var(--color-white);
+}
+
+body.dark-mode .rc-switch-double {
+	color: var(--color-white);
+}
+
+body.dark-mode .error-border {
+	border-color: var(--color-dark-red);
 }
 
 body.dark-mode .background-component-color {
@@ -209,21 +171,8 @@ body.dark-mode .container-bars .color-primary-action-color {
 	color: var(--color-white);
 }
 
-body.dark-mode .rc-old .rc-message-box .reply-preview {
-	background-color: var(--color-dark);
-}
-
-body.dark-mode .rc-switch__text {
-	color: var(--color-white);
-}
-
 body.dark-mode .burger i {
 	background-color: var(--color-white);
-}
-
-body.dark-mode .message-actions,
-body.dark-mode .rc-member-list__counter {
-	color: var(--color-gray);
 }
 
 body.dark-mode .rc-member-list__user.active,
@@ -238,16 +187,6 @@ body.dark-mode .rc-user-info-details {
 body.dark-mode p.rc-user-info-details__info {
 	color: var(--color-white);
 }
-
-body.dark-mode select option {
-	color: var(--color-dark);
-}
-
-body.dark-mode .error-border {
-	border-color: var(--color-dark-red);
-}
-
-/* Messages and message box */
 
 body.dark-mode .messages-container .footer,
 body.dark-mode .content-background-color {
@@ -275,6 +214,15 @@ body.dark-mode .rc-message-box__container {
 	background-color: var(--message-box-background);
 }
 
+body.dark-mode .rc-old .rc-message-box .reply-preview {
+	background-color: var(--color-dark);
+}
+
+body.dark-mode .message-actions,
+body.dark-mode .rc-member-list__counter {
+	color: var(--color-gray);
+}
+
 body.dark-mode .background-transparent-darker-before::before {
     background-color: var(--color-dark-medium);
 }
@@ -282,8 +230,6 @@ body.dark-mode .background-transparent-darker-before::before {
 body.dark-mode .background-info-font-color {
     background-color: var(--color-dark-medium);
 }
-
-/* Modals */
 
 body.dark-mode .rc-modal,
 body.dark-mode .rc-modal__footer {
@@ -294,8 +240,6 @@ body.dark-mode .rc-modal__content,
 body.dark-mode .rc-modal__header {
 	color: var(--color-white);
 }
-
-/* Buttons */
 
 body.dark-mode .rc-button--outline {
 	border-color: var(--button-outline-color);
@@ -313,8 +257,6 @@ body.dark-mode .rc-button--cancel {
 	color: var(--button-primary-text-color);
 }
 
-/* Contextual bar */
-
 body.dark-mode .contextual-bar {
 	background-color: var(--color-dark);
   	border-left: 2px solid var(--color-dark-medium);
@@ -329,8 +271,6 @@ body.dark-mode .contextual-bar__content {
 	background-color: var(--color-dark);
 }
 
-/* Popovers */
-
 body.dark-mode .rc-popover__content {
 	background-color: var(--popover-background);
 	box-shadow: 0px 0px 2px var(--color-dark-20);
@@ -338,10 +278,6 @@ body.dark-mode .rc-popover__content {
 
 body.dark-mode .emoji-picker .filter-item.active {
 	border-color: var(--color-light-blue);
-}
-
-body.dark-mode .rc-switch-double {
-	color: var(--color-white);
 }
 
 body.dark-mode .rc-header--room {
@@ -400,7 +336,6 @@ body.dark-mode .hljs-type,
 body.dark-mode .hljs-number {
 	color: var(--color-orange);
 }
-
 
 
 /**************Admin Panel******************/
