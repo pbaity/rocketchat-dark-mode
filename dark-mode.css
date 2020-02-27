@@ -39,6 +39,7 @@ select {
 }
 
 
+
 /******************************************
  ************Transition Effect*************
  ******************************************/
@@ -83,6 +84,7 @@ select,
 .sidebar__footer {
 	transition: opacity 300ms linear, color 150ms, background-color 150ms, border-color 150ms;
 }
+
 
 
 /******************************************
@@ -155,6 +157,7 @@ body.dark-mode {
 	--alerts-background: #1d73f5;
 	--alerts-color: var(--color-white);
 }
+
 
 
 /******************************************
@@ -369,6 +372,7 @@ body.dark-mode .hljs-type,
 body.dark-mode .hljs-number {
 	color: var(--color-orange);
 }
+
 
 
 /**************Admin Panel******************/
