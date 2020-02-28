@@ -25,7 +25,7 @@ const darkModeToggleText = {
 	'pl': 'Toggle Dark Mode',
 	'pt': 'Toggle Dark Mode',
 	'ru': 'Смена оформления'
-}[defaultUserLanguage()];
+}[defaultUserLanguage()] || 'Toggle Dark Mode';
 
 const toggleButton = `<button class="sidebar__toolbar-button rc-tooltip rc-tooltip--down js-button" aria-label="${darkModeToggleText}">D</button>`;
 
