@@ -175,10 +175,6 @@ body.dark-mode .sidebar-item > a {
 	color: inherit;
 }
 
-body.dark-mode input {
-	color: var(--color-white);
-}
-
 body.dark-mode select option {
 	color: var(--color-dark);
 }
@@ -282,12 +278,14 @@ body.dark-mode .rc-button--outline {
 	color: var(--button-outline-color);
 }
 
-body.dark-mode .rc-button--outline.js-close {
+body.dark-mode .rc-button--outline.js-close,
+body.dark-mode .rc-button--nude.js-close {
 	border-color: var(--button-close-color);
 	color: var(--button-close-color);
 }
 
-body.dark-mode .rc-button--cancel {
+body.dark-mode .rc-button--cancel,
+body.dark-mode .rc-button--danger {
 	background-color: var(--button-cancel-color);
 	border-color: var(--button-cancel-color);
 	color: var(--button-primary-text-color);
@@ -423,11 +421,28 @@ body.dark-mode .rcx-accordion-item__bar:hover {
 	background-color: var(--color-dark-30);
 }
 
-body.dark-mode .rcx-box--text-style-h1,
-body.dark-mode .rcx-subtitle {
+body.dark-mode .rcx-box--text-style-h1, 
+body.dark-mode .rcx-subtitle, 
+body.dark-mode .rcx-box--text-color-default, 
+body.dark-mode .rcx-box--text-color-info {
 	color: var(--color-gray-lightest);
 }
 
 body.dark-mode .rcx-button--primary:disabled {
 	color: var(--color-gray);
+}
+
+body.dark-mode .permissions-manager .permission-grid .role-name {
+	background: var(--color-dark);
+}
+
+body.dark-mode .rc-apps-marketplace .rc-table-content tbody .rc-table-tr:not(.table-no-click):not(.table-no-pointer):hover, 
+body.dark-mode .rc-apps-section .rc-table-content tbody .rc-table-tr:not(.table-no-click):not(.table-no-pointer):hover {
+	background-color: var(--color-dark);
+}
+
+body.dark-mode .rc-apps-marketplace .rc-table-content .rc-table-info .rc-apps-categories .rc-apps-category, 
+body.dark-mode .rc-apps-section .rc-table-content .rc-table-info .rc-apps-categories .rc-apps-category {
+	color: var(--primary-font-color);
+    background-color: var(--color-dark-medium);
 }
