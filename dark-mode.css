@@ -446,3 +446,17 @@ body.dark-mode .rc-apps-section .rc-table-content .rc-table-info .rc-apps-catego
 	color: var(--primary-font-color);
     background-color: var(--color-dark-medium);
 }
+
+
+
+/**************Login Page******************/
+
+section.full-page.color-tertiary-font-color {
+	background-color: var(--color-dark);
+}
+
+.rc-button.rc-button--nude.forgot-password,
+.rc-button.rc-button--nude.back-to-login,
+.rc-button.rc-button--nude.register {
+    color: var(--color-white);
+}
