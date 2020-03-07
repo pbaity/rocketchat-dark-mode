@@ -16,7 +16,7 @@
 	color: var(--info-font-color);
 }
 
-select {
+input, select, textarea {
 	color: var(--input-text-color);
 }
 
