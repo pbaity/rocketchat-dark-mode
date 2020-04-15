@@ -99,10 +99,10 @@ body.dark-mode {
 
 	--button-outline-color: var(--color-gray-medium);
 	--button-close-color: var(--color-gray-medium);
- 
+
 
 	/********************** Overridden Rocket.Chat Variables **********************/
-	 
+
 	/* General Colors */
 	--rc-color-alert-message-warning-background: hsl(352, 83%, 20%);
 	--rc-color-primary: var(--color-gray-lightest);
@@ -421,9 +421,9 @@ body.dark-mode .rcx-accordion-item__bar:hover {
 	background-color: var(--color-dark-30);
 }
 
-body.dark-mode .rcx-box--text-style-h1, 
-body.dark-mode .rcx-subtitle, 
-body.dark-mode .rcx-box--text-color-default, 
+body.dark-mode .rcx-box--text-style-h1,
+body.dark-mode .rcx-subtitle,
+body.dark-mode .rcx-box--text-color-default,
 body.dark-mode .rcx-box--text-color-info {
 	color: var(--color-gray-lightest);
 }
@@ -436,12 +436,12 @@ body.dark-mode .permissions-manager .permission-grid .role-name {
 	background: var(--color-dark);
 }
 
-body.dark-mode .rc-apps-marketplace .rc-table-content tbody .rc-table-tr:not(.table-no-click):not(.table-no-pointer):hover, 
+body.dark-mode .rc-apps-marketplace .rc-table-content tbody .rc-table-tr:not(.table-no-click):not(.table-no-pointer):hover,
 body.dark-mode .rc-apps-section .rc-table-content tbody .rc-table-tr:not(.table-no-click):not(.table-no-pointer):hover {
 	background-color: var(--color-dark);
 }
 
-body.dark-mode .rc-apps-marketplace .rc-table-content .rc-table-info .rc-apps-categories .rc-apps-category, 
+body.dark-mode .rc-apps-marketplace .rc-table-content .rc-table-info .rc-apps-categories .rc-apps-category,
 body.dark-mode .rc-apps-section .rc-table-content .rc-table-info .rc-apps-categories .rc-apps-category {
 	color: var(--primary-font-color);
     background-color: var(--color-dark-medium);
@@ -459,4 +459,19 @@ section.full-page.color-tertiary-font-color {
 .rc-button.rc-button--nude.back-to-login,
 .rc-button.rc-button--nude.register {
     color: var(--color-white);
+}
+
+
+
+/**************Scrollbars******************/
+body.dark-mode *::-webkit-scrollbar {
+	background-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode *::-webkit-scrollbar-thumb {
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+body.dark-mode *::-webkit-scrollbar-corner {
+	background-color: rgba(255, 255, 255, 0.05);
 }
