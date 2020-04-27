@@ -475,3 +475,9 @@ body.dark-mode *::-webkit-scrollbar-thumb {
 body.dark-mode *::-webkit-scrollbar-corner {
 	background-color: rgba(255, 255, 255, 0.05);
 }
+
+/* elevation tiles */
+body.dark-mode .rcx-tile--elevation-0, 
+body.dark-mode .rcx-tile--elevation-1 {
+    background-color: var(--color-dark-medium);
+}
