@@ -171,6 +171,14 @@ body.dark-mode a {
 	color: var(--color-light-blue);
 }
 
+body.dark-mode select {
+	background-color: var(--color-dark);
+}
+
+body.dark-mode select option {
+	color: var(--primary-font-color);
+}
+
 body.dark-mode .sidebar-item > a {
 	color: inherit;
 }
@@ -185,6 +193,10 @@ body.dark-mode .rc-switch__text {
 
 body.dark-mode .rc-switch-double {
 	color: var(--color-white);
+}
+
+body.dark-mode .rc-switch__button {
+	background-color: var(--color-dark);
 }
 
 body.dark-mode .error-border {
@@ -305,6 +317,26 @@ body.dark-mode .contextual-bar__content {
 	background-color: var(--color-dark);
 }
 
+/***** Chat file list *****/
+
+body.dark-mode .attachments__item:hover, .attachments__item:active {
+	background-color: var(--color-darkest);
+}
+
+body.dark-mode .attachments__content:hover, .attachments__content:active {
+	color: var(--primary-font-color);
+}
+
+body.dark-mode .attachments__name {
+	color: var(--color-blue);
+}
+
+body.dark-mode .attachments__name:hover, .attachments__name:active {
+	color: var(--color-light-blue);
+}
+
+/*****/
+
 body.dark-mode .rc-popover__content {
 	background-color: var(--popover-background);
 	box-shadow: 0px 0px 2px var(--color-dark-20);
@@ -326,6 +358,9 @@ body.dark-mode .chat-now {
 	color: var(--color-white);
 }
 
+body.dark-mode .message-popup-title {
+	background-color: var(--color-dark);
+}
 
 /**************Code Highlights*****************/
 
@@ -371,7 +406,17 @@ body.dark-mode .hljs-number {
 	color: var(--color-orange);
 }
 
+/***** My Account *****/
 
+body.dark-mode .rc-form-legend,
+body.dark-mode .rc-form-label {
+	color: var(--primary-font-color);
+}
+
+body.dark-mode .js-logout {
+	color: var(--primary-font-color);
+	border-color: var(--primary-font-color);
+}
 
 /**************Admin Panel******************/
 
@@ -474,6 +519,17 @@ body.dark-mode *::-webkit-scrollbar-thumb {
 
 body.dark-mode *::-webkit-scrollbar-corner {
 	background-color: rgba(255, 255, 255, 0.05);
+}
+
+/***** Poll App *****/
+body.dark-mode .rc-modal-wrapper > dialog > div {
+	background-color: var(--header-background-color);
+}
+
+body.dark-mode .rcx-box * .rcx-input-box,
+body.dark-mode .rcx-box * .rcx-select {
+	color: var(--rc-color-primary);
+	background-color: var(--message-box-background);
 }
 
 /* elevation tiles */
