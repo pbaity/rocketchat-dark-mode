@@ -183,10 +183,6 @@ body.dark-mode .sidebar-item > a {
 	color: inherit;
 }
 
-body.dark-mode select option {
-	color: var(--color-dark);
-}
-
 body.dark-mode .rc-switch__text {
 	color: var(--color-white);
 }
@@ -527,7 +523,14 @@ body.dark-mode .rc-modal-wrapper > dialog > div {
 }
 
 body.dark-mode .rcx-box * .rcx-input-box,
-body.dark-mode .rcx-box * .rcx-select {
-	color: var(--rc-color-primary);
-	background-color: var(--message-box-background);
+body.dark-mode .rcx-box * .rcx-select,
+body.dark-mode span.rcx-box.rcx-box--text-color-default {
+	color: var(--color-dark);
+	background-color: var(--color-white);
+}
+
+/***** Elevation Tiles *****/
+body.dark-mode .rcx-tile--elevation-0, 
+body.dark-mode .rcx-tile--elevation-1 {
+	background-color: var(--color-dark-medium);
 }
