@@ -531,3 +531,9 @@ body.dark-mode .rcx-box * .rcx-select {
 	color: var(--rc-color-primary);
 	background-color: var(--message-box-background);
 }
+
+/* elevation tiles */
+body.dark-mode .rcx-tile--elevation-0, 
+body.dark-mode .rcx-tile--elevation-1 {
+    background-color: var(--color-dark-medium);
+}
