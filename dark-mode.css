@@ -168,7 +168,7 @@ body.dark-mode {
 /***************Main Chat*****************/
 
 body.dark-mode a {
-	color: var(--color-light-blue);
+	color: var(--info-font-color);
 }
 
 body.dark-mode select {
@@ -271,9 +271,9 @@ body.dark-mode .background-transparent-darker-before::before {
 	background-color: var(--color-dark-medium);
 }
 
-body.dark-mode .background-info-font-color {
+/*body.dark-mode .background-info-font-color {
 	background-color: var(--color-dark-medium);
-}
+}*/
 
 body.dark-mode .rc-modal,
 body.dark-mode .rc-modal__footer {
@@ -442,6 +442,24 @@ body.dark-mode .sidebar-flex__search .rc-input__element {
 	color: var(--color-dark);
 }
 
+body.dark-mode .rcx-input-box__wrapper {
+	background-color: var(--color-dark);
+}
+
+body.dark-mode .rcx-box * .rcx-input-box {
+	background-color: var(--color-dark);
+}
+
+body.dark-mode .rcx-table__cell {
+	color: var(--color-gray);
+	background-color: var(--color-dark);
+}
+
+body.dark-mode  .rcx-table__cell--align-end {
+	color: var(--color-gray);
+	background-color: var(--color-gray);
+}
+
 body.dark-mode .rc-input__element:disabled{
 	background-color: var(--color-gray);
 }
@@ -470,6 +488,9 @@ body.dark-mode .rcx-box--text-style-h1,
 body.dark-mode .rcx-subtitle,
 body.dark-mode .rcx-box--text-color-default,
 body.dark-mode .rcx-box--text-color-info {
+	color: var(--color-gray-lightest);
+}
+body.dark-mode .rcx-table__cell {
 	color: var(--color-gray-lightest);
 }
 
@@ -530,14 +551,76 @@ body.dark-mode .rc-modal-wrapper > dialog > div {
 	background-color: var(--header-background-color);
 }
 
-body.dark-mode .rcx-box * .rcx-input-box,
-body.dark-mode .rcx-box * .rcx-select {
-	color: var(--rc-color-primary);
-	background-color: var(--message-box-background);
+body.dark-mode .rcx-box--text-style-h1, 
+body.dark-mode .rcx-subtitle, 
+body.dark-mode .rcx-box--text-color-default, 
+body.dark-mode .rcx-box--text-color-info {
+    color: var(--color-dark);
 }
 
-/* elevation tiles */
-body.dark-mode .rcx-tile--elevation-0, 
-body.dark-mode .rcx-tile--elevation-1 {
+/*body.dark-mode .rcx-box * .rcx-input-box,*/
+body.dark-mode .rcx-box * .rcx-select {
+	/*color: var(--color-dark-medium);*/
+	background-color: var(--color-white);
+}
+
+body.dark-mode .mail-messages__instructions {
+	background-color: var(--color-dark);
+}
+
+body.dark-mode .rcx-tag--secondary {
 	background-color: var(--color-dark-medium);
 }
+
+body.dark-mode .rcx-table__cell--align-end {
+    color: var(--info-font-color) !important;
+	background-color: var(--color-dark-medium) !important;
+}
+
+body.dark-mode .rcx-box {
+    color: var(--info-font-color) !important;
+	background-color: var(--color-dark) !important;
+}
+
+body.dark-mode .rcx-table__cell--align-start {
+    color: var(--info-font-color) !important;
+	background-color: var(--color-dark-medium) !important;
+}
+
+body.dark-mode .rcx-button {
+	background-color: var(--color-dark-medium)
+}
+
+body.dark-mode .rcx-button--primary {
+	color: var(--info-font-color);
+	background-color: #095ad2
+}
+
+body.dark-mode  .rcx-field__description code {
+	background-color: var(--color-dark);
+}
+
+body.dark-mode .table-fake-th {
+	color: var(--info-font-color);
+}
+
+body.dark-mode .rc-input__element {
+	background-color: var(--color-dark-medium);
+	color: var(--info-font-color) !important;
+}
+
+body.dark-mode .rcx-check-box.is-focused .rcx-check-box__input:checked+.rcx-check-box__fake, .rcx-check-box.is-focused .rcx-check-box__input:indeterminate+.rcx-check-box__fake, .rcx-check-box__input:checked:focus+.rcx-check-box__fake, .rcx-check-box__input:indeterminate:focus+.rcx-check-box__fake, .rcx-radio-button.is-focused .rcx-radio-button__input:checked+.rcx-radio-button__fake, .rcx-radio-button__input:checked:focus+.rcx-radio-button__fake, .rcx-toggle-switch.is-focused .rcx-toggle-switch__input:checked+.rcx-toggle-switch__fake, .rcx-toggle-switch__input:checked:focus+.rcx-toggle-switch__fake{
+	background-color: #1d74f5 !important;
+}
+
+body.dark-mode .CodeMirror {
+	background-color: var(--color-gray-light);
+}
+
+body.dark-mode .CodeMirror-gutter {
+	background-color: var(--color-dark);
+}
+
+body.dark-mode .setting-action {
+	border: var(--button-border-width) solid var(--info-font-color);
+	color: var(--info-font-color);
