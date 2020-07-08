@@ -406,6 +406,13 @@ body.dark-mode .hljs-number {
 	color: var(--color-orange);
 }
 
+body.dark-mode .hljs-addition {
+  background-color: #1e3a21;
+}
+body.dark-mode .hljs-deletion {
+  background-color: #472d2e;
+}
+
 /***** My Account *****/
 
 body.dark-mode .rc-form-legend,
@@ -537,7 +544,7 @@ body.dark-mode .rcx-box * .rcx-select {
 }
 
 /* elevation tiles */
-body.dark-mode .rcx-tile--elevation-0, 
+body.dark-mode .rcx-tile--elevation-0,
 body.dark-mode .rcx-tile--elevation-1 {
 	background-color: var(--color-dark-medium);
 }
