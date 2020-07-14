@@ -609,7 +609,18 @@ body.dark-mode .rc-input__element {
 	color: var(--info-font-color) !important;
 }
 
-body.dark-mode .rcx-check-box.is-focused .rcx-check-box__input:checked+.rcx-check-box__fake, .rcx-check-box.is-focused .rcx-check-box__input:indeterminate+.rcx-check-box__fake, .rcx-check-box__input:checked:focus+.rcx-check-box__fake, .rcx-check-box__input:indeterminate:focus+.rcx-check-box__fake, .rcx-radio-button.is-focused .rcx-radio-button__input:checked+.rcx-radio-button__fake, .rcx-radio-button__input:checked:focus+.rcx-radio-button__fake, .rcx-toggle-switch.is-focused .rcx-toggle-switch__input:checked+.rcx-toggle-switch__fake, .rcx-toggle-switch__input:checked:focus+.rcx-toggle-switch__fake{
+body.dark-mode .rcx-check-box.is-focused,
+body.dark-mode .rcx-check-box__input:checked+.rcx-check-box__fake,
+body.dark-mode .rcx-check-box.is-focused,
+body.dark-mode .rcx-check-box__input:indeterminate+.rcx-check-box__fake,
+body.dark-mode .rcx-check-box__input:checked:focus+.rcx-check-box__fake,
+body.dark-mode .rcx-check-box__input:indeterminate:focus+.rcx-check-box__fake,
+body.dark-mode .rcx-radio-button.is-focused
+body.dark-mode .rcx-radio-button__input:checked+.rcx-radio-button__fake,
+body.dark-mode .rcx-radio-button__input:checked:focus+.rcx-radio-button__fake,
+body.dark-mode .rcx-toggle-switch.is-focused
+body.dark-mode .rcx-toggle-switch__input:checked+.rcx-toggle-switch__fake,
+body.dark-mode .rcx-toggle-switch__input:checked:focus+.rcx-toggle-switch__fake {
 	background-color: #1d74f5 !important;
 }
 
@@ -624,3 +635,8 @@ body.dark-mode .CodeMirror-gutter {
 body.dark-mode .setting-action {
 	border: var(--button-border-width) solid var(--info-font-color);
 	color: var(--info-font-color);
+}
+
+body.dark-mode .message {
+    background-color: var(--color-darkest);
+}
