@@ -168,7 +168,7 @@ body.dark-mode {
 /***************Main Chat*****************/
 
 body.dark-mode a {
-	color: var(--info-font-color);
+	color: var(--color-light-blue);
 }
 
 body.dark-mode select {
