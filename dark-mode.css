@@ -237,6 +237,10 @@ body.dark-mode .content-background-color {
 	background-color: var(--header-background-color);
 }
 
+body.dark-mode .message {
+    background-color: var(--color-darkest);
+}
+
 body.dark-mode .message.new-day::after,
 body.dark-mode .message .reactions>li,
 body.dark-mode .border-component-color {
@@ -406,6 +410,13 @@ body.dark-mode .hljs-number {
 	color: var(--color-orange);
 }
 
+body.dark-mode .hljs-addition {
+  background-color: #1e3a21;
+}
+body.dark-mode .hljs-deletion {
+  background-color: #472d2e;
+}
+
 /***** My Account *****/
 
 body.dark-mode .rc-form-legend,
@@ -490,6 +501,7 @@ body.dark-mode .rcx-box--text-color-default,
 body.dark-mode .rcx-box--text-color-info {
 	color: var(--color-gray-lightest);
 }
+
 body.dark-mode .rcx-table__cell {
 	color: var(--color-gray-lightest);
 }
@@ -511,51 +523,6 @@ body.dark-mode .rc-apps-marketplace .rc-table-content .rc-table-info .rc-apps-ca
 body.dark-mode .rc-apps-section .rc-table-content .rc-table-info .rc-apps-categories .rc-apps-category {
 	color: var(--primary-font-color);
 	background-color: var(--color-dark-medium);
-}
-
-
-
-/**************Login Page******************/
-
-body.dark-mode section.full-page.color-tertiary-font-color {
-	background-color: var(--color-dark);
-}
-
-body.dark-mode .rc-button.rc-button--nude.forgot-password,
-body.dark-mode .rc-button.rc-button--nude.back-to-login,
-body.dark-mode .rc-button.rc-button--nude.register,
-body.dark-mode .register-link-replacement {
-	color: var(--color-white);
-}
-
-body.dark-mode #login-card {
-	background-color: var(--color-darkest);
-}
-
-
-/**************Scrollbars******************/
-body.dark-mode *::-webkit-scrollbar {
-	background-color: rgba(255, 255, 255, 0.05);
-}
-
-body.dark-mode *::-webkit-scrollbar-thumb {
-	background-color: rgba(255, 255, 255, 0.15);
-}
-
-body.dark-mode *::-webkit-scrollbar-corner {
-	background-color: rgba(255, 255, 255, 0.05);
-}
-
-/***** Poll App *****/
-body.dark-mode .rc-modal-wrapper > dialog > div {
-	background-color: var(--header-background-color);
-}
-
-body.dark-mode .rcx-box--text-style-h1, 
-body.dark-mode .rcx-subtitle, 
-body.dark-mode .rcx-box--text-color-default, 
-body.dark-mode .rcx-box--text-color-info {
-    color: var(--color-dark);
 }
 
 /*body.dark-mode .rcx-box * .rcx-input-box,*/
@@ -637,6 +604,46 @@ body.dark-mode .setting-action {
 	color: var(--info-font-color);
 }
 
-body.dark-mode .message {
-    background-color: var(--color-darkest);
+
+/**************Login Page******************/
+
+body.dark-mode section.full-page.color-tertiary-font-color {
+	background-color: var(--color-dark);
+}
+
+body.dark-mode .rc-button.rc-button--nude.forgot-password,
+body.dark-mode .rc-button.rc-button--nude.back-to-login,
+body.dark-mode .rc-button.rc-button--nude.register,
+body.dark-mode .register-link-replacement {
+	color: var(--color-white);
+}
+
+body.dark-mode #login-card {
+	background-color: var(--color-darkest);
+}
+
+
+/**************Scrollbars******************/
+body.dark-mode *::-webkit-scrollbar {
+	background-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode *::-webkit-scrollbar-thumb {
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+body.dark-mode *::-webkit-scrollbar-corner {
+	background-color: rgba(255, 255, 255, 0.05);
+}
+
+/***** Poll App *****/
+body.dark-mode .rc-modal-wrapper > dialog > div {
+	background-color: var(--header-background-color);
+}
+
+body.dark-mode .rcx-box--text-style-h1, 
+body.dark-mode .rcx-subtitle, 
+body.dark-mode .rcx-box--text-color-default, 
+body.dark-mode .rcx-box--text-color-info {
+    color: var(--color-dark);
 }
