@@ -254,6 +254,11 @@ body.dark-mode .message.new-day::before {
 	background-color: var(--rc-color-primary-dark);
 }
 
+body.dark-mode .message.active,
+body.dark-mode .message:hover {
+    background-color: var(--color-dark-medium);
+}
+
 body.dark-mode .message.editing {
 	background-color: var(--color-dark-blue);
 }
