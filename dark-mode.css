@@ -356,7 +356,7 @@ body.dark-mode .emoji-picker .filter-item.active {
 }
 
 body.dark-mode .rc-header--room {
-	box-shadow: 0px 0px 3px var(--color-dark-medium);
+	border-bottom: 2px solid var(--color-dark-medium);
 }
 
 body.dark-mode .room-leader:hover {
