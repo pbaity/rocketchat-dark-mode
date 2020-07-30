@@ -183,6 +183,10 @@ body.dark-mode .sidebar-item > a {
 	color: inherit;
 }
 
+body.dark-mode select option {
+	color: var(--color-dark);
+}
+
 body.dark-mode .rc-switch__text {
 	color: var(--color-white);
 }
@@ -233,6 +237,10 @@ body.dark-mode .content-background-color {
 	background-color: var(--header-background-color);
 }
 
+body.dark-mode .message {
+    background-color: var(--color-darkest);
+}
+
 body.dark-mode .message.new-day::after,
 body.dark-mode .message .reactions>li,
 body.dark-mode .border-component-color {
@@ -244,6 +252,11 @@ body.dark-mode .message .title .is-bot,
 body.dark-mode .message .title .role-tag,
 body.dark-mode .message.new-day::before {
 	background-color: var(--rc-color-primary-dark);
+}
+
+body.dark-mode .message.active,
+body.dark-mode .message:hover {
+    background-color: var(--color-dark-medium);
 }
 
 body.dark-mode .message.editing {
@@ -264,12 +277,12 @@ body.dark-mode .rc-member-list__counter {
 }
 
 body.dark-mode .background-transparent-darker-before::before {
-    background-color: var(--color-dark-medium);
+	background-color: var(--color-dark-medium);
 }
 
-body.dark-mode .background-info-font-color {
-    background-color: var(--color-dark-medium);
-}
+/*body.dark-mode .background-info-font-color {
+	background-color: var(--color-dark-medium);
+}*/
 
 body.dark-mode .rc-modal,
 body.dark-mode .rc-modal__footer {
@@ -301,12 +314,12 @@ body.dark-mode .rc-button--danger {
 
 body.dark-mode .contextual-bar {
 	background-color: var(--color-dark);
-  	border-left: 2px solid var(--color-dark-medium);
+	border-left: 2px solid var(--color-dark-medium);
 }
 
 body.dark-mode .contextual-bar__header {
 	background-color: var(--color-dark);
-  	border-bottom: 1px solid var(--color-dark-medium);
+	border-bottom: 1px solid var(--color-dark-medium);
 }
 
 body.dark-mode .contextual-bar__content {
@@ -343,7 +356,7 @@ body.dark-mode .emoji-picker .filter-item.active {
 }
 
 body.dark-mode .rc-header--room {
-	box-shadow: 0px 0px 3px var(--color-dark-medium);
+	border-bottom: 2px solid var(--color-dark-medium);
 }
 
 body.dark-mode .room-leader:hover {
@@ -402,22 +415,23 @@ body.dark-mode .hljs-number {
 	color: var(--color-orange);
 }
 
+body.dark-mode .hljs-addition {
+  background-color: #1e3a21;
+}
+body.dark-mode .hljs-deletion {
+  background-color: #472d2e;
+}
+
 /***** My Account *****/
 
 body.dark-mode .rc-form-legend,
 body.dark-mode .rc-form-label {
-	color: var(--color-gray-lightest);
+	color: var(--primary-font-color);
 }
 
 body.dark-mode .js-logout {
-	color: var(--color-gray-lightest);
-	border-color: var(--color-gray-lightest);
-}
-
-body.dark-mode .rc-button.setting-action.download-my-data,
-body.dark-mode .rc-button.setting-action.export-my-data {
-	border-color: var(--color-gray-lightest);
-	color: var(--color-gray-lightest);
+	color: var(--primary-font-color);
+	border-color: var(--primary-font-color);
 }
 
 /**************Admin Panel******************/
@@ -442,6 +456,24 @@ body.dark-mode .rcx-field__label{
 
 body.dark-mode .sidebar-flex__search .rc-input__element {
 	color: var(--color-dark);
+}
+
+body.dark-mode .rcx-input-box__wrapper {
+	background-color: var(--color-dark);
+}
+
+body.dark-mode .rcx-box * .rcx-input-box {
+	background-color: var(--color-dark);
+}
+
+body.dark-mode .rcx-table__cell {
+	color: var(--color-gray);
+	background-color: var(--color-dark);
+}
+
+body.dark-mode  .rcx-table__cell--align-end {
+	color: var(--color-gray);
+	background-color: var(--color-gray);
 }
 
 body.dark-mode .rc-input__element:disabled{
@@ -475,6 +507,10 @@ body.dark-mode .rcx-box--text-color-info {
 	color: var(--color-gray-lightest);
 }
 
+body.dark-mode .rcx-table__cell {
+	color: var(--color-gray-lightest);
+}
+
 body.dark-mode .rcx-button--primary:disabled {
 	color: var(--color-gray);
 }
@@ -491,23 +527,105 @@ body.dark-mode .rc-apps-section .rc-table-content tbody .rc-table-tr:not(.table-
 body.dark-mode .rc-apps-marketplace .rc-table-content .rc-table-info .rc-apps-categories .rc-apps-category,
 body.dark-mode .rc-apps-section .rc-table-content .rc-table-info .rc-apps-categories .rc-apps-category {
 	color: var(--primary-font-color);
-    background-color: var(--color-dark-medium);
+	background-color: var(--color-dark-medium);
 }
 
+/*body.dark-mode .rcx-box * .rcx-input-box,*/
+body.dark-mode .rcx-box * .rcx-select {
+	/*color: var(--color-dark-medium);*/
+	background-color: var(--color-white);
+}
+
+body.dark-mode .mail-messages__instructions {
+	background-color: var(--color-dark);
+}
+
+body.dark-mode .rcx-tag--secondary {
+	background-color: var(--color-dark-medium);
+}
+
+body.dark-mode .rcx-table__cell--align-end {
+    color: var(--info-font-color) !important;
+	background-color: var(--color-dark-medium) !important;
+}
+
+body.dark-mode .rcx-box {
+    color: var(--info-font-color) !important;
+	background-color: var(--color-dark) !important;
+}
+
+body.dark-mode .rcx-table__cell--align-start {
+    color: var(--info-font-color) !important;
+	background-color: var(--color-dark-medium) !important;
+}
+
+body.dark-mode .rcx-button {
+	background-color: var(--color-dark-medium)
+}
+
+body.dark-mode .rcx-button--primary {
+	color: var(--info-font-color);
+	background-color: #095ad2
+}
+
+body.dark-mode  .rcx-field__description code {
+	background-color: var(--color-dark);
+}
+
+body.dark-mode .table-fake-th {
+	color: var(--info-font-color);
+}
+
+body.dark-mode .rc-input__element {
+	background-color: var(--color-dark-medium);
+	color: var(--info-font-color) !important;
+}
+
+body.dark-mode .rcx-check-box.is-focused,
+body.dark-mode .rcx-check-box__input:checked+.rcx-check-box__fake,
+body.dark-mode .rcx-check-box.is-focused,
+body.dark-mode .rcx-check-box__input:indeterminate+.rcx-check-box__fake,
+body.dark-mode .rcx-check-box__input:checked:focus+.rcx-check-box__fake,
+body.dark-mode .rcx-check-box__input:indeterminate:focus+.rcx-check-box__fake,
+body.dark-mode .rcx-radio-button.is-focused
+body.dark-mode .rcx-radio-button__input:checked+.rcx-radio-button__fake,
+body.dark-mode .rcx-radio-button__input:checked:focus+.rcx-radio-button__fake,
+body.dark-mode .rcx-toggle-switch.is-focused
+body.dark-mode .rcx-toggle-switch__input:checked+.rcx-toggle-switch__fake,
+body.dark-mode .rcx-toggle-switch__input:checked:focus+.rcx-toggle-switch__fake {
+	background-color: #1d74f5 !important;
+}
+
+body.dark-mode .CodeMirror {
+	background-color: var(--color-gray-light);
+}
+
+body.dark-mode .CodeMirror-gutter {
+	background-color: var(--color-dark);
+}
+
+body.dark-mode .setting-action {
+	border: var(--button-border-width) solid var(--info-font-color);
+	color: var(--info-font-color);
+}
 
 
 /**************Login Page******************/
 
-section.full-page.color-tertiary-font-color {
+body.dark-mode section.full-page.color-tertiary-font-color {
 	background-color: var(--color-dark);
 }
 
-.rc-button.rc-button--nude.forgot-password,
-.rc-button.rc-button--nude.back-to-login,
-.rc-button.rc-button--nude.register {
-    color: var(--color-white);
+body.dark-mode .rc-button.rc-button--nude.forgot-password,
+body.dark-mode .rc-button.rc-button--nude.back-to-login,
+body.dark-mode .rc-button.rc-button--nude.register,
+body.dark-mode .register-link-replacement {
+	color: var(--color-white);
 }
 
+body.dark-mode #login-card {
+	background-color: var(--color-darkest);
+}
 
 
 /**************Scrollbars******************/
@@ -528,15 +646,14 @@ body.dark-mode .rc-modal-wrapper > dialog > div {
 	background-color: var(--header-background-color);
 }
 
-body.dark-mode .rcx-box * .rcx-input-box,
-body.dark-mode .rcx-box * .rcx-select,
-body.dark-mode span.rcx-box.rcx-box--text-color-default {
-	color: var(--color-dark);
-	background-color: var(--color-white);
+body.dark-mode .rcx-box--text-style-h1, 
+body.dark-mode .rcx-subtitle, 
+body.dark-mode .rcx-box--text-color-default, 
+body.dark-mode .rcx-box--text-color-info {
+    color: var(--color-dark);
 }
 
-/***** Elevation Tiles *****/
-body.dark-mode .rcx-tile--elevation-0, 
-body.dark-mode .rcx-tile--elevation-1 {
-	background-color: var(--color-dark-medium);
+/***** Hide Bamboo build notification links *****/
+[data-alias="Bamboo"] > blockquote {
+	display:none;
 }
