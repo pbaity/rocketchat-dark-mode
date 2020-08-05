@@ -17,7 +17,7 @@ const lightModeSymbol = `<svg id="icon-darkmode" viewBox="0 0 302.4 302.4" fill=
 
 const darkModeToggleText = {
 	'en': 'Toggle Dark Mode',
-	'de': 'Toggle Dark Mode',
+	'de': 'Dark Mode umschalten',
 	'fr': 'Toggle Dark Mode',
 	'es': 'Toggle Dark Mode',
 	'it': 'Toggle Dark Mode',
