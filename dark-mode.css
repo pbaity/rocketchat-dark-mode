@@ -5,6 +5,7 @@
 :root {
 	--primary-font-color: #444;
 	--info-font-color: #a0a0a0;
+	--rc-status-online: #43b581;
 }
 
 /* Reset global font color so that it's changable more easily */
