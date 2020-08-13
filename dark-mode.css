@@ -177,7 +177,7 @@ body.dark-mode select {
 }
 
 body.dark-mode select option {
-	color: var(--primary-font-color);
+	color: white;
 }
 
 body.dark-mode .sidebar-item > a {
