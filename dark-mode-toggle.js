@@ -23,7 +23,7 @@ const darkModeToggleText = {
 	'it': 'Toggle Dark Mode',
 	'nl': 'Toggle Dark Mode',
 	'pl': 'Toggle Dark Mode',
-	'pt': 'Toggle Dark Mode',
+	'pt': 'Alternar Tema',
 	'ru': 'Смена оформления'
 }[defaultUserLanguage()] || 'Toggle Dark Mode';
 
