@@ -5,7 +5,7 @@
 :root {
 	--primary-font-color: #444;
 	--info-font-color: #a0a0a0;
-	--rc-status-online: #43b581;
+	--color-darker: #272c33;
 }
 
 /* Reset global font color so that it's changable more easily */
@@ -253,7 +253,7 @@ body.dark-mode .message.new-day::before {
 
 body.dark-mode .message.active,
 body.dark-mode .message:hover {
-    background-color: var(--color-dark-medium);
+    background-color: var(--color-darker);
 }
 
 body.dark-mode .message.editing {
@@ -270,7 +270,14 @@ body.dark-mode .rc-old .rc-message-box .reply-preview {
 
 body.dark-mode .message-actions,
 body.dark-mode .rc-member-list__counter {
-	color: var(--color-gray);
+	color: var(--color-gray-light);
+	background-color: var(--color-darkest);
+	border-color: var(--color-dark);
+}
+
+body.dark-mode .message-actions__button:hover,
+body.dark-mode .message-actions__menu:hover {
+	background-color: var(--color-dark-light);
 }
 
 body.dark-mode .background-transparent-darker-before::before {
