@@ -184,10 +184,6 @@ body.dark-mode .sidebar-item > a {
 	color: inherit;
 }
 
-body.dark-mode select option {
-	color: var(--color-dark);
-}
-
 body.dark-mode .rc-switch__text {
 	color: var(--color-white);
 }
