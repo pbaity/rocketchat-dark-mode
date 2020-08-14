@@ -277,7 +277,7 @@ body.dark-mode .rc-member-list__counter {
 
 body.dark-mode .message-actions__button:hover,
 body.dark-mode .message-actions__menu:hover {
-	background-color: var(--color-dark-light);
+	background-color: var(--color-dark);
 }
 
 body.dark-mode .background-transparent-darker-before::before {
