@@ -609,6 +609,10 @@ body.dark-mode .setting-action {
 
 /**************Login Page******************/
 
+body.dark-mode main#rocket-chat {
+	background-color: var(--color-dark);
+}
+
 body.dark-mode section.full-page.color-tertiary-font-color {
 	background-color: var(--color-dark);
 }
@@ -616,6 +620,7 @@ body.dark-mode section.full-page.color-tertiary-font-color {
 body.dark-mode .rc-button.rc-button--nude.forgot-password,
 body.dark-mode .rc-button.rc-button--nude.back-to-login,
 body.dark-mode .rc-button.rc-button--nude.register,
+body.dark-mode .rc-button.rc-button--nude i.icon-cancel,
 body.dark-mode .register-link-replacement {
 	color: var(--color-white);
 }
