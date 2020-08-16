@@ -558,6 +558,10 @@ body.dark-mode .rcx-box {
 	background-color: var(--color-dark) !important;
 }
 
+body.dark-mode .rcx-modal__backdrop {
+	background-color: transparent !important;
+}
+
 body.dark-mode .rcx-table__cell--align-start {
     color: var(--info-font-color) !important;
 	background-color: var(--color-dark-medium) !important;
