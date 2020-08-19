@@ -377,7 +377,8 @@ body.dark-mode .message-popup-title {
 
 /**************Code Highlights*****************/
 
-body.dark-mode .code-colors {
+body.dark-mode .code-colors,
+body.dark-mode .rc-old code.inline {
 	background: var(--color-dark-100);
 	color: var(--color-gray-light);
 }
