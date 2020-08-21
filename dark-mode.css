@@ -157,6 +157,9 @@ body.dark-mode {
 	/* alert */
 	--alerts-background: #1d73f5;
 	--alerts-color: var(--color-white);
+
+	--message-box-editing-color: var(--rc-color-alert-message-warning-background);
+	--rc-color-alert: var(--color-dark-red);
 }
 
 
