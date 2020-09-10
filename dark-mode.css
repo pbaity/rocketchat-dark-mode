@@ -140,6 +140,10 @@ body.dark-mode {
 	/* Mention link */
 	--mention-link-background: var(--color-dark-medium);
 	--mention-link-text-color: var(--color-light-blue);
+	--mention-link-me-background: var(--alerts-background);
+	--mention-link-me-text-color: var(--color-white);
+	--mention-link-group-background: var(--alerts-background);
+	--mention-link-group-text-color: var(--color-white);
 
 	/* Message box */
 	--message-box-user-typing-color: var(--color-gray-lightest);
