@@ -2,7 +2,7 @@
  *************General Settings*************
  ******************************************/
 
-:root {
+ :root {
 	--primary-font-color: #444;
 	--info-font-color: #a0a0a0;
 	--color-darker: #272c33;
@@ -278,7 +278,7 @@ body.dark-mode .rc-old .rc-message-box .reply-preview {
 body.dark-mode .message-actions,
 body.dark-mode .rc-member-list__counter {
 	color: var(--color-gray-light);
-	background-color: var(--color-darkest);
+	background-color: transparent;
 	border-color: var(--color-dark);
 }
 
@@ -509,7 +509,7 @@ body.dark-mode .permissions-manager .permission-grid .id-styler {
 }
 
 body.dark-mode .rcx-accordion-item__bar:hover {
-	background-color: var(--color-dark-30);
+	background-color: var(--color-dark);
 }
 
 body.dark-mode .rcx-box--text-style-h1,
@@ -545,7 +545,15 @@ body.dark-mode .rc-apps-section .rc-table-content .rc-table-info .rc-apps-catego
 /*body.dark-mode .rcx-box * .rcx-input-box,*/
 body.dark-mode .rcx-box * .rcx-select {
 	/*color: var(--color-dark-medium);*/
-	background-color: var(--color-white);
+	background-color: var(--color-dark);
+}
+
+body.dark-mode .rcx-box * .rcx-button {
+	background-color: transparent;
+}
+
+body.dark-mode .rcx-box.rcx-user-card {
+	background-color: var(--color-dark) !important;
 }
 
 body.dark-mode .mail-messages__instructions {
@@ -557,13 +565,17 @@ body.dark-mode .rcx-tag--secondary {
 }
 
 body.dark-mode .rcx-table__cell--align-end {
-    color: var(--info-font-color) !important;
+  color: var(--info-font-color) !important;
 	background-color: var(--color-dark-medium) !important;
 }
 
 body.dark-mode .rcx-box {
-    color: var(--info-font-color) !important;
-	background-color: var(--color-dark) !important;
+  color: var(--info-font-color) !important;
+	background-color: var(--color-dark);
+}
+
+body.dark-mode h1.rcx-box {
+	background-color: transparent;
 }
 
 body.dark-mode .rcx-modal__backdrop {
@@ -667,9 +679,9 @@ body.dark-mode .rc-modal-wrapper > dialog > div {
 	background-color: var(--header-background-color);
 }
 
-body.dark-mode .rcx-box--text-style-h1, 
-body.dark-mode .rcx-subtitle, 
-body.dark-mode .rcx-box--text-color-default, 
+body.dark-mode .rcx-box--text-style-h1,
+body.dark-mode .rcx-subtitle,
+body.dark-mode .rcx-box--text-color-default,
 body.dark-mode .rcx-box--text-color-info {
     color: var(--color-dark);
 }
