@@ -20,6 +20,7 @@ const darkModeToggleText = {
 	'de': 'Dark Mode umschalten',
 	'fr': 'Toggle Dark Mode',
 	'es': 'Toggle Dark Mode',
+	'hu': 'Sötét mód be/ki',
 	'it': 'Toggle Dark Mode',
 	'nl': 'Toggle Dark Mode',
 	'pl': 'Toggle Dark Mode',
