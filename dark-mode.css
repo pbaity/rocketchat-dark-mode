@@ -6,6 +6,7 @@
 	--primary-font-color: #444;
 	--info-font-color: #a0a0a0;
 	--color-darker: #272c33;
+	--custom-scrollbar-color: background-color: rgba(255, 255, 255, 0.15);
 }
 
 /* Reset global font color so that it's changable more easily */
@@ -168,9 +169,6 @@ body.dark-mode {
 
 	--message-box-editing-color: var(--rc-color-alert-message-warning-background);
 	--rc-color-alert: var(--color-dark-red);
-
-	/* Scrollbar Thumb */
-	--custom-scrollbar-color: background-color: rgba(255, 255, 255, 0.15);
 }
 
 
