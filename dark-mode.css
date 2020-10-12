@@ -8,6 +8,10 @@
 	--color-darker: #272c33;
 }
 
+*::-webkit-scrollbar-thumb {
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
 /* Reset global font color so that it's changable more easily */
 .color-primary-font-color, textarea {
 	color: var(--primary-font-color);
