@@ -681,6 +681,6 @@ body.dark-mode .rcx-box--text-color-default,
 body.dark-mode .rcx-box--text-color-info {
     color: var(--color-dark);
 }
-body.dark-mode .rcx-\@tmocsy { 
+body.dark-mode div.rcx-box.rcx-box--full[aria-label="Unread"] { 
 	background-color: #1d74f5 !important;
 }
