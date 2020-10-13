@@ -663,7 +663,7 @@ body.dark-mode *::-webkit-scrollbar {
 	background-color: rgba(255, 255, 255, 0.05);
 }
 
-body.dark-mode *::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
 	background-color: rgba(255, 255, 255, 0.15);
 }
 
@@ -681,7 +681,4 @@ body.dark-mode .rcx-subtitle,
 body.dark-mode .rcx-box--text-color-default, 
 body.dark-mode .rcx-box--text-color-info {
     color: var(--color-dark);
-}
-body.dark-mode .rcx-\@tmocsy { 
-	background-color: #1d74f5 !important;
 }
