@@ -295,6 +295,18 @@ body.dark-mode .message-actions__menu:hover {
 	background-color: var(--color-dark);
 }
 
+body.dark-mode .message .body > table thead tr {
+    background-color: var(--color-darkest);
+}
+
+body.dark-mode .message .body > table tr {
+    background-color: var(--color-dark-medium);
+}
+
+body.dark-mode .message .body > table tr:nth-child(2n) {
+    background-color: var(--color-dark);
+}
+
 body.dark-mode .background-transparent-darker-before::before {
 	background-color: var(--color-dark-medium);
 }
