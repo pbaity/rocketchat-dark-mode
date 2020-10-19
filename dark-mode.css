@@ -345,6 +345,11 @@ body.dark-mode .contextual-bar__content {
 	background-color: var(--color-dark);
 }
 
+/* Targets unread message indicator in threads panel. */
+body.dark-mode button.rcx-contextual-message__follow + div.rcx-box--full {
+    background-color: #1d74f5 !important;
+}
+
 /***** Chat file list *****/
 
 body.dark-mode .attachments__item:hover, .attachments__item:active {
@@ -362,8 +367,6 @@ body.dark-mode .attachments__name {
 body.dark-mode .attachments__name:hover, .attachments__name:active {
 	color: var(--color-light-blue);
 }
-
-/*****/
 
 body.dark-mode .rc-popover__content {
 	background-color: var(--popover-background);
@@ -680,7 +683,4 @@ body.dark-mode .rcx-subtitle,
 body.dark-mode .rcx-box--text-color-default, 
 body.dark-mode .rcx-box--text-color-info {
     color: var(--color-dark);
-}
-body.dark-mode div.rcx-box.rcx-box--full[aria-label="Unread"] { 
-	background-color: #1d74f5 !important;
 }
