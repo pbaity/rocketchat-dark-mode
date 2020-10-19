@@ -10,7 +10,7 @@ If you don't like a particular color or style, that's fine - change it in your f
 
 ## 2. Supporting Rocket.Chat versions
 
-Any code changes should work for all Rocket.Chat versions from [the version used in the Rocket.Chat server snap](https://snapcraft.io/rocketchat-server) (which is always a little behind) up to the [lastest version available](https://github.com/RocketChat/Rocket.Chat/releases) (within reason). When breaking changes are unavoidable, decisions will be made on a case-by-case basis. I (the repo owner) will do my best to discuss it with the community, but I reserve the right to make the final call for what goes into this repository.
+Any code changes should work for all Rocket.Chat versions from [the version used in the Rocket.Chat server snap](https://snapcraft.io/rocketchat-server) (which is always a little behind) up to the [lastest stable version available](https://github.com/RocketChat/Rocket.Chat/releases) (within reason). When breaking changes are unavoidable, decisions will be made on a case-by-case basis. I (the repo owner) will do my best to discuss it with the community, but I reserve the right to make the final call for what goes into this repository.
 
 ## 3. Follow code style
 
