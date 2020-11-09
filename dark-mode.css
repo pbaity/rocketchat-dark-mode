@@ -673,15 +673,15 @@ body.dark-mode #login-card {
 
 
 /**************Scrollbars******************/
-body.dark-mode *::-webkit-scrollbar {
+body.dark-mode .main-content *::-webkit-scrollbar {
 	background-color: rgba(255, 255, 255, 0.05);
 }
 
-body.dark-mode *::-webkit-scrollbar-thumb {
+body.dark-mode .main-content  *::-webkit-scrollbar-thumb {
 	background-color: rgba(255, 255, 255, 0.15);
 }
 
-body.dark-mode *::-webkit-scrollbar-corner {
+body.dark-mode .main-content  *::-webkit-scrollbar-corner {
 	background-color: rgba(255, 255, 255, 0.05);
 }
 
