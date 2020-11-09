@@ -29,7 +29,7 @@ input, select, textarea {
 	transition: filter 150ms;
 }
 
-.sidebar__toolbar-button-icon--darkmode {
+.rcx-icon--name-darkmode {
 	height: .9em;
 }
 
@@ -179,7 +179,7 @@ body.dark-mode {
 
 /***************Main Chat*****************/
 
-body.dark-mode a {
+body.dark-mode .main-content a {
 	color: var(--color-light-blue);
 }
 
@@ -584,7 +584,7 @@ body.dark-mode .rcx-table__cell--align-end {
 	background-color: var(--color-dark-medium) !important;
 }
 
-body.dark-mode .rcx-box {
+body.dark-mode .main-content .rcx-box {
     color: var(--info-font-color) !important;
 	background-color: var(--color-dark) !important;
 }
@@ -598,7 +598,7 @@ body.dark-mode .rcx-table__cell--align-start {
 	background-color: var(--color-dark-medium) !important;
 }
 
-body.dark-mode .rcx-button {
+body.dark-mode .main-content .rcx-button {
 	background-color: var(--color-dark-medium)
 }
 
