@@ -50,7 +50,7 @@ function toggleDarkMode() {
 }
 
 function addDarkModeToggle() {
-	const sidebarToolbar = $('.rcx-sidebar-topbar__wrapper .rcx-\\@vi4iz8');
+	const sidebarToolbar = $('.rcx-\\@vi4iz8').first();
 
 	// wait for the sidebar toolbar to be visible
 	// this will also be false if the toolbar doesn't exist yet
