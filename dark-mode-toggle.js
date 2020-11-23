@@ -19,25 +19,25 @@ const darkModeToggleText = {
 	'en': 'Toggle Dark Mode',
 	'de': 'Dark Mode umschalten',
 	'fr': 'Toggle Dark Mode',
-	'es': 'Toggle Dark Mode',
+	'es': 'Alternar Modo Obscuro',
 	'hu': 'Sötét mód be/ki',
 	'it': 'Toggle Dark Mode',
 	'nl': 'Toggle Dark Mode',
 	'pl': 'Toggle Dark Mode',
-	'pt': 'Alternar Tema',
+	'pt': 'Alternar Modo Escuro',
 	'ru': 'Смена оформления',
 	'he': 'מצב לילה',
 	'hi': 'डार्क मोड'
 }[defaultUserLanguage()] || 'Toggle Dark Mode';
 
-const toggleButton = `<button class="sidebar__toolbar-button rc-tooltip rc-tooltip--down js-button" aria-label="${darkModeToggleText}">D</button>`;
+const toggleButton = `<button id="dark-mode-button" class="rcx-box rcx-box--full rcx-button--small-square rcx-button--square rcx-button--small rcx-button--ghost rcx-button rcx-button-group__item rcx-@ue04p" aria-label="${darkModeToggleText}">D</button>`;
 
 function isDarkModeSet() {
 	return localStorage.getItem('dark-mode') === 'true';
 }
 
 function getDarkModeIcon() {
-	return `<svg class="rc-icon sidebar__toolbar-button-icon sidebar__toolbar-button-icon--darkmode" aria-hidden="true">
+	return `<svg class="rcx-box rcx-box--full rcx-icon--name-darkmode rcx-icon rcx-@4pvxx3" aria-hidden="true">
     <use xlink:href="#icon-darkmode"></use>
     ${isDarkModeSet() ? lightModeSymbol : darkModeSymbol}
   </svg>`;
@@ -50,7 +50,7 @@ function toggleDarkMode() {
 }
 
 function addDarkModeToggle() {
-	const sidebarToolbar = $('.sidebar__toolbar');
+	const sidebarToolbar = $('.rcx-\\@vi4iz8').first();
 
 	// wait for the sidebar toolbar to be visible
 	// this will also be false if the toolbar doesn't exist yet
@@ -59,7 +59,7 @@ function addDarkModeToggle() {
 		return;
 	}
 
-	var darkModeButton = $(`.js-button[aria-label="${darkModeToggleText}"]`);
+	var darkModeButton = $('#dark-mode-button');
 
 	// do nothing if button is already on the screen
 	if (darkModeButton.is(':visible')) {
