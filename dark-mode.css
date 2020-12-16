@@ -696,3 +696,32 @@ body.dark-mode .rcx-box--text-color-default,
 body.dark-mode .rcx-box--text-color-info {
     color: var(--color-dark);
 }
+
+/***** Changes for 3.9.1 *****/
+
+aside.sidebar--main .rcx-sidebar-topbar .rcx-button--small-square {
+    width: 1.35rem;
+}
+
+body.dark-mode .main-content .rcx-box {
+    color: var(--info-font-color) !important;
+	background-color: var(--color-darkest) !important;
+}
+
+body.dark-mode div[class*="user-card"] {
+    color: var(--info-font-color) !important;
+    background-color: var(--color-dark) !important;
+}
+
+body.dark-mode .rcx-box {
+    color: var(--info-font-color) !important;
+    background-color: var(--color-dark-medium);
+}
+
+body.dark-mode .rcx-status-bullet--online {
+  background: #2de0a5 !important;
+}
+
+body.dark-mode .rcx-box--full {
+    background-color: var(--color-dark);
+}
