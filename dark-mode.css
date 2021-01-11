@@ -183,6 +183,14 @@ body.dark-mode .main-content a {
 	color: var(--color-light-blue);
 }
 
+body.dark-mode .mention-link--group {
+	color: var(--mention-link-group-text-color) !important;
+}
+
+body.dark-mode .mention-link--me {
+	color: var(--mention-link-me-text-color) !important;
+}
+
 body.dark-mode select {
 	background-color: var(--color-dark);
 }
