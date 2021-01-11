@@ -435,7 +435,8 @@ body.dark-mode .hljs-name {
 	color: var(--color-light-blue);
 }
 
-body.dark-mode .hljs-selector-tag {
+body.dark-mode .hljs-selector-tag,
+body.dark-mode .hljs-subst {
 	color: var(--color-green);
 }
 
