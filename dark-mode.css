@@ -690,12 +690,38 @@ body.dark-mode .rc-modal-wrapper > dialog > div {
 	background-color: var(--header-background-color);
 }
 
-body.dark-mode .rcx-box--text-style-h1, 
-body.dark-mode .rcx-subtitle, 
-body.dark-mode .rcx-box--text-color-default, 
+body.dark-mode .rcx-box--text-style-h1,
+body.dark-mode .rcx-subtitle,
+body.dark-mode .rcx-box--text-color-default,
 body.dark-mode .rcx-box--text-color-info {
     color: var(--color-dark);
 }
+
+/* Style the browser scroll bars to avoid visually clashing with the rest of Rocket.Chat in dark mode. */
+
+body.dark-mode * {
+	scrollbar-color: #777 transparent;
+}
+
+body.dark-mode *::-webkit-scrollbar {
+	width: .75rem;
+}
+
+body.dark-mode *::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+body.dark-mode *::-webkit-scrollbar-thumb {
+	background-color: #777;
+}
+
+/* Firefox does the dimming on hover automatically. We emulate it for Webkit-based browsers. */
+body.dark-mode *::-webkit-scrollbar-thumb:hover {
+	background-color: #666;
+}
+
+body.dark-mode *::-webkit-scrollbar-thumb:active {
+	background-color: #444;
 
 /***** Changes for 3.9.1 *****/
 
