@@ -731,6 +731,7 @@ body.dark-mode *::-webkit-scrollbar-thumb:hover {
 
 body.dark-mode *::-webkit-scrollbar-thumb:active {
 	background-color: #444;
+}
 
 /***** Changes for 3.9.1 *****/
 
