@@ -760,3 +760,23 @@ body.dark-mode .rcx-status-bullet--online {
 body.dark-mode .rcx-box--full {
     background-color: var(--color-dark);
 }
+
+body.dark-mode .rc-box.rcx-box--full.rcx-sidebar-item__title,
+body.dark-mode .rc-box.rcx-box--full.rcx-sidebar-item__subtitle,
+body.dark-mode .rc-box.rcx-box--full.rcx-sidebar-item__time {
+	color: var(--sidebar-item-text-color);
+}
+
+body.dark-mode .rcx-sidebar-topbar button.rcx-button-group__item .rcx-icon,
+body.dark-mode .rcx-box.rcx-box--full.rcx-icon--name-hashtag,
+body.dark-mode .rcx-box.rcx-box--full.rcx-sidebar-title {
+	color: var(--sidebar-item-text-color) !important;
+}
+
+body.dark-mode .rcx-sidebar-item--highlighted {
+	color: #fff !important;
+}
+
+body.dark-mode .rcx-sidebar-item__container span.rcx-box.rcx-box--full.rcx-badge {
+	background-color: var(--rc-color-alert);
+}
