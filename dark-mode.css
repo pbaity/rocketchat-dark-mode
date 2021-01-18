@@ -29,7 +29,7 @@ input, select, textarea {
 	transition: filter 150ms;
 }
 
-.sidebar__toolbar-button-icon--darkmode {
+.rcx-icon--name-darkmode {
 	height: .9em;
 }
 
@@ -179,8 +179,16 @@ body.dark-mode {
 
 /***************Main Chat*****************/
 
-body.dark-mode a {
+body.dark-mode .main-content a {
 	color: var(--color-light-blue);
+}
+
+body.dark-mode .mention-link--group {
+	color: var(--mention-link-group-text-color) !important;
+}
+
+body.dark-mode .mention-link--me {
+	color: var(--mention-link-me-text-color) !important;
 }
 
 body.dark-mode select {
@@ -357,6 +365,10 @@ body.dark-mode .contextual-bar__content {
 	background-color: var(--color-dark);
 }
 
+body.dark-mode .rc-member-list__counter {
+	background-color: var(--color-dark);
+}
+
 /* Targets unread message indicator in threads panel. */
 body.dark-mode button.rcx-contextual-message__follow + div.rcx-box--full {
     background-color: #1d74f5 !important;
@@ -435,7 +447,8 @@ body.dark-mode .hljs-name {
 	color: var(--color-light-blue);
 }
 
-body.dark-mode .hljs-selector-tag {
+body.dark-mode .hljs-selector-tag,
+body.dark-mode .hljs-subst {
 	color: var(--color-green);
 }
 
@@ -584,7 +597,7 @@ body.dark-mode .rcx-table__cell--align-end {
 	background-color: var(--color-dark-medium) !important;
 }
 
-body.dark-mode .rcx-box {
+body.dark-mode .main-content .rcx-box {
     color: var(--info-font-color) !important;
 	background-color: var(--color-dark) !important;
 }
@@ -598,7 +611,7 @@ body.dark-mode .rcx-table__cell--align-start {
 	background-color: var(--color-dark-medium) !important;
 }
 
-body.dark-mode .rcx-button {
+body.dark-mode .main-content .rcx-button {
 	background-color: var(--color-dark-medium)
 }
 
@@ -673,15 +686,15 @@ body.dark-mode #login-card {
 
 
 /**************Scrollbars******************/
-body.dark-mode *::-webkit-scrollbar {
+body.dark-mode .main-content *::-webkit-scrollbar {
 	background-color: rgba(255, 255, 255, 0.05);
 }
 
-body.dark-mode *::-webkit-scrollbar-thumb {
+body.dark-mode .main-content  *::-webkit-scrollbar-thumb {
 	background-color: rgba(255, 255, 255, 0.15);
 }
 
-body.dark-mode *::-webkit-scrollbar-corner {
+body.dark-mode .main-content  *::-webkit-scrollbar-corner {
 	background-color: rgba(255, 255, 255, 0.05);
 }
 
@@ -690,9 +703,85 @@ body.dark-mode .rc-modal-wrapper > dialog > div {
 	background-color: var(--header-background-color);
 }
 
-body.dark-mode .rcx-box--text-style-h1, 
-body.dark-mode .rcx-subtitle, 
-body.dark-mode .rcx-box--text-color-default, 
+body.dark-mode .rcx-box--text-style-h1,
+body.dark-mode .rcx-subtitle,
+body.dark-mode .rcx-box--text-color-default,
 body.dark-mode .rcx-box--text-color-info {
     color: var(--color-dark);
+}
+
+/* Style the browser scroll bars to avoid visually clashing with the rest of Rocket.Chat in dark mode. */
+
+body.dark-mode * {
+	scrollbar-color: #777 transparent;
+}
+
+body.dark-mode *::-webkit-scrollbar {
+	width: .75rem;
+}
+
+body.dark-mode *::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+body.dark-mode *::-webkit-scrollbar-thumb {
+	background-color: #777;
+}
+
+/* Firefox does the dimming on hover automatically. We emulate it for Webkit-based browsers. */
+body.dark-mode *::-webkit-scrollbar-thumb:hover {
+	background-color: #666;
+}
+
+body.dark-mode *::-webkit-scrollbar-thumb:active {
+	background-color: #444;
+}
+
+/***** Changes for 3.9.1 *****/
+
+aside.sidebar--main .rcx-sidebar-topbar .rcx-button--small-square {
+    width: 1.35rem;
+}
+
+body.dark-mode .main-content .rcx-box {
+    color: var(--info-font-color) !important;
+	background-color: var(--color-darkest) !important;
+}
+
+body.dark-mode div[class*="user-card"] {
+    color: var(--info-font-color) !important;
+    background-color: var(--color-dark) !important;
+}
+
+body.dark-mode .rcx-box {
+    color: var(--info-font-color) !important;
+    background-color: var(--color-dark-medium);
+}
+
+body.dark-mode .rcx-status-bullet--online {
+  background: #2de0a5 !important;
+}
+
+body.dark-mode .rcx-box--full {
+    background-color: var(--color-dark);
+}
+
+body.dark-mode .rc-box.rcx-box--full.rcx-sidebar-item__title,
+body.dark-mode .rc-box.rcx-box--full.rcx-sidebar-item__subtitle,
+body.dark-mode .rc-box.rcx-box--full.rcx-sidebar-item__time {
+	color: var(--sidebar-item-text-color);
+}
+
+body.dark-mode .rcx-sidebar-topbar button.rcx-button-group__item .rcx-icon,
+body.dark-mode .rcx-box.rcx-box--full.rcx-icon--name-hashtag,
+body.dark-mode .rcx-box.rcx-box--full.rcx-sidebar-title {
+	color: var(--sidebar-item-text-color) !important;
+}
+
+body.dark-mode .rcx-sidebar-item--highlighted {
+	color: #fff !important;
+}
+
+body.dark-mode .rcx-sidebar-item__container span.rcx-box.rcx-box--full.rcx-badge {
+	background-color: var(--rc-color-alert);
 }
