@@ -365,6 +365,10 @@ body.dark-mode .contextual-bar__content {
 	background-color: var(--color-dark);
 }
 
+body.dark-mode .rc-member-list__counter {
+	background-color: var(--color-dark);
+}
+
 /* Targets unread message indicator in threads panel. */
 body.dark-mode button.rcx-contextual-message__follow + div.rcx-box--full {
     background-color: #1d74f5 !important;
