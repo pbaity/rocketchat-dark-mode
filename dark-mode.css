@@ -401,29 +401,47 @@ body.dark-mode .rcx-options .rcx-option--selected:hover {
 
 /***** Buttons *****/
 
-/* Top-right buttons */
-body.dark-mode .rcx-button--tiny-square.rcx-button:not(.rcx-button--ghost), /* Selected button */
-/* body.dark-mode .rcx-button--tiny-square.rcx-button--ghost.hover, */
-/* body.dark-mode .rcx-button--tiny-square.rcx-button--ghost.is-hovered, */
-body.dark-mode .rcx-button--tiny-square.rcx-button--ghost:hover,
-/* body.dark-mode .rcx-button--tiny-square.rcx-button.hover,  */
-/* body.dark-mode .rcx-button--tiny-square.rcx-button.is-hovered,  */
-body.dark-mode .rcx-button--tiny-square.rcx-button:hover {
+/* Top-right and right sidebar buttons */
+body.dark-mode /*.rcx-button--tiny-square*/ *:is(.rcx-room-header, .rcx-vertical-bar) .rcx-button:not(.rcx-button--ghost), /* Selected buttons */
+body.dark-mode /*.rcx-button--tiny-square*/ *:is(.rcx-room-header, .rcx-vertical-bar) *:is(.rcx-button--ghost, .rcx-button:hover):hover { /* Hovered buttons */
 	border-color: transparent !important;
 	background-color: var(--color-dark) !important;
+}
+
+/* body.dark-mode .main-content .rcx-button {
+	background-color: var(--color-dark-medium);
+} */
+
+body.dark-mode .rcx-button {
+    color: var(--info-font-color);
+}
+
+body.dark-mode .rcx-button--primary {
+	color: var(--info-font-color);
+	background-color: #095ad2
+}
+
+body.dark-mode .rcx-button--primary:disabled {
+	color: var(--color-gray);
+}
+
+body.dark-mode .rcx-button--danger {
+	color: var(--rcx-button-colors-secondary-danger-color,var(--rcx-color-danger-500,#f5455c));
 }
 
 /***** Right sidebar *****/
 
 /* TODO : switch toggle */
 
-body.dark-mode .rcx-vertical-bar,
-body.dark-mode .rcx-vertical-bar .rcx-button {
+body.dark-mode .rcx-vertical-bar {
 	background-color: var(--rc-color-primary-background) !important;
 }
 
-body.dark-mode .rcx-vertical-bar .rcx-button:hover {
-    background-color: var(--rc-color-primary-dark) !important;
+body.dark-mode .rcx-css-136xdpx:hover, /* Thread list item */
+body.dark-mode .rcx-css-136xdpx:focus, 
+body.dark-mode .rcx-css-1es44sn:hover, /* Files list item */
+body.dark-mode .rcx-css-1es44sn:focus {
+    background-color: var(--rc-color-primary-dark);
 }
 
 /* Targets unread message indicator in threads panel. */
@@ -616,10 +634,6 @@ body.dark-mode .rcx-table__cell {
 	color: var(--color-gray-lightest);
 }
 
-body.dark-mode .rcx-button--primary:disabled {
-	color: var(--color-gray);
-}
-
 body.dark-mode .permissions-manager .permission-grid .role-name {
 	background: var(--color-dark);
 }
@@ -654,10 +668,15 @@ body.dark-mode .rcx-table__cell--align-end {
 	background-color: var(--color-dark-medium) !important;
 }
 
-body.dark-mode .main-content .rcx-box {
+/* Apply info (white) font *everywhere* */
+body.dark-mode *:is(.rcx-room-header, .rcx-vertical-bar) .rcx-box:not(.rcx-button) {
     color: var(--info-font-color) !important;
-	/* background-color: var(--color-dark) !important; */
 }
+
+/* body.dark-mode .main-content .rcx-box {
+    color: var(--info-font-color) !important;
+	background-color: var(--color-dark) !important;
+} */
 
 body.dark-mode .rcx-modal__backdrop {
 	background-color: transparent !important;
@@ -666,15 +685,6 @@ body.dark-mode .rcx-modal__backdrop {
 body.dark-mode .rcx-table__cell--align-start {
     color: var(--info-font-color) !important;
 	background-color: var(--color-dark-medium) !important;
-}
-
-body.dark-mode .main-content .rcx-button {
-	/* background-color: var(--color-dark-medium); */
-}
-
-body.dark-mode .rcx-button--primary {
-	color: var(--info-font-color);
-	background-color: #095ad2
 }
 
 body.dark-mode  .rcx-field__description code {
