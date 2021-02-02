@@ -183,6 +183,10 @@ body.dark-mode .main-content a {
 	color: var(--color-light-blue);
 }
 
+body.dark-mode .main-content .messages-box .wrapper {
+	background-color: var(--color-darkest);
+}
+
 body.dark-mode .mention-link--group {
 	color: var(--mention-link-group-text-color) !important;
 }
@@ -599,7 +603,7 @@ body.dark-mode .rcx-table__cell--align-end {
 
 body.dark-mode .main-content .rcx-box {
     color: var(--info-font-color) !important;
-	background-color: var(--color-dark) !important;
+	/* background-color: var(--color-dark) !important; */
 }
 
 body.dark-mode .rcx-modal__backdrop {
@@ -612,7 +616,7 @@ body.dark-mode .rcx-table__cell--align-start {
 }
 
 body.dark-mode .main-content .rcx-button {
-	background-color: var(--color-dark-medium)
+	/* background-color: var(--color-dark-medium); */
 }
 
 body.dark-mode .rcx-button--primary {
