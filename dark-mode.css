@@ -402,16 +402,20 @@ body.dark-mode .rcx-options .rcx-option--selected:hover {
 
 /***** Buttons *****/
 
-/* Top-right and right sidebar buttons */
-body.dark-mode /*.rcx-button--tiny-square*/ *:is(.rcx-room-header, .rcx-vertical-bar) .rcx-button:not(.rcx-button--ghost), /* Selected buttons */
-body.dark-mode /*.rcx-button--tiny-square*/ *:is(.rcx-room-header, .rcx-vertical-bar) *:is(.rcx-button--ghost, .rcx-button:hover):hover { /* Hovered buttons */
-	border-color: transparent !important;
+/* Regular button style */
+body.dark-mode .main-content .rcx-button:not(.rcx-button--ghost) { /* Default */
 	background-color: var(--color-dark) !important;
 }
+body.dark-mode .main-content .rcx-button:is(.rcx-button--ghost, .rcx-button):hover { /* Hovered or selected */
+	background-color: var(--color-darkest) !important;
+}
 
-/* body.dark-mode .main-content .rcx-button {
-	background-color: var(--color-dark-medium);
-} */
+/* Square (icon) button style */
+body.dark-mode .main-content .rcx-button--square:not(.rcx-button--ghost), /* Default */
+body.dark-mode .main-content .rcx-button--square:is(.rcx-button--ghost, .rcx-button):hover {  /* Hovered or selected */
+	background-color: var(--color-dark) !important;
+	border-color: transparent !important;
+}
 
 body.dark-mode .rcx-button {
     color: var(--info-font-color);
@@ -670,7 +674,9 @@ body.dark-mode .rcx-table__cell--align-end {
 }
 
 /* Apply info (white) font *everywhere* */
-body.dark-mode *:is(.rcx-room-header, .rcx-vertical-bar) .rcx-box:not(.rcx-button) {
+body.dark-mode .rcx-css-ps0pgs, /* Channel name */
+body.dark-mode .rcx-room-header  .rcx-box:not(.rcx-button-group):not(.rcx-button):not(.rcx-css-1fgkscl):not(.rcx-css-4pvxx3), /* omit buttons/icons (.rcx-css-1fgkscl is .rcx-icon parent) */
+body.dark-mode .rcx-vertical-bar .rcx-box:not(.rcx-button-group):not(.rcx-button):not(.rcx-css-1fgkscl):not(.rcx-css-4pvxx3) {
     color: var(--info-font-color) !important;
 }
 
