@@ -373,6 +373,17 @@ body.dark-mode .rc-member-list__counter {
 	background-color: var(--color-dark);
 }
 
+/***** Right sidebar *****/
+
+body.dark-mode .rcx-vertical-bar,
+body.dark-mode .rcx-vertical-bar .rcx-button {
+	background-color: var(--rc-color-primary-background) !important;
+}
+
+body.dark-mode .rcx-vertical-bar .rcx-button:hover {
+    background-color: var(--rc-color-primary-dark) !important;
+}
+
 /* Targets unread message indicator in threads panel. */
 body.dark-mode button.rcx-contextual-message__follow + div.rcx-box--full {
     background-color: #1d74f5 !important;
