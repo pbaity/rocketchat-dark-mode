@@ -786,9 +786,11 @@ body.dark-mode .rcx-box--text-color-info {
 
 /* Style the browser scroll bars to avoid visually clashing with the rest of Rocket.Chat in dark mode. */
 
+/*
 body.dark-mode * {
 	scrollbar-color: #777 transparent;
 }
+*/
 
 body.dark-mode *::-webkit-scrollbar {
 	width: .75rem;
