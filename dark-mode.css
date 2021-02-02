@@ -90,8 +90,6 @@ select,
 	transition: opacity 300ms linear, color 150ms, background-color 150ms, border-color 150ms;
 }
 
-
-
 /******************************************
  *************Dark Mode Settings***********
  ******************************************/
@@ -429,7 +427,7 @@ body.dark-mode .rcx-button {
     color: var(--info-font-color);
 }
 
-body.dark-mode .rcx-button--ghost:hover {
+body.dark-mode .rcx-button--ghost:not(.rcx-button--square):hover {
 	color: var(--color-dark) !important;
 }
 
