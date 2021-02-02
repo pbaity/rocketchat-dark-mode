@@ -373,6 +373,20 @@ body.dark-mode .rc-member-list__counter {
 	background-color: var(--color-dark);
 }
 
+/***** Buttons  *****/
+
+/* Top-right buttons */
+body.dark-mode .rcx-button--tiny-square.rcx-button:not(.rcx-button--ghost), /* Selected button */
+/* body.dark-mode .rcx-button--tiny-square.rcx-button--ghost.hover, */
+/* body.dark-mode .rcx-button--tiny-square.rcx-button--ghost.is-hovered, */
+body.dark-mode .rcx-button--tiny-square.rcx-button--ghost:hover,
+/* body.dark-mode .rcx-button--tiny-square.rcx-button.hover,  */
+/* body.dark-mode .rcx-button--tiny-square.rcx-button.is-hovered,  */
+body.dark-mode .rcx-button--tiny-square.rcx-button:hover {
+	border-color: transparent !important;
+	background-color: var(--color-dark) !important;
+}
+
 /***** Right sidebar *****/
 
 body.dark-mode .rcx-vertical-bar,
