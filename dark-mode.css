@@ -383,13 +383,14 @@ body.dark-mode .rcx-options > .rcx-tile {
     background-color: var(--rc-color-primary-darkest) !important;
 }
 
-body.dark-mode .rcx-options .rcx-option {
+body.dark-mode .rcx-options .rcx-option,
+body.dark-mode .rcx-options .rcx-option--focus /* Temporary fix while focus is not refreshed */ {
 	background-color: var(--rc-color-primary-darkest) !important;
 	color: var(--color-white) !important;
 }
 
 body.dark-mode .rc-popover__content .rcx-option:hover,
-body.dark-mode .rcx-options .rcx-option--focus, 
+/* body.dark-mode .rcx-options .rcx-option--focus, */ /* Temporary fix while focus is not refreshed */
 body.dark-mode .rcx-options .rcx-option--selected {
     background-color: var(--color-dark-light) !important;
 }
