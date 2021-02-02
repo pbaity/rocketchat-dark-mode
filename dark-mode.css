@@ -326,14 +326,22 @@ body.dark-mode .background-transparent-darker-before::before {
 /*body.dark-mode .background-info-font-color {
 	background-color: var(--color-dark-medium);
 }*/
+body.dark-mode .rcx-modal__inner,
+body.dark-mode .rcx-modal__footer {
+	background: var(--color-dark);
+}
 
-body.dark-mode .rc-modal,
-body.dark-mode .rc-modal__footer {
+body.dark-mode .rc-modal__footer,
+body.dark-mode .rc-modal {
 	background: var(--color-darkest);
 }
 
 body.dark-mode .rc-modal__content,
-body.dark-mode .rc-modal__header {
+body.dark-mode .rc-modal__header,
+body.dark-mode .rcx-modal__content,
+body.dark-mode .rcx-modal__inner,
+body.dark-mode .rcx-modal__header,
+body.dark-mode .rcx-modal__title {
 	color: var(--color-white);
 }
 
@@ -419,6 +427,10 @@ body.dark-mode .main-content .rcx-button--square:is(.rcx-button--ghost, .rcx-but
 
 body.dark-mode .rcx-button {
     color: var(--info-font-color);
+}
+
+body.dark-mode .rcx-button--ghost:hover {
+	color: var(--color-dark) !important;
 }
 
 body.dark-mode .rcx-button--primary {
@@ -685,9 +697,9 @@ body.dark-mode .rcx-vertical-bar .rcx-box:not(.rcx-button-group):not(.rcx-button
 	background-color: var(--color-dark) !important;
 } */
 
-body.dark-mode .rcx-modal__backdrop {
+/* body.dark-mode .rcx-modal__backdrop {
 	background-color: transparent !important;
-}
+} */
 
 body.dark-mode .rcx-table__cell--align-start {
     color: var(--info-font-color) !important;
