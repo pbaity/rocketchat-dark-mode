@@ -373,7 +373,33 @@ body.dark-mode .rc-member-list__counter {
 	background-color: var(--color-dark);
 }
 
-/***** Buttons  *****/
+/**** Select / Dropdowns ****/
+
+body.dark-mode .rcx-select {
+    background-color: var(--rc-color-primary-darkest) !important;
+}
+
+body.dark-mode .rcx-options > .rcx-tile {
+    background-color: var(--rc-color-primary-darkest) !important;
+}
+
+body.dark-mode .rcx-options .rcx-option {
+	background-color: var(--rc-color-primary-darkest) !important;
+	color: var(--color-white) !important;
+}
+
+body.dark-mode .rc-popover__content .rcx-option:hover,
+body.dark-mode .rcx-options .rcx-option--focus, 
+body.dark-mode .rcx-options .rcx-option--selected {
+    background-color: var(--color-dark-light) !important;
+}
+
+body.dark-mode .rcx-options .rcx-option:hover,
+body.dark-mode .rcx-options .rcx-option--selected:hover {
+	background-color: var(--color-dark) !important;
+}
+
+/***** Buttons *****/
 
 /* Top-right buttons */
 body.dark-mode .rcx-button--tiny-square.rcx-button:not(.rcx-button--ghost), /* Selected button */
@@ -388,6 +414,8 @@ body.dark-mode .rcx-button--tiny-square.rcx-button:hover {
 }
 
 /***** Right sidebar *****/
+
+/* TODO : switch toggle */
 
 body.dark-mode .rcx-vertical-bar,
 body.dark-mode .rcx-vertical-bar .rcx-button {
