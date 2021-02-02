@@ -739,7 +739,7 @@ body.dark-mode *::-webkit-scrollbar-thumb:active {
 
 /***** Changes for 3.9.1 *****/
 
-aside.sidebar--main .rcx-sidebar-topbar .rcx-button--small-square {
+/* aside.sidebar--main .rcx-sidebar-topbar .rcx-button--small-square {
     width: 1.35rem;
 }
 
@@ -784,4 +784,4 @@ body.dark-mode .rcx-sidebar-item--highlighted {
 
 body.dark-mode .rcx-sidebar-item__container span.rcx-box.rcx-box--full.rcx-badge {
 	background-color: var(--rc-color-alert);
-}
+} */
