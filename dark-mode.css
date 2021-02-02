@@ -725,3 +725,7 @@ body.dark-mode .rcx-status-bullet--online {
 body.dark-mode .rcx-box--full {
     background-color: var(--color-dark);
 }
+
+body.dark-mode .highlight-text {
+    background-color: var(--color-blue);
+}
