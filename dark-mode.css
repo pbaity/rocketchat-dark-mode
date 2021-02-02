@@ -785,3 +785,8 @@ body.dark-mode .rcx-sidebar-item--highlighted {
 body.dark-mode .rcx-sidebar-item__container span.rcx-box.rcx-box--full.rcx-badge {
 	background-color: var(--rc-color-alert);
 } */
+
+/* This CSS block is used to counter RocketChat's bug which crop the end of custom CSS. */
+.dummy-entry {
+    color: whitesmoke;
+}
