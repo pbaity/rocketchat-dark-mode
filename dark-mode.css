@@ -30,7 +30,8 @@ input, select, textarea {
 }
 
 .rcx-icon--name-darkmode {
-	height: .9em;
+	height: 1em;
+	font-size: 1rem !important;
 }
 
 @media (min-width: 1372px) {
@@ -599,7 +600,7 @@ body.dark-mode .rcx-table__cell--align-end {
 
 body.dark-mode .main-content .rcx-box {
     color: var(--info-font-color) !important;
-	background-color: var(--color-dark) !important;
+	background-color: var(--color-darkest) !important;
 }
 
 body.dark-mode .rcx-modal__backdrop {
