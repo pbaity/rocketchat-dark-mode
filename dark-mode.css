@@ -30,7 +30,8 @@ input, select, textarea {
 }
 
 .rcx-icon--name-darkmode {
-	height: .9em;
+	height: 1em;
+	font-size: 1rem !important;
 }
 
 @media (min-width: 1372px) {
@@ -203,6 +204,10 @@ body.dark-mode select option {
 
 body.dark-mode .sidebar-item > a {
 	color: inherit;
+}
+
+body.dark-mode .highlight-text {
+    background-color: var(--color-blue);
 }
 
 body.dark-mode .rc-switch__text {
@@ -679,7 +684,7 @@ body.dark-mode .rcx-tag--secondary {
 }
 
 body.dark-mode .rcx-table__cell--align-end {
-    color: var(--info-font-color) !important;
+  color: var(--info-font-color) !important;
 	background-color: var(--color-dark-medium) !important;
 }
 
@@ -687,7 +692,8 @@ body.dark-mode .rcx-table__cell--align-end {
 body.dark-mode .rcx-css-ps0pgs, /* Channel name */
 body.dark-mode .rcx-room-header  .rcx-box:not(.rcx-button-group):not(.rcx-button):not(.rcx-css-1fgkscl):not(.rcx-css-4pvxx3), /* omit buttons/icons (.rcx-css-1fgkscl is .rcx-icon parent) */
 body.dark-mode .rcx-vertical-bar .rcx-box:not(.rcx-button-group):not(.rcx-button):not(.rcx-css-1fgkscl):not(.rcx-css-4pvxx3) {
-    color: var(--info-font-color) !important;
+  color: var(--info-font-color) !important;
+	/*background-color: var(--color-darkest) !important;*/
 }
 
 /* body.dark-mode .main-content .rcx-box {
@@ -700,8 +706,8 @@ body.dark-mode .rcx-vertical-bar .rcx-box:not(.rcx-button-group):not(.rcx-button
 } */
 
 body.dark-mode .rcx-table__cell--align-start {
-    color: var(--info-font-color) !important;
-	background-color: var(--color-dark-medium) !important;
+  color: var(--info-font-color) !important;
+  background-color: var(--color-dark-medium) !important;
 }
 
 body.dark-mode  .rcx-field__description code {
