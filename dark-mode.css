@@ -91,8 +91,6 @@ select,
 	transition: opacity 300ms linear, color 150ms, background-color 150ms, border-color 150ms;
 }
 
-
-
 /******************************************
  *************Dark Mode Settings***********
  ******************************************/
@@ -184,6 +182,10 @@ body.dark-mode .main-content a {
 	color: var(--color-light-blue);
 }
 
+body.dark-mode .main-content .messages-box .wrapper {
+	background-color: var(--color-darkest);
+}
+
 body.dark-mode .mention-link--group {
 	color: var(--mention-link-group-text-color) !important;
 }
@@ -202,6 +204,10 @@ body.dark-mode select option {
 
 body.dark-mode .sidebar-item > a {
 	color: inherit;
+}
+
+body.dark-mode .highlight-text {
+    background-color: var(--color-blue);
 }
 
 body.dark-mode .rc-switch__text {
@@ -323,14 +329,22 @@ body.dark-mode .background-transparent-darker-before::before {
 /*body.dark-mode .background-info-font-color {
 	background-color: var(--color-dark-medium);
 }*/
+body.dark-mode .rcx-modal__inner,
+body.dark-mode .rcx-modal__footer {
+	background: var(--color-dark);
+}
 
-body.dark-mode .rc-modal,
-body.dark-mode .rc-modal__footer {
+body.dark-mode .rc-modal__footer,
+body.dark-mode .rc-modal {
 	background: var(--color-darkest);
 }
 
 body.dark-mode .rc-modal__content,
-body.dark-mode .rc-modal__header {
+body.dark-mode .rc-modal__header,
+body.dark-mode .rcx-modal__content,
+body.dark-mode .rcx-modal__inner,
+body.dark-mode .rcx-modal__header,
+body.dark-mode .rcx-modal__title {
 	color: var(--color-white);
 }
 
@@ -368,6 +382,86 @@ body.dark-mode .contextual-bar__content {
 
 body.dark-mode .rc-member-list__counter {
 	background-color: var(--color-dark);
+}
+
+/**** Select / Dropdowns ****/
+
+body.dark-mode .rcx-select {
+    background-color: var(--rc-color-primary-darkest) !important;
+}
+
+body.dark-mode .rcx-options > .rcx-tile {
+    background-color: var(--rc-color-primary-darkest) !important;
+}
+
+body.dark-mode .rcx-options .rcx-option,
+body.dark-mode .rcx-options .rcx-option--focus /* Temporary fix while focus is not refreshed */ {
+	background-color: var(--rc-color-primary-darkest) !important;
+	color: var(--color-white) !important;
+}
+
+body.dark-mode .rc-popover__content .rcx-option:hover,
+/* body.dark-mode .rcx-options .rcx-option--focus, */ /* Temporary fix while focus is not refreshed */
+body.dark-mode .rcx-options .rcx-option--selected {
+    background-color: var(--color-dark-light) !important;
+}
+
+body.dark-mode .rcx-options .rcx-option:hover,
+body.dark-mode .rcx-options .rcx-option--selected:hover {
+	background-color: var(--color-dark) !important;
+}
+
+/***** Buttons *****/
+
+/* Regular button style */
+body.dark-mode .main-content .rcx-button:not(.rcx-button--ghost) { /* Default */
+	background-color: var(--color-dark) !important;
+}
+body.dark-mode .main-content .rcx-button:is(.rcx-button--ghost, .rcx-button):hover { /* Hovered or selected */
+	background-color: var(--color-darkest) !important;
+}
+
+/* Square (icon) button style */
+body.dark-mode .main-content .rcx-button--square:not(.rcx-button--ghost), /* Default */
+body.dark-mode .main-content .rcx-button--square:is(.rcx-button--ghost, .rcx-button):hover {  /* Hovered or selected */
+	background-color: var(--color-dark) !important;
+	border-color: transparent !important;
+}
+
+body.dark-mode .rcx-button {
+    color: var(--info-font-color);
+}
+
+body.dark-mode .rcx-button--ghost:not(.rcx-button--square):hover {
+	color: var(--color-dark) !important;
+}
+
+body.dark-mode .rcx-button--primary {
+	color: var(--info-font-color);
+	background-color: #095ad2
+}
+
+body.dark-mode .rcx-button--primary:disabled {
+	color: var(--color-gray);
+}
+
+body.dark-mode .rcx-button--danger {
+	color: var(--rcx-button-colors-secondary-danger-color,var(--rcx-color-danger-500,#f5455c));
+}
+
+/***** Right sidebar *****/
+
+/* TODO : switch toggle */
+
+body.dark-mode .rcx-vertical-bar {
+	background-color: var(--rc-color-primary-background) !important;
+}
+
+body.dark-mode .rcx-css-136xdpx:hover, /* Thread list item */
+body.dark-mode .rcx-css-136xdpx:focus, 
+body.dark-mode .rcx-css-1es44sn:hover, /* Files list item */
+body.dark-mode .rcx-css-1es44sn:focus {
+    background-color: var(--rc-color-primary-dark);
 }
 
 /* Targets unread message indicator in threads panel. */
@@ -489,6 +583,19 @@ body.dark-mode .js-logout {
 	color: var(--primary-font-color);
 }
 
+body.dark-mode .rcx-css-1org57t ~ .rcx-button { /* Button (with cross icon) button to close admin panel */
+    color: var(--color-dark) !important;
+}
+
+/*body.dark-mode .simplebar-content > .rcx-box => will also modify sidebar background */
+body.dark-mode .simplebar-content > .rcx-css-fr02gd { /* main content */
+    background-color: var(--color-dark);
+}
+
+body.dark-mode .rcx-select__item {
+	color: var(--primary-font-color) !important;
+}
+
 body.dark-mode .sidebar-flex__header {
 	background-color: var(--color-dark);
 }
@@ -513,6 +620,7 @@ body.dark-mode .rcx-input-box__wrapper {
 
 body.dark-mode .rcx-box * .rcx-input-box {
 	background-color: var(--color-dark);
+	color: var(--rc-color-primary);
 }
 
 body.dark-mode .rcx-table__cell {
@@ -560,10 +668,6 @@ body.dark-mode .rcx-table__cell {
 	color: var(--color-gray-lightest);
 }
 
-body.dark-mode .rcx-button--primary:disabled {
-	color: var(--color-gray);
-}
-
 body.dark-mode .permissions-manager .permission-grid .role-name {
 	background: var(--color-dark);
 }
@@ -594,31 +698,30 @@ body.dark-mode .rcx-tag--secondary {
 }
 
 body.dark-mode .rcx-table__cell--align-end {
-    color: var(--info-font-color) !important;
+  color: var(--info-font-color) !important;
 	background-color: var(--color-dark-medium) !important;
 }
 
-body.dark-mode .main-content .rcx-box {
-    color: var(--info-font-color) !important;
-	background-color: var(--color-darkest) !important;
+/* Apply info (white) font *everywhere* */
+body.dark-mode .rcx-css-ps0pgs, /* Channel name */
+body.dark-mode .rcx-room-header  .rcx-box:not(.rcx-button-group):not(.rcx-button):not(.rcx-css-1fgkscl):not(.rcx-css-4pvxx3), /* omit buttons/icons (.rcx-css-1fgkscl is .rcx-icon parent) */
+body.dark-mode .rcx-vertical-bar .rcx-box:not(.rcx-button-group):not(.rcx-button):not(.rcx-css-1fgkscl):not(.rcx-css-4pvxx3) {
+  color: var(--info-font-color) !important;
+	/*background-color: var(--color-darkest) !important;*/
 }
 
-body.dark-mode .rcx-modal__backdrop {
+/* body.dark-mode .main-content .rcx-box {
+    color: var(--info-font-color) !important;
+	background-color: var(--color-dark) !important;
+} */
+
+/* body.dark-mode .rcx-modal__backdrop {
 	background-color: transparent !important;
-}
+} */
 
 body.dark-mode .rcx-table__cell--align-start {
-    color: var(--info-font-color) !important;
-	background-color: var(--color-dark-medium) !important;
-}
-
-body.dark-mode .main-content .rcx-button {
-	background-color: var(--color-dark-medium)
-}
-
-body.dark-mode .rcx-button--primary {
-	color: var(--info-font-color);
-	background-color: #095ad2
+  color: var(--info-font-color) !important;
+  background-color: var(--color-dark-medium) !important;
 }
 
 body.dark-mode  .rcx-field__description code {
@@ -713,9 +816,11 @@ body.dark-mode .rcx-box--text-color-info {
 
 /* Style the browser scroll bars to avoid visually clashing with the rest of Rocket.Chat in dark mode. */
 
+/*
 body.dark-mode * {
 	scrollbar-color: #777 transparent;
 }
+*/
 
 body.dark-mode *::-webkit-scrollbar {
 	width: .75rem;
@@ -740,7 +845,7 @@ body.dark-mode *::-webkit-scrollbar-thumb:active {
 
 /***** Changes for 3.9.1 *****/
 
-aside.sidebar--main .rcx-sidebar-topbar .rcx-button--small-square {
+/* aside.sidebar--main .rcx-sidebar-topbar .rcx-button--small-square {
     width: 1.35rem;
 }
 
@@ -785,8 +890,9 @@ body.dark-mode .rcx-sidebar-item--highlighted {
 
 body.dark-mode .rcx-sidebar-item__container span.rcx-box.rcx-box--full.rcx-badge {
 	background-color: var(--rc-color-alert);
-}
+} */
 
-body.dark-mode .highlight-text {
-    background-color: var(--color-blue);
+/* This CSS block is used to counter RocketChat's bug which crop the end of custom CSS. */
+.dummy-entry {
+    color: whitesmoke;
 }
