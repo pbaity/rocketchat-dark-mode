@@ -2,7 +2,7 @@
  *************General Settings*************
  ******************************************/
 
-:root {
+ :root {
 	--primary-font-color: #444;
 	--info-font-color: #a0a0a0;
 	--color-darker: #272c33;
@@ -177,6 +177,11 @@ body.dark-mode {
 
 
 /***************Main Chat*****************/
+
+ /* Message "You joined a new private conversation with" */
+body.dark-mode .rcx-css-dlop43 {
+	color: var(--rc-color-primary) !important;
+}
 
 body.dark-mode .main-content a {
 	color: var(--color-light-blue);
