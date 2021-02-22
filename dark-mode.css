@@ -178,6 +178,10 @@ body.dark-mode {
 
 /***************Main Chat*****************/
 
+body.dark-mode .rcx-attachment__content .rcx-css-16qhlle {
+    color: var(--color-white) !important;
+}
+
 body.dark-mode .main-content a {
 	color: var(--color-light-blue);
 }
