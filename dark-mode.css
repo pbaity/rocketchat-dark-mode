@@ -582,7 +582,7 @@ body.dark-mode .js-logout {
 	border-color: var(--primary-font-color);
 }
 
-/**************Admin Panel******************/
+/************** Admin panel & Account panel ******************/
 
 .page-list a:not(.rc-button), .page-settings a:not(.rc-button) {
 	color: var(--primary-font-color);
@@ -595,6 +595,23 @@ body.dark-mode .rcx-css-1org57t ~ .rcx-button { /* Button (with cross icon) butt
 /*body.dark-mode .simplebar-content > .rcx-box => will also modify sidebar background */
 body.dark-mode .simplebar-content > .rcx-css-fr02gd { /* main content */
     background-color: var(--color-dark);
+}
+
+body.dark-mode .simplebar-wrapper { /* Panels sidebar */
+    background-color: var(--sidebar-background);
+}
+
+body.dark-mode .rcx-css-1l00c5f,
+body.dark-mode .rcx-css-1ky5rco { /* Panels sidebar item */
+    color: var(--rcx-sidebar-item-color,var(--rcx-color-foreground-hint,#9ea2a8)) !important;
+}
+
+body.dark-mode .rcx-css-1l00c5f.active { /* Panels sidebar item selected */
+    background-color: rgba(108, 114, 122, 0.3);
+}
+
+body.dark-mode .rcx-css-1l00c5f:hover, .rcx-css-1l00c5f:focus, .rcx-css-1l00c5f.active:focus, .rcx-css-1l00c5f.active:hover { /* Panels sidebar item hovered */
+    background-color: var(--color-darkest);
 }
 
 body.dark-mode .rcx-select__item {
