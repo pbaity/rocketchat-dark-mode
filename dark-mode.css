@@ -683,7 +683,9 @@ body.dark-mode .rcx-table__cell--align-end {
 	background-color: var(--color-gray);
 }
 
-body.dark-mode .rcx-css-18up6l1 {
+body.dark-mode .rcx-css-18up6l1,
+body.dark-mode .rcx-css-zvbm6,
+body.dark-mode .rcx-css-n6qrb5 { /* Table cells content text*/
 	color: var(--primary-font-color) !important;
 }
 
