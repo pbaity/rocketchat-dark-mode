@@ -630,6 +630,14 @@ body.dark-mode .rcx-css-1l00c5f:hover, .rcx-css-1l00c5f:focus, .rcx-css-1l00c5f.
     background-color: var(--color-darkest);
 }
 
+body.dark-mode .rcx-css-kyq2rf { /* Admin panel info & stats (Deployment, License, Usage) */
+	background-color: var(--color-dark) !important;
+}
+
+body.dark-mode .rcx-css-61di5s { /* Admin panel info & stats (Deployment, License, Usage) */
+	color: var(--color-gray) !important;
+}
+
 body.dark-mode .rcx-select__item {
 	color: var(--primary-font-color) !important;
 }
