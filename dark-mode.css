@@ -351,6 +351,23 @@ body.dark-mode .background-transparent-darker-before::before {
 	background-color: var(--color-dark-medium);
 }
 
+/* User card */
+body.dark-mode .rcx-user-card {
+	background-color: var(--color-dark) !important;
+}
+
+body.dark-mode .rcx-user-card .rcx-button:not(.rcx-css-ue04py) {
+    background-color: var(--color-dark-medium);
+    border: none;
+}
+
+body.dark-mode .rcx-user-card .rcx-button:hover {
+    background-color: var(--color-dark-light);
+    border: none;
+}
+
+/* Modals */
+
 /*body.dark-mode .background-info-font-color {
 	background-color: var(--color-dark-medium);
 }*/
