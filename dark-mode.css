@@ -178,7 +178,6 @@ body.dark-mode {
 
 /***************Main Chat*****************/
 
-<<<<<<< HEAD
 /* Blockquote */
 body.dark-mode .rcx-css-1d5cod7 {
 	background-color: var(--color-darkest) !important;
@@ -195,15 +194,13 @@ body.dark-mode .rcx-css-ntpg4f {
 }
 
 /* Message "You joined a new private conversation with" */
-=======
-body.dark-mode .rcx-attachment__content .rcx-css-16qhlle {
-    color: var(--color-white) !important;
+ body.dark-mode .rcx-css-dlop43 {
+	color: var(--rc-color-primary) !important;
 }
 
- /* Message "You joined a new private conversation with" */
->>>>>>> 0200eab091f7f9512e148491cdc610221e5f0d02
-body.dark-mode .rcx-css-dlop43 {
-	color: var(--rc-color-primary) !important;
+/* Attachements content */
+body.dark-mode .rcx-attachment__content .rcx-css-16qhlle {
+    color: var(--color-white) !important;
 }
 
 body.dark-mode .main-content a {
