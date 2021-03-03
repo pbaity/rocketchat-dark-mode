@@ -188,7 +188,12 @@ body.dark-mode .rcx-css-11c35pn:focus .rcx-attachment__details {
 	background-color: var(--color-dark) !important;
 }
 
- /* Message "You joined a new private conversation with" */
+/* Pinned messages content */
+body.dark-mode .rcx-css-ntpg4f {
+    color: var(--rc-color-primary) !important;
+}
+
+/* Message "You joined a new private conversation with" */
 body.dark-mode .rcx-css-dlop43 {
 	color: var(--rc-color-primary) !important;
 }
