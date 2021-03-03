@@ -616,7 +616,7 @@ body.dark-mode .rcx-css-1wm5na { /* Account settings page header title */
 	color: var(--primary-font-color) !important;
 }
 
-body.dark-mode .simplebar-wrapper { /* Panels sidebar */
+body.dark-mode .rc-scrollbars-container { /* Panels sidebar */
     background-color: var(--sidebar-background);
 }
 
