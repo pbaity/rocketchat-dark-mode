@@ -178,8 +178,8 @@ body.dark-mode {
 
 /***************Main Chat*****************/
 
-body.dark-mode .rcx-attachment__content .rcx-css-16qhlle {
-    color: var(--color-white) !important;
+body.dark-mode .rcx-message-attachment .rcx-attachment__content .rcx-box--full {
+    color: var(--color-white);
 }
 
  /* Message "You joined a new private conversation with" */
