@@ -20,9 +20,12 @@ And when dark mode is active:
 
 ## Installation
 
-**NOTE:**
-- For Rocket.Chat versions 3.2.2 - 3.3.3, use the code from the [**3.2.2** branch](https://github.com/pbaity/rocketchat-dark-mode/tree/3.2.2) or from the [accompanying release](https://github.com/pbaity/rocketchat-dark-mode/releases/tag/v3.2.2).
-- For Rocket.Chat versions 3.4.0 - 3.7.2, use the code from the [**3.7.2** branch](https://github.com/pbaity/rocketchat-dark-mode/tree/3.7.2) or from the [accompanying release](https://github.com/pbaity/rocketchat-dark-mode/releases/tag/v3.7.2).
+**NOTE:** This repo aims to keep the dark mode working for the latest stable release of Rocket.Chat. Older versions may or may not work.
+
+- For Rocket.Chat versions 3.2.2 - 3.3.3, use the code from the [**3.2.2** branch](https://github.com/pbaity/rocketchat-dark-mode/tree/3.2.2).
+- For Rocket.Chat versions 3.4.0 - 3.7.2, use the code from the [**3.7.2** branch](https://github.com/pbaity/rocketchat-dark-mode/tree/3.7.2).
+- For Rocket.Chat versions 3.8.0 - 3.9.1, use the code from the [**3.9.1** branch](https://github.com/pbaity/rocketchat-dark-mode/tree/3.9.1).
+- For Rocket.Chat versions 3.9.2 - 3.11.2, use the code from the [**3.11.2** branch](https://github.com/pbaity/rocketchat-dark-mode/tree/3.11.2).
 - For current latest stable release, use the code from the **master** branch.
 
 If you want to "install" this dark mode, here's all you need to do:
