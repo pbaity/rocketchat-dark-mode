@@ -180,6 +180,10 @@ body.dark-mode .rcx-css-1d5cod7 {
 	background-color: var(--color-darkest) !important;
 }
 
+body.dark-mode blockquote.rcx-attachment__details .rcx-box--full {
+	color: var(--secondary-font-color);
+}
+
 body.dark-mode .rcx-css-11c35pn:hover .rcx-attachment__details,
 body.dark-mode .rcx-css-11c35pn:focus .rcx-attachment__details {
 	background-color: var(--color-dark) !important;
@@ -187,7 +191,7 @@ body.dark-mode .rcx-css-11c35pn:focus .rcx-attachment__details {
 
 /* Attachements content */
 body.dark-mode .rcx-message-attachment .rcx-attachment__content .rcx-box--full {
-    color: var(--color-white);
+    color: var(--primary-font-color);
 }
 
 /* Pinned messages content */
@@ -196,7 +200,7 @@ body.dark-mode .rcx-css-ntpg4f {
 }
 
 /* Message "You joined a new private conversation with" */
- body.dark-mode .rcx-css-dlop43 {
+body.dark-mode .rcx-css-dlop43 {
 	color: var(--rc-color-primary) !important;
 }
 
