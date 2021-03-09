@@ -2,7 +2,7 @@
  *************General Settings*************
  ******************************************/
 
-:root {
+ :root {
 	--primary-font-color: #444;
 	--info-font-color: #a0a0a0;
 	--color-darker: #272c33;
@@ -169,14 +169,40 @@ body.dark-mode {
 	--rc-color-alert: var(--color-dark-red);
 }
 
-
-
 /******************************************
  *********Manual Dark Theme Overrides******
  ******************************************/
 
-
 /***************Main Chat*****************/
+
+/* Blockquote */
+body.dark-mode .rcx-css-1d5cod7 {
+	background-color: var(--color-darkest) !important;
+}
+
+body.dark-mode blockquote.rcx-attachment__details .rcx-box--full {
+	color: var(--secondary-font-color);
+}
+
+body.dark-mode .rcx-css-11c35pn:hover .rcx-attachment__details,
+body.dark-mode .rcx-css-11c35pn:focus .rcx-attachment__details {
+	background-color: var(--color-dark) !important;
+}
+
+/* Attachements content */
+body.dark-mode .rcx-message-attachment .rcx-attachment__content .rcx-box--full {
+    color: var(--primary-font-color);
+}
+
+/* Pinned messages content */
+body.dark-mode .rcx-css-ntpg4f {
+    color: var(--rc-color-primary) !important;
+}
+
+/* Message "You joined a new private conversation with" */
+body.dark-mode .rcx-css-dlop43 {
+	color: var(--rc-color-primary) !important;
+}
 
 body.dark-mode .main-content a {
 	color: var(--color-light-blue);
@@ -325,6 +351,23 @@ body.dark-mode .message .body > table tr:nth-child(2n) {
 body.dark-mode .background-transparent-darker-before::before {
 	background-color: var(--color-dark-medium);
 }
+
+/* User card */
+body.dark-mode .rcx-user-card {
+	background-color: var(--color-dark) !important;
+}
+
+body.dark-mode .rcx-user-card .rcx-button:not(.rcx-css-ue04py) {
+    background-color: var(--color-dark-medium);
+    border: none;
+}
+
+body.dark-mode .rcx-user-card .rcx-button:hover {
+    background-color: var(--color-dark-light);
+    border: none;
+}
+
+/* Modals */
 
 /*body.dark-mode .background-info-font-color {
 	background-color: var(--color-dark-medium);
@@ -577,19 +620,60 @@ body.dark-mode .js-logout {
 	border-color: var(--primary-font-color);
 }
 
-/**************Admin Panel******************/
+/************** Admin panel & Account panel ******************/
 
 .page-list a:not(.rc-button), .page-settings a:not(.rc-button) {
 	color: var(--primary-font-color);
 }
 
-body.dark-mode .rcx-css-1org57t ~ .rcx-button { /* Button (with cross icon) button to close admin panel */
-    color: var(--color-dark) !important;
-}
-
 /*body.dark-mode .simplebar-content > .rcx-box => will also modify sidebar background */
 body.dark-mode .simplebar-content > .rcx-css-fr02gd { /* main content */
     background-color: var(--color-dark);
+}
+
+body.dark-mode .rcx-css-txktj6 { /* Account settings page background */
+    background-color: var(--color-dark) !important;
+}
+
+body.dark-mode .rcx-css-1wm5na { /* Account settings page header title */
+	color: var(--primary-font-color) !important;
+}
+
+body.dark-mode .rc-scrollbars-container { /* Panels sidebar */
+    background-color: var(--sidebar-background);
+}
+
+body.dark-mode .rcx-css-15hfnte {  /* Panels sidebar header */
+    background-color: var(--color-dark);
+}
+
+body.dark-mode .rcx-css-10ij0kz .rcx-box { /* Panels sidebar header text and button (with cross icon) */
+    color: var(--primary-font-color) !important;
+}
+
+body.dark-mode .rcx-css-15hfnte .rcx-css-4pvxx3:hover { /* Panels sidebar button (with cross icon) hovered */
+    color: var(--rc-color-primary-dark) !important;
+}
+
+body.dark-mode .rcx-css-1l00c5f,
+body.dark-mode .rcx-css-1ky5rco { /* Panels sidebar item */
+    color: var(--rcx-sidebar-item-color,var(--rcx-color-foreground-hint,#9ea2a8)) !important;
+}
+
+body.dark-mode .rcx-css-1l00c5f.active { /* Panels sidebar item selected */
+    background-color: rgba(108, 114, 122, 0.3);
+}
+
+body.dark-mode .rcx-css-1l00c5f:hover, .rcx-css-1l00c5f:focus, .rcx-css-1l00c5f.active:focus, .rcx-css-1l00c5f.active:hover { /* Panels sidebar item hovered */
+    background-color: var(--color-darkest);
+}
+
+body.dark-mode .rcx-css-kyq2rf { /* Admin panel info & stats (Deployment, License, Usage) */
+	background-color: var(--color-dark) !important;
+}
+
+body.dark-mode .rcx-css-61di5s { /* Admin panel info & stats (Deployment, License, Usage) */
+	color: var(--color-gray) !important;
 }
 
 body.dark-mode .rcx-select__item {
@@ -624,13 +708,23 @@ body.dark-mode .rcx-box * .rcx-input-box {
 }
 
 body.dark-mode .rcx-table__cell {
-	color: var(--color-gray);
+	color: var(--color-gray) !important;
 	background-color: var(--color-dark);
 }
 
-body.dark-mode  .rcx-table__cell--align-end {
+body.dark-mode .rcx-table__cell--header {
+	color: var(--color-gray-lightest) !important;
+}
+
+body.dark-mode .rcx-table__cell--align-end {
 	color: var(--color-gray);
 	background-color: var(--color-gray);
+}
+
+body.dark-mode .rcx-css-18up6l1,
+body.dark-mode .rcx-css-zvbm6,
+body.dark-mode .rcx-css-n6qrb5 { /* Table cells content text*/
+	color: var(--primary-font-color) !important;
 }
 
 body.dark-mode .rc-input__element:disabled{
@@ -661,10 +755,6 @@ body.dark-mode .rcx-box--text-style-h1,
 body.dark-mode .rcx-subtitle,
 body.dark-mode .rcx-box--text-color-default,
 body.dark-mode .rcx-box--text-color-info {
-	color: var(--color-gray-lightest);
-}
-
-body.dark-mode .rcx-table__cell {
 	color: var(--color-gray-lightest);
 }
 
