@@ -25,7 +25,7 @@ const darkModeToggleText = {
 	'fr': 'Activer le mode sombre',
 	'es': 'Alternar Modo Obscuro',
 	'hu': 'Sötét mód be/ki',
-	'it': 'Toggle Dark Mode',
+	'it': 'Attiva/Disattiva modalità scura',
 	'nl': 'Toggle Dark Mode',
 	'pl': 'Toggle Dark Mode',
 	'pt': 'Alternar Modo Escuro',
