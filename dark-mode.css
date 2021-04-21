@@ -175,6 +175,11 @@ body.dark-mode {
 
 /***************Main Chat*****************/
 
+/* Breadcrumbs discussions */
+body.dark-mode .rcx-room-header .rcx-tag--default {
+	background-color: unset; 
+}
+
 /* Blockquote */
 body.dark-mode .rcx-css-1d5cod7 {
 	background-color: var(--color-darkest) !important;
@@ -191,12 +196,17 @@ body.dark-mode .rcx-css-11c35pn:focus .rcx-attachment__details {
 
 /* Attachements content */
 body.dark-mode .rcx-message-attachment .rcx-attachment__content .rcx-box--full {
-    color: var(--primary-font-color);
+	color: var(--primary-font-color);
+}
+
+body.dark-mode .rcx-message-attachment .rcx-attachment__content .rcx-box--full.rcx-box--with-block-elements pre code {
+	background-color: var(--color-dark);
+  	color: var(--primary-font-color);
 }
 
 /* Pinned messages content */
 body.dark-mode .rcx-css-ntpg4f {
-    color: var(--rc-color-primary) !important;
+	color: var(--rc-color-primary) !important;
 }
 
 /* Message "You joined a new private conversation with" */
@@ -287,7 +297,7 @@ body.dark-mode .content-background-color {
 }
 
 body.dark-mode .message {
-    background-color: var(--color-darkest);
+	background-color: var(--color-darkest);
 }
 
 body.dark-mode .message.new-day::after,
@@ -467,12 +477,18 @@ body.dark-mode .main-content .rcx-button:is(.rcx-button--ghost, .rcx-button):hov
 /* Square (icon) button style */
 body.dark-mode .main-content .rcx-button--square:not(.rcx-button--ghost), /* Default */
 body.dark-mode .main-content .rcx-button--square:is(.rcx-button--ghost, .rcx-button):hover {  /* Hovered or selected */
-	background-color: var(--color-dark) !important;
+	background-color: var(--color-darkest) !important;
 	border-color: transparent !important;
 }
 
+body.dark-mode .main-content .rcx-button--square:is(.rcx-button--ghost, .rcx-button):focus {
+	background-color: var(--color-darkest);
+	border-color: transparent !important;
+	box-shadow: 0 0 0 .1rem var(--color-gray);
+}
+
 body.dark-mode .rcx-button {
-    color: var(--info-font-color);
+	color: var(--info-font-color);
 }
 
 body.dark-mode .rcx-button--ghost:not(.rcx-button--square):hover {
@@ -893,15 +909,8 @@ body.dark-mode .main-content  *::-webkit-scrollbar-corner {
 }
 
 /***** Poll App *****/
-body.dark-mode .rc-modal-wrapper > dialog > div {
-	background-color: var(--header-background-color);
-}
-
-body.dark-mode .rcx-box--text-style-h1,
-body.dark-mode .rcx-subtitle,
-body.dark-mode .rcx-box--text-color-default,
-body.dark-mode .rcx-box--text-color-info {
-    color: var(--color-dark);
+body.dark-mode [data-username="poll.bot"] .rcx-css-erwtrf {
+	color: var(--primary-font-color) !important; 
 }
 
 /* Style the browser scroll bars to avoid visually clashing with the rest of Rocket.Chat in dark mode. */
