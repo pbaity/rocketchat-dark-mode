@@ -568,11 +568,11 @@ body.dark-mode .rcx-room-header hr.rcx-divider {
     border-color: var(--color-dark-medium);
 }
 
-body.dark-mode aside.rcx-box.rcx-box--full.rcx-vertical-bar,	/* right aside (threads, search, etc.) */
-body.dark-mode .rcx-css-ccvr3m,									/* thread list message */
-body.dark-mode .rcx-css-1j3nsmc,								/* thread list message */
-body.dark-mode .rcx-css-1bmadou,								/* thread list header */
-body.dark-mode .rcx-css-1yhzjdg									/* thread list search bar */
+body.dark-mode aside.rcx-box.rcx-box--full.rcx-vertical-bar,    /* right aside (threads, search, etc.) */
+body.dark-mode .rcx-css-ccvr3m,                                 /* thread list message */
+body.dark-mode .rcx-css-1j3nsmc,                                /* thread list message */
+body.dark-mode .rcx-css-1bmadou,                                /* thread list header */
+body.dark-mode .rcx-css-1yhzjdg                                 /* thread list search bar */
 {
 	border-color: var(--color-dark-medium) !important;
 }
