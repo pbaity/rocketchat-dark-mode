@@ -487,6 +487,15 @@ body.dark-mode .main-content .rcx-button--square:is(.rcx-button--ghost, .rcx-but
 	box-shadow: 0 0 0 .1rem var(--color-gray);
 }
 
+/* Menu buttons on top right (threads, search, etc.) */
+body.dark-mode .rcx-css-15vvv6z:hover,
+body.dark-mode .rcx-css-ue04py:hover,
+body.dark-mode .rcx-css-15vvv6z:active,
+body.dark-mode .rcx-css-ue04py:active {
+    border-color: var(--color-dark-medium) !important;
+    background-color: var(--color-dark-medium) !important;
+}
+
 body.dark-mode .rcx-button {
 	color: var(--info-font-color);
 }
@@ -555,8 +564,17 @@ body.dark-mode .emoji-picker .filter-item.active {
 	border-color: var(--color-light-blue);
 }
 
-body.dark-mode .rc-header--room {
-	border-bottom: 2px solid var(--color-dark-medium);
+body.dark-mode .rcx-room-header hr.rcx-divider {
+    border-color: var(--color-dark-medium);
+}
+
+body.dark-mode aside.rcx-box.rcx-box--full.rcx-vertical-bar,    /* right aside (threads, search, etc.) */
+body.dark-mode .rcx-css-ccvr3m,                                 /* thread list message */
+body.dark-mode .rcx-css-1j3nsmc,                                /* thread list message */
+body.dark-mode .rcx-css-1bmadou,                                /* thread list header */
+body.dark-mode .rcx-css-1yhzjdg                                 /* thread list search bar */
+{
+	border-color: var(--color-dark-medium) !important;
 }
 
 body.dark-mode .room-leader:hover {
