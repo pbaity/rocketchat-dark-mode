@@ -1015,8 +1015,7 @@ body.figcaption.rcx-box.rcx-box--full.rcx-attachment__details {
 	color: #fff !important;
 }
 /*Possible fix for issue #130*/
-body.rcx-box--full {
-	
+body.rcx-css-z2kk2c{
 	color: #fff !important;
 }
 /* This CSS block is used to counter RocketChat's bug which crop the end of custom CSS. */
