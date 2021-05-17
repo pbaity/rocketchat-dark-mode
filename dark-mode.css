@@ -1009,6 +1009,12 @@ body.dark-mode .rcx-sidebar-item__container span.rcx-box.rcx-box--full.rcx-badge
 	background-color: var(--rc-color-alert);
 } */
 
+/*Possible fix for issue #129*/
+body.figcaption.rcx-box.rcx-box--full.rcx-attachment__details {
+	background-color: black !important;
+	color: #fff !important;
+}
+
 /* This CSS block is used to counter RocketChat's bug which crop the end of custom CSS. */
 .dummy-entry {
     color: whitesmoke;
