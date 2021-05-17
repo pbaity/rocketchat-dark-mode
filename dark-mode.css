@@ -1014,7 +1014,11 @@ body.figcaption.rcx-box.rcx-box--full.rcx-attachment__details {
 	background-color: black !important;
 	color: #fff !important;
 }
-
+/*Possible fix for issue #130*/
+body.rcx-box--full {
+	
+	color: #fff !important;
+}
 /* This CSS block is used to counter RocketChat's bug which crop the end of custom CSS. */
 .dummy-entry {
     color: whitesmoke;
