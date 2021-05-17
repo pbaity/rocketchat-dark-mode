@@ -1010,12 +1010,12 @@ body.dark-mode .rcx-sidebar-item__container span.rcx-box.rcx-box--full.rcx-badge
 } */
 
 /*Possible fix for issue #129*/
-body.figcaption.rcx-box.rcx-box--full.rcx-attachment__details {
+body.dark-mode figcaption.rcx-box.rcx-box--full.rcx-attachment__details {
 	background-color: black !important;
 	color: #fff !important;
 }
 /*Possible fix for issue #130*/
-body.rcx-css-z2kk2c{
+body.dark-mode rcx-css-z2kk2c{
 	color: #fff !important;
 }
 /* This CSS block is used to counter RocketChat's bug which crop the end of custom CSS. */
