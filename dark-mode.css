@@ -1011,12 +1011,18 @@ body.dark-mode .rcx-sidebar-item__container span.rcx-box.rcx-box--full.rcx-badge
 
 body.dark-mode figcaption.rcx-box.rcx-box--full.rcx-attachment__details {
 	background-color: var(--color-darker) !important;
-	color: var(--primary-font-color)) !important;
+	color: var(--primary-font-color) !important;
 }
 
 body.dark-mode .rcx-css-z2kk2c {
-	color: var(--primary-font-color)) !important;
+	color: var(--primary-font-color) !important;
 }
+
+body.dark-mode .rcx-box--with-inline-elements code, .rcx-field__description code, .rcx-field__error code, .rcx-field__hint code{
+	background-color: var(--color-dark-100) !important;
+	color: var(--primary-font-color) !important;
+}
+
 /* This CSS block is used to counter RocketChat's bug which crop the end of custom CSS. */
 .dummy-entry {
     color: whitesmoke;
