@@ -927,7 +927,7 @@ body.dark-mode .main-content  *::-webkit-scrollbar-corner {
 }
 
 /***** Poll App *****/
-body.dark-mode [data-username="app.poll"] .rcx-css-erwtrf {
+body.dark-mode .rcx-css-erwtrf {
 	color: var(--primary-font-color) !important; 
 }
 
