@@ -677,6 +677,14 @@ body.dark-mode .rc-scrollbars-container { /* Panels sidebar */
     background-color: var(--sidebar-background);
 }
 
+body.dark-mode .rc-scrollbars-view { /* Modals with list background like Reactions */
+    background-color: var(--color-darkest);
+}
+
+body.dark-mode .rcx-button-group { /* Backgrounds for buttons in modals with list */
+    background-color: var(--color-darkest);
+}
+
 body.dark-mode .rcx-css-15hfnte {  /* Panels sidebar header */
     background-color: var(--color-dark);
 }
