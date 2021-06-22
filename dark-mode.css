@@ -496,6 +496,10 @@ body.dark-mode .rcx-css-ue04py:active {
     background-color: var(--color-dark-medium) !important;
 }
 
+body.dark-mode .rcx-css-136xdpx {
+	background-color: var(--color-darkest);
+}
+
 body.dark-mode .rcx-button {
 	color: var(--info-font-color);
 }
