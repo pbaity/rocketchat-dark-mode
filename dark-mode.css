@@ -464,6 +464,10 @@ body.dark-mode .rcx-options .rcx-option--selected:hover {
 	background-color: var(--color-dark) !important;
 }
 
+body.dark-mode .rcx-css-dpt4t8 { /* User selector in create direct message modal */
+	color: var(--color-dark);
+}
+
 /***** Buttons *****/
 
 /* Regular button style */
