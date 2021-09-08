@@ -464,10 +464,6 @@ body.dark-mode .rcx-options .rcx-option--selected:hover {
 	background-color: var(--color-dark) !important;
 }
 
-body.dark-mode .rcx-css-dpt4t8 { /* User selector in create direct message modal */
-	color: var(--color-dark);
-}
-
 /***** Buttons *****/
 
 /* Regular button style */
@@ -821,6 +817,16 @@ body.dark-mode .rcx-box * .rcx-select {
 	background-color: var(--color-white);
 }
 
+body.dark-mode .rcx-banner {
+	background-color: var(--color-dark-medium);
+	color: var(--info-font-color) !important;
+}
+
+body.dark-mode .rcx-banner__close-button .rcx-button:hover {
+    background-color: var(--color-dark-light);
+    border: none;
+}
+
 body.dark-mode .mail-messages__instructions {
 	background-color: var(--color-dark);
 }
@@ -1034,4 +1040,16 @@ body.dark-mode .rcx-box--with-inline-elements code, .rcx-field__description code
 /* This CSS block is used to counter RocketChat's bug which crop the end of custom CSS. */
 .dummy-entry {
     color: whitesmoke;
+}
+
+.emoji {
+    padding: 60px !important;
+  	padding-left: 70px !important;
+  	padding-right: 70px !important;
+    color: transparent;
+}
+.emoji.big {
+  height: unset !important;
+  width: unset !important;
+  max-height: 60px !important;
 }
