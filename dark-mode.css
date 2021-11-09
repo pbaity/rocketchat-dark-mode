@@ -821,6 +821,16 @@ body.dark-mode .rcx-box * .rcx-select {
 	background-color: var(--color-white);
 }
 
+body.dark-mode .rcx-banner {
+	background-color: var(--color-dark-medium);
+	color: var(--info-font-color) !important;
+}
+
+body.dark-mode .rcx-banner__close-button .rcx-button:hover {
+    background-color: var(--color-dark-light);
+    border: none;
+}
+
 body.dark-mode .mail-messages__instructions {
 	background-color: var(--color-dark);
 }
