@@ -145,8 +145,8 @@ body.dark-mode {
 	--mention-link-group-text-color: var(--color-white);
 
 	/* Message box */
-	--message-box-user-typing-color: var(--color-gray-lightest);
-	--message-box-user-typing-user-color: var(--color-gray-lightest);
+	--message-box-user-activity-color: var(--color-gray-lightest);
+	--message-box-user-activity-user-color: var(--color-gray-lightest);
 
 	/* Header */
 	--header-title-username-color-darker: var(--color-gray-lightest);
