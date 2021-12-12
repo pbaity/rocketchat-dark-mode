@@ -34,7 +34,8 @@ const darkModeToggleText = {
 	'pt': 'Alternar Modo Escuro',
 	'ru': 'Смена оформления',
 	'he': 'מצב לילה',
-	'hi': 'डार्क मोड'
+	'hi': 'डार्क मोड',
+	'zh': '切换暗色主题'
 }[defaultUserLanguage()] || 'Toggle Dark Mode';
 
 const toggleButton = `<button id="${DARK_MODE_BUTTON}" class="rcx-box rcx-box--full rcx-button--small-square rcx-button--square rcx-button--small rcx-button--ghost rcx-button rcx-button-group__item rcx-@ue04p" aria-label="${darkModeToggleText}">D</button>`;
