@@ -381,7 +381,7 @@ body.dark-mode .rcx-user-card .rcx-button:hover {
 
 /* Modals */
 
-body.dark-mode .rcx-modal__header > .rcx-button--ghost.rcx-button:hover {
+body.dark-mode .rcx-modal__header .rcx-button--ghost.rcx-button:hover {
 	color: var(--rc-color-primary-lightest);
 }
 
