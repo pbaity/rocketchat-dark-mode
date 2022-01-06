@@ -381,9 +381,14 @@ body.dark-mode .rcx-user-card .rcx-button:hover {
 
 /* Modals */
 
+body.dark-mode .rcx-modal__header > .rcx-button--ghost.rcx-button:hover {
+	color: var(--rc-color-primary-lightest);
+}
+
 /*body.dark-mode .background-info-font-color {
 	background-color: var(--color-dark-medium);
 }*/
+
 body.dark-mode .rcx-modal__inner,
 body.dark-mode .rcx-modal__footer {
 	background: var(--color-dark);
@@ -714,10 +719,6 @@ body.dark-mode .rcx-css-15hfnte {  /* Panels sidebar header */
 
 body.dark-mode .rcx-css-10ij0kz .rcx-box { /* Panels sidebar header text and button (with cross icon) */
     color: var(--primary-font-color) !important;
-}
-
-body.dark-mode .rcx-css-15hfnte .rcx-css-4pvxx3:hover { /* Panels sidebar button (with cross icon) hovered */
-    color: var(--rc-color-primary-dark) !important;
 }
 
 body.dark-mode .rcx-css-1l00c5f,
