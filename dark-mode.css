@@ -155,6 +155,7 @@ body.dark-mode {
 
 	/* Popover */
 	--popover-background: var(--color-dark);
+	--popover-background-hover: var(--color-dark-medium);
 	--popover-title-color: var(--color-white);
 	--popover-item-color: var(--color-white);
 
@@ -579,6 +580,10 @@ body.dark-mode .attachments__name {
 
 body.dark-mode .attachments__name:hover, .attachments__name:active {
 	color: var(--color-light-blue);
+}
+
+body.dark-mode .rc-popover__item:hover {
+	background-color: var(--popover-background-hover);
 }
 
 body.dark-mode .rc-popover__content {
