@@ -131,7 +131,8 @@ body.dark-mode {
 	--tags-background: var(--color-blue);
 
 	/* Sidebar */
-	--sidebar-background: var(--color-dark);
+	--sidebar-background: var(--color-dark); /* var(--color-dark-medium); */
+	--sidebar-background-hover: var(--color-darkest); /* var(--color-dark); */
 
 	/* Chip */
 	--chip-background: var(--color-blue);
@@ -523,6 +524,23 @@ body.dark-mode .rcx-button--primary:disabled {
 
 body.dark-mode .rcx-button--danger {
 	color: var(--rcx-button-colors-secondary-danger-color,var(--rcx-color-danger-500,#f5455c));
+}
+
+/***** Left sidebar *****/
+
+body.dark-mode .rcx-box.rcx-box--full.rcx-tile--elevation-2.rcx-tile {
+	background-color: var(--sidebar-background);
+	/* 255 - rgba(47,52,61,.12) */
+	box-shadow: 0 0 2px 0 rgba(208,203,194,.08), 0 0 12px 0 rgba(208,203,194,.12);
+}
+
+body.dark-mode .rcx-box.rcx-box--full.rcx-tile--elevation-2.rcx-tile .rcx-option__title,
+body.dark-mode .rcx-box.rcx-box--full.rcx-tile--elevation-2.rcx-tile .rcx-option {
+	color: var(--primary-font-color);
+}
+
+body.dark-mode .rcx-box.rcx-box--full.rcx-tile--elevation-2.rcx-tile .rcx-option:hover {
+    background-color: var(--sidebar-background-hover);
 }
 
 /***** Right sidebar *****/
