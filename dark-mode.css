@@ -476,10 +476,6 @@ body.dark-mode .rcx-options .rcx-option--selected:hover {
 	background-color: var(--color-dark) !important;
 }
 
-body.dark-mode .rcx-css-dpt4t8 { /* User selector in create direct message modal */
-	color: var(--color-dark);
-}
-
 /***** Buttons *****/
 
 /* Regular button style */
@@ -575,6 +571,7 @@ body.dark-mode button.rcx-contextual-message__follow + div.rcx-box--full {
 }
 
 /***** Chat file list *****/
+
 
 body.dark-mode .attachments__item:hover, .attachments__item:active {
 	background-color: var(--color-darkest);
@@ -781,6 +778,11 @@ body.dark-mode .rcx-input-box__wrapper {
 body.dark-mode .rcx-box * .rcx-input-box {
 	background-color: var(--color-dark);
 	color: var(--rc-color-primary);
+}
+
+/* .rcx-autocomplete, .rcx-input-box:not(.rcx-input-box--undecorated), .rcx-input-box__wrapper, .rcx-select */
+body.dark-mode .rcx-autocomplete {
+	background-color: transparent;
 }
 
 body.dark-mode .rcx-table__cell {
