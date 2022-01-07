@@ -883,7 +883,7 @@ body.dark-mode .rcx-table__cell--align-end {
 /* Apply info (white) font *everywhere* */
 body.dark-mode .rcx-css-ps0pgs, /* Channel name */
 body.dark-mode .rcx-room-header  .rcx-box:not(.rcx-button-group):not(.rcx-button):not(.rcx-css-1fgkscl):not(.rcx-css-4pvxx3), /* omit buttons/icons (.rcx-css-1fgkscl is .rcx-icon parent) */
-body.dark-mode .rcx-vertical-bar .rcx-box:not(.rcx-button-group):not(.rcx-button):not(.rcx-css-1fgkscl):not(.rcx-css-4pvxx3) {
+body.dark-mode .rcx-vertical-bar .rcx-box:not(.rcx-button-group):not(.rcx-button):not(.rcx-css-1fgkscl):not(.rcx-css-4pvxx3):not(.rcx-css-trljwa) {
   color: var(--info-font-color) !important;
 	/*background-color: var(--color-darkest) !important;*/
 }
