@@ -385,6 +385,11 @@ body.dark-mode .rcx-modal__header .rcx-button--ghost.rcx-button:hover {
 	color: var(--rc-color-primary-lightest);
 }
 
+/* Temporary fix for modals where "Cancel" button is missing 'rcx-button--ghost' class */
+body.dark-mode .rcx-modal__footer .rcx-box.rcx-box--full.rcx-box--animated.rcx-button.rcx-button-group__item:first-of-type:not(.rcx-button--ghost) {
+	color: var(--rc-color-primary-lightest);
+}
+
 /*body.dark-mode .background-info-font-color {
 	background-color: var(--color-dark-medium);
 }*/
