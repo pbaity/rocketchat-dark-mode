@@ -690,6 +690,11 @@ body.dark-mode .js-logout {
 	border-color: var(--primary-font-color);
 }
 
+/* Security - 2FA */
+body.dark-mode .rcx-css-9zx50y, body.dark-mode .rcx-css-zl15hy {
+	background-color: transparent !important;
+}
+
 /************** Admin panel & Account panel ******************/
 
 .page-list a:not(.rc-button), .page-settings a:not(.rc-button) {
