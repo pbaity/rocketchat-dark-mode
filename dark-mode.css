@@ -704,6 +704,12 @@ body.dark-mode .rcx-css-9zx50y, body.dark-mode .rcx-css-zl15hy {
 	background-color: transparent !important;
 }
 
+/***** Omnichannel *****/
+
+body.dark-mode .rcx-css-110cgdy {
+	background-color: transparent !important;
+}
+
 /************** Admin panel & Account panel ******************/
 
 .page-list a:not(.rc-button), .page-settings a:not(.rc-button) {
