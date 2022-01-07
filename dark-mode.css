@@ -572,6 +572,13 @@ body.dark-mode button.rcx-contextual-message__follow + div.rcx-box--full {
 
 /***** Chat file list *****/
 
+body.dark-mode .rcx-css-18t0quo {
+	background-color: var(--color-darkest);
+}
+
+body.dark-mode .rcx-css-18t0quo:hover {
+	background-color: var(--color-dark-medium);
+}
 
 body.dark-mode .attachments__item:hover, .attachments__item:active {
 	background-color: var(--color-darkest);
