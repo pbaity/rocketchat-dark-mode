@@ -762,6 +762,10 @@ body.dark-mode .rcx-css-61di5s { /* Admin panel info & stats (Deployment, Licens
 	color: var(--color-gray) !important;
 }
 
+body.dark-mode .rcx-pagination__link:disabled { /* Admin panel pagination (e.g., in App Marketplace) */
+	color: var(--color-white);
+}
+
 body.dark-mode .rcx-select__item {
 	color: var(--primary-font-color) !important;
 }
