@@ -90,7 +90,12 @@ function updateButton(mode) {
 }
 
 function addDarkModeToggle() {
-	const sidebarToolbar = $('.rcx-sidebar-topbar .rcx-button-group').first();
+	const normalModeSidebarSelector = '.rcx-sidebar-topbar .rcx-button-group';
+	const embeddedModeSidebarSelector = '.rcx-room-header .rcx-button-group';
+
+	const sidebarToolbar = ($(normalModeSidebarSelector).length > 0)
+						? $(normalModeSidebarSelector).first()
+						: $(embeddedModeSidebarSelector).first();
 
 	// wait for the sidebar toolbar to be visible
 	// this will also be false if the toolbar doesn't exist yet
