@@ -14,6 +14,9 @@ const DARK_MODE_BUTTON = "dark-mode-button"; // could be `button-${DARK_MODE_CSS
 
 const DARK_MODE_MODES = ["auto", "dark", "light"];
 
+let DARK_MODE_BUTTON_RETRY_COUNT = 0;
+const DARK_MODE_BUTTON_RETRY_MAX = 10;
+
 const systemModeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
 const modeSymbols = {
@@ -89,7 +92,7 @@ function updateButton(mode) {
 	darkModeButton.attr('data-title', `${darkModeToggleText}, current: ${mode}`);
 }
 
-function addDarkModeToggle() {
+function addDarkModeToggle() {	
 	const normalModeSidebarSelector = '.rcx-sidebar-topbar .rcx-button-group';
 	const embeddedModeSidebarSelector = '.rcx-room-header .rcx-button-group';
 
@@ -99,8 +102,9 @@ function addDarkModeToggle() {
 
 	// wait for the sidebar toolbar to be visible
 	// this will also be false if the toolbar doesn't exist yet
-	if(!sidebarToolbar.is(':visible')) {
+	if(!sidebarToolbar.is(':visible') && DARK_MODE_BUTTON_RETRY_COUNT < DARK_MODE_BUTTON_RETRY_MAX) {
 		setTimeout(addDarkModeToggle, 250);
+		DARK_MODE_BUTTON_RETRY_COUNT += 1;
 		return;
 	}
 
@@ -118,12 +122,13 @@ function addDarkModeToggle() {
 		toggleDarkMode();
 		$(this).blur();
 	});
-
-	// Switch mode on system theme changes
-	systemModeMediaQuery.addEventListener("change", maybeModeChange);
-
-	// Trigger initial mode change if necessary
-	maybeModeChange();
 }
 
+// Switch mode on system theme changes
+systemModeMediaQuery.addEventListener("change", maybeModeChange);
+
+// Trigger initial mode change if necessary
+maybeModeChange();
+
+// Add toggle button
 $(addDarkModeToggle);
