@@ -38,6 +38,12 @@ const darkModeToggleText = {
 	'zh': '切换暗色主题'
 }[defaultUserLanguage()] || 'Toggle Dark Mode';
 
+const normalModeSidebarSelector = '.rcx-sidebar-topbar .rcx-button-group';
+const embeddedModeSidebarSelector = '.rcx-room-header .rcx-button-group';
+
+let addDarkModeToggleRetryCount = 0;
+const addDarkModeToggleRetryMax = 10;
+
 const toggleButton = `<button id="${DARK_MODE_BUTTON}" class="rcx-box rcx-box--full rcx-button--small-square rcx-button--square rcx-button--small rcx-button--ghost rcx-button rcx-button-group__item rcx-@ue04p" aria-label="${darkModeToggleText}">D</button>`;
 
 function getDarkModeSetting() {
@@ -90,12 +96,15 @@ function updateButton(mode) {
 }
 
 function addDarkModeToggle() {
-	const sidebarToolbar = $('.rcx-sidebar-topbar .rcx-button-group').first();
+	const sidebarToolbar = ($(normalModeSidebarSelector).length > 0)
+						? $(normalModeSidebarSelector).first()
+						: $(embeddedModeSidebarSelector).first();
 
 	// wait for the sidebar toolbar to be visible
 	// this will also be false if the toolbar doesn't exist yet
-	if(!sidebarToolbar.is(':visible')) {
+	if(!sidebarToolbar.is(':visible') && addDarkModeToggleRetryCount < addDarkModeToggleRetryMax) {
 		setTimeout(addDarkModeToggle, 250);
+		addDarkModeToggleRetryCount += 1;
 		return;
 	}
 
@@ -113,12 +122,13 @@ function addDarkModeToggle() {
 		toggleDarkMode();
 		$(this).blur();
 	});
-
-	// Switch mode on system theme changes
-	systemModeMediaQuery.addEventListener("change", maybeModeChange);
-
-	// Trigger initial mode change if necessary
-	maybeModeChange();
 }
 
+// Switch mode on system theme changes
+systemModeMediaQuery.addEventListener("change", maybeModeChange);
+
+// Trigger initial mode change if necessary
+maybeModeChange();
+
+// Add toggle button
 $(addDarkModeToggle);
