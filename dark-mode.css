@@ -131,8 +131,8 @@ body.dark-mode {
 	--tags-background: var(--color-blue);
 
 	/* Sidebar */
-	--sidebar-background: var(--color-dark); /* var(--color-dark-medium); */
-	--sidebar-background-hover: var(--color-darkest); /* var(--color-dark); */
+	--sidebar-background: var(--color-dark);
+	--sidebar-background-hover: var(--color-darkest);
 
 	/* Chip */
 	--chip-background: var(--color-blue);
@@ -536,9 +536,8 @@ body.dark-mode .rcx-button--danger {
 /***** Left sidebar *****/
 
 body.dark-mode .rcx-box.rcx-box--full.rcx-tile--elevation-2.rcx-tile {
-	background-color: var(--sidebar-background);
-	/* 255 - rgba(47,52,61,.12) */
-	box-shadow: 0 0 2px 0 rgba(208,203,194,.08), 0 0 12px 0 rgba(208,203,194,.12);
+	background-color: var(--color-dark-medium);
+	color: var(--primary-font-color);
 }
 
 body.dark-mode .rcx-box.rcx-box--full.rcx-tile--elevation-2.rcx-tile .rcx-option__title,
@@ -547,7 +546,7 @@ body.dark-mode .rcx-box.rcx-box--full.rcx-tile--elevation-2.rcx-tile .rcx-option
 }
 
 body.dark-mode .rcx-box.rcx-box--full.rcx-tile--elevation-2.rcx-tile .rcx-option:hover {
-    background-color: var(--sidebar-background-hover);
+    background-color: var(--color-dark-light);
 }
 
 /***** Right sidebar *****/
