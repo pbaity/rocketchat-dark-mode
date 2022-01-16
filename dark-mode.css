@@ -9,7 +9,7 @@
 }
 
 /* Reset global font color so that it's changable more easily */
-.color-primary-font-color, textarea {
+/* .color-primary-font-color, textarea {
 	color: var(--primary-font-color);
 }
 
@@ -44,19 +44,19 @@ input, select, textarea {
 	from {
 		background-color: hsl(216, 92%, 54%);
 	}
-}
+} */
 
 /******************************************
  ************Transition Effect*************
  ******************************************/
-input,
+/* input,
 textarea,
 select,
 .color-primary-font-color,
 .color-info-font-color,
 .background-info-font-color,
 .background-transparent-darker-before::before,
-.messages-box .message .body, /* override for opacity transition */
+.messages-box .message .body,
 .rc-header__name,
 .rc-header__wrap,
 .message .reactions>li,
@@ -89,85 +89,7 @@ select,
 .contextual-bar__content,
 .sidebar__footer {
 	transition: opacity 300ms linear, color 150ms, background-color 150ms, border-color 150ms;
-}
-
-/******************************************
- *************Dark Mode Settings***********
- ******************************************/
-body.dark-mode {
-
-	/****************************** Custom Variables ******************************/
-	--primary-font-color: var(--color-gray-lightest);
-	--info-font-color: var(--color-gray-light);
-	--message-box-background: hsla(0, 0, 100%, 0.1);
-
-	--button-outline-color: var(--color-gray-medium);
-	--button-close-color: var(--color-gray-medium);
-
-
-	/********************** Overridden Rocket.Chat Variables **********************/
-
-	/* General Colors */
-	--rc-color-alert-message-warning-background: hsl(352, 83%, 20%);
-	--rc-color-primary: var(--color-gray-lightest);
-	--rc-color-primary-lightest: var(--color-dark-medium);
-
-	/* Forms - Button */
-	--button-disabled-background: var(--color-dark-70);
-	--button-disabled-text-color: var(--color-dark-80);
-
-	/* Forms - Input */
-	--input-text-color: var(--color-gray-lightest);
-	--input-icon-color: var(--color-gray-lightest);
-
-	/* Forms - popup list */
-	--popup-list-background: var(--color-dark);
-	--popup-list-background-hover: var(--color-darkest);
-	--popup-list-selected-background: var(--color-dark);
-	--popup-list-name-color: var(--color-white);
-
-	/* Forms - tags */
-	--tags-text-color: var(--color-white);
-	--tags-background: var(--color-blue);
-
-	/* Sidebar */
-	--sidebar-background: var(--color-dark);
-
-	/* Chip */
-	--chip-background: var(--color-blue);
-
-	/* Mention link */
-	--mention-link-background: var(--color-dark-medium);
-	--mention-link-text-color: var(--color-light-blue);
-	--mention-link-me-background: var(--alerts-background);
-	--mention-link-me-text-color: var(--color-white);
-	--mention-link-group-background: var(--alerts-background);
-	--mention-link-group-text-color: var(--color-white);
-
-	/* Message box */
-	--message-box-user-activity-color: var(--color-gray-lightest);
-	--message-box-user-activity-user-color: var(--color-gray-lightest);
-
-	/* Header */
-	--header-title-username-color-darker: var(--color-gray-lightest);
-	--header-background-color: var(--color-darkest);
-
-	/* Popover */
-	--popover-background: var(--color-dark);
-	--popover-title-color: var(--color-white);
-	--popover-item-color: var(--color-white);
-
-	/* Tooltip */
-	--tooltip-background: var(--color-darkest);
-	--tooltip-text-color: var(--color-white);
-
-	/* alert */
-	--alerts-background: #1d73f5;
-	--alerts-color: var(--color-white);
-
-	--message-box-editing-color: var(--rc-color-alert-message-warning-background);
-	--rc-color-alert: var(--color-dark-red);
-}
+} */
 
 /******************************************
  *********Manual Dark Theme Overrides******
@@ -178,20 +100,6 @@ body.dark-mode {
 /* Breadcrumbs discussions */
 body.dark-mode .rcx-room-header .rcx-tag--default {
 	background-color: unset; 
-}
-
-/* Blockquote */
-body.dark-mode .rcx-css-1d5cod7 {
-	background-color: var(--color-darkest) !important;
-}
-
-body.dark-mode blockquote.rcx-attachment__details .rcx-box--full {
-	color: var(--secondary-font-color);
-}
-
-body.dark-mode .rcx-css-11c35pn:hover .rcx-attachment__details,
-body.dark-mode .rcx-css-11c35pn:focus .rcx-attachment__details {
-	background-color: var(--color-dark) !important;
 }
 
 /* Attachements content */
@@ -294,32 +202,6 @@ body.dark-mode p.rc-user-info-details__info {
 body.dark-mode .messages-container .footer,
 body.dark-mode .content-background-color {
 	background-color: var(--header-background-color);
-}
-
-body.dark-mode .message {
-	background-color: var(--color-darkest);
-}
-
-body.dark-mode .message.new-day::after,
-body.dark-mode .message .reactions>li,
-body.dark-mode .border-component-color {
-	border-color: var(--rc-color-primary-lightest);
-}
-
-body.dark-mode .message .reactions>li,
-body.dark-mode .message .title .is-bot,
-body.dark-mode .message .title .role-tag,
-body.dark-mode .message.new-day::before {
-	background-color: var(--rc-color-primary-dark);
-}
-
-body.dark-mode .message.active,
-body.dark-mode .message:hover {
-    background-color: var(--color-darker);
-}
-
-body.dark-mode .message.editing {
-	background-color: var(--color-dark-blue);
 }
 
 body.dark-mode .message.first-unread .body:after {
@@ -436,69 +318,11 @@ body.dark-mode .contextual-bar__content {
 body.dark-mode .rc-member-list__counter {
 	background-color: var(--color-dark);
 }
-
-/**** Select / Dropdowns ****/
-
-body.dark-mode .rcx-select {
-    background-color: var(--rc-color-primary-darkest) !important;
-}
-
-body.dark-mode .rcx-options > .rcx-tile {
-    background-color: var(--rc-color-primary-darkest) !important;
-}
-
-body.dark-mode .rcx-options .rcx-option,
-body.dark-mode .rcx-options .rcx-option--focus /* Temporary fix while focus is not refreshed */ {
-	background-color: var(--rc-color-primary-darkest) !important;
-	color: var(--color-white) !important;
-}
-
-body.dark-mode .rc-popover__content .rcx-option:hover,
-/* body.dark-mode .rcx-options .rcx-option--focus, */ /* Temporary fix while focus is not refreshed */
-body.dark-mode .rcx-options .rcx-option--selected {
-    background-color: var(--color-dark-light) !important;
-}
-
-body.dark-mode .rcx-options .rcx-option:hover,
-body.dark-mode .rcx-options .rcx-option--selected:hover {
-	background-color: var(--color-dark) !important;
-}
-
-body.dark-mode .rcx-css-dpt4t8 { /* User selector in create direct message modal */
-	color: var(--color-dark);
-}
-
 /***** Buttons *****/
 
-/* Regular button style */
-body.dark-mode .main-content .rcx-button:not(.rcx-button--ghost) { /* Default */
-	background-color: var(--color-dark) !important;
-}
-body.dark-mode .main-content .rcx-button:is(.rcx-button--ghost, .rcx-button):hover { /* Hovered or selected */
-	background-color: var(--color-darkest) !important;
-}
-
-/* Square (icon) button style */
-body.dark-mode .main-content .rcx-button--square:not(.rcx-button--ghost), /* Default */
-body.dark-mode .main-content .rcx-button--square:is(.rcx-button--ghost, .rcx-button):hover {  /* Hovered or selected */
-	background-color: var(--color-darkest) !important;
-	border-color: transparent !important;
-}
-
-body.dark-mode .main-content .rcx-button--square:is(.rcx-button--ghost, .rcx-button):focus {
-	background-color: var(--color-darkest);
-	border-color: transparent !important;
-	box-shadow: 0 0 0 .1rem var(--color-gray);
-}
 
 /* Menu buttons on top right (threads, search, etc.) */
-body.dark-mode .rcx-css-15vvv6z:hover,
-body.dark-mode .rcx-css-ue04py:hover,
-body.dark-mode .rcx-css-15vvv6z:active,
-body.dark-mode .rcx-css-ue04py:active {
-    border-color: var(--color-dark-medium) !important;
-    background-color: var(--color-dark-medium) !important;
-}
+
 
 body.dark-mode .rcx-css-136xdpx {
 	background-color: var(--color-darkest);

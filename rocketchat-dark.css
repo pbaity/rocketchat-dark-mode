@@ -279,7 +279,6 @@ body {
   --alerts-padding: var(--sidebar-default-padding);
   --alerts-padding-vertical: 10px;
   --alerts-padding-vertical-large: 20px;
-  --attention-color: #9c27b0; /* #endregion */ /* #region less-colors Old Colors (minor) */ 
   --avatar-initials-text-size: 22px;
   --avatar-initials-text-weight: 700; /* Badge */
   --avatar-radius: var(--border-radius);
@@ -293,7 +292,7 @@ body {
   --badge-unread-background: var(--color-blue);
   --badge-user-mentions-background: var(--color-red);--body-font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, Microsoft YaHei, PingFang TC, Hiragino Sans CNS, Microsoft JhengHei, Hiragino Sans, Hiragino Kaku Gothic Pro, Malgun Gothic, Helvetica Neue, sans-serif; /* #endregion */ /* General */ 
   --border: 2px;
-  --border-radius: 2px;
+  --border-radius: 4px;
   --button-border-radius: var(--border-radius);
   --button-border-width: var(--border);
   --button-cancel-color: var(--rc-color-error);
@@ -340,18 +339,15 @@ body {
   --color-red: #f5455c;
   --color-white: #fff; /* #region colors Colors */
   --color-yellow: #ffd21f;
-  --component-color: #f2f3f5;--content-background-color: #fff;
   --content-page-padding: 2.5rem; /* badge */
   --create-channel-description-color: var(--color-gray);
   --create-channel-description-text-size: .875rem; /* Toolbar */
   --create-channel-gap-between-elements: 1rem;
   --create-channel-title-color: var(--color-darkest);
   --create-channel-title-text-size: 1.375rem;
-  --custom-scrollbar-color: var(--transparent-darker); /* #endregion */ /* #region fonts Fonts */ 
   --default-font-weight-header: 500; /* General Typography */
   --default-padding: 1.5rem;
   --default-small-padding: 1rem;
-  --error-color: #bc2031;
   --flex-nav-background: var(--color-gray-lightest); /* Popover */
   --flex-tab-webrtc-2-width: 850px;
   --flex-tab-webrtc-width: 400px;
@@ -370,7 +366,6 @@ body {
   --header-title-status-name-weight: 400;
   --header-title-username-color-darker: var(--color-dark);
   --header-title-username-weight: 400;
-  --info-font-color: var(--secondary-font-color);
   --input-border-color: var(--color-gray-light);
   --input-border-radius: var(--border-radius);
   --input-border-width: var(--border);
@@ -384,7 +379,6 @@ body {
   --input-title-color: #2d343d;
   --input-title-text-size: var(--input-font-size);
   --label-margin-bottom: 1rem; /* Forms - Button */
-  --link-font-color: var(--primary-action-color);
   --mention-link-background: #fff6d6;
   --mention-link-group-background: #fde8d7;
   --mention-link-group-text-color: var(--color-orange); /* Message box */
@@ -405,7 +399,6 @@ body {
   --message-box-user-activity-color: var(--color-gray);
   --message-box-user-activity-text-size: .75rem;
   --message-box-user-activity-user-color: var(--color-dark);
-  --pending-color: #fcb316;
   --popover-background: var(--color-white);
   --popover-column-min-width: 130px;
   --popover-column-padding: 1rem;
@@ -423,9 +416,6 @@ body {
   --popup-list-name-color: #2d343d;
   --popup-list-name-size: 1rem; /* Forms - tags */
   --popup-list-selected-background: var(--color-gray-lightest);
-  --primary-action-color: #1d74f5;
-  --primary-background-color: #04436a;
-  --primary-font-color: #444;
   --rc-color-alert: var(--color-yellow);
   --rc-color-alert-light: var(--color-dark-yellow);
   --rc-color-alert-message-primary: var(--color-blue);
@@ -435,7 +425,7 @@ body {
   --rc-color-alert-message-warning: #d52d24;
   --rc-color-alert-message-warning-background: #fff3f3;
   --rc-color-announcement-background: #d1ebfe;
-  --rc-color-announcement-background-hover: #76b7fc; /* #endregion */ /* #region colors Old Colors */ 
+  --rc-color-announcement-background-hover: #76b7fc; /* #endregion */ /* #region colors Old Colors */ /* #endregion */ /* #region less-colors Old Colors (minor) */ /* #endregion */ /* #region fonts Fonts */ 
   --rc-color-announcement-text: #095ad2;
   --rc-color-announcement-text-hover: #01336b;
   --rc-color-button-primary: var(--color-blue);
@@ -466,14 +456,10 @@ body {
   --rooms-list-small-padding: var(--sidebar-small-default-padding); /* Chip */
   --rooms-list-title-color: var(--rc-color-primary-light);
   --rooms-list-title-text-size: .75rem;
-  --secondary-action-color: #ddd;
-  --secondary-background-color: #f4f4f4;
-  --secondary-font-color: #a0a0a0;
   --select-avatar-preview-size: 150px;
   --select-avatar-size: 48px;
   --select-avatar-upload-background: var(--color-gray-light);
   --select-avatar-upload-color: #2d343d; /* Sidebar */
-  --selection-color: #02acec;
   --sidebar-account-status-bullet-radius: 50%;
   --sidebar-account-status-bullet-size: 10px;
   --sidebar-account-status-color: var(--color-gray); /* Sidebar Item */
@@ -488,6 +474,7 @@ body {
   --sidebar-background-light: var(--rc-color-primary-lightest);
   --sidebar-background-light-active: var(--rc-color-primary-light-medium);
   --sidebar-background-light-hover: var(--rc-color-primary-light);
+  --sidebar-border: #21252a; /* Sidebar flex */
   --sidebar-default-padding: 24px;
   --sidebar-extra-small-default-padding: 12px;
   --sidebar-flex-search-background: var(--color-white);
@@ -515,19 +502,18 @@ body {
   --sidebar-small-account-thumb-size: 40px;
   --sidebar-small-account-username-weight: 400;
   --sidebar-small-default-padding: 16px;
-  --sidebar-small-header-padding: var(--sidebar-small-default-padding); /* Sidebar flex */
+  --sidebar-small-header-padding: var(--sidebar-small-default-padding);
   --sidebar-small-width: 90%;
   --sidebar-width: 280px;
   --status-bullet-radius: 50%;
   --status-bullet-size: 10px;
   --status-name-weight: 400;
-  --success-color: #2de0a5;
   --tags-avatar-size: 20px; /* Forms - select avatar */
   --tags-background: #f2f3f5;
   --tags-border-color: var(--color-gray-light);
   --tags-border-radius: var(--border-radius);
   --tags-border-width: var(--border);
-  --tags-text-color: var(--rc-color-primary);--tertiary-font-color: var(--transparent-lightest);
+  --tags-text-color: var(--rc-color-primary);
   --text-default-size: 1rem;
   --text-default-weight: 500;
   --text-heading-size: 1.375rem;
@@ -546,10 +532,6 @@ body {
   --tooltip-radius: var(--border-radius); /* alert */
   --tooltip-text-color: var(--color-white);
   --tooltip-text-size: .75rem;
-}
-
-.rcx-sidebar {
-  background: var(--sidebar-background) !important;
 }
 
 .color-primary-font-color,
@@ -592,14 +574,11 @@ select,
 .color-primary-font-color,
 .color-info-font-color,
 .background-info-font-color,
-.background-transparent-darker-before::before,
-.messages-box .message .body,
 .rc-header__name,
 .rc-header__wrap,
 .message .reactions > li,
 .message .title .is-bot,
 .message .title .role-tag,
-.message.new-day::before,
 .code-colors,
 .hljs-selector-id,
 .hljs-selector-tag,
@@ -617,15 +596,10 @@ select,
 .hljs-template-variable,
 .hljs-variable,
 .rc-message-box__container,
-.messages-container .footer,
-.content-background-color,
-.message.new-day::after,
 .message .reactions > li,
-.border-component-color,
 .contextual-bar__header,
-.contextual-bar__content,
-.sidebar__footer {
-  transition: opacity 300ms linear, color 150ms, background-color 150ms, border-color 150ms;
+.contextual-bar__content {
+  transition: opacity 150ms ease-in-out, color 150ms ease-in-out, background-color 150ms ease-in-out, border-color 150ms ease-in-out;
 }
 
 @keyframes highlight {
@@ -634,14 +608,33 @@ select,
   }
 }
 
+.rcx-sidebar .sidebar--custom-colors {
+  --rcx-button-colors-ghost-active-background-color: #1e2227;
+  --rcx-button-colors-ghost-background-color: #1e2227;
+  --rcx-button-colors-ghost-border-color: transparent;
+  --rcx-button-colors-ghost-color: #9ea2a8;
+  --rcx-button-colors-ghost-hover-background-color: #23272c;
+  --rcx-divider-color: var(--sidebar-border); 
+  --rcx-sidebar-item-background-color-hover: #1e2227;
+  --rcx-sidebar-item-background-color-selected: #23272c;
+}
+
+.rcx-sidebar {
+  background: var(--sidebar-background) !important;
+  border-right: .06rem solid var(--sidebar-border);
+}
+
 body.dark-mode {
   --alerts-background: #1d73f5;
   --alerts-color: var(--color-white);
-  --button-close-color: var(--color-gray-medium); /********************** Overridden Rocket.Chat Variables **********************/ /* General Colors */ 
+  --button-close-color: var(--color-gray-medium);
   --button-disabled-background: var(--color-dark-70);
   --button-disabled-text-color: var(--color-dark-80); /* Forms - Input */
   --button-outline-color: var(--color-gray-medium);
   --chip-background: var(--color-blue); /* Mention link */
+  --component-color: #21252a;
+  --content-background-color: var(--color-dark);
+  --header-background-color: var(--color-dark);
   --header-background-color: var(--color-darkest); /* Popover */
   --header-title-username-color-darker: var(--color-gray-lightest);
   --info-font-color: var(--color-gray-light);
@@ -668,9 +661,250 @@ body.dark-mode {
   --rc-color-alert: var(--color-dark-red); --rc-color-alert-message-warning-background: hsl(352, 83%, 20%);
   --rc-color-primary: var(--color-gray-lightest);
   --rc-color-primary-lightest: var(--color-dark-medium); /* Forms - Button */
+  --rcx-divider-color: var(--sidebar-border); /********************** Overridden Rocket.Chat Variables **********************/ /* General Colors */ 
   --sidebar-background: var(--color-dark); /* Chip */
   --tags-background: var(--color-blue); /* Sidebar */
   --tags-text-color: var(--color-white);
   --tooltip-background: var(--color-darkest);
   --tooltip-text-color: var(--color-white); /* alert */
+}
+
+body.dark-mode .main-content .start {
+  font-weight: 900;
+}
+
+body.dark-mode .main-content .rcx-button:not(.rcx-button--ghost) {
+  /* Default */ background-color: var(--color-dark) !important;
+}
+
+body.dark-mode .main-content .rcx-button:is(.rcx-button--ghost, .rcx-button):hover {
+  /* Hovered or selected */ background-color: var(--color-darkest) !important;
+}
+
+body.dark-mode .main-content .rcx-button--square:not(.rcx-button--ghost),
+body.dark-mode .main-content .rcx-button--square:is(.rcx-button--ghost, .rcx-button):hover {
+  /* Hovered or selected */ background-color: var(--color-darkest) !important;
+  border-color: transparent !important;
+}
+
+body.dark-mode .main-content .rcx-button--square:is(.rcx-button--ghost, .rcx-button):focus {
+  background-color: var(--color-darkest);
+  border-color: transparent !important;
+  box-shadow: 0 0 0 .1rem var(--color-gray);
+}
+
+body.dark-mode .main-content .rcx-css-15vvv6z:active,
+body.dark-mode .main-content .rcx-css-15vvv6z:hover,
+body.dark-mode .main-content .rcx-css-ue04py:active,
+body.dark-mode .main-content .rcx-css-ue04py:hover {
+  background-color: var(--color-dark-medium) !important; 
+  border-color: var(--color-dark-medium) !important;
+}
+
+body.dark-mode .message:hover,
+body.dark-mode .message:focus,
+body.dark-mode .message.active {
+  background: #1e2227;
+}
+
+body.dark-mode .message.editing {
+  background: rgba(37, 99, 235, .15);
+}
+
+body.dark-mode .message.first-unread .body:after {
+  background-color: var(--header-background-color);
+}
+
+body.dark-mode .message.new-day::before {
+  background: #1a1d21;
+  color: #a5adb8;
+}
+
+body.dark-mode .message .title {
+  margin-bottom: .25rem;
+}
+
+body.dark-mode .message .title .is-bot,
+body.dark-mode .message .title .role-tag {
+  background: #23272c;
+  color: #a5adb8;
+}
+
+body.dark-mode .message .time {
+  color: #a0a8b4;
+}
+
+body.dark-mode .message .rcx-box--full {
+  color: #a0a8b4;
+}
+
+body.dark-mode .message .rcx-box--full blockquote {
+  background: transparent !important;
+  border: 0 !important;
+  border-left: .2rem solid #272c32 !important;
+  border-radius: 0 !important;
+  padding-top: .5rem !important;
+}
+
+body.dark-mode .message .rcx-box--full picture {
+  background: transparent;
+  border-color: #23272c !important;
+  border-radius: .25rem !important;
+}
+
+body.dark-mode .message .rcx-box--full picture img {
+  border-radius: .25rem;
+}
+
+body.dark-mode .message .rcx-box--full code {
+  background: #252a2f !important;
+  border-color: #272c32 !important;
+  color: #a0a8b4;
+}
+
+body.dark-mode .message .message-oembed {
+  background: transparent !important;
+  border: 0 !important;
+  border-left: .2rem solid #272c32 !important;
+  margin-top: .25rem;
+}
+
+body.dark-mode .message .message-oembed img {
+  border-radius: .25rem;
+}
+
+body.dark-mode .message code.code-colors {
+  background: #252a2f !important;
+  border-color: #272c32 !important;
+  color: #a0a8b4;
+  line-height: 1;
+}
+
+body.dark-mode .message code.code-colors .hljs-doctag,
+body.dark-mode .message code.code-colors .hljs-keyword,
+body.dark-mode .message code.code-colors .hljs-meta .hljs-keyword,
+body.dark-mode .message code.code-colors .hljs-template-tag,
+body.dark-mode .message code.code-colors .hljs-template-variable,
+body.dark-mode .message code.code-colors .hljs-type,
+body.dark-mode .message code.code-colors .hljs-variable {
+  color: #ff7b72;
+}
+
+body.dark-mode .message code.code-colors .hljs-attr,
+body.dark-mode .message code.code-colors .hljs-attribute,
+body.dark-mode .message code.code-colors .hljs-literal,
+body.dark-mode .message code.code-colors .hljs-meta,
+body.dark-mode .message code.code-colors .hljs-number,
+body.dark-mode .message code.code-colors .hljs-operator,
+body.dark-mode .message code.code-colors .hljs-variable,
+body.dark-mode .message code.code-colors .hljs-selector-attr,
+body.dark-mode .message code.code-colors .hljs-selector-class,
+body.dark-mode .message code.code-colors .hljs-selector-id {
+  color: #79c0ff;
+}
+
+body.dark-mode .message code.code-colors .hljs-title {
+  color: #d2a8ff;
+}
+
+body.dark-mode .message code.code-colors .hljs-regexp,
+body.dark-mode .message code.code-colors .hljs-string,
+body.dark-mode .message code.code-colors .hljs-meta .hljs-string {
+  color: #a5d6ff;
+}
+
+body.dark-mode .message code.code-colors .hljs-comment,
+body.dark-mode .message code.code-colors .hljs-code,
+body.dark-mode .message code.code-colors .hljs-formula {
+  color: #8b949e;
+}
+
+body.dark-mode .message code.code-colors .hljs-name,
+body.dark-mode .message code.code-colors .hljs-quote,
+body.dark-mode .message code.code-colors .hljs-selector-tag,
+body.dark-mode .message code.code-colors .hljs-selector-pseudo {
+  color: #7ee787;
+}
+
+body.dark-mode .message .mention-link {
+  background: rgba(37, 99, 235, .15) !important;
+  color: #2563eb !important;
+  padding: .1rem .2rem;
+}
+
+body.dark-mode .message .reactions > li {
+  background: #23272c;
+  border-color: #23272c;
+  color: #a5adb8;
+}
+
+body.dark-mode .message .reactions > li:active,
+body.dark-mode .message .reactions > li:focus,
+body.dark-mode .message .reactions > li:hover {
+  background: #23272c;
+  border-color: #2c3138;
+}
+
+body.dark-mode .message .background-transparent-darker-before::before {
+  background: transparent;
+}
+
+body.dark-mode .message .message-actions,
+body.dark-mode .message .rc-member-list__counter {
+  background: #1a1d21;
+  border-color: #23272c;
+  color: #a5adb8;
+}
+
+body.dark-mode .message .message-actions .message-actions__button:hover,
+body.dark-mode .message .message-actions .message-actions__menu:hover,
+body.dark-mode .message .rc-member-list__counter .message-actions__button:hover,
+body.dark-mode .message .rc-member-list__counter .message-actions__menu:hover {
+  background: #23272c;
+}
+
+body.dark-mode .rcx-room-header .rcx-css-ps0pgs,
+body.dark-mode .rcx-room-header .rcx-box:not(.rcx-button-group):not(.rcx-button):not(.rcx-css-1fgkscl):not(.rcx-css-4pvxx3),
+body.dark-mode .rcx-vertical-bar .rcx-box:not(.rcx-button-group):not(.rcx-button):not(.rcx-css-1fgkscl):not(.rcx-css-4pvxx3) {
+  color: #fff !important;
+}
+
+body.dark-mode .footer .rc-message-box__container {
+  background: transparent;
+  border-color: #21252a;
+}
+
+body.dark-mode .footer .rc-message-box .reply-preview {
+  background: #1a1d21;
+  z-index: 99;
+}
+
+body.dark-mode .rcx-select {
+  background-color: var(--rc-color-primary-darkest) !important;
+}
+
+body.dark-mode .rcx-options > .rcx-tile {
+  background-color: var(--rc-color-primary-darkest) !important;
+}
+
+body.dark-mode .rcx-options .rcx-option {
+  background-color: var(--rc-color-primary-darkest) !important;
+  color: var(--color-white) !important;
+}
+
+body.dark-mode .rcx-options .rcx-option:hover {
+  background-color: var(--color-dark) !important;
+}
+
+body.dark-mode .rcx-options .rcx-option--focus,
+body.dark-mode .rcx-options .rcx-option--selected {
+  background-color: var(--color-dark-light) !important;
+}
+
+body.dark-mode .rcx-css-dpt4t8 {
+  /* User selector in create direct message modal */ color: var(--color-dark);
+}
+
+body.dark-mode .rc-popover__content .rcx-option:hover {
+  background-color: var(--color-dark-light) !important;
 }

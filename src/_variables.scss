@@ -14,15 +14,21 @@ $secondary-color-light: lighten($secondary-color, 3%) !default;
 
 // Gray colors
 $dark-color: #1A1D21 !default;
+$dark-color-dark: darken($dark-color, 2%) !default;
+$dark-color-light: lighten($dark-color, 2%) !default;
+$dark-color-darker: darken($dark-color, 4%) !default;
+$dark-color-lighter: lighten($dark-color, 4%) !default;
 $light-color: #fff !default;
 $gray-color: lighten($dark-color, 55%) !default;
-$gray-color-dark: darken($gray-color, 30%) !default;
-$gray-color-light: lighten($gray-color, 20%) !default;
+$gray-color-dark: darken($gray-color, 2%) !default;
+$gray-color-light: lighten($gray-color, 2%) !default;
+$gray-color-darker: darken($gray-color, 4%) !default;
+$gray-color-lighter: lighten($gray-color, 4%) !default;
 
-$border-color: lighten($dark-color, 65%) !default;
-$border-color-dark: darken($border-color, 10%) !default;
-$border-color-light: lighten($border-color, 8%) !default;
-$bg-color: lighten($dark-color, 75%) !default;
+$border-color: lighten($dark-color, 3%) !default;
+$border-color-dark: darken($border-color, 3%) !default;
+$border-color-light: lighten($border-color, 3%) !default;
+$bg-color: lighten($dark-color, 5%) !default;
 $bg-color-dark: darken($bg-color, 3%) !default;
 $bg-color-light: $light-color !default;
 
@@ -80,7 +86,7 @@ $line-height: 1.2rem !default;
 $layout-spacing: $unit-2 !default;
 $layout-spacing-sm: $unit-1 !default;
 $layout-spacing-lg: $unit-4 !default;
-$border-radius: $unit-h !default;
+$border-radius: .25rem !default;
 $border-width: $unit-o !default;
 $border-width-lg: $unit-h !default;
 $control-size: $unit-9 !default;
