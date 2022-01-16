@@ -1,0 +1,30 @@
+{
+  "name": "rocketchat-dark.css",
+  "version": "0.1.0",
+  "homepage": "https://github.com/DimensionDev/rocketchat-dark-mode",
+  "author": "Yan Zhu <picturepan2@hotmail.com>",
+  "description": "",
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "dark-mode",
+    "responsive"
+  ],
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "latest",
+    "node-sass": "^7.0.1"
+  },
+  "browserslist": [
+    "last 4 Chrome versions",
+    "Edge >= 12",
+    "Firefox ESR",
+    "last 4 Safari versions",
+    "last 4 Opera versions",
+    "Explorer >= 10"
+  ]
+}
