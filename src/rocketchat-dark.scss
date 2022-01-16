@@ -368,21 +368,6 @@ body {
 	--flex-nav-background: var(--color-gray-lightest);
 
 	/*
-	* Popover
-	*/
-	--popover-padding: 1rem;
-	--popover-radius: var(--border-radius);
-	--popover-background: var(--color-white);
-	--popover-column-min-width: 130px;
-	--popover-column-padding: 1rem;
-	--popover-title-color: var(--color-dark);
-	--popover-title-text-size: 0.75rem;
-	--popover-item-color: var(--color-dark);
-	--popover-item-text-size: 0.875rem;
-	--popover-divider-height: 2px;
-	--popover-divider-color: var(--color-gray-light);
-
-	/*
 	* Tooltip
 	*/
 	--tooltip-background: var(--color-darkest);
@@ -515,6 +500,7 @@ body.dark-mode {
     /****************************** Custom Variables ******************************/
     --primary-font-color: var(--color-gray-lightest);
     --info-font-color: var(--color-gray-light);
+    --color-darker: #{$dark-color};
     --message-box-background: hsla(0, 0, 100%, 0.1);
     --header-background-color: var(--color-dark);
     --content-background-color: var(--color-dark);
@@ -576,6 +562,7 @@ body.dark-mode {
     --popover-background: var(--color-dark);
     --popover-title-color: var(--color-white);
     --popover-item-color: var(--color-white);
+    --popover-divider-color: #{$border-color-light};
 
     /* Tooltip */
     --tooltip-background: var(--color-darkest);
@@ -587,6 +574,37 @@ body.dark-mode {
 
     --message-box-editing-color: var(--rc-color-alert-message-warning-background);
     --rc-color-alert: var(--color-dark-red);
+  }
+
+  /* Breadcrumbs discussions */
+  .rcx-room-header {
+    .rcx-tag--default {
+      background-color: unset; 
+    }
+  }
+
+  /* Attachements content */
+  .rcx-message-attachment {
+    .rcx-attachment__content {
+      .rcx-box--full {
+        color: var(--primary-font-color);
+
+        &.rcx-box--with-block-elements pre code {
+          background-color: var(--color-dark);
+            color: var(--primary-font-color);
+        }
+      }
+    }
+  }
+
+  /* Pinned messages content */
+  .rcx-css-ntpg4f {
+    color: var(--rc-color-primary) !important;
+  }
+
+  /* Message "You joined a new private conversation with" */
+  .rcx-css-dlop43 {
+    color: var(--rc-color-primary) !important;
   }
 
   //- Main
@@ -614,17 +632,44 @@ body.dark-mode {
       &:is(.rcx-button--ghost, .rcx-button):focus {
         background-color: var(--color-darkest);
         border-color: transparent !important;
-        box-shadow: 0 0 0 .1rem var(--color-gray);
+        box-shadow: 0 0 0 .1rem lighten($dark-color-lighter, 4%);
       }
     }
 
     .rcx-css-15vvv6z,
-    .rcx-css-ue04py {
+    .rcx-css-ue04py,
+    .rcx-css-136xdpx,
+    .rcx-css-1es44sn {
+      color: $gray-color;
+
       &:active,
       &:hover {
-        border-color: var(--color-dark-medium) !important;
-        background-color: var(--color-dark-medium) !important;
+        border-color: $border-color !important;
+        background-color: $bg-color !important;
       }
+    }
+
+    //- Aside
+    .rcx-vertical-bar {
+      background: $dark-color !important;
+
+      .rcx-avatar--x332 {
+        height: 10rem;
+        width: 10rem;
+      }
+    }
+
+    aside.rcx-box.rcx-box--full.rcx-vertical-bar,    /* right aside (threads, search, etc.) */
+    .rcx-css-ccvr3m,                                 /* thread list message */
+    .rcx-css-1j3nsmc,                                /* thread list message */
+    .rcx-css-1bmadou,                                /* thread list header */
+    .rcx-css-1yhzjdg                                 /* thread list search bar */
+    {
+      border-color: $border-color !important;
+    }
+
+    .rcx-css-nbqasl {
+      padding: 1.5rem !important;
     }
   }
   
@@ -813,35 +858,47 @@ body.dark-mode {
 
   //- Dropdown
   .rcx-select {
-    background-color: var(--rc-color-primary-darkest) !important;
+    background-color: $dark-color !important;
   }
 
   .rcx-options {
     & > .rcx-tile {
-      background-color: var(--rc-color-primary-darkest) !important;
+      background: $dark-color !important;
     }
 
     .rcx-option {
-      background-color: var(--rc-color-primary-darkest) !important;
-      color: var(--color-white) !important;
+      background: $dark-color !important;
+      color: $light-color !important;
 
       &:hover {
-        background-color: var(--color-dark) !important;
+        background: $dark-color-light !important;
       }
     }
 
     .rcx-option--focus,
     .rcx-option--selected {
-      background-color: var(--color-dark-light) !important;
+      background: $dark-color-light !important;
     }
   }
 
   .rcx-css-dpt4t8 { /* User selector in create direct message modal */
-    color: var(--color-dark);
+    color: $dark-color;
   }
 
+  .rc-popover__content {
+    .rc-popover__item {
+      &:focus,
+      &:hover {
+        color: $gray-color-light;
+      }
+    }
 
-  .rc-popover__content .rcx-option:hover {
-    background-color: var(--color-dark-light) !important;
+    .rc-popover__divider {
+      margin: .5rem 0;
+    }
+
+    .rcx-option:hover {
+      background: $dark-color-light !important;
+    }
   }
 }

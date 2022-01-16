@@ -348,7 +348,7 @@ body {
   --default-font-weight-header: 500; /* General Typography */
   --default-padding: 1.5rem;
   --default-small-padding: 1rem;
-  --flex-nav-background: var(--color-gray-lightest); /* Popover */
+  --flex-nav-background: var(--color-gray-lightest); /* Tooltip */
   --flex-tab-webrtc-2-width: 850px;
   --flex-tab-webrtc-width: 400px;
   --flex-tab-width: 380px;
@@ -399,17 +399,6 @@ body {
   --message-box-user-activity-color: var(--color-gray);
   --message-box-user-activity-text-size: .75rem;
   --message-box-user-activity-user-color: var(--color-dark);
-  --popover-background: var(--color-white);
-  --popover-column-min-width: 130px;
-  --popover-column-padding: 1rem;
-  --popover-divider-color: var(--color-gray-light); /* Tooltip */
-  --popover-divider-height: 2px;
-  --popover-item-color: var(--color-dark);
-  --popover-item-text-size: .875rem;
-  --popover-padding: 1rem;
-  --popover-radius: var(--border-radius);
-  --popover-title-color: var(--color-dark);
-  --popover-title-text-size: .75rem;
   --popup-list-background: var(--color-white);
   --popup-list-background-hover: var(--color-gray-lightest);
   --popup-list-border-radius: var(--border-radius);
@@ -625,6 +614,10 @@ select,
 }
 
 body.dark-mode {
+  /* Breadcrumbs discussions */ /* Attachements content */ /* Pinned messages content */ /* Message "You joined a new private conversation with" */
+}
+
+body.dark-mode {
   --alerts-background: #1d73f5;
   --alerts-color: var(--color-white);
   --button-close-color: var(--color-gray-medium);
@@ -632,6 +625,7 @@ body.dark-mode {
   --button-disabled-text-color: var(--color-dark-80); /* Forms - Input */
   --button-outline-color: var(--color-gray-medium);
   --chip-background: var(--color-blue); /* Mention link */
+  --color-darker: #1a1d21;
   --component-color: #21252a;
   --content-background-color: var(--color-dark);
   --header-background-color: var(--color-dark);
@@ -651,7 +645,8 @@ body.dark-mode {
   --message-box-user-activity-color: var(--color-gray-lightest);
   --message-box-user-activity-user-color: var(--color-gray-lightest); /* Header */
   --popover-background: var(--color-dark);
-  --popover-item-color: var(--color-white); /* Tooltip */
+  --popover-divider-color: #272c32; /* Tooltip */
+  --popover-item-color: var(--color-white);
   --popover-title-color: var(--color-white);
   --popup-list-background: var(--color-dark);
   --popup-list-background-hover: var(--color-darkest);
@@ -667,6 +662,27 @@ body.dark-mode {
   --tags-text-color: var(--color-white);
   --tooltip-background: var(--color-darkest);
   --tooltip-text-color: var(--color-white); /* alert */
+}
+
+body.dark-mode .rcx-room-header .rcx-tag--default {
+  background-color: unset;
+}
+
+body.dark-mode .rcx-message-attachment .rcx-attachment__content .rcx-box--full {
+  color: var(--primary-font-color);
+}
+
+body.dark-mode .rcx-message-attachment .rcx-attachment__content .rcx-box--full.rcx-box--with-block-elements pre code {
+  background-color: var(--color-dark);
+  color: var(--primary-font-color);
+}
+
+body.dark-mode .rcx-css-ntpg4f {
+  color: var(--rc-color-primary) !important;
+}
+
+body.dark-mode .rcx-css-dlop43 {
+  color: var(--rc-color-primary) !important;
 }
 
 body.dark-mode .main-content .start {
@@ -690,15 +706,47 @@ body.dark-mode .main-content .rcx-button--square:is(.rcx-button--ghost, .rcx-but
 body.dark-mode .main-content .rcx-button--square:is(.rcx-button--ghost, .rcx-button):focus {
   background-color: var(--color-darkest);
   border-color: transparent !important;
-  box-shadow: 0 0 0 .1rem var(--color-gray);
+  box-shadow: 0 0 0 .1rem #2c3138;
+}
+
+body.dark-mode .main-content .rcx-css-15vvv6z,
+body.dark-mode .main-content .rcx-css-ue04py,
+body.dark-mode .main-content .rcx-css-136xdpx,
+body.dark-mode .main-content .rcx-css-1es44sn {
+  color: #a0a8b4;
 }
 
 body.dark-mode .main-content .rcx-css-15vvv6z:active,
 body.dark-mode .main-content .rcx-css-15vvv6z:hover,
 body.dark-mode .main-content .rcx-css-ue04py:active,
-body.dark-mode .main-content .rcx-css-ue04py:hover {
-  background-color: var(--color-dark-medium) !important; 
-  border-color: var(--color-dark-medium) !important;
+body.dark-mode .main-content .rcx-css-ue04py:hover,
+body.dark-mode .main-content .rcx-css-136xdpx:active,
+body.dark-mode .main-content .rcx-css-136xdpx:hover,
+body.dark-mode .main-content .rcx-css-1es44sn:active,
+body.dark-mode .main-content .rcx-css-1es44sn:hover {
+  background-color: #252a2f !important; 
+  border-color: #21252a !important;
+}
+
+body.dark-mode .main-content .rcx-vertical-bar {
+  background: #1a1d21 !important;
+}
+
+body.dark-mode .main-content .rcx-vertical-bar .rcx-avatar--x332 {
+  height: 10rem;
+  width: 10rem;
+}
+
+body.dark-mode .main-content aside.rcx-box.rcx-box--full.rcx-vertical-bar,
+body.dark-mode .main-content .rcx-css-ccvr3m,
+body.dark-mode .main-content .rcx-css-1j3nsmc,
+body.dark-mode .main-content .rcx-css-1bmadou,
+body.dark-mode .main-content .rcx-css-1yhzjdg {
+  border-color: #21252a !important;
+}
+
+body.dark-mode .main-content .rcx-css-nbqasl {
+  padding: 1.5rem !important;
 }
 
 body.dark-mode .message:hover,
@@ -880,31 +928,40 @@ body.dark-mode .footer .rc-message-box .reply-preview {
 }
 
 body.dark-mode .rcx-select {
-  background-color: var(--rc-color-primary-darkest) !important;
+  background-color: #1a1d21 !important;
 }
 
 body.dark-mode .rcx-options > .rcx-tile {
-  background-color: var(--rc-color-primary-darkest) !important;
+  background: #1a1d21 !important;
 }
 
 body.dark-mode .rcx-options .rcx-option {
-  background-color: var(--rc-color-primary-darkest) !important;
-  color: var(--color-white) !important;
+  background: #1a1d21 !important;
+  color: #fff !important;
 }
 
 body.dark-mode .rcx-options .rcx-option:hover {
-  background-color: var(--color-dark) !important;
+  background: #1e2227 !important;
 }
 
 body.dark-mode .rcx-options .rcx-option--focus,
 body.dark-mode .rcx-options .rcx-option--selected {
-  background-color: var(--color-dark-light) !important;
+  background: #1e2227 !important;
 }
 
 body.dark-mode .rcx-css-dpt4t8 {
-  /* User selector in create direct message modal */ color: var(--color-dark);
+  /* User selector in create direct message modal */ color: #1a1d21;
+}
+
+body.dark-mode .rc-popover__content .rc-popover__item:focus,
+body.dark-mode .rc-popover__content .rc-popover__item:hover {
+  color: #a5adb8;
+}
+
+body.dark-mode .rc-popover__content .rc-popover__divider {
+  margin: .5rem 0;
 }
 
 body.dark-mode .rc-popover__content .rcx-option:hover {
-  background-color: var(--color-dark-light) !important;
+  background: #1e2227 !important;
 }

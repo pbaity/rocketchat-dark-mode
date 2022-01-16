@@ -2,125 +2,8 @@
  *************General Settings*************
  ******************************************/
 
- :root {
-	--primary-font-color: #444;
-	--info-font-color: #a0a0a0;
-	--color-darker: #272c33;
-}
-
-/* Reset global font color so that it's changable more easily */
-/* .color-primary-font-color, textarea {
-	color: var(--primary-font-color);
-}
-
-.color-info-font-color {
-	color: var(--info-font-color);
-}
-
-input, select, textarea {
-	color: var(--input-text-color);
-}
-
-.error-color {
-	color: var(--rc-color-error);
-}
-
-.js-button[aria-label="Toggle Dark Mode"] {
-	transition: filter 150ms;
-}
-
-.rcx-icon--name-darkmode {
-	height: 1em;
-	font-size: 1rem !important;
-}
-
-@media (min-width: 1372px) {
-	.sidebar__toolbar-button {
-		margin: 0 3px;
-	}
-}
-
-@keyframes highlight {
-	from {
-		background-color: hsl(216, 92%, 54%);
-	}
-} */
-
-/******************************************
- ************Transition Effect*************
- ******************************************/
-/* input,
-textarea,
-select,
-.color-primary-font-color,
-.color-info-font-color,
-.background-info-font-color,
-.background-transparent-darker-before::before,
-.messages-box .message .body,
-.rc-header__name,
-.rc-header__wrap,
-.message .reactions>li,
-.message .title .is-bot,
-.message .title .role-tag,
-.message.new-day::before,
-.code-colors,
-.hljs-selector-id,
-.hljs-selector-tag,
-.hljs-attribute,
-.hljs-keyword,
-.hljs-title,
-.hljs-doctag,
-.hljs-string,
-.hljs-type,
-.hljs-literal,
-.hljs-number,
-.hljs-tag,
-.hljs-name,
-.hljs-attr,
-.hljs-template-variable,
-.hljs-variable,
-.rc-message-box__container,
-.messages-container .footer,
-.content-background-color,
-.message.new-day::after,
-.message .reactions>li,
-.border-component-color,
-.contextual-bar__header,
-.contextual-bar__content,
-.sidebar__footer {
-	transition: opacity 300ms linear, color 150ms, background-color 150ms, border-color 150ms;
-} */
-
-/******************************************
- *********Manual Dark Theme Overrides******
- ******************************************/
 
 /***************Main Chat*****************/
-
-/* Breadcrumbs discussions */
-body.dark-mode .rcx-room-header .rcx-tag--default {
-	background-color: unset; 
-}
-
-/* Attachements content */
-body.dark-mode .rcx-message-attachment .rcx-attachment__content .rcx-box--full {
-	color: var(--primary-font-color);
-}
-
-body.dark-mode .rcx-message-attachment .rcx-attachment__content .rcx-box--full.rcx-box--with-block-elements pre code {
-	background-color: var(--color-dark);
-  	color: var(--primary-font-color);
-}
-
-/* Pinned messages content */
-body.dark-mode .rcx-css-ntpg4f {
-	color: var(--rc-color-primary) !important;
-}
-
-/* Message "You joined a new private conversation with" */
-body.dark-mode .rcx-css-dlop43 {
-	color: var(--rc-color-primary) !important;
-}
 
 body.dark-mode .main-content a {
 	color: var(--color-light-blue);
@@ -353,17 +236,6 @@ body.dark-mode .rcx-button--danger {
 
 /* TODO : switch toggle */
 
-body.dark-mode .rcx-vertical-bar {
-	background-color: var(--rc-color-primary-background) !important;
-}
-
-body.dark-mode .rcx-css-136xdpx:hover, /* Thread list item */
-body.dark-mode .rcx-css-136xdpx:focus, 
-body.dark-mode .rcx-css-1es44sn:hover, /* Files list item */
-body.dark-mode .rcx-css-1es44sn:focus {
-    background-color: var(--rc-color-primary-dark);
-}
-
 /* Targets unread message indicator in threads panel. */
 body.dark-mode button.rcx-contextual-message__follow + div.rcx-box--full {
     background-color: #1d74f5 !important;
@@ -400,14 +272,7 @@ body.dark-mode .rcx-room-header hr.rcx-divider {
     border-color: var(--color-dark-medium);
 }
 
-body.dark-mode aside.rcx-box.rcx-box--full.rcx-vertical-bar,    /* right aside (threads, search, etc.) */
-body.dark-mode .rcx-css-ccvr3m,                                 /* thread list message */
-body.dark-mode .rcx-css-1j3nsmc,                                /* thread list message */
-body.dark-mode .rcx-css-1bmadou,                                /* thread list header */
-body.dark-mode .rcx-css-1yhzjdg                                 /* thread list search bar */
-{
-	border-color: var(--color-dark-medium) !important;
-}
+
 
 body.dark-mode .room-leader:hover {
 	background-color: var(--color-darkest);
@@ -419,59 +284,6 @@ body.dark-mode .chat-now {
 
 body.dark-mode .message-popup-title {
 	background-color: var(--color-dark);
-}
-
-/**************Code Highlights*****************/
-
-body.dark-mode .code-colors,
-body.dark-mode .rc-old code.inline {
-	background: var(--color-dark-100);
-	color: var(--color-gray-light);
-}
-
-body.dark-mode .hljs-selector-id,
-body.dark-mode .hljs-keyword {
-	color: var(--color-light-blue);
-}
-
-body.dark-mode .hljs-title {
-	color: var(--color-gray-light);
-}
-
-body.dark-mode .hljs-literal,
-body.dark-mode .hljs-number,
-body.dark-mode .hljs-attr,
-body.dark-mode .hljs-template-variable,
-body.dark-mode .hljs-variable {
-	color: var(--color-dark-green);
-}
-
-body.dark-mode .hljs-tag,
-body.dark-mode .hljs-name {
-	color: var(--color-light-blue);
-}
-
-body.dark-mode .hljs-selector-tag,
-body.dark-mode .hljs-subst {
-	color: var(--color-green);
-}
-
-body.dark-mode .hljs-doctag,
-body.dark-mode .hljs-string {
-	color: var(--color-red);
-}
-
-body.dark-mode .hljs-attribute,
-body.dark-mode .hljs-type,
-body.dark-mode .hljs-number {
-	color: var(--color-orange);
-}
-
-body.dark-mode .hljs-addition {
-  background-color: #1e3a21;
-}
-body.dark-mode .hljs-deletion {
-  background-color: #472d2e;
 }
 
 /***** My Account *****/
@@ -675,15 +487,6 @@ body.dark-mode .rcx-vertical-bar .rcx-box:not(.rcx-button-group):not(.rcx-button
   color: var(--info-font-color) !important;
 	/*background-color: var(--color-darkest) !important;*/
 }
-
-/* body.dark-mode .main-content .rcx-box {
-    color: var(--info-font-color) !important;
-	background-color: var(--color-dark) !important;
-} */
-
-/* body.dark-mode .rcx-modal__backdrop {
-	background-color: transparent !important;
-} */
 
 body.dark-mode .rcx-table__cell--align-start {
   color: var(--info-font-color) !important;
