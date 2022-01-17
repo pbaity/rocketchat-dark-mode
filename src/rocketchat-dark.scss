@@ -312,13 +312,14 @@ textarea {
 
 //- Reset Sidebar
 .rcx-sidebar .sidebar--custom-colors {
-  // --rcx-button-colors-ghost-active-border-color: #1f2329;
+  --rcx-button-colors-ghost-active-border-color: #{$dark-color-light};
   --rcx-button-colors-ghost-active-background-color: #{$dark-color-light};
   --rcx-button-colors-ghost-color: #{$gray-color-lighter};
   --rcx-button-colors-ghost-border-color: transparent;
   --rcx-button-colors-ghost-background-color: #{$dark-color-light};
   --rcx-button-colors-ghost-hover-background-color: #{$dark-color-lighter};
-  // --rcx-button-colors-ghost-hover-border-color: #1f2329;
+  --rcx-button-colors-ghost-hover-border-color: #{$dark-color-lighter};
+  --rcx-button-colors-ghost-hover-color: #{$gray-color-lighter};
 
   --rcx-sidebar-item-background-color-hover: #{$dark-color-light};
   --rcx-sidebar-item-background-color-selected: #{$dark-color-lighter};
@@ -359,11 +360,14 @@ body.dark-mode {
     --rcx-button-colors-primary-disabled-border-color: #{$gray-color-darker};
     --rcx-color-foreground-default: #{$gray-color-lightest};
 
+    --rcx-button-colors-ghost-active-border-color: #{$dark-color-light};
     --rcx-button-colors-ghost-active-background-color: #{$dark-color-light};
     --rcx-button-colors-ghost-color: #{$gray-color-lighter};
     --rcx-button-colors-ghost-border-color: transparent;
     --rcx-button-colors-ghost-background-color: #{$dark-color-light};
     --rcx-button-colors-ghost-hover-background-color: #{$dark-color-lighter};
+    --rcx-button-colors-ghost-hover-border-color: #{$dark-color-lighter};
+    --rcx-button-colors-ghost-hover-color: #{$light-color-dark};
 
     --rcx-input-colors-background-color: #{$dark-color};
     --rcx-input-colors-border-color: #{$border-color-light};
@@ -383,6 +387,9 @@ body.dark-mode {
     --rcx-button-colors-off-hover-border-color: #{$border-color-lightest};
     --rcx-button-colors-off-disabled-border-color: #{$border-color-light};
     --rcx-button-colors-off-disabled-color: #{$border-color-lighter};
+
+    --message-box-markdown-color: #{$gray-color-darkest};
+    --message-box-markdown-hover-color: #{$gray-color-lightest};
 
     /* Forms - popup list */
     --popup-list-background: var(--color-dark);
@@ -1278,18 +1285,14 @@ body.dark-mode {
   //- Scrollbars
   .main-content {
     *::-webkit-scrollbar {
-      background-color: rgba(255, 255, 255, 0.05);
+      background-color: rgba($border-color, .25);
     }
     *::-webkit-scrollbar-thumb {
-      background-color: rgba(255, 255, 255, 0.15);
+      background-color: rgba($border-color-light, .25);
     }
     *::-webkit-scrollbar-corner {
-      background-color: rgba(255, 255, 255, 0.05);
+      background-color: rgba($border-color, .25);
     }
-  }
-
-  *::-webkit-scrollbar {
-    width: .75rem;
   }
   
   *::-webkit-scrollbar-track {
@@ -1297,15 +1300,15 @@ body.dark-mode {
   }
   
   *::-webkit-scrollbar-thumb {
-    background-color: #777;
+    background-color: $border-color;
   }
   
   /* Firefox does the dimming on hover automatically. We emulate it for Webkit-based browsers. */
   *::-webkit-scrollbar-thumb:hover {
-    background-color: #666;
+    background-color: $border-color-light;
   }
   
   *::-webkit-scrollbar-thumb:active {
-    background-color: #444;
+    background-color: $border-color-lighter;
   }
 }

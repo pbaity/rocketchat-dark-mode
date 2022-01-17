@@ -497,10 +497,13 @@ textarea {
 
 .rcx-sidebar .sidebar--custom-colors {
   --rcx-button-colors-ghost-active-background-color: #1e2227;
+  --rcx-button-colors-ghost-active-border-color: #1e2227;
   --rcx-button-colors-ghost-background-color: #1e2227;
   --rcx-button-colors-ghost-border-color: transparent;
   --rcx-button-colors-ghost-color: #abb3bd;
   --rcx-button-colors-ghost-hover-background-color: #23272c;
+  --rcx-button-colors-ghost-hover-border-color: #23272c;
+  --rcx-button-colors-ghost-hover-color: #abb3bd;
   --rcx-divider-color: var(--sidebar-border); 
   --rcx-sidebar-item-background-color-hover: #1e2227;
   --rcx-sidebar-item-background-color-selected: #23272c;
@@ -530,6 +533,8 @@ body.dark-mode {
   --info-font-color: var(--color-gray-light);
   --message-box-background: hsla(0, 0, 100%, .1);
   --message-box-editing-color: var(--rc-color-alert-message-warning-background);
+  --message-box-markdown-color: #8994a2;
+  --message-box-markdown-hover-color: #b6bdc6; /* Forms - popup list */
   --message-box-user-activity-color: var(--color-gray-lightest);
   --message-box-user-activity-user-color: var(--color-gray-lightest); /* Header */
   --popover-background: var(--color-dark);
@@ -543,16 +548,19 @@ body.dark-mode {
   /****************************** Custom Variables ******************************/ --primary-font-color: var(--color-gray-lightest);
   --rc-color-alert: var(--color-dark-red); 
   --rcx-button-colors-ghost-active-background-color: #1e2227;
+  --rcx-button-colors-ghost-active-border-color: #1e2227;
   --rcx-button-colors-ghost-background-color: #1e2227;
   --rcx-button-colors-ghost-border-color: transparent;
   --rcx-button-colors-ghost-color: #abb3bd;
   --rcx-button-colors-ghost-hover-background-color: #23272c;
+  --rcx-button-colors-ghost-hover-border-color: #23272c;
+  --rcx-button-colors-ghost-hover-color: #fafafa;
   --rcx-button-colors-off-active-background-color: #23272c;
   --rcx-button-colors-off-background-color: #23272c;
   --rcx-button-colors-off-border-color: #30363e;
   --rcx-button-colors-off-disabled-background-color: #23272c;
   --rcx-button-colors-off-disabled-border-color: #2a2f35;
-  --rcx-button-colors-off-disabled-color: #30363e; /* Forms - popup list */
+  --rcx-button-colors-off-disabled-color: #30363e;
   --rcx-button-colors-off-focus-background-color: #23272c;
   --rcx-button-colors-off-focus-shadow-color: rgba(26, 29, 33, .15);
   --rcx-button-colors-off-hover-background-color: #23272c;
@@ -1381,19 +1389,15 @@ body.dark-mode .rcx-label {
 }
 
 body.dark-mode .main-content *::-webkit-scrollbar {
-  background-color: rgba(255, 255, 255, .05);
+  background-color: rgba(35, 39, 44, .25);
 }
 
 body.dark-mode .main-content *::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, .15);
+  background-color: rgba(42, 47, 53, .25);
 }
 
 body.dark-mode .main-content *::-webkit-scrollbar-corner {
-  background-color: rgba(255, 255, 255, .05);
-}
-
-body.dark-mode *::-webkit-scrollbar {
-  width: .75rem;
+  background-color: rgba(35, 39, 44, .25);
 }
 
 body.dark-mode *::-webkit-scrollbar-track {
@@ -1401,13 +1405,13 @@ body.dark-mode *::-webkit-scrollbar-track {
 }
 
 body.dark-mode *::-webkit-scrollbar-thumb {
-  background-color: #777;
+  background-color: #23272c;
 }
 
 body.dark-mode *::-webkit-scrollbar-thumb:hover {
-  background-color: #666;
+  background-color: #2a2f35;
 }
 
 body.dark-mode *::-webkit-scrollbar-thumb:active {
-  background-color: #444;
+  background-color: #30363e;
 }
