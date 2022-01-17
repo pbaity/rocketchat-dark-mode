@@ -680,6 +680,23 @@ body.dark-mode {
     background: var(--color-dark);
   }
 
+  figcaption.rcx-box.rcx-box--full.rcx-attachment__details {
+    background-color: var(--color-darker) !important;
+    color: var(--primary-font-color) !important;
+  }
+  
+  .rcx-css-z2kk2c {
+    color: var(--primary-font-color) !important;
+  }
+  
+  .rcx-box--with-inline-elements code,
+  .rcx-field__description code,
+  .rcx-field__error code,
+  .rcx-field__hint code{
+    background-color: var(--color-dark-100) !important;
+    color: var(--primary-font-color) !important;
+  }
+
   //- My Account
   .rc-form-legend,
   .rc-form-label {
@@ -1087,15 +1104,6 @@ body.dark-mode {
     color: var(--color-dark);
   }
 
-  .rcx-input-box__wrapper {
-    background-color: var(--color-dark);
-  }
-
-  .rcx-box * .rcx-input-box {
-    background-color: var(--color-dark);
-    color: var(--rc-color-primary);
-  }
-
   .rcx-table__cell {
     color: var(--color-gray) !important;
     background-color: var(--color-dark);
@@ -1114,10 +1122,6 @@ body.dark-mode {
   .rcx-css-zvbm6,
   .rcx-css-n6qrb5 { /* Table cells content text*/
     color: var(--primary-font-color) !important;
-  }
-
-  .rc-input__element:disabled{
-    background-color: var(--color-gray);
   }
 
   .admin-table-row {
@@ -1158,6 +1162,72 @@ body.dark-mode {
     background-color: var(--color-dark-medium);
   }
   
+  .rcx-banner {
+    background-color: var(--color-dark-medium);
+    color: var(--info-font-color) !important;
+  }
+  
+  .rcx-banner__close-button .rcx-button:hover {
+      background-color: var(--color-dark-light);
+      border: none;
+  }
+  
+  .mail-messages__instructions {
+    background-color: var(--color-dark);
+  }
+  
+  .rcx-table__cell--align-end {
+    color: var(--info-font-color) !important;
+  background-color: var(--color-dark-medium) !important;
+  }
+  
+  .rcx-table__cell--align-start {
+    color: var(--info-font-color) !important;
+    background-color: var(--color-dark-medium) !important;
+  }
+  
+  .rcx-field__description code {
+    background-color: var(--color-dark);
+  }
+  
+  .table-fake-th {
+    color: var(--info-font-color);
+  }
+  
+  .setting-action {
+    border: var(--button-border-width) solid var(--info-font-color);
+    color: var(--info-font-color);
+  }
+
+  .CodeMirror {
+    background-color: var(--color-gray-light);
+  }
+  
+  .CodeMirror-gutter {
+    background-color: var(--color-dark);
+  }
+
+  //- Login
+  main#rocket-chat {
+    background-color: var(--color-dark);
+  }
+  
+  section.full-page.color-tertiary-font-color {
+    background-color: var(--color-dark);
+  }
+  
+  .rc-button.rc-button--nude.forgot-password,
+  .rc-button.rc-button--nude.back-to-login,
+  .rc-button.rc-button--nude.register,
+  .rc-button.rc-button--nude i.icon-cancel,
+  .register-link-replacement {
+    color: var(--color-white);
+  }
+  
+  #login-card {
+    background-color: var(--color-darkest);
+  }
+  
   //- Components
   //- Buttons
   .rcx-css-136xdpx {
@@ -1183,6 +1253,49 @@ body.dark-mode {
   
   .rcx-button--danger {
     color: var(--rcx-button-colors-secondary-danger-color,var(--rcx-color-danger-500,#f5455c));
+  }
+
+  //- Forms
+  .rcx-check-box.is-focused,
+  .rcx-check-box__input:checked+.rcx-check-box__fake,
+  .rcx-check-box.is-focused,
+  .rcx-check-box__input:indeterminate+.rcx-check-box__fake,
+  .rcx-check-box__input:checked:focus+.rcx-check-box__fake,
+  .rcx-check-box__input:indeterminate:focus+.rcx-check-box__fake,
+  .rcx-radio-button.is-focused
+  .rcx-radio-button__input:checked+.rcx-radio-button__fake,
+  .rcx-radio-button__input:checked:focus+.rcx-radio-button__fake,
+  .rcx-toggle-switch.is-focused
+  .rcx-toggle-switch__input:checked+.rcx-toggle-switch__fake,
+  .rcx-toggle-switch__input:checked:focus+.rcx-toggle-switch__fake {
+    background-color: $primary-color !important;
+  }
+
+  .rc-input__element {
+    background-color: $dark-color-light;
+    border-color: $border-color;
+    color: $gray-color-lightest !important;
+
+    &:focus,
+    &:hover {
+      background: $dark-color-lighter;
+      border-color: $border-color-light;
+    }
+
+    &:disabled {
+      opacity: .75;
+    }
+  }
+
+  .rcx-autocomplete,
+  .rcx-select,
+  .rcx-input-box__wrapper {
+    --rcx-input-colors-background-color: #{$dark-color};
+    --rcx-input-colors-border-color: #{$border-color-light};
+    --rcx-input-colors-active-border-color: #{$border-color-lightest};
+    --rcx-input-colors-hover-border-color: #{$border-color-lighter};
+    --rcx-input-colors-focus-border-color: #{$border-color-lightest};
+    --rcx-input-colors-focus-shadow-color: #{$shadow-color};
   }
 
   //- Dropdown
@@ -1270,5 +1383,39 @@ body.dark-mode {
   .rcx-modal__title,
   .rcx-label {
     color: var(--color-white);
+  }
+
+  //- Scrollbars
+  .main-content {
+    *::-webkit-scrollbar {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+    *::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+    *::-webkit-scrollbar-corner {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+  }
+
+  *::-webkit-scrollbar {
+    width: .75rem;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #777;
+  }
+  
+  /* Firefox does the dimming on hover automatically. We emulate it for Webkit-based browsers. */
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #666;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #444;
   }
 }

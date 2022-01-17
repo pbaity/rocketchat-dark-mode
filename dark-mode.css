@@ -73,120 +73,15 @@ body.dark-mode .message .body > table tr:nth-child(2n) {
 
 
 /*body.dark-mode .rcx-box * .rcx-input-box,*/
-body.dark-mode .rcx-box * .rcx-select {
-	/*color: var(--color-dark-medium);*/
-	background-color: var(--color-white);
-}
 
-body.dark-mode .rcx-banner {
-	background-color: var(--color-dark-medium);
-	color: var(--info-font-color) !important;
-}
-
-body.dark-mode .rcx-banner__close-button .rcx-button:hover {
-    background-color: var(--color-dark-light);
-    border: none;
-}
-
-body.dark-mode .mail-messages__instructions {
-	background-color: var(--color-dark);
-}
-
-body.dark-mode .rcx-table__cell--align-end {
-  color: var(--info-font-color) !important;
-background-color: var(--color-dark-medium) !important;
-}
-
-/* Apply info (white) font *everywhere* */
-body.dark-mode .rcx-css-ps0pgs, /* Channel name */
-body.dark-mode .rcx-room-header  .rcx-box:not(.rcx-button-group):not(.rcx-button):not(.rcx-css-1fgkscl):not(.rcx-css-4pvxx3), /* omit buttons/icons (.rcx-css-1fgkscl is .rcx-icon parent) */
-body.dark-mode .rcx-vertical-bar .rcx-box:not(.rcx-button-group):not(.rcx-button):not(.rcx-css-1fgkscl):not(.rcx-css-4pvxx3) {
-  color: var(--info-font-color) !important;
-	/*background-color: var(--color-darkest) !important;*/
-}
-
-body.dark-mode .rcx-table__cell--align-start {
-  color: var(--info-font-color) !important;
-  background-color: var(--color-dark-medium) !important;
-}
-
-body.dark-mode  .rcx-field__description code {
-	background-color: var(--color-dark);
-}
-
-body.dark-mode .table-fake-th {
-	color: var(--info-font-color);
-}
-
-body.dark-mode .rc-input__element {
-	background-color: var(--color-dark-medium);
-	color: var(--info-font-color) !important;
-}
-
-body.dark-mode .rcx-check-box.is-focused,
-body.dark-mode .rcx-check-box__input:checked+.rcx-check-box__fake,
-body.dark-mode .rcx-check-box.is-focused,
-body.dark-mode .rcx-check-box__input:indeterminate+.rcx-check-box__fake,
-body.dark-mode .rcx-check-box__input:checked:focus+.rcx-check-box__fake,
-body.dark-mode .rcx-check-box__input:indeterminate:focus+.rcx-check-box__fake,
-body.dark-mode .rcx-radio-button.is-focused
-body.dark-mode .rcx-radio-button__input:checked+.rcx-radio-button__fake,
-body.dark-mode .rcx-radio-button__input:checked:focus+.rcx-radio-button__fake,
-body.dark-mode .rcx-toggle-switch.is-focused
-body.dark-mode .rcx-toggle-switch__input:checked+.rcx-toggle-switch__fake,
-body.dark-mode .rcx-toggle-switch__input:checked:focus+.rcx-toggle-switch__fake {
-	background-color: #1d74f5 !important;
-}
-
-body.dark-mode .CodeMirror {
-	background-color: var(--color-gray-light);
-}
-
-body.dark-mode .CodeMirror-gutter {
-	background-color: var(--color-dark);
-}
-
-body.dark-mode .setting-action {
-	border: var(--button-border-width) solid var(--info-font-color);
-	color: var(--info-font-color);
-}
 
 
 /**************Login Page******************/
 
-body.dark-mode main#rocket-chat {
-	background-color: var(--color-dark);
-}
-
-body.dark-mode section.full-page.color-tertiary-font-color {
-	background-color: var(--color-dark);
-}
-
-body.dark-mode .rc-button.rc-button--nude.forgot-password,
-body.dark-mode .rc-button.rc-button--nude.back-to-login,
-body.dark-mode .rc-button.rc-button--nude.register,
-body.dark-mode .rc-button.rc-button--nude i.icon-cancel,
-body.dark-mode .register-link-replacement {
-	color: var(--color-white);
-}
-
-body.dark-mode #login-card {
-	background-color: var(--color-darkest);
-}
 
 
-/**************Scrollbars******************/
-body.dark-mode .main-content *::-webkit-scrollbar {
-	background-color: rgba(255, 255, 255, 0.05);
-}
 
-body.dark-mode .main-content  *::-webkit-scrollbar-thumb {
-	background-color: rgba(255, 255, 255, 0.15);
-}
 
-body.dark-mode .main-content  *::-webkit-scrollbar-corner {
-	background-color: rgba(255, 255, 255, 0.05);
-}
 
 
 
@@ -198,26 +93,7 @@ body.dark-mode * {
 }
 */
 
-body.dark-mode *::-webkit-scrollbar {
-	width: .75rem;
-}
 
-body.dark-mode *::-webkit-scrollbar-track {
-	background-color: transparent;
-}
-
-body.dark-mode *::-webkit-scrollbar-thumb {
-	background-color: #777;
-}
-
-/* Firefox does the dimming on hover automatically. We emulate it for Webkit-based browsers. */
-body.dark-mode *::-webkit-scrollbar-thumb:hover {
-	background-color: #666;
-}
-
-body.dark-mode *::-webkit-scrollbar-thumb:active {
-	background-color: #444;
-}
 
 /***** Changes for 3.9.1 *****/
 
@@ -267,20 +143,6 @@ body.dark-mode .rcx-sidebar-item--highlighted {
 body.dark-mode .rcx-sidebar-item__container span.rcx-box.rcx-box--full.rcx-badge {
 	background-color: var(--rc-color-alert);
 } */
-
-body.dark-mode figcaption.rcx-box.rcx-box--full.rcx-attachment__details {
-	background-color: var(--color-darker) !important;
-	color: var(--primary-font-color) !important;
-}
-
-body.dark-mode .rcx-css-z2kk2c {
-	color: var(--primary-font-color) !important;
-}
-
-body.dark-mode .rcx-box--with-inline-elements code, .rcx-field__description code, .rcx-field__error code, .rcx-field__hint code{
-	background-color: var(--color-dark-100) !important;
-	color: var(--primary-font-color) !important;
-}
 
 /* This CSS block is used to counter RocketChat's bug which crop the end of custom CSS. */
 .dummy-entry {
