@@ -320,17 +320,6 @@ body {
 	--badge-group-mentions-background: var(--color-orange);
 
 	/*
-	* Mention link
-	*/
-	--mention-link-radius: 4px;
-	--mention-link-background: #fff6d6;
-	--mention-link-text-color: #b68d00;
-	--mention-link-me-background: #ffe9ec;
-	--mention-link-me-text-color: var(--color-red);
-	--mention-link-group-background: #fde8d7;
-	--mention-link-group-text-color: var(--color-orange);
-
-	/*
 	* Message box
 	*/
 	--message-box-text-size: var(--input-font-size);
@@ -428,40 +417,6 @@ textarea {
 	}
 }
 
-input,
-textarea,
-select,
-.color-primary-font-color,
-.color-info-font-color,
-.background-info-font-color,
-.rc-header__name,
-.rc-header__wrap,
-.message .reactions > li,
-.message .title .is-bot,
-.message .title .role-tag,
-.code-colors,
-.hljs-selector-id,
-.hljs-selector-tag,
-.hljs-attribute,
-.hljs-keyword,
-.hljs-title,
-.hljs-doctag,
-.hljs-string,
-.hljs-type,
-.hljs-literal,
-.hljs-number,
-.hljs-tag,
-.hljs-name,
-.hljs-attr,
-.hljs-template-variable,
-.hljs-variable,
-.rc-message-box__container,
-.message .reactions > li,
-.contextual-bar__header,
-.contextual-bar__content {
-	transition: opacity 150ms ease-in-out, color 150ms ease-in-out, background-color 150ms ease-in-out, border-color 150ms ease-in-out;
-}
-
 @keyframes highlight {
 	from {
 		background-color: hsl(216, 92%, 54%);
@@ -472,7 +427,7 @@ select,
 .rcx-sidebar .sidebar--custom-colors {
   // --rcx-button-colors-ghost-active-border-color: #1f2329;
   --rcx-button-colors-ghost-active-background-color: #{$dark-color-light};
-  --rcx-button-colors-ghost-color: #9ea2a8;
+  --rcx-button-colors-ghost-color: #{$gray-color-lighter};
   --rcx-button-colors-ghost-border-color: transparent;
   --rcx-button-colors-ghost-background-color: #{$dark-color-light};
   --rcx-button-colors-ghost-hover-background-color: #{$dark-color-lighter};
@@ -509,6 +464,10 @@ body.dark-mode {
     --button-close-color: var(--color-gray-medium);
 
     --rcx-divider-color: var(--sidebar-border);
+    --rcx-button-colors-ghost-color: #{$gray-color-lighter};
+    --rcx-button-colors-secondary-border-color: var(--sidebar-border);
+    --rcx-button-colors-secondary-hover-border-color: #{$gray-color-lighter};
+    --rcx-button-colors-primary-disabled-border-color: #{$gray-color-darker};
 
     /********************** Overridden Rocket.Chat Variables **********************/
 
@@ -540,14 +499,6 @@ body.dark-mode {
 
     /* Chip */
     --chip-background: var(--color-blue);
-
-    /* Mention link */
-    --mention-link-background: var(--color-dark-medium);
-    --mention-link-text-color: var(--color-light-blue);
-    --mention-link-me-background: var(--alerts-background);
-    --mention-link-me-text-color: var(--color-white);
-    --mention-link-group-background: var(--alerts-background);
-    --mention-link-group-text-color: var(--color-white);
 
     /* Message box */
     --component-color: #{$border-color};
@@ -607,6 +558,58 @@ body.dark-mode {
     color: var(--rc-color-primary) !important;
   }
 
+  .highlight-text {
+    background-color: var(--color-blue);
+  }
+
+  .rc-switch__text {
+    color: var(--color-white);
+  }
+
+  .rc-switch-double {
+    color: var(--color-white);
+  }
+
+  .rc-switch__button {
+    background-color: var(--color-dark);
+  }
+
+  .error-border {
+    border-color: var(--color-dark-red);
+  }
+
+  .background-component-color {
+    background-color: var(--color-dark-blue);
+  }
+
+  .upload-progress-progress {
+    background-color: var(--color-blue);
+  }
+
+  .container-bars {
+    .color-primary-action-color {
+      color: var(--color-white);
+    }
+  }
+
+  //- Channel Message
+  .rcx-avatar-stack > .rcx-avatar > .rcx-avatar__element {
+    border-color: $border-color;
+  }
+
+  .rcx-tag--secondary {
+    background: rgba($primary-color, .15);
+    border-radius: var(--border-radius);
+    padding: .25rem .4rem;
+
+    &:focus,
+    &:hover {
+      background: rgba($primary-color, .15);
+      color: $primary-color;
+      opacity: .8;
+    }
+  }
+
   //- Main
   .main-content {
     .start {
@@ -614,15 +617,17 @@ body.dark-mode {
     }
 
     .rcx-button {
+      color: var(--rcx-button-colors-ghost-color) !important;
+  
       &:not(.rcx-button--ghost) { /* Default */
         background-color: var(--color-dark) !important;
       }
-
+  
       &:is(.rcx-button--ghost, .rcx-button):hover { /* Hovered or selected */
         background-color: var(--color-darkest) !important;
       }
     }
-
+  
     .rcx-button--square {
       &:not(.rcx-button--ghost), /* Default */
       &:is(.rcx-button--ghost, .rcx-button):hover {  /* Hovered or selected */
@@ -640,8 +645,6 @@ body.dark-mode {
     .rcx-css-ue04py,
     .rcx-css-136xdpx,
     .rcx-css-1es44sn {
-      color: $gray-color;
-
       &:active,
       &:hover {
         border-color: $border-color !important;
@@ -659,17 +662,64 @@ body.dark-mode {
       }
     }
 
-    aside.rcx-box.rcx-box--full.rcx-vertical-bar,    /* right aside (threads, search, etc.) */
+    aside.rcx-vertical-bar,    /* right aside (threads, search, etc.) */
     .rcx-css-ccvr3m,                                 /* thread list message */
     .rcx-css-1j3nsmc,                                /* thread list message */
     .rcx-css-1bmadou,                                /* thread list header */
     .rcx-css-1yhzjdg                                 /* thread list search bar */
     {
+      --rcx-color-neutral-300: #{$border-color};
       border-color: $border-color !important;
     }
 
+    .rcx-vertical-bar {
+      .rcx-tag {
+        background: $dark-color-lighter;
+        color: $gray-color-light;
+      }
+
+      .rcx-css-1e1wru6 {
+        color: $gray-color-light;
+      }
+    }
+
+    /* Files List */
+    .rcx-css-18t0quo 
+    {
+      &.hover,
+      &:hover {
+        background: $bg-color-dark;
+      }
+
+      &.focus,
+      &:focus {
+        border-color: $border-color;
+      }
+    }
+
+    /* Settings List */
     .rcx-css-nbqasl {
       padding: 1.5rem !important;
+    }
+
+    .rcx-accordion-item__bar {
+      border-top-color: $border-color;
+
+      &:focus {
+        box-shadow: 0 0 0 .25rem lighten($dark-color-lighter, 4%);
+      }
+
+      &[tabindex] {
+        &.hover,
+        &:hover {
+          background: $bg-color-dark;
+        }
+
+        &.focus,
+        &:focus {
+          border-color: $border-color;
+        }
+      }
     }
   }
   
@@ -840,7 +890,7 @@ body.dark-mode {
   .rcx-room-header .rcx-css-ps0pgs, 
   .rcx-room-header .rcx-box:not(.rcx-button-group):not(.rcx-button):not(.rcx-css-1fgkscl):not(.rcx-css-4pvxx3),
   .rcx-vertical-bar .rcx-box:not(.rcx-button-group):not(.rcx-button):not(.rcx-css-1fgkscl):not(.rcx-css-4pvxx3) {
-    color: $light-color !important;
+    color: $light-color-dark !important;
   }
 
   //- Footer
@@ -857,6 +907,14 @@ body.dark-mode {
   }
 
   //- Dropdown
+  select {
+    background-color: var(--color-dark);
+
+    option {
+      color: var(--color-white);
+    }
+  }
+
   .rcx-select {
     background-color: $dark-color !important;
   }
@@ -868,7 +926,7 @@ body.dark-mode {
 
     .rcx-option {
       background: $dark-color !important;
-      color: $light-color !important;
+      color: $gray-color-light !important;
 
       &:hover {
         background: $dark-color-light !important;

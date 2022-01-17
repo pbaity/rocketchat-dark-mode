@@ -5,65 +5,15 @@
 
 /***************Main Chat*****************/
 
-body.dark-mode .main-content a {
-	color: var(--color-light-blue);
-}
-
-body.dark-mode .main-content .messages-box .wrapper {
-	background-color: var(--color-darkest);
-}
-
-body.dark-mode .mention-link--group {
+/* body.dark-mode .mention-link--group {
 	color: var(--mention-link-group-text-color) !important;
 }
 
 body.dark-mode .mention-link--me {
 	color: var(--mention-link-me-text-color) !important;
-}
+} */
 
-body.dark-mode select {
-	background-color: var(--color-dark);
-}
 
-body.dark-mode select option {
-	color: var(--color-white);
-}
-
-body.dark-mode .sidebar-item > a {
-	color: inherit;
-}
-
-body.dark-mode .highlight-text {
-    background-color: var(--color-blue);
-}
-
-body.dark-mode .rc-switch__text {
-	color: var(--color-white);
-}
-
-body.dark-mode .rc-switch-double {
-	color: var(--color-white);
-}
-
-body.dark-mode .rc-switch__button {
-	background-color: var(--color-dark);
-}
-
-body.dark-mode .error-border {
-	border-color: var(--color-dark-red);
-}
-
-body.dark-mode .background-component-color {
-	background-color: var(--color-dark-blue);
-}
-
-body.dark-mode .upload-progress-progress {
-	background-color: var(--color-blue);
-}
-
-body.dark-mode .container-bars .color-primary-action-color {
-	color: var(--color-white);
-}
 
 body.dark-mode .burger i {
 	background-color: var(--color-white);
@@ -469,10 +419,6 @@ body.dark-mode .rcx-banner__close-button .rcx-button:hover {
 
 body.dark-mode .mail-messages__instructions {
 	background-color: var(--color-dark);
-}
-
-body.dark-mode .rcx-tag--secondary {
-	background-color: var(--color-dark-medium);
 }
 
 body.dark-mode .rcx-table__cell--align-end {

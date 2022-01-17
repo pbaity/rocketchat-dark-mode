@@ -19,11 +19,15 @@ $dark-color-light: lighten($dark-color, 2%) !default;
 $dark-color-darker: darken($dark-color, 4%) !default;
 $dark-color-lighter: lighten($dark-color, 4%) !default;
 $light-color: #fff !default;
+$light-color-dark: darken($light-color, 2%) !default;
+$light-color-light: lighten($light-color, 2%) !default;
 $gray-color: lighten($dark-color, 55%) !default;
 $gray-color-dark: darken($gray-color, 2%) !default;
 $gray-color-light: lighten($gray-color, 2%) !default;
 $gray-color-darker: darken($gray-color, 4%) !default;
 $gray-color-lighter: lighten($gray-color, 4%) !default;
+$gray-color-darkest: darken($gray-color, 6%) !default;
+$gray-color-lightest: lighten($gray-color, 6%) !default;
 
 $border-color: lighten($dark-color, 3%) !default;
 $border-color-dark: darken($border-color, 3%) !default;
