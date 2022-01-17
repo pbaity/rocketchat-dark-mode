@@ -469,6 +469,8 @@ body.dark-mode {
     --rcx-button-colors-secondary-hover-border-color: #{$gray-color-lighter};
     --rcx-button-colors-primary-disabled-border-color: #{$gray-color-darker};
 
+    --rcx-color-foreground-default: #{$gray-color-lightest};
+
     /********************** Overridden Rocket.Chat Variables **********************/
 
     /* General Colors */
@@ -651,8 +653,6 @@ body.dark-mode {
     box-shadow: 0px 0px 2px var(--color-dark-20);
   }
 
-  
-
   .emoji-picker {
     .filter-list {
       padding: 0;
@@ -678,6 +678,22 @@ body.dark-mode {
   .room-leader:hover,
   .message-popup-title {
     background: var(--color-dark);
+  }
+
+  //- My Account
+  .rc-form-legend,
+  .rc-form-label {
+    color: var(--primary-font-color);
+  }
+
+  .js-logout {
+    color: var(--primary-font-color);
+    border-color: var(--primary-font-color);
+  }
+
+  //- Poll App
+  .rcx-css-erwtrf {
+    color: var(--primary-font-color) !important; 
   }
 
   //- Channel Message
@@ -997,6 +1013,151 @@ body.dark-mode {
     }
   }
 
+  //- Admin 
+  .page-list a:not(.rc-button),
+  .page-settings a:not(.rc-button) {
+    color: var(--primary-font-color);
+  }
+  
+  .simplebar-content > .rcx-css-fr02gd { /* main content */
+    background-color: var(--color-dark);
+  }
+  
+  .rcx-css-txktj6 { /* Account settings page background */
+    background-color: var(--color-dark) !important;
+  }
+  
+  .rcx-css-1wm5na { /* Account settings page header title */
+    color: var(--primary-font-color) !important;
+  }
+  
+  .rc-scrollbars-container { /* Panels sidebar */
+    background-color: var(--sidebar-background);
+  }
+  
+  .rcx-css-15hfnte {  /* Panels sidebar header */
+    background-color: var(--color-dark);
+
+    .rcx-css-4pvxx3:hover { /* Panels sidebar button (with cross icon) hovered */
+      color: var(--rc-color-primary-dark) !important;
+    }
+  }
+  
+  .rcx-css-10ij0kz .rcx-box { /* Panels sidebar header text and button (with cross icon) */
+    color: var(--primary-font-color) !important;
+  }
+  
+  .rcx-css-1l00c5f,
+  .rcx-css-1ky5rco { /* Panels sidebar item */
+      color: var(--rcx-sidebar-item-color,var(--rcx-color-foreground-hint,#9ea2a8)) !important;
+  }
+  
+  .rcx-css-1l00c5f.active { /* Panels sidebar item selected */
+      background-color: rgba(108, 114, 122, 0.3);
+  }
+  
+  .rcx-css-1l00c5f:hover, .rcx-css-1l00c5f:focus, .rcx-css-1l00c5f.active:focus, .rcx-css-1l00c5f.active:hover { /* Panels sidebar item hovered */
+      background-color: var(--color-darkest);
+  }
+  
+  .rcx-css-kyq2rf { /* Admin panel info & stats (Deployment, License, Usage) */
+    background-color: var(--color-dark) !important;
+  }
+  
+  .rcx-css-61di5s { /* Admin panel info & stats (Deployment, License, Usage) */
+    color: var(--color-gray) !important;
+  }
+  
+  .rcx-select__item {
+    color: var(--primary-font-color) !important;
+  }
+  
+  .sidebar-flex__header,
+  .sidebar-light {
+    background: var(--color-dark);
+  }
+
+  .rcx-accordion-item__title,
+  .rcx-label__text,
+  .rcx-field__label {
+    color: var(--color-white);
+  }
+
+  .sidebar-flex__search .rc-input__element {
+    color: var(--color-dark);
+  }
+
+  .rcx-input-box__wrapper {
+    background-color: var(--color-dark);
+  }
+
+  .rcx-box * .rcx-input-box {
+    background-color: var(--color-dark);
+    color: var(--rc-color-primary);
+  }
+
+  .rcx-table__cell {
+    color: var(--color-gray) !important;
+    background-color: var(--color-dark);
+  }
+
+  .rcx-table__cell--header {
+    color: var(--color-gray-lightest) !important;
+  }
+
+  .rcx-table__cell--align-end {
+    color: var(--color-gray);
+    background-color: var(--color-gray);
+  }
+
+  .rcx-css-18up6l1,
+  .rcx-css-zvbm6,
+  .rcx-css-n6qrb5 { /* Table cells content text*/
+    color: var(--primary-font-color) !important;
+  }
+
+  .rc-input__element:disabled{
+    background-color: var(--color-gray);
+  }
+
+  .admin-table-row {
+    background-color: hsl(219, 16%, 25%);
+  }
+
+  .sidebar-light .sidebar-item {
+    color: inherit;
+  }
+
+  .admin-table-row:nth-child(even) {
+    background-color: hsl(219, 15%, 33%);
+  }
+
+  .permissions-manager .permission-grid .id-styler {
+    color: var(--info-font-color);
+  }
+
+  .rcx-box--text-style-h1,
+  .rcx-subtitle,
+  .rcx-box--text-color-default,
+  .rcx-box--text-color-info {
+    color: var(--color-gray-lightest);
+  }
+
+  .permissions-manager .permission-grid .role-name {
+    background: var(--color-dark);
+  }
+
+  .rc-apps-marketplace .rc-table-content tbody .rc-table-tr:not(.table-no-click):not(.table-no-pointer):hover,
+  .rc-apps-section .rc-table-content tbody .rc-table-tr:not(.table-no-click):not(.table-no-pointer):hover {
+    background-color: var(--color-dark);
+  }
+
+  .rc-apps-marketplace .rc-table-content .rc-table-info .rc-apps-categories .rc-apps-category,
+  .rc-apps-section .rc-table-content .rc-table-info .rc-apps-categories .rc-apps-category {
+    color: var(--primary-font-color);
+    background-color: var(--color-dark-medium);
+  }
+  
   //- Components
   //- Buttons
   .rcx-css-136xdpx {
