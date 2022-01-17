@@ -34,7 +34,7 @@ body {
 	--color-dark: #{$dark-color};
 	--color-dark-medium: #414852;
 	--color-dark-light: #6c727a;
-	--color-gray: #9ea2a8;
+	--color-gray: #{gray-color};
 	--color-gray-medium: #cbced1;
 	--color-gray-light: #e1e5e8;
 	--color-gray-lightest: #f2f3f5;
@@ -71,83 +71,10 @@ body {
 	--rc-color-announcement-background-hover: #76b7fc;
 	/* #endregion */
 
-	/* #region colors Old Colors */
-	// --content-background-color: #ffffff;
-	// --primary-background-color: #04436a;
-	// --primary-font-color: #444444;
-	// --primary-action-color: #1d74f5;
-	// --secondary-background-color: #f4f4f4;
-	// --secondary-font-color: #a0a0a0;
-	// --secondary-action-color: #dddddd;
-	// --component-color: #f2f3f5;
-	// --pending-color: #fcb316;
-	// --error-color: #bc2031;
-	// --success-color: #2de0a5;
-	// --selection-color: #02acec;
-	// --attention-color: #9c27b0;
-
-	/* #endregion */
-
-	/* #region less-colors Old Colors (minor) */
-	// --tertiary-font-color: var(--transparent-lightest);
-	// --link-font-color: var(--primary-action-color);
-	// --info-font-color: var(--secondary-font-color);
-	// --custom-scrollbar-color: var(--transparent-darker);
-	/* #endregion */
-
   /* #region fonts Fonts */
 	--body-font-family: #{$cjk-font-family};
 	/* #endregion */
-
-	/*
-	* General
-	*/
-	--text-size: 0.875rem;
-	--header-min-height: 60px;
-	--toolbar-height: 55px;
-	--footer-min-height: 70px;
-	--rooms-box-width: 280px;
-	--flex-tab-width: 380px;
-	--flex-tab-webrtc-width: 400px;
-	--flex-tab-webrtc-2-width: 850px;
-	--border: 2px;
-	--border-radius: 4px;
-	--rc-status-online: var(--rc-color-success);
-	--rc-status-away: var(--rc-color-alert);
-	--rc-status-busy: var(--rc-color-error);
-	--rc-status-invisible: var(--color-gray-medium);
-	--rc-status-offline: var(--transparent-darker);
-	--rc-status-invisible-sidebar: var(--rc-color-primary-darkest);
-	--default-padding: 1.5rem;
-	--default-small-padding: 1rem;
-	--status-bullet-size: 10px;
-	--status-bullet-radius: 50%;
-	--account-username-weight: 700;
-	--status-name-weight: 400;
-	--default-font-weight-header: 500;
-
-	/*
-	* General Typography
-	*/
-	--text-default-size: 1rem;
-	--text-default-weight: 500;
-	--text-small-size: 0.875rem;
-	--text-small-weight: 500;
-	--text-heading-size: 1.375rem;
-	--text-heading-weight: 700;
-	--text-label-size: 075rem;
-	--text-label-weight: 600;
-	--text-tiny-size: 075rem;
-	--text-tiny-weight: 400;
-	--text-micro-size: 0.625rem;
-	--text-micro-weight: 700;
-
-	/*
-	* Forms
-	*/
-	--gap-between-elements: 2.5rem;
-	--label-margin-bottom: 1rem;
-
+  
 	/*
 	* Forms - Button
 	*/
@@ -212,23 +139,6 @@ body {
 	--select-avatar-upload-color: #2d343d;
 
 	/*
-	* Sidebar
-	*/
-	--sidebar-width: 280px;
-	--sidebar-small-width: 90%;
-	--sidebar-background: var(--rc-color-primary-background);
-	--sidebar-background-hover: var(--rc-color-primary-dark);
-	--sidebar-background-light: var(--rc-color-primary-lightest);
-	--sidebar-background-light-hover: var(--rc-color-primary-light);
-	--sidebar-background-light-active: var(--rc-color-primary-light-medium);
-	--sidebar-default-padding: 24px;
-	--sidebar-small-default-padding: 16px;
-	--sidebar-extra-small-default-padding: 12px;
-	--sidebar-footer-height: 48px;
-	--sidebar-small-header-padding: var(--sidebar-small-default-padding);
-  --sidebar-border: #{$border-color};
-
-	/*
 	* Sidebar flex
 	*/
 	--sidebar-flex-search-background: var(--color-white);
@@ -287,26 +197,9 @@ body {
 	--toolbar-placeholder-color: var(--color-gray);
 
 	/*
-	* Rooms list
-	*/
-	--rooms-list-title-color: var(--rc-color-primary-light);
-	--rooms-list-title-text-size: 0.75rem;
-	--rooms-list-empty-text-color: var(--color-gray);
-	--rooms-list-empty-text-size: 0.75rem;
-	--rooms-list-padding: var(--sidebar-default-padding);
-	--rooms-list-small-padding: var(--sidebar-small-default-padding);
-
-	/*
 	* Chip
 	*/
 	--chip-background: #dddddd;
-
-	/*
-	* Avatar
-	*/
-	--avatar-radius: var(--border-radius);
-	--avatar-initials-text-size: 22px;
-	--avatar-initials-text-weight: 700;
 
 	/*
 	* Badge
@@ -374,12 +267,6 @@ body {
 	--alerts-color: var(--color-white);
 	--alerts-font-size: var(--text-default-size);
 	--content-page-padding: 2.5rem;
-
-	/*
-	* badge
-	*/
-	--badge-size: 14px;
-	--badge-font-size: 0.625rem;
 }
 
 //- Resets
@@ -463,28 +350,39 @@ body.dark-mode {
     --button-outline-color: var(--color-gray-medium);
     --button-close-color: var(--color-gray-medium);
 
+    --sidebar-border: #{$border-color};
     --rcx-divider-color: var(--sidebar-border);
-    --rcx-button-colors-ghost-color: #{$gray-color-lighter};
+    --rcx-button-colors-secondary-background-color: transparent;
     --rcx-button-colors-secondary-border-color: var(--sidebar-border);
+    --rcx-button-colors-secondary-hover-background-color: transparent;
     --rcx-button-colors-secondary-hover-border-color: #{$gray-color-lighter};
     --rcx-button-colors-primary-disabled-border-color: #{$gray-color-darker};
-
     --rcx-color-foreground-default: #{$gray-color-lightest};
 
-    /********************** Overridden Rocket.Chat Variables **********************/
+    --rcx-button-colors-ghost-active-background-color: #{$dark-color-light};
+    --rcx-button-colors-ghost-color: #{$gray-color-lighter};
+    --rcx-button-colors-ghost-border-color: transparent;
+    --rcx-button-colors-ghost-background-color: #{$dark-color-light};
+    --rcx-button-colors-ghost-hover-background-color: #{$dark-color-lighter};
 
-    /* General Colors */
-    --rc-color-alert-message-warning-background: hsl(352, 83%, 20%);
-    --rc-color-primary: var(--color-gray-lightest);
-    --rc-color-primary-lightest: var(--color-dark-medium);
+    --rcx-input-colors-background-color: #{$dark-color};
+    --rcx-input-colors-border-color: #{$border-color-light};
+    --rcx-input-colors-active-border-color: #{$border-color-lightest};
+    --rcx-input-colors-hover-border-color: #{$border-color-lighter};
+    --rcx-input-colors-focus-border-color: #{$border-color-lightest};
+    --rcx-input-colors-focus-shadow-color: #{$shadow-color};
 
-    /* Forms - Button */
-    --button-disabled-background: var(--color-dark-70);
-    --button-disabled-text-color: var(--color-dark-80);
-
-    /* Forms - Input */
-    --input-text-color: var(--color-gray-lightest);
-    --input-icon-color: var(--color-gray-lightest);
+    --rcx-button-colors-off-focus-shadow-color: #{$shadow-color};
+    --rcx-button-colors-primary-focus-shadow-color: #{$shadow-color};
+    --rcx-button-colors-off-background-color: #{$dark-color-lighter};
+    --rcx-button-colors-off-active-background-color: #{$dark-color-lighter};
+    --rcx-button-colors-off-hover-background-color: #{$dark-color-lighter};
+    --rcx-button-colors-off-focus-background-color: #{$dark-color-lighter};
+    --rcx-button-colors-off-disabled-background-color: #{$dark-color-lighter};
+    --rcx-button-colors-off-border-color: #{$border-color-lighter};
+    --rcx-button-colors-off-hover-border-color: #{$border-color-lightest};
+    --rcx-button-colors-off-disabled-border-color: #{$border-color-light};
+    --rcx-button-colors-off-disabled-color: #{$border-color-lighter};
 
     /* Forms - popup list */
     --popup-list-background: var(--color-dark);
@@ -697,6 +595,14 @@ body.dark-mode {
     color: var(--primary-font-color) !important;
   }
 
+  .rcx-table__cell--header:after {
+    border-color: $border-color;
+  }
+
+  .rcx-pagination--divider:before {
+    background: $border-color;
+  }
+
   //- My Account
   .rc-form-legend,
   .rc-form-label {
@@ -763,7 +669,6 @@ body.dark-mode {
     }
 
     .rcx-css-15vvv6z,
-    .rcx-css-ue04py,
     .rcx-css-136xdpx,
     .rcx-css-1es44sn {
       &:active,
@@ -1287,17 +1192,6 @@ body.dark-mode {
     }
   }
 
-  .rcx-autocomplete,
-  .rcx-select,
-  .rcx-input-box__wrapper {
-    --rcx-input-colors-background-color: #{$dark-color};
-    --rcx-input-colors-border-color: #{$border-color-light};
-    --rcx-input-colors-active-border-color: #{$border-color-lightest};
-    --rcx-input-colors-hover-border-color: #{$border-color-lighter};
-    --rcx-input-colors-focus-border-color: #{$border-color-lightest};
-    --rcx-input-colors-focus-shadow-color: #{$shadow-color};
-  }
-
   //- Dropdown
   select {
     background-color: var(--color-dark);
@@ -1329,10 +1223,6 @@ body.dark-mode {
     .rcx-option--selected {
       background: $dark-color-light !important;
     }
-  }
-
-  .rcx-css-dpt4t8 { /* User selector in create direct message modal */
-    color: $dark-color;
   }
 
   .rc-popover__content {

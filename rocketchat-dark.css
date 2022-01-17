@@ -272,27 +272,19 @@ template {
 }
 
 body {
-  --account-username-weight: 700;
   --alerts-background: #1d73f5;
   --alerts-color: var(--color-white);
   --alerts-font-size: var(--text-default-size);
   --alerts-padding: var(--sidebar-default-padding);
   --alerts-padding-vertical: 10px;
   --alerts-padding-vertical-large: 20px;
-  --avatar-initials-text-size: 22px;
-  --avatar-initials-text-weight: 700; /* Badge */
-  --avatar-radius: var(--border-radius);
   --badge-background: var(--rc-color-primary-dark);
-  --badge-font-size: .625rem; 
   --badge-group-mentions-background: var(--color-orange); /* Message box */
   --badge-radius: 12px;
-  --badge-size: 14px;
   --badge-text-color: var(--color-white);
   --badge-text-size: .75rem;
   --badge-unread-background: var(--color-blue);
-  --badge-user-mentions-background: var(--color-red);--body-font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, Microsoft YaHei, PingFang TC, Hiragino Sans CNS, Microsoft JhengHei, Hiragino Sans, Hiragino Kaku Gothic Pro, Malgun Gothic, Helvetica Neue, sans-serif; /* #endregion */ /* General */ 
-  --border: 2px;
-  --border-radius: 4px;
+  --badge-user-mentions-background: var(--color-red);--body-font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, Microsoft YaHei, PingFang TC, Hiragino Sans CNS, Microsoft JhengHei, Hiragino Sans, Hiragino Kaku Gothic Pro, Malgun Gothic, Helvetica Neue, sans-serif; /* #endregion */ /* Forms - Button */ 
   --button-border-radius: var(--border-radius);
   --button-border-width: var(--border);
   --button-cancel-color: var(--rc-color-error);
@@ -304,11 +296,10 @@ body {
   --button-primary-background: var(--rc-color-button-primary);
   --button-primary-text-color: var(--color-white);
   --button-secondary-background: var(--color-gray-medium);
-  --button-secondary-text-color: var(--color-dark-medium); /* Forms - Input */
-  --button-square-size: 36px;
+  --button-secondary-text-color: var(--color-dark-medium); /* Forms - Input */--button-square-size: 36px;
   --button-text-size: var(--input-font-size);
   --button-text-size-small: 13px;
-  --chip-background: #ddd; /* Avatar */
+  --chip-background: #ddd; /* Badge */
   --color-black: #000;
   --color-blue: #1d74f5;
   --color-dark: #1a1d21;
@@ -327,7 +318,7 @@ body {
   --color-dark-red: #e0364d;
   --color-dark-yellow: #f6c502;
   --color-darkest: #1f2329;
-  --color-gray: #9ea2a8;
+  --color-gray: gray-color;
   --color-gray-light: #e1e5e8;
   --color-gray-lightest: #f2f3f5;
   --color-gray-medium: #cbced1;
@@ -339,24 +330,15 @@ body {
   --color-red: #f5455c;
   --color-white: #fff; /* #region colors Colors */
   --color-yellow: #ffd21f;
-  --content-page-padding: 2.5rem; /* badge */
+  --content-page-padding: 2.5rem; 
   --create-channel-description-color: var(--color-gray);
   --create-channel-description-text-size: .875rem; /* Toolbar */
   --create-channel-gap-between-elements: 1rem;
   --create-channel-title-color: var(--color-darkest);
   --create-channel-title-text-size: 1.375rem;
-  --default-font-weight-header: 500; /* General Typography */
-  --default-padding: 1.5rem;
-  --default-small-padding: 1rem;
   --flex-nav-background: var(--color-gray-lightest); /* Tooltip */
-  --flex-tab-webrtc-2-width: 850px;
-  --flex-tab-webrtc-width: 400px;
-  --flex-tab-width: 380px;
-  --footer-min-height: 70px;
-  --gap-between-elements: 2.5rem;
   --header-background-color: var(--color-white); /* Flex nav */
   --header-height: 77px;
-  --header-min-height: 60px;
   --header-padding: 16px;
   --header-title-font-size: var(--text-default-size);
   --header-title-font-size--subtitle: var(--text-small-size);
@@ -378,7 +360,6 @@ body {
   --input-text-color: var(--color-dark-medium);
   --input-title-color: #2d343d;
   --input-title-text-size: var(--input-font-size);
-  --label-margin-bottom: 1rem; /* Forms - Button */
   --message-box-container-border-color: var(--color-gray-medium);
   --message-box-container-border-radius: var(--border-radius);
   --message-box-container-border-width: var(--border);
@@ -407,7 +388,7 @@ body {
   --rc-color-alert-message-warning: #d52d24;
   --rc-color-alert-message-warning-background: #fff3f3;
   --rc-color-announcement-background: #d1ebfe;
-  --rc-color-announcement-background-hover: #76b7fc; /* #endregion */ /* #region colors Old Colors */ /* #endregion */ /* #region less-colors Old Colors (minor) */ /* #endregion */ /* #region fonts Fonts */ 
+  --rc-color-announcement-background-hover: #76b7fc; /* #endregion */ /* #region fonts Fonts */ 
   --rc-color-announcement-text: #095ad2;
   --rc-color-announcement-text-hover: #01336b;
   --rc-color-button-primary: var(--color-blue);
@@ -425,23 +406,10 @@ body {
   --rc-color-primary-lightest: var(--color-gray-lightest);
   --rc-color-success: var(--color-green);
   --rc-color-success-light: #25d198;
-  --rc-status-away: var(--rc-color-alert);
-  --rc-status-busy: var(--rc-color-error);
-  --rc-status-invisible: var(--color-gray-medium);
-  --rc-status-invisible-sidebar: var(--rc-color-primary-darkest);
-  --rc-status-offline: var(--transparent-darker);
-  --rc-status-online: var(--rc-color-success);
-  --rooms-box-width: 280px;
-  --rooms-list-empty-text-color: var(--color-gray);
-  --rooms-list-empty-text-size: .75rem;
-  --rooms-list-padding: var(--sidebar-default-padding);
-  --rooms-list-small-padding: var(--sidebar-small-default-padding); /* Chip */
-  --rooms-list-title-color: var(--rc-color-primary-light);
-  --rooms-list-title-text-size: .75rem;
   --select-avatar-preview-size: 150px;
   --select-avatar-size: 48px;
   --select-avatar-upload-background: var(--color-gray-light);
-  --select-avatar-upload-color: #2d343d; /* Sidebar */
+  --select-avatar-upload-color: #2d343d; /* Sidebar flex */
   --sidebar-account-status-bullet-radius: 50%;
   --sidebar-account-status-bullet-size: 10px;
   --sidebar-account-status-color: var(--color-gray); /* Sidebar Item */
@@ -451,17 +419,8 @@ body {
   --sidebar-account-username-color-darker: var(--color-dark);
   --sidebar-account-username-size: 1rem;
   --sidebar-account-username-weight: 700;
-  --sidebar-background: var(--rc-color-primary-background);
-  --sidebar-background-hover: var(--rc-color-primary-dark);
-  --sidebar-background-light: var(--rc-color-primary-lightest);
-  --sidebar-background-light-active: var(--rc-color-primary-light-medium);
-  --sidebar-background-light-hover: var(--rc-color-primary-light);
-  --sidebar-border: #23272c; /* Sidebar flex */
-  --sidebar-default-padding: 24px;
-  --sidebar-extra-small-default-padding: 12px;
   --sidebar-flex-search-background: var(--color-white);
   --sidebar-flex-search-placeholder-color: var(--color-gray); /* Sidebar Account */
-  --sidebar-footer-height: 48px;
   --sidebar-item-active-background: var(--rc-color-primary-dark);
   --sidebar-item-active-color: var(--sidebar-item-text-color);
   --sidebar-item-background: inherit;
@@ -483,33 +442,13 @@ body {
   --sidebar-small-account-status-bullet-size: 8px;
   --sidebar-small-account-thumb-size: 40px;
   --sidebar-small-account-username-weight: 400;
-  --sidebar-small-default-padding: 16px;
-  --sidebar-small-header-padding: var(--sidebar-small-default-padding);
-  --sidebar-small-width: 90%;
-  --sidebar-width: 280px;
-  --status-bullet-radius: 50%;
-  --status-bullet-size: 10px;
-  --status-name-weight: 400;
   --tags-avatar-size: 20px; /* Forms - select avatar */
   --tags-background: #f2f3f5;
   --tags-border-color: var(--color-gray-light);
   --tags-border-radius: var(--border-radius);
   --tags-border-width: var(--border);
   --tags-text-color: var(--rc-color-primary);
-  --text-default-size: 1rem;
-  --text-default-weight: 500;
-  --text-heading-size: 1.375rem;
-  --text-heading-weight: 700;
-  --text-label-size: 075rem;
-  --text-label-weight: 600;
-  --text-micro-size: .625rem;
-  --text-micro-weight: 700; /* Forms */--text-size: .875rem;
-  --text-small-size: .875rem;
-  --text-small-weight: 500;
-  --text-tiny-size: 075rem;
-  --text-tiny-weight: 400;
-  --toolbar-height: 55px;
-  --toolbar-placeholder-color: var(--color-gray); /* Rooms list */
+  --toolbar-placeholder-color: var(--color-gray); /* Chip */
   --tooltip-background: var(--color-darkest);
   --tooltip-radius: var(--border-radius); /* alert */
   --tooltip-text-color: var(--color-white);
@@ -580,8 +519,6 @@ body.dark-mode {
   --alerts-background: #1d73f5;
   --alerts-color: var(--color-white);
   --button-close-color: var(--color-gray-medium);
-  --button-disabled-background: var(--color-dark-70);
-  --button-disabled-text-color: var(--color-dark-80); /* Forms - Input */
   --button-outline-color: var(--color-gray-medium);
   --chip-background: var(--color-blue); /* Message box */
   --color-dark: #1a1d21;
@@ -591,8 +528,6 @@ body.dark-mode {
   --header-background-color: var(--color-darkest); /* Popover */
   --header-title-username-color-darker: var(--color-gray-lightest);
   --info-font-color: var(--color-gray-light);
-  --input-icon-color: var(--color-gray-lightest); /* Forms - popup list */
-  --input-text-color: var(--color-gray-lightest);
   --message-box-background: hsla(0, 0, 100%, .1);
   --message-box-editing-color: var(--rc-color-alert-message-warning-background);
   --message-box-user-activity-color: var(--color-gray-lightest);
@@ -606,16 +541,38 @@ body.dark-mode {
   --popup-list-name-color: var(--color-white); /* Forms - tags */
   --popup-list-selected-background: var(--color-dark);
   /****************************** Custom Variables ******************************/ --primary-font-color: var(--color-gray-lightest);
-  --rc-color-alert: var(--color-dark-red); --rc-color-alert-message-warning-background: hsl(352, 83%, 20%);
-  --rc-color-primary: var(--color-gray-lightest);
-  --rc-color-primary-lightest: var(--color-dark-medium); /* Forms - Button */
+  --rc-color-alert: var(--color-dark-red); 
+  --rcx-button-colors-ghost-active-background-color: #1e2227;
+  --rcx-button-colors-ghost-background-color: #1e2227;
+  --rcx-button-colors-ghost-border-color: transparent;
   --rcx-button-colors-ghost-color: #abb3bd;
+  --rcx-button-colors-ghost-hover-background-color: #23272c;
+  --rcx-button-colors-off-active-background-color: #23272c;
+  --rcx-button-colors-off-background-color: #23272c;
+  --rcx-button-colors-off-border-color: #30363e;
+  --rcx-button-colors-off-disabled-background-color: #23272c;
+  --rcx-button-colors-off-disabled-border-color: #2a2f35;
+  --rcx-button-colors-off-disabled-color: #30363e; /* Forms - popup list */
+  --rcx-button-colors-off-focus-background-color: #23272c;
+  --rcx-button-colors-off-focus-shadow-color: rgba(26, 29, 33, .15);
+  --rcx-button-colors-off-hover-background-color: #23272c;
+  --rcx-button-colors-off-hover-border-color: #373e46;
   --rcx-button-colors-primary-disabled-border-color: #949eab;
+  --rcx-button-colors-primary-focus-shadow-color: rgba(26, 29, 33, .15);
+  --rcx-button-colors-secondary-background-color: transparent;
   --rcx-button-colors-secondary-border-color: var(--sidebar-border);
+  --rcx-button-colors-secondary-hover-background-color: transparent;
   --rcx-button-colors-secondary-hover-border-color: #abb3bd;
-  --rcx-color-foreground-default: #b6bdc6; /********************** Overridden Rocket.Chat Variables **********************/ /* General Colors */ 
+  --rcx-color-foreground-default: #b6bdc6;
   --rcx-divider-color: var(--sidebar-border);
+  --rcx-input-colors-active-border-color: #373e46;
+  --rcx-input-colors-background-color: #1a1d21;
+  --rcx-input-colors-border-color: #2a2f35;
+  --rcx-input-colors-focus-border-color: #373e46;
+  --rcx-input-colors-focus-shadow-color: rgba(26, 29, 33, .15);
+  --rcx-input-colors-hover-border-color: #30363e;
   --sidebar-background: var(--color-dark); /* Chip */
+  --sidebar-border: #23272c;
   --tags-background: var(--color-blue); /* Sidebar */
   --tags-text-color: var(--color-white);
   --tooltip-background: var(--color-darkest);
@@ -775,6 +732,14 @@ body.dark-mode .rcx-field__hint code {
   color: var(--primary-font-color) !important;
 }
 
+body.dark-mode .rcx-table__cell--header:after {
+  border-color: #23272c;
+}
+
+body.dark-mode .rcx-pagination--divider:before {
+  background: #23272c;
+}
+
 body.dark-mode .rc-form-legend,
 body.dark-mode .rc-form-label {
   color: var(--primary-font-color);
@@ -840,8 +805,6 @@ body.dark-mode .main-content .rcx-button--square:is(.rcx-button--ghost, .rcx-but
 
 body.dark-mode .main-content .rcx-css-15vvv6z:active,
 body.dark-mode .main-content .rcx-css-15vvv6z:hover,
-body.dark-mode .main-content .rcx-css-ue04py:active,
-body.dark-mode .main-content .rcx-css-ue04py:hover,
 body.dark-mode .main-content .rcx-css-136xdpx:active,
 body.dark-mode .main-content .rcx-css-136xdpx:hover,
 body.dark-mode .main-content .rcx-css-1es44sn:active,
@@ -1343,17 +1306,6 @@ body.dark-mode .rc-input__element:disabled {
   opacity: .75;
 }
 
-body.dark-mode .rcx-autocomplete,
-body.dark-mode .rcx-select,
-body.dark-mode .rcx-input-box__wrapper {
-  --rcx-input-colors-active-border-color: #373e46;
-  --rcx-input-colors-background-color: #1a1d21;
-  --rcx-input-colors-border-color: #2a2f35;
-  --rcx-input-colors-focus-border-color: #373e46;
-  --rcx-input-colors-focus-shadow-color: rgba(26, 29, 33, .15); 
-  --rcx-input-colors-hover-border-color: #30363e;
-}
-
 body.dark-mode select {
   background-color: var(--color-dark);
 }
@@ -1382,10 +1334,6 @@ body.dark-mode .rcx-options .rcx-option:hover {
 body.dark-mode .rcx-options .rcx-option--focus,
 body.dark-mode .rcx-options .rcx-option--selected {
   background: #1e2227 !important;
-}
-
-body.dark-mode .rcx-css-dpt4t8 {
-  /* User selector in create direct message modal */ color: #1a1d21;
 }
 
 body.dark-mode .rc-popover__content .rc-popover__item:focus,
