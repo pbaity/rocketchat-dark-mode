@@ -37,28 +37,8 @@ body.dark-mode .content-background-color {
 	background-color: var(--header-background-color);
 }
 
-body.dark-mode .message.first-unread .body:after {
-	background-color: var(--header-background-color);
-}
-
 body.dark-mode .rc-message-box__container {
 	background-color: var(--message-box-background);
-}
-
-body.dark-mode .rc-old .rc-message-box .reply-preview {
-	background-color: var(--color-dark);
-}
-
-body.dark-mode .message-actions,
-body.dark-mode .rc-member-list__counter {
-	color: var(--color-gray-light);
-	background-color: var(--color-darkest);
-	border-color: var(--color-dark);
-}
-
-body.dark-mode .message-actions__button:hover,
-body.dark-mode .message-actions__menu:hover {
-	background-color: var(--color-dark);
 }
 
 body.dark-mode .message .body > table thead tr {
@@ -73,168 +53,19 @@ body.dark-mode .message .body > table tr:nth-child(2n) {
     background-color: var(--color-dark);
 }
 
-body.dark-mode .background-transparent-darker-before::before {
-	background-color: var(--color-dark-medium);
-}
-
-/* User card */
-body.dark-mode .rcx-user-card {
-	background-color: var(--color-dark) !important;
-}
-
-body.dark-mode .rcx-user-card .rcx-button:not(.rcx-css-ue04py) {
-    background-color: var(--color-dark-medium);
-    border: none;
-}
-
-body.dark-mode .rcx-user-card .rcx-button:hover {
-    background-color: var(--color-dark-light);
-    border: none;
-}
-
 /* Modals */
 
 /*body.dark-mode .background-info-font-color {
 	background-color: var(--color-dark-medium);
 }*/
-body.dark-mode .rcx-modal__inner,
-body.dark-mode .rcx-modal__footer {
-	background: var(--color-dark);
-}
 
-body.dark-mode .rc-modal__footer,
-body.dark-mode .rc-modal {
-	background: var(--color-darkest);
-}
-
-body.dark-mode .rc-modal__content,
-body.dark-mode .rc-modal__header,
-body.dark-mode .rcx-modal__content,
-body.dark-mode .rcx-modal__inner,
-body.dark-mode .rcx-modal__header,
-body.dark-mode .rcx-modal__title {
-	color: var(--color-white);
-}
-
-body.dark-mode .rc-button--outline {
-	border-color: var(--button-outline-color);
-	color: var(--button-outline-color);
-}
-
-body.dark-mode .rc-button--outline.js-close,
-body.dark-mode .rc-button--nude.js-close {
-	border-color: var(--button-close-color);
-	color: var(--button-close-color);
-}
-
-body.dark-mode .rc-button--cancel,
-body.dark-mode .rc-button--danger {
-	background-color: var(--button-cancel-color);
-	border-color: var(--button-cancel-color);
-	color: var(--button-primary-text-color);
-}
-
-body.dark-mode .contextual-bar {
-	background-color: var(--color-dark);
-	border-left: 2px solid var(--color-dark-medium);
-}
-
-body.dark-mode .contextual-bar__header {
-	background-color: var(--color-dark);
-	border-bottom: 1px solid var(--color-dark-medium);
-}
-
-body.dark-mode .contextual-bar__content {
-	background-color: var(--color-dark);
-}
-
-body.dark-mode .rc-member-list__counter {
-	background-color: var(--color-dark);
-}
-/***** Buttons *****/
-
-
-/* Menu buttons on top right (threads, search, etc.) */
-
-
-body.dark-mode .rcx-css-136xdpx {
-	background-color: var(--color-darkest);
-}
-
-body.dark-mode .rcx-button {
-	color: var(--info-font-color);
-}
-
-body.dark-mode .rcx-button--ghost:not(.rcx-button--square):hover {
-	color: var(--color-dark) !important;
-}
-
-body.dark-mode .rcx-button--primary {
-	color: var(--info-font-color);
-	background-color: #095ad2
-}
-
-body.dark-mode .rcx-button--primary:disabled {
-	color: var(--color-gray);
-}
-
-body.dark-mode .rcx-button--danger {
-	color: var(--rcx-button-colors-secondary-danger-color,var(--rcx-color-danger-500,#f5455c));
-}
 
 /***** Right sidebar *****/
 
 /* TODO : switch toggle */
 
 /* Targets unread message indicator in threads panel. */
-body.dark-mode button.rcx-contextual-message__follow + div.rcx-box--full {
-    background-color: #1d74f5 !important;
-}
 
-/***** Chat file list *****/
-
-body.dark-mode .attachments__item:hover, .attachments__item:active {
-	background-color: var(--color-darkest);
-}
-
-body.dark-mode .attachments__content:hover, .attachments__content:active {
-	color: var(--primary-font-color);
-}
-
-body.dark-mode .attachments__name {
-	color: var(--color-blue);
-}
-
-body.dark-mode .attachments__name:hover, .attachments__name:active {
-	color: var(--color-light-blue);
-}
-
-body.dark-mode .rc-popover__content {
-	background-color: var(--popover-background);
-	box-shadow: 0px 0px 2px var(--color-dark-20);
-}
-
-body.dark-mode .emoji-picker .filter-item.active {
-	border-color: var(--color-light-blue);
-}
-
-body.dark-mode .rcx-room-header hr.rcx-divider {
-    border-color: var(--color-dark-medium);
-}
-
-
-
-body.dark-mode .room-leader:hover {
-	background-color: var(--color-darkest);
-}
-
-body.dark-mode .chat-now {
-	color: var(--color-white);
-}
-
-body.dark-mode .message-popup-title {
-	background-color: var(--color-dark);
-}
 
 /***** My Account *****/
 

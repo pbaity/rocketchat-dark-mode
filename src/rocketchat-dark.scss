@@ -455,7 +455,7 @@ body.dark-mode {
     /****************************** Custom Variables ******************************/
     --primary-font-color: var(--color-gray-lightest);
     --info-font-color: var(--color-gray-light);
-    --color-darker: #{$dark-color};
+    --color-dark: #{$dark-color};
     --message-box-background: hsla(0, 0, 100%, 0.1);
     --header-background-color: var(--color-dark);
     --content-background-color: var(--color-dark);
@@ -592,6 +592,94 @@ body.dark-mode {
     }
   }
 
+  .rc-button--outline {
+    border-color: var(--button-outline-color);
+    color: var(--button-outline-color);
+  }
+  
+  .rc-button--outline.js-close,
+  .rc-button--nude.js-close {
+    border-color: var(--button-close-color);
+    color: var(--button-close-color);
+  }
+  
+  .rc-button--cancel,
+  .rc-button--danger {
+    background-color: var(--button-cancel-color);
+    border-color: var(--button-cancel-color);
+    color: var(--button-primary-text-color);
+  }
+  
+  .contextual-bar {
+    border-left: 2px solid var(--color-dark-medium);
+  }
+  
+  .contextual-bar__header {
+    border-bottom: 1px solid var(--color-dark-medium);
+  }
+  
+  .contextual-bar,
+  .contextual-bar__header,
+  .contextual-bar__content,
+  .rc-member-list__counter {
+    background: var(--color-dark);
+  }
+
+  //- Chat File List
+  .attachments__item:hover,
+  .attachments__item:active {
+    background-color: var(--color-darkest);
+  }
+
+  .attachments__content:hover,
+  .attachments__content:active {
+    color: var(--primary-font-color);
+  }
+
+  .attachments__name {
+    color: var(--color-blue);
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: var(--color-light-blue);
+    }
+  }
+
+  .rc-popover__content {
+    background-color: var(--popover-background);
+    box-shadow: 0px 0px 2px var(--color-dark-20);
+  }
+
+  
+
+  .emoji-picker {
+    .filter-list {
+      padding: 0;
+    }
+
+    .filter-item {
+      border-color: $border-color-dark;
+
+      &.active {
+        border-color: $primary-color;
+      }
+    }
+  }
+
+  .rcx-room-header hr.rcx-divider {
+    border-color: $border-color;
+  }
+
+  .chat-now {
+    color: var(--color-white);
+  }
+  
+  .room-leader:hover,
+  .message-popup-title {
+    background: var(--color-dark);
+  }
+
   //- Channel Message
   .rcx-avatar-stack > .rcx-avatar > .rcx-avatar__element {
     border-color: $border-color;
@@ -681,6 +769,10 @@ body.dark-mode {
       .rcx-css-1e1wru6 {
         color: $gray-color-light;
       }
+    }
+
+    button.rcx-contextual-message__follow + div.rcx-box--full {
+      background: $primary-color !important;
     }
 
     /* Files List */
@@ -902,8 +994,34 @@ body.dark-mode {
 
     .rc-message-box .reply-preview {
       background: $dark-color;
-      z-index: 99;
     }
+  }
+
+  //- Components
+  //- Buttons
+  .rcx-css-136xdpx {
+    background: var(--color-dark);
+  }
+  
+  .rcx-button {
+    color: var(--info-font-color);
+  }
+  
+  .rcx-button--ghost:not(.rcx-button--square):hover {
+    color: var(--color-dark) !important;
+  }
+  
+  .rcx-button--primary {
+    color: var(--info-font-color);
+    background-color: #095ad2;
+  }
+  
+  .rcx-button--primary:disabled {
+    opacity: .6;
+  }
+  
+  .rcx-button--danger {
+    color: var(--rcx-button-colors-secondary-danger-color,var(--rcx-color-danger-500,#f5455c));
   }
 
   //- Dropdown
@@ -958,5 +1076,38 @@ body.dark-mode {
     .rcx-option:hover {
       background: $dark-color-light !important;
     }
+  }
+
+  //- User Card 
+  .rcx-user-card {
+    background-color: var(--color-dark) !important;
+
+    .rcx-button:not(.rcx-css-ue04py) {
+      background-color: var(--color-dark-medium);
+      border: none;
+    }
+
+    .rcx-button:hover {
+      background-color: var(--color-dark-light);
+      border: none;
+    }
+  }
+
+  //- Modals
+  .rcx-modal__inner,
+  .rcx-modal__footer,
+  .rc-modal,
+  .rc-modal__footer {
+    background: $dark-color;
+  }
+
+  .rc-modal__content,
+  .rc-modal__header,
+  .rcx-modal__content,
+  .rcx-modal__inner,
+  .rcx-modal__header,
+  .rcx-modal__title,
+  .rcx-label {
+    color: var(--color-white);
   }
 }

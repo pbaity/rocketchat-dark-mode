@@ -584,7 +584,7 @@ body.dark-mode {
   --button-disabled-text-color: var(--color-dark-80); /* Forms - Input */
   --button-outline-color: var(--color-gray-medium);
   --chip-background: var(--color-blue); /* Message box */
-  --color-darker: #1a1d21;
+  --color-dark: #1a1d21;
   --component-color: #21252a;
   --content-background-color: var(--color-dark);
   --header-background-color: var(--color-dark);
@@ -674,6 +674,89 @@ body.dark-mode .container-bars .color-primary-action-color {
   color: var(--color-white);
 }
 
+body.dark-mode .rc-button--outline {
+  border-color: var(--button-outline-color);
+  color: var(--button-outline-color);
+}
+
+body.dark-mode .rc-button--outline.js-close,
+body.dark-mode .rc-button--nude.js-close {
+  border-color: var(--button-close-color);
+  color: var(--button-close-color);
+}
+
+body.dark-mode .rc-button--cancel,
+body.dark-mode .rc-button--danger {
+  background-color: var(--button-cancel-color);
+  border-color: var(--button-cancel-color);
+  color: var(--button-primary-text-color);
+}
+
+body.dark-mode .contextual-bar {
+  border-left: 2px solid var(--color-dark-medium);
+}
+
+body.dark-mode .contextual-bar__header {
+  border-bottom: 1px solid var(--color-dark-medium);
+}
+
+body.dark-mode .contextual-bar,
+body.dark-mode .contextual-bar__header,
+body.dark-mode .contextual-bar__content,
+body.dark-mode .rc-member-list__counter {
+  background: var(--color-dark);
+}
+
+body.dark-mode .attachments__item:hover,
+body.dark-mode .attachments__item:active {
+  background-color: var(--color-darkest);
+}
+
+body.dark-mode .attachments__content:hover,
+body.dark-mode .attachments__content:active {
+  color: var(--primary-font-color);
+}
+
+body.dark-mode .attachments__name {
+  color: var(--color-blue);
+}
+
+body.dark-mode .attachments__name:active,
+body.dark-mode .attachments__name:focus,
+body.dark-mode .attachments__name:hover {
+  color: var(--color-light-blue);
+}
+
+body.dark-mode .rc-popover__content {
+  background-color: var(--popover-background);
+  box-shadow: 0 0 2px var(--color-dark-20);
+}
+
+body.dark-mode .emoji-picker .filter-list {
+  padding: 0;
+}
+
+body.dark-mode .emoji-picker .filter-item {
+  border-color: #1a1d21;
+}
+
+body.dark-mode .emoji-picker .filter-item.active {
+  border-color: #2563eb;
+}
+
+body.dark-mode .rcx-room-header hr.rcx-divider {
+  border-color: #21252a;
+}
+
+body.dark-mode .chat-now {
+  color: var(--color-white);
+}
+
+body.dark-mode .room-leader:hover,
+body.dark-mode .message-popup-title {
+  background: var(--color-dark);
+}
+
 body.dark-mode .rcx-avatar-stack > .rcx-avatar > .rcx-avatar__element {
   border-color: #21252a;
 }
@@ -760,6 +843,10 @@ body.dark-mode .main-content .rcx-vertical-bar .rcx-tag {
 
 body.dark-mode .main-content .rcx-vertical-bar .rcx-css-1e1wru6 {
   color: #a5adb8;
+}
+
+body.dark-mode .main-content button.rcx-contextual-message__follow + div.rcx-box--full {
+  background: #2563eb !important;
 }
 
 body.dark-mode .main-content .rcx-css-18t0quo.hover,
@@ -969,7 +1056,31 @@ body.dark-mode .footer .rc-message-box__container {
 
 body.dark-mode .footer .rc-message-box .reply-preview {
   background: #1a1d21;
-  z-index: 99;
+}
+
+body.dark-mode .rcx-css-136xdpx {
+  background: var(--color-dark);
+}
+
+body.dark-mode .rcx-button {
+  color: var(--info-font-color);
+}
+
+body.dark-mode .rcx-button--ghost:not(.rcx-button--square):hover {
+  color: var(--color-dark) !important;
+}
+
+body.dark-mode .rcx-button--primary {
+  background-color: #095ad2; 
+  color: var(--info-font-color);
+}
+
+body.dark-mode .rcx-button--primary:disabled {
+  opacity: .6;
+}
+
+body.dark-mode .rcx-button--danger {
+  color: var(--rcx-button-colors-secondary-danger-color, var(--rcx-color-danger-500, #f5455c));
 }
 
 body.dark-mode select {
@@ -1017,4 +1128,35 @@ body.dark-mode .rc-popover__content .rc-popover__divider {
 
 body.dark-mode .rc-popover__content .rcx-option:hover {
   background: #1e2227 !important;
+}
+
+body.dark-mode .rcx-user-card {
+  background-color: var(--color-dark) !important;
+}
+
+body.dark-mode .rcx-user-card .rcx-button:not(.rcx-css-ue04py) {
+  background-color: var(--color-dark-medium);
+  border: none;
+}
+
+body.dark-mode .rcx-user-card .rcx-button:hover {
+  background-color: var(--color-dark-light);
+  border: none;
+}
+
+body.dark-mode .rcx-modal__inner,
+body.dark-mode .rcx-modal__footer,
+body.dark-mode .rc-modal,
+body.dark-mode .rc-modal__footer {
+  background: #1a1d21;
+}
+
+body.dark-mode .rc-modal__content,
+body.dark-mode .rc-modal__header,
+body.dark-mode .rcx-modal__content,
+body.dark-mode .rcx-modal__inner,
+body.dark-mode .rcx-modal__header,
+body.dark-mode .rcx-modal__title,
+body.dark-mode .rcx-label {
+  color: var(--color-white);
 }
