@@ -568,7 +568,11 @@ body.dark-mode .rcx-css-1es44sn:focus {
 body.dark-mode button.rcx-contextual-message__follow + div.rcx-box--full {
     background-color: #1d74f5 !important;
 }
+/***** Members list *****/
 
+body.dark-mode .rcx-option__content {
+	color: var(--color-gray-light);
+}
 /***** Chat file list *****/
 
 body.dark-mode .rcx-css-18t0quo {
