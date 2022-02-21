@@ -573,6 +573,11 @@ body.dark-mode button.rcx-contextual-message__follow + div.rcx-box--full {
 body.dark-mode .rcx-option__content {
 	color: var(--color-gray-light);
 }
+
+.rcx-option--focus, .rcx-option:hover {
+    background-color: var(--rc-color-primary-dark);
+}
+
 /***** Chat file list *****/
 
 body.dark-mode .rcx-css-18t0quo {
