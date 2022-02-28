@@ -104,6 +104,7 @@ body.dark-mode {
 	--button-outline-color: var(--color-gray-medium);
 	--button-close-color: var(--color-gray-medium);
 
+	--rcx-color-neutral-100: var(--rc-color-primary-dark);
 
 	/********************** Overridden Rocket.Chat Variables **********************/
 
@@ -572,10 +573,6 @@ body.dark-mode button.rcx-contextual-message__follow + div.rcx-box--full {
 
 body.dark-mode .rcx-option__content {
 	color: var(--color-gray-light);
-}
-
-body.dark-mode .rcx-option--focus, .rcx-option:hover {
-    background-color: var(--rc-color-primary-dark);
 }
 
 /***** Chat file list *****/
