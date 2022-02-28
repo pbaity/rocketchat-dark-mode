@@ -104,14 +104,13 @@ body.dark-mode {
 	--button-outline-color: var(--color-gray-medium);
 	--button-close-color: var(--color-gray-medium);
 
-	--rcx-color-neutral-100: var(--rc-color-primary-dark);
-
 	/********************** Overridden Rocket.Chat Variables **********************/
 
 	/* General Colors */
 	--rc-color-alert-message-warning-background: hsl(352, 83%, 20%);
 	--rc-color-primary: var(--color-gray-lightest);
 	--rc-color-primary-lightest: var(--color-dark-medium);
+	--rcx-color-neutral-100: var(--rc-color-primary-dark);
 
 	/* Forms - Button */
 	--button-disabled-background: var(--color-dark-70);
