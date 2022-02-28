@@ -104,13 +104,13 @@ body.dark-mode {
 	--button-outline-color: var(--color-gray-medium);
 	--button-close-color: var(--color-gray-medium);
 
-
 	/********************** Overridden Rocket.Chat Variables **********************/
 
 	/* General Colors */
 	--rc-color-alert-message-warning-background: hsl(352, 83%, 20%);
 	--rc-color-primary: var(--color-gray-lightest);
 	--rc-color-primary-lightest: var(--color-dark-medium);
+	--rcx-color-neutral-100: var(--rc-color-primary-dark);
 
 	/* Forms - Button */
 	--button-disabled-background: var(--color-dark-70);
@@ -449,6 +449,11 @@ body.dark-mode .rc-member-list__counter {
 	background-color: var(--color-dark);
 }
 
+/* Modal : message info (read by) */
+body.dark-mode .rcx-css-bcrfr1:hover {
+	background-color: var(--rcx-color-neutral-100);
+}
+
 /**** Select / Dropdowns ****/
 
 body.dark-mode .rcx-select {
@@ -573,6 +578,7 @@ body.dark-mode button.rcx-contextual-message__follow + div.rcx-box--full {
 body.dark-mode .rcx-option__content {
 	color: var(--color-gray-light);
 }
+
 /***** Chat file list *****/
 
 body.dark-mode .rcx-css-18t0quo {
@@ -896,15 +902,15 @@ body.dark-mode .rcx-tag--secondary {
 }
 
 body.dark-mode .rcx-table__cell--align-end {
-  color: var(--info-font-color) !important;
+	color: var(--info-font-color) !important;
 	background-color: var(--color-dark-medium) !important;
 }
 
 /* Apply info (white) font *everywhere* */
 body.dark-mode .rcx-css-ps0pgs, /* Channel name */
-body.dark-mode .rcx-room-header  .rcx-box:not(.rcx-button-group):not(.rcx-button):not(.rcx-css-1fgkscl):not(.rcx-css-4pvxx3), /* omit buttons/icons (.rcx-css-1fgkscl is .rcx-icon parent) */
-body.dark-mode .rcx-vertical-bar .rcx-box:not(.rcx-button-group):not(.rcx-button):not(.rcx-css-1fgkscl):not(.rcx-css-4pvxx3):not(.rcx-css-trljwa) {
-  color: var(--info-font-color) !important;
+body.dark-mode .rcx-room-header  .rcx-box:not(.rcx-button-group):not(.rcx-button):not(.rcx-css-1fgkscl):not(.rcx-css-4pvxx3):not(.rcx-toggle-switch__input):not(.rcx-toggle-switch__fake), /* omit buttons/icons (.rcx-css-1fgkscl is .rcx-icon parent) */
+body.dark-mode .rcx-vertical-bar .rcx-box:not(.rcx-button-group):not(.rcx-button):not(.rcx-css-1fgkscl):not(.rcx-css-4pvxx3):not(.rcx-toggle-switch__input):not(.rcx-toggle-switch__fake):not(.rcx-css-trljwa) {
+	color: var(--info-font-color) !important;
 	/*background-color: var(--color-darkest) !important;*/
 }
 
@@ -918,8 +924,8 @@ body.dark-mode .rcx-vertical-bar .rcx-box:not(.rcx-button-group):not(.rcx-button
 } */
 
 body.dark-mode .rcx-table__cell--align-start {
-  color: var(--info-font-color) !important;
-  background-color: var(--color-dark-medium) !important;
+	color: var(--info-font-color) !important;
+  	background-color: var(--color-dark-medium) !important;
 }
 
 body.dark-mode  .rcx-field__description code {
