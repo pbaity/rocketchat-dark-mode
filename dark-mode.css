@@ -449,6 +449,11 @@ body.dark-mode .rc-member-list__counter {
 	background-color: var(--color-dark);
 }
 
+/* Modal : message info (read by) */
+body.dark-mode .rcx-css-bcrfr1:hover {
+	background-color: var(--rcx-color-neutral-100);
+}
+
 /**** Select / Dropdowns ****/
 
 body.dark-mode .rcx-select {
