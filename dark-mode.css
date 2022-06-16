@@ -111,6 +111,7 @@ body.dark-mode {
 	--rc-color-primary: var(--color-gray-lightest);
 	--rc-color-primary-lightest: var(--color-dark-medium);
 	--rcx-color-neutral-100: var(--rc-color-primary-dark);
+	--rcx-color-danger-200: var(--rc-color-alert);
 
 	/* Forms - Button */
 	--button-disabled-background: var(--color-dark-70);
