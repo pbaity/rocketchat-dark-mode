@@ -747,23 +747,15 @@ body.dark-mode .rcx-css-110cgdy {
 	background-color: transparent !important;
 }
 
-/************** Admin panel & Account panel ******************/
-
-.page-list a:not(.rc-button), .page-settings a:not(.rc-button) {
-	color: var(--primary-font-color);
-}
+/************** All panels ******************/
 
 /*body.dark-mode .simplebar-content > .rcx-box => will also modify sidebar background */
 body.dark-mode .simplebar-content > .rcx-css-fr02gd { /* main content */
     background-color: var(--color-dark);
 }
 
-body.dark-mode .rcx-css-txktj6 { /* Account settings page background */
-    background-color: var(--color-dark) !important;
-}
-
-body.dark-mode .rcx-css-1wm5na { /* Account settings page header title */
-	color: var(--primary-font-color) !important;
+.page-list a:not(.rc-button), .page-settings a:not(.rc-button) {
+	color: var(--primary-font-color);
 }
 
 body.dark-mode .rc-scrollbars-container { /* Panels sidebar */
@@ -791,11 +783,23 @@ body.dark-mode .rcx-css-1l00c5f:hover, .rcx-css-1l00c5f:focus, .rcx-css-1l00c5f.
     background-color: var(--color-darkest);
 }
 
-body.dark-mode .rcx-css-kyq2rf { /* Admin panel info & stats (Deployment, License, Usage) */
+/************** Account panel ******************/
+
+body.dark-mode .rcx-css-txktj6 { /* Account settings page background */
+    background-color: var(--color-dark) !important;
+}
+
+body.dark-mode .rcx-css-1wm5na { /* Account settings page header title */
+	color: var(--primary-font-color) !important;
+}
+
+/************** Admin panel ******************/
+
+body.dark-mode .rcx-css-kyq2rf { /* Info & stats (Deployment, License, Usage) */
 	background-color: var(--color-dark) !important;
 }
 
-body.dark-mode .rcx-css-61di5s { /* Admin panel info & stats (Deployment, License, Usage) */
+body.dark-mode .rcx-css-61di5s { /* Info & stats (Deployment, License, Usage) */
 	color: var(--color-gray) !important;
 }
 
