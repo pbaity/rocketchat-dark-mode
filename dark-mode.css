@@ -571,21 +571,36 @@ body.dark-mode .rcx-box.rcx-box--full.rcx-tile--elevation-2.rcx-tile .rcx-option
 
 /* TODO : switch toggle */
 
+/***** Chat thread list *****/
+
 body.dark-mode .rcx-vertical-bar {
 	background-color: var(--rc-color-primary-background) !important;
 }
 
-body.dark-mode .rcx-css-136xdpx:hover, /* Thread list item */
-body.dark-mode .rcx-css-136xdpx:focus, 
-body.dark-mode .rcx-css-1es44sn:hover, /* Files list item */
-body.dark-mode .rcx-css-1es44sn:focus {
-    background-color: var(--rc-color-primary-dark);
+body.dark-mode .rcx-css-jve35a > .rcx-message,
+body.dark-mode .rcx-css-jve35a {
+	background-color: var(--color-darkest);
+}
+
+body.dark-mode .rcx-css-jve35a:hover > .rcx-message,
+body.dark-mode .rcx-css-jve35a:hover {
+	background-color: var(--color-dark-medium);
+}
+
+body.dark-mode .rcx-message-metrics__item-label {
+	color: var(--color-gray-light);
+}
+
+body.dark-mode .rcx-css-jve35a > .rcx-message > .rcx-message-container > .rcx-message-body,
+body.dark-mode .rcx-css-jve35a:hover > .rcx-message > .rcx-message-container > .rcx-message-body {
+	color: var(--primary-color);
 }
 
 /* Targets unread message indicator in threads panel. */
 body.dark-mode button.rcx-contextual-message__follow + div.rcx-box--full {
     background-color: #1d74f5 !important;
 }
+
 /***** Members list *****/
 
 body.dark-mode .rcx-option__content {
