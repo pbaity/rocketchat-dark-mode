@@ -795,6 +795,10 @@ body.dark-mode .rcx-css-1wm5na { /* Account settings page header title */
 
 /************** Admin panel ******************/
 
+body.dark-mode .rcx-css-1of9j10 { /* Settings */
+	background-color: var(--color-darker) !important;
+}
+
 body.dark-mode .rcx-css-kyq2rf { /* Info & stats (Deployment, License, Usage) */
 	background-color: var(--color-dark) !important;
 }
