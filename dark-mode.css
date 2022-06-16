@@ -185,10 +185,7 @@ body.dark-mode .rcx-room-header .rcx-tag--default {
 /* Blockquote */
 body.dark-mode .rcx-css-1d5cod7 {
 	background-color: var(--color-darkest) !important;
-}
-
-body.dark-mode blockquote.rcx-attachment__details .rcx-box--full {
-	color: var(--secondary-font-color);
+	color: var(--secondary-font-color) !important;
 }
 
 body.dark-mode .rcx-css-11c35pn:hover .rcx-attachment__details,
