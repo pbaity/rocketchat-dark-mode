@@ -211,6 +211,11 @@ body.dark-mode .rcx-css-ntpg4f {
 	color: var(--rc-color-primary) !important;
 }
 
+/* Message "Beginning of conversation" */
+body.dark-mode .rcx-css-wtiuha {
+	color: var(--rc-color-primary-light-medium) !important;
+}
+
 /* Message "You joined a new private conversation with" */
 body.dark-mode .rcx-css-dlop43 {
 	color: var(--rc-color-primary) !important;
