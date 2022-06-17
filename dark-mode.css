@@ -730,6 +730,10 @@ body.dark-mode .simplebar-content > .rcx-css-fr02gd { /* main content */
     background-color: var(--color-dark);
 }
 
+body.dark-mode .rcx-css-1of9j10 { /*Admin Settings Panels */
+	background-color: var(--color-darker) !important;
+}
+
 body.dark-mode .rcx-css-txktj6 { /* Account settings page background */
     background-color: var(--color-dark) !important;
 }
