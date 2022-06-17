@@ -483,6 +483,14 @@ body.dark-mode .rcx-options .rcx-option--focus /* Temporary fix while focus is n
 	color: var(--color-white) !important;
 }
 
+body.dark-mode .rc-scrollbars-view .rcx-option .rcx-option__wrapper {
+	color: var(--color-white) !important;
+}
+
+body.dark-mode .rc-scrollbars-view .rcx-option:hover {
+	background-color: var(--color-darker) !important;
+}
+
 body.dark-mode .rc-popover__content .rcx-option:hover,
 /* body.dark-mode .rcx-options .rcx-option--focus, */ /* Temporary fix while focus is not refreshed */
 body.dark-mode .rcx-options .rcx-option--selected {
@@ -756,6 +764,18 @@ body.dark-mode .simplebar-content > .rcx-css-fr02gd { /* main content */
 
 .page-list a:not(.rc-button), .page-settings a:not(.rc-button) {
 	color: var(--primary-font-color);
+}
+
+body.dark-mode .rcx-css-1of9j10 { /*Admin Settings Panels */
+	background-color: var(--color-darker) !important;
+}
+
+body.dark-mode .rcx-css-txktj6 { /* Account settings page background */
+    background-color: var(--color-dark) !important;
+}
+
+body.dark-mode .rcx-css-1wm5na { /* Account settings page header title */
+	color: var(--primary-font-color) !important;
 }
 
 body.dark-mode .rc-scrollbars-container { /* Panels sidebar */
