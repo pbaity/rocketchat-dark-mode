@@ -111,6 +111,7 @@ body.dark-mode {
 	--rc-color-primary: var(--color-gray-lightest);
 	--rc-color-primary-lightest: var(--color-dark-medium);
 	--rcx-color-neutral-100: var(--rc-color-primary-dark);
+	--rcx-color-danger-200: var(--rc-color-alert);
 
 	/* Forms - Button */
 	--button-disabled-background: var(--color-dark-70);
@@ -185,10 +186,17 @@ body.dark-mode .rcx-room-header .rcx-tag--default {
 /* Blockquote */
 body.dark-mode .rcx-css-1d5cod7 {
 	background-color: var(--color-darkest) !important;
+	color: var(--secondary-font-color) !important;
 }
 
-body.dark-mode blockquote.rcx-attachment__details .rcx-box--full {
-	color: var(--secondary-font-color);
+body.dark-mode .rcx-css-11c35pn > .rcx-attachment__details {
+	border-color: transparent !important;
+	border-inline-start-color: var(--primary-font-color) !important;
+}
+
+body.dark-mode .rcx-css-11c35pn:hover .rcx-attachment__details,
+body.dark-mode .rcx-css-11c35pn:focus .rcx-attachment__details {
+    border-color: var(--secondary-font-color) !important;
 }
 
 body.dark-mode .rcx-css-11c35pn:hover .rcx-attachment__details,
@@ -211,9 +219,14 @@ body.dark-mode .rcx-css-ntpg4f {
 	color: var(--rc-color-primary) !important;
 }
 
+/* Message "Beginning of conversation" */
+body.dark-mode .rcx-css-wtiuha {
+	color: var(--rc-color-primary-light-medium) !important;
+}
+
 /* Message "You joined a new private conversation with" */
-body.dark-mode .rcx-css-dlop43 {
-	color: var(--rc-color-primary) !important;
+body.dark-mode .rcx-css-oyadl9 {
+	color: var(--rc-color-primary-light) !important;
 }
 
 body.dark-mode .main-content a {
@@ -566,21 +579,36 @@ body.dark-mode .rcx-box.rcx-box--full.rcx-tile--elevation-2.rcx-tile .rcx-option
 
 /* TODO : switch toggle */
 
+/***** Chat thread list *****/
+
 body.dark-mode .rcx-vertical-bar {
 	background-color: var(--rc-color-primary-background) !important;
 }
 
-body.dark-mode .rcx-css-136xdpx:hover, /* Thread list item */
-body.dark-mode .rcx-css-136xdpx:focus, 
-body.dark-mode .rcx-css-1es44sn:hover, /* Files list item */
-body.dark-mode .rcx-css-1es44sn:focus {
-    background-color: var(--rc-color-primary-dark);
+body.dark-mode .rcx-css-jve35a > .rcx-message,
+body.dark-mode .rcx-css-jve35a {
+	background-color: var(--color-darkest);
+}
+
+body.dark-mode .rcx-css-jve35a:hover > .rcx-message,
+body.dark-mode .rcx-css-jve35a:hover {
+	background-color: var(--color-dark-medium);
+}
+
+body.dark-mode .rcx-message-metrics__item-label {
+	color: var(--color-gray-light);
+}
+
+body.dark-mode .rcx-css-jve35a > .rcx-message > .rcx-message-container > .rcx-message-body,
+body.dark-mode .rcx-css-jve35a:hover > .rcx-message > .rcx-message-container > .rcx-message-body {
+	color: var(--primary-color);
 }
 
 /* Targets unread message indicator in threads panel. */
 body.dark-mode button.rcx-contextual-message__follow + div.rcx-box--full {
     background-color: #1d74f5 !important;
 }
+
 /***** Members list *****/
 
 body.dark-mode .rcx-option__content {
@@ -727,27 +755,15 @@ body.dark-mode .rcx-css-110cgdy {
 	background-color: transparent !important;
 }
 
-/************** Admin panel & Account panel ******************/
-
-.page-list a:not(.rc-button), .page-settings a:not(.rc-button) {
-	color: var(--primary-font-color);
-}
+/************** All panels ******************/
 
 /*body.dark-mode .simplebar-content > .rcx-box => will also modify sidebar background */
 body.dark-mode .simplebar-content > .rcx-css-fr02gd { /* main content */
     background-color: var(--color-dark);
 }
 
-body.dark-mode .rcx-css-1of9j10 { /*Admin Settings Panels */
-	background-color: var(--color-darker) !important;
-}
-
-body.dark-mode .rcx-css-txktj6 { /* Account settings page background */
-    background-color: var(--color-dark) !important;
-}
-
-body.dark-mode .rcx-css-1wm5na { /* Account settings page header title */
-	color: var(--primary-font-color) !important;
+.page-list a:not(.rc-button), .page-settings a:not(.rc-button) {
+	color: var(--primary-font-color);
 }
 
 body.dark-mode .rc-scrollbars-container { /* Panels sidebar */
@@ -775,11 +791,45 @@ body.dark-mode .rcx-css-1l00c5f:hover, .rcx-css-1l00c5f:focus, .rcx-css-1l00c5f.
     background-color: var(--color-darkest);
 }
 
-body.dark-mode .rcx-css-kyq2rf { /* Admin panel info & stats (Deployment, License, Usage) */
+/************** Account panel ******************/
+
+body.dark-mode .rcx-css-txktj6 { /* Account settings page background */
+    background-color: var(--color-dark) !important;
+}
+
+body.dark-mode .rcx-css-1wm5na { /* Account settings page header title */
+	color: var(--primary-font-color) !important;
+}
+
+/************** Admin panel ******************/
+
+body.dark-mode .rcx-css-1ky5rco,
+body.dark-mode .rcx-css-xsevtx { /* Sidebar items */
+    color: var(--primary-font-color) !important;
+}
+
+body.dark-mode .rcx-css-xsevtx:hover {
+	background-color: var(--color-darkest) !important;
+}
+
+body.dark-mode .rcx-css-pkfs6h.active {
+	background-color: var(--color-dark-70) !important;
+}
+
+body.dark-mode .rcx-css-1k9p36u,
+body.dark-mode .rcx-css-11ki28k { /* Connectivty services */
+	color: var(--primary-font-color) !important;
+}
+
+body.dark-mode .rcx-css-1of9j10 { /* Settings */
+	background-color: var(--color-darker) !important;
+}
+
+body.dark-mode .rcx-css-kyq2rf { /* Info & stats (Deployment, License, Usage) */
 	background-color: var(--color-dark) !important;
 }
 
-body.dark-mode .rcx-css-61di5s { /* Admin panel info & stats (Deployment, License, Usage) */
+body.dark-mode .rcx-css-61di5s { /* Info & stats (Deployment, License, Usage) */
 	color: var(--color-gray) !important;
 }
 
