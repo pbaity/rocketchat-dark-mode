@@ -795,6 +795,19 @@ body.dark-mode .rcx-css-1wm5na { /* Account settings page header title */
 
 /************** Admin panel ******************/
 
+body.dark-mode .rcx-css-1ky5rco,
+body.dark-mode .rcx-css-xsevtx { /* Sidebar items */
+    color: var(--primary-font-color) !important;
+}
+
+body.dark-mode .rcx-css-xsevtx:hover {
+	background-color: var(--color-darkest) !important;
+}
+
+body.dark-mode .rcx-css-pkfs6h.active {
+	background-color: var(--color-dark-70) !important;
+}
+
 body.dark-mode .rcx-css-1of9j10 { /* Settings */
 	background-color: var(--color-darker) !important;
 }
