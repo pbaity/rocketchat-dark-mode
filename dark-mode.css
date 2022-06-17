@@ -470,6 +470,14 @@ body.dark-mode .rcx-options .rcx-option--focus /* Temporary fix while focus is n
 	color: var(--color-white) !important;
 }
 
+body.dark-mode .rc-scrollbars-view .rcx-option .rcx-option__wrapper {
+	color: var(--color-white) !important;
+}
+
+body.dark-mode .rc-scrollbars-view .rcx-option:hover {
+	background-color: var(--color-darker) !important;
+}
+
 body.dark-mode .rc-popover__content .rcx-option:hover,
 /* body.dark-mode .rcx-options .rcx-option--focus, */ /* Temporary fix while focus is not refreshed */
 body.dark-mode .rcx-options .rcx-option--selected {
