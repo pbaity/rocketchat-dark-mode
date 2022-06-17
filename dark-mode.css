@@ -766,18 +766,6 @@ body.dark-mode .simplebar-content > .rcx-css-fr02gd { /* main content */
 	color: var(--primary-font-color);
 }
 
-body.dark-mode .rcx-css-1of9j10 { /*Admin Settings Panels */
-	background-color: var(--color-darker) !important;
-}
-
-body.dark-mode .rcx-css-txktj6 { /* Account settings page background */
-    background-color: var(--color-dark) !important;
-}
-
-body.dark-mode .rcx-css-1wm5na { /* Account settings page header title */
-	color: var(--primary-font-color) !important;
-}
-
 body.dark-mode .rc-scrollbars-container { /* Panels sidebar */
     background-color: var(--sidebar-background);
 }
