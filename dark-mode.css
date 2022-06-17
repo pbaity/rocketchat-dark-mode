@@ -808,6 +808,11 @@ body.dark-mode .rcx-css-pkfs6h.active {
 	background-color: var(--color-dark-70) !important;
 }
 
+body.dark-mode .rcx-css-1k9p36u,
+body.dark-mode .rcx-css-11ki28k { /* Connectivty services */
+	color: var(--primary-font-color) !important;
+}
+
 body.dark-mode .rcx-css-1of9j10 { /* Settings */
 	background-color: var(--color-darker) !important;
 }
