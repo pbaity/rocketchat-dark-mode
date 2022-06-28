@@ -20,6 +20,14 @@ And when dark mode is active:
 
 ## Installation
 
+If you want to "install" this dark mode, here's all you need to do:
+
+1. Be an administrator of your Rocket.Chat instance, or send these instructions to one and pester them to do it for you
+2. Go to the **Administration** panel > **Settings** > **Layout**
+3. Copy the contents of [dark-mode.css](dark-mode.css) into **Custom CSS**
+4. Copy the contents of [dark-mode-toggle.js](dark-mode-toggle.js) into **Custom Script for Logged In Users** (third field) under **Custom Scripts**
+5. Refresh your local Rocket.Chat instance (a server restart is _not_ required). You may need to clear your cache if using a web browser.
+
 **NOTE:** This repo aims to keep the dark mode working for the latest stable release of Rocket.Chat. Older versions may or may not work.
 
 - For Rocket.Chat versions 3.2.2 - 3.3.3, use the code from the [**3.2.2** branch](https://github.com/pbaity/rocketchat-dark-mode/tree/3.2.2).
@@ -31,13 +39,6 @@ And when dark mode is active:
 - For Rocket.Chat versions 4.2.3 - 4.7.4, use the code from the [**4.7.4** branch](https://github.com/pbaity/rocketchat-dark-mode/tree/4.7.4).
 - For current latest stable release, use the code from the **master** branch.
 
-If you want to "install" this dark mode, here's all you need to do:
-
-1. Be an administrator of your Rocket.Chat instance, or send these instructions to one and pester them to do it for you
-2. Go to the **Administration** panel > **Layout**
-3. Copy the contents of [dark-mode.css](dark-mode.css) into **Custom CSS**
-4. Copy the contents of [dark-mode-toggle.js](dark-mode-toggle.js) into **Custom Scripts** > **Custom Script for Logged In Users**
-5. Refresh your local Rocket.Chat instance (a server restart is _not_ required). You may need to clear your cache if using a web browser.
 
 ## Contributing
 
