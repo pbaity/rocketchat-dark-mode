@@ -336,8 +336,10 @@ body.dark-mode .rcx-message {
 	background-color: var(--color-darkest);
 }
 
-body.dark-mode .rcx-message.active,
-body.dark-mode .rcx-message:hover {
+body.dark-mode .message.active, /* old name (threads) */
+body.dark-mode .message:hover, /* old name (threads) */
+body.dark-mode .rcx-message.active, /* new name (main chat) */
+body.dark-mode .rcx-message:hover { /* new name (main chat) */
     background-color: var(--color-darker);
 }
 
