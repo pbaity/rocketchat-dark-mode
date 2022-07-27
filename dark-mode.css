@@ -540,27 +540,55 @@ body.dark-mode .rcx-options .rcx-option--selected:hover {
 
 /***** Buttons *****/
 
-/* Regular button style */
-body.dark-mode .main-content .rcx-button:not(.rcx-button--ghost) { /* Default */
-	background-color: var(--color-dark) !important;
+/* Default style for buttons */
+
+body.dark-mode .main-content .rcx-button:not(.rcx-button--primary, .rcx-button--danger) {
+	background-color: var(--color-darkest);
 }
-body.dark-mode .main-content .rcx-button:is(.rcx-button--ghost, .rcx-button):hover { /* Hovered or selected */
-	background-color: var(--color-darkest) !important;
+body.dark-mode .main-content .rcx-button:is(.rcx-button--icon) {
+	border-color: transparent !important;
+}
+body.dark-mode .main-content .rcx-button:hover,
+body.dark-mode .main-content .rcx-button.rcx-button--icon-info { /* Replaces :focus rule */
+	background-color: var(--color-dark);
 }
 
-/* Square (icon) button style */
-body.dark-mode .main-content .rcx-button--square:not(.rcx-button--ghost) { /* Default */
+/* Same style, for unusual buttons/icons/etc */
+/* ----------------------------------------- */
+/*	|	CSS rule					|	Location		|	Description					|
+	|-------------------------------|-------------------|-------------------------------|
+	|	.message-actions__menu-icon	|	Right sidebar	|	Message actions menu items	|
+	|	...							|	...				|	...							|
+*/
+
+body.dark-mode .message-actions__menu-icon {
 	background-color: var(--color-darkest) !important;
-	border-color: transparent !important;
 }
-body.dark-mode .main-content .rcx-button--square:is(.rcx-button--ghost, .rcx-button):hover,  /* Hovered or selected */
-body.dark-mode .main-content .rcx-button--square:is(.rcx-button--ghost, .rcx-button).rcx-button--icon-info { /* Replaces :focus rule */
+body.dark-mode .message-actions__menu:hover,
+body.dark-mode .message-actions__menu-icon:hover,
+body.dark-mode .message-actions__menu-icon:focus {
 	background-color: var(--color-dark) !important;
 	border-color: transparent !important;
-	/* box-shadow: 0 0 0 .1rem var(--color-gray); */
+}
+
+/* Inverted style, for buttons on dark backgrounds */
+/* ----------------------------------------------- */
+/*	|	CSS rule			|	Location		|	Description						|
+	|-----------------------|-------------------|-----------------------------------|
+	|	.rcx-css-1bmadou	|	Right sidebar	|	Top right action buttons		|
+	|	...					|	...				|	...								|
+*/
+
+body.dark-mode .rcx-css-1bmadou .rcx-button {
+	background-color: var(--color-dark) !important;
+}
+body.dark-mode .rcx-css-1bmadou .rcx-button:hover,
+body.dark-mode .rcx-css-1bmadou .rcx-button:focus {
+	background-color: var(--color-darkest) !important;
 }
 
 /* Menu buttons on top right (threads, search, etc.) */
+
 body.dark-mode .rcx-css-15vvv6z:hover,
 body.dark-mode .rcx-css-ue04py:hover,
 body.dark-mode .rcx-css-15vvv6z:active,
