@@ -220,16 +220,6 @@ body.dark-mode .rcx-css-ntpg4f {
 	color: var(--rc-color-primary) !important;
 }
 
-/* Message "Beginning of conversation" */
-body.dark-mode .rcx-css-wtiuha {
-	color: var(--rc-color-primary-light-medium) !important;
-}
-
-/* Message "You joined a new private conversation with" */
-body.dark-mode .rcx-css-oyadl9 {
-	color: var(--rc-color-primary-light) !important;
-}
-
 body.dark-mode .main-content a {
 	color: var(--color-light-blue);
 }
@@ -312,8 +302,43 @@ body.dark-mode .content-background-color {
 	background-color: var(--header-background-color);
 }
 
-body.dark-mode .message {
+/* Chat system messages */
+
+/* "Beginning of conversation" */
+body.dark-mode .rcx-css-wtiuha {
+	color: var(--rc-color-primary-light-medium) !important;
+}
+
+/* User joined channel, roles updates, etc */
+body.dark-mode .rcx-message-system__name {
+	color: var(--rc-color-primary-light) !important;
+}
+
+/* "You joined a new private conversation with" */
+body.dark-mode .rcx-css-oyadl9 {
+	color: var(--rc-color-primary-light) !important;
+}
+
+/* Chat messages */
+
+body.dark-mode .rcx-message {
 	background-color: var(--color-darkest);
+}
+
+body.dark-mode .rcx-message.active,
+body.dark-mode .rcx-message:hover {
+    background-color: var(--color-darker);
+}
+
+/*
+body.dark-mode .rcx-message .first-unread .body:after {
+	background-color: var(--header-background-color);
+}
+*/
+
+body.dark-mode .rcx-message-body,
+body.dark-mode .rcx-message-header__name {
+	color: var(--primary-font-color);
 }
 
 body.dark-mode .message.new-day::after,
@@ -329,17 +354,8 @@ body.dark-mode .message.new-day::before {
 	background-color: var(--rc-color-primary-dark);
 }
 
-body.dark-mode .message.active,
-body.dark-mode .message:hover {
-    background-color: var(--color-darker);
-}
-
-body.dark-mode .message.editing {
-	background-color: var(--color-dark-blue);
-}
-
-body.dark-mode .message.first-unread .body:after {
-	background-color: var(--header-background-color);
+body.dark-mode .rcx-message--editing {
+	background-color: var(--color-dark-blue) !important;
 }
 
 body.dark-mode .rc-message-box__container {
@@ -598,11 +614,6 @@ body.dark-mode .rcx-css-jve35a:hover {
 
 body.dark-mode .rcx-message-metrics__item-label {
 	color: var(--color-gray-light);
-}
-
-body.dark-mode .rcx-css-jve35a > .rcx-message > .rcx-message-container > .rcx-message-body,
-body.dark-mode .rcx-css-jve35a:hover > .rcx-message > .rcx-message-container > .rcx-message-body {
-	color: var(--primary-color);
 }
 
 /* Targets unread message indicator in threads panel. */
