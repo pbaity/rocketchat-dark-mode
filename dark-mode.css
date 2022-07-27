@@ -6,6 +6,7 @@
 	--primary-font-color: #444;
 	--info-font-color: #a0a0a0;
 	--color-darker: #272c33;
+	--color-light-yellow: #ffecad;
 }
 
 /* Reset global font color so that it's changable more easily */
@@ -108,11 +109,13 @@ body.dark-mode {
 
 	/* General Colors */
 	--rc-color-alert-message-warning-background: hsl(352, 83%, 20%);
+	--message-box-editing-color: var(--rc-color-alert-message-warning-background);
 	--rc-color-primary: var(--color-gray-lightest);
 	--rc-color-primary-lightest: var(--color-dark-medium);
 	--rcx-color-neutral-100: var(--rc-color-primary-dark);
-	--rcx-color-danger-200: var(--rc-color-alert);
-	--rcx-color-warning-200: var(--rc-color-alert);
+
+	--rcx-color-danger-200: var(--color-dark-red);
+	--rcx-color-warning-200: var(--color-light-yellow);
 
 	/* Chat */
 	--rcx-message-background-color: var(--rc-color-primary-darkest);
@@ -170,12 +173,12 @@ body.dark-mode {
 	--tooltip-background: var(--color-darkest);
 	--tooltip-text-color: var(--color-white);
 
-	/* alert */
+	/* Alert */
 	--alerts-background: #1d73f5;
 	--alerts-color: var(--color-white);
 
-	--message-box-editing-color: var(--rc-color-alert-message-warning-background);
-	--rc-color-alert: var(--color-dark-red);
+	/* Toastbar */
+	--rcx-toastbar-error-color: var(--primary-font-color) /*--rcx-font-danger */
 }
 
 /******************************************
@@ -586,9 +589,11 @@ body.dark-mode .rcx-button--primary:disabled {
 	color: var(--color-gray);
 }
 
+/*
 body.dark-mode .rcx-button--danger {
 	color: var(--rcx-button-colors-secondary-danger-color,var(--rcx-color-danger-500,#f5455c));
 }
+*/
 
 /***** Left sidebar *****/
 
@@ -816,16 +821,19 @@ body.dark-mode .rcx-css-10ij0kz .rcx-box { /* Panels sidebar header text and but
     color: var(--primary-font-color) !important;
 }
 
-body.dark-mode .rcx-css-1l00c5f,
+body.dark-mode .rcx-css-1x2kh4b,
 body.dark-mode .rcx-css-1ky5rco { /* Panels sidebar item */
     color: var(--rcx-sidebar-item-color,var(--rcx-color-foreground-hint,#9ea2a8)) !important;
 }
 
-body.dark-mode .rcx-css-1l00c5f.active { /* Panels sidebar item selected */
-    background-color: rgba(108, 114, 122, 0.3);
+body.dark-mode .rcx-css-1x2kh4b.active { /* Panels sidebar item selected */
+	background-color: var(--color-dark-70) !important;
 }
 
-body.dark-mode .rcx-css-1l00c5f:hover, .rcx-css-1l00c5f:focus, .rcx-css-1l00c5f.active:focus, .rcx-css-1l00c5f.active:hover { /* Panels sidebar item hovered */
+body.dark-mode .rcx-css-1x2kh4b:hover, 
+body.dark-mode .rcx-css-1x2kh4b:focus, 
+body.dark-mode .rcx-css-1x2kh4b.active:focus, 
+body.dark-mode .rcx-css-1x2kh4b.active:hover { /* Panels sidebar item hovered */
     background-color: var(--color-darkest);
 }
 
@@ -841,17 +849,13 @@ body.dark-mode .rcx-css-1wm5na { /* Account settings page header title */
 
 /************** Admin panel ******************/
 
-body.dark-mode .rcx-css-1ky5rco,
-body.dark-mode .rcx-css-xsevtx { /* Sidebar items */
-    color: var(--primary-font-color) !important;
+/* Admin panel page items (deployment-card) */
+body.dark-mode .rcx-css-10nb3ed {
+    background-color: var(--color-darkest) !important;
 }
 
 body.dark-mode .rcx-css-xsevtx:hover {
 	background-color: var(--color-darkest) !important;
-}
-
-body.dark-mode .rcx-css-pkfs6h.active {
-	background-color: var(--color-dark-70) !important;
 }
 
 body.dark-mode .rcx-css-1k9p36u,
@@ -887,10 +891,11 @@ body.dark-mode .sidebar-light {
 	background-color: var(--color-dark);
 }
 
-body.dark-mode .rcx-accordion-item__title,
+body.dark-mode .rcx-accordion-item__bar .rcx-accordion-item__title,
+body.dark-mode .rcx-accordion-item__bar .rcx-chevron,
 body.dark-mode .rcx-label__text,
 body.dark-mode .rcx-field__label{
-	color: var(--color-white);
+	color: var(--primary-font-color)
 }
 
 body.dark-mode .sidebar-flex__search .rc-input__element {
@@ -952,7 +957,7 @@ body.dark-mode .permissions-manager .permission-grid .id-styler {
 }
 
 body.dark-mode .rcx-accordion-item__bar:hover {
-	background-color: var(--color-dark-30);
+	background-color: var(--color-darkest);
 }
 
 body.dark-mode .rcx-box--text-style-h1,
