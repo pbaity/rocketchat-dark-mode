@@ -350,6 +350,7 @@ body.dark-mode .rcx-message .first-unread .body:after {
 */
 
 body.dark-mode .rcx-message-body,
+body.dark-mode .rcx-message-thread__message,
 body.dark-mode .rcx-message-header__name {
 	color: var(--primary-font-color);
 }
@@ -591,17 +592,20 @@ body.dark-mode .rcx-button--danger {
 
 /***** Left sidebar *****/
 
-body.dark-mode .rcx-box.rcx-box--full.rcx-tile--elevation-2.rcx-tile {
+/* Popover menus - Top left buttons (.rcx-css-bcgm2b) */
+/* .rcx-box.rcx-box--full.rcx-tile--elevation-2.rcx-tile */
+
+body.dark-mode .rcx-css-bcgm2b.rcx-tile {
 	background-color: var(--color-dark-medium);
 	color: var(--primary-font-color);
 }
 
-body.dark-mode .rcx-box.rcx-box--full.rcx-tile--elevation-2.rcx-tile .rcx-option__title,
-body.dark-mode .rcx-box.rcx-box--full.rcx-tile--elevation-2.rcx-tile .rcx-option {
+body.dark-mode .rcx-css-bcgm2b .rcx-option__title,
+body.dark-mode .rcx-css-bcgm2b .rcx-option {
 	color: var(--primary-font-color);
 }
 
-body.dark-mode .rcx-box.rcx-box--full.rcx-tile--elevation-2.rcx-tile .rcx-option:hover {
+body.dark-mode .rcx-css-bcgm2b .rcx-option:hover {
     background-color: var(--color-dark-light);
 }
 
@@ -634,12 +638,6 @@ body.dark-mode button.rcx-contextual-message__follow + div.rcx-box--full {
     background-color: #1d74f5 !important;
 }
 
-/***** Members list *****/
-
-body.dark-mode .rcx-option__content {
-	color: var(--color-gray-light);
-}
-
 /***** Chat file list *****/
 
 body.dark-mode .rcx-css-18t0quo {
@@ -666,14 +664,29 @@ body.dark-mode .attachments__name:hover, .attachments__name:active {
 	color: var(--color-light-blue);
 }
 
-body.dark-mode .rc-popover__item:hover {
+/* Popover menus - Chat messages buttons (message-action-menu-options) */
+/* rcx-box rcx-box--full rcx-tile--elevation-2 rcx-tile  rcx-button-group__item rcx-css-2lacg2 */
+
+body.dark-mode .rcx-button-group__item.rcx-css-2lacg2, /* main chat */
+body.dark-mode .rc-popover__item:hover { /* threads */
 	background-color: var(--popover-background-hover);
 }
 
-body.dark-mode .rc-popover__content {
+body.dark-mode .rcx-button-group__item.rcx-css-2lacg2, /* main chat */
+body.dark-mode .rc-popover__content { /* threads */
 	background-color: var(--popover-background);
 	box-shadow: 0px 0px 2px var(--color-dark-20);
 }
+
+body.dark-mode .rcx-css-2lacg2 .rcx-option:not(.rcx-option--danger) {
+	color: var(--primary-font-color);
+}
+
+body.dark-mode .rcx-css-2lacg2 .rcx-option.rcx-option--danger {
+	color: var(--rc-color-error);
+}
+
+/* --- */
 
 body.dark-mode .emoji-picker .filter-item.active {
 	border-color: var(--color-light-blue);
