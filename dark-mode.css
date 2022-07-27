@@ -309,7 +309,7 @@ body.dark-mode .content-background-color {
 
 /* Chat messages separator (main chat) */
 
-body.dark-mode .rcx-message-divider__bar:after {
+body.dark-mode .rcx-message-divider__wrapper {
     background-color: var(--rc-color-primary-dark);
 }
 
@@ -356,14 +356,14 @@ body.dark-mode .rcx-message-header__name {
 
 body.dark-mode .message .reactions>li,
 body.dark-mode .border-component-color,
-body.dark-mode .message.thread-main.new-day::after { /* Chat messages separator (threads) */
+body.dark-mode .message.new-day::after { /* Chat messages separator (threads) */
 	border-color: var(--rc-color-primary-lightest);
 }
 
 body.dark-mode .message .reactions>li,
 body.dark-mode .message .title .is-bot,
 body.dark-mode .message .title .role-tag,
-body.dark-mode .message.thread-main.new-day::before { /* Chat messages separator (threads) */
+body.dark-mode .message.new-day::before { /* Chat messages separator (threads) */
 	background-color: var(--rc-color-primary-dark);
 }
 
