@@ -113,6 +113,11 @@ body.dark-mode {
 	--rcx-color-neutral-100: var(--rc-color-primary-dark);
 	--rcx-color-danger-200: var(--rc-color-alert);
 	--rcx-color-warning-200: var(--rc-color-alert);
+
+	/* Chat */
+	--rcx-message-background-color: var(--rc-color-primary-darkest);
+	--rcx-message-divider-background-color: var(--rc-color-primary-dark);
+	--rcx-message-divider-color: var(--primary-font-color);
 	
 	/* Forms - Button */
 	--button-disabled-background: var(--color-dark-70);
@@ -302,6 +307,12 @@ body.dark-mode .content-background-color {
 	background-color: var(--header-background-color);
 }
 
+/* Chat messages separator (main chat) */
+
+body.dark-mode .rcx-message-divider__bar:after {
+    background-color: var(--rc-color-primary-dark);
+}
+
 /* Chat system messages */
 
 /* "Beginning of conversation" */
@@ -341,16 +352,16 @@ body.dark-mode .rcx-message-header__name {
 	color: var(--primary-font-color);
 }
 
-body.dark-mode .message.new-day::after,
 body.dark-mode .message .reactions>li,
-body.dark-mode .border-component-color {
+body.dark-mode .border-component-color,
+body.dark-mode .message.thread-main.new-day::after { /* Chat messages separator (threads) */
 	border-color: var(--rc-color-primary-lightest);
 }
 
 body.dark-mode .message .reactions>li,
 body.dark-mode .message .title .is-bot,
 body.dark-mode .message .title .role-tag,
-body.dark-mode .message.new-day::before {
+body.dark-mode .message.thread-main.new-day::before { /* Chat messages separator (threads) */
 	background-color: var(--rc-color-primary-dark);
 }
 
