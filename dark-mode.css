@@ -179,6 +179,9 @@ body.dark-mode {
 
 	/* Toastbar */
 	--rcx-toastbar-error-color: var(--primary-font-color) /*--rcx-font-danger */
+
+	/* Tags */
+	--rcx-tag-colors-default-background-color: var(--color-dark);
 }
 
 /******************************************
