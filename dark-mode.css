@@ -858,8 +858,9 @@ body.dark-mode .rcx-css-xsevtx:hover {
 	background-color: var(--color-darkest) !important;
 }
 
+body.dark-mode .rcx-css-12tgzar, /* Users */
 body.dark-mode .rcx-css-1k9p36u,
-body.dark-mode .rcx-css-11ki28k { /* Connectivty services */
+body.dark-mode .rcx-css-11ki28k { /* Connectivity services */
 	color: var(--primary-font-color) !important;
 }
 
