@@ -550,12 +550,9 @@ body.dark-mode .main-content .rcx-button--square:not(.rcx-button--ghost) { /* De
 	background-color: var(--color-darkest) !important;
 	border-color: transparent !important;
 }
-body.dark-mode .main-content .rcx-button--square:is(.rcx-button--ghost, .rcx-button):hover {  /* Hovered or selected */
+body.dark-mode .main-content .rcx-button--square:is(.rcx-button--ghost, .rcx-button):hover,  /* Hovered or selected */
+body.dark-mode .main-content .rcx-button--square:is(.rcx-button--ghost, .rcx-button).rcx-button--icon-info { /* Replaces :focus rule */
 	background-color: var(--color-dark) !important;
-}
-
-body.dark-mode .main-content .rcx-button--square:is(.rcx-button--ghost, .rcx-button):focus {
-	background-color: var(--color-darkest);
 	border-color: transparent !important;
 	/* box-shadow: 0 0 0 .1rem var(--color-gray); */
 }
