@@ -383,14 +383,17 @@ body.dark-mode .rc-old .rc-message-box .reply-preview {
 	background-color: var(--color-dark);
 }
 
-body.dark-mode .rcx-message-toolbox,
+body.dark-mode .message-actions, /* threads */
+body.dark-mode .rcx-message-toolbox, /* main chat */
 body.dark-mode .rc-member-list__counter {
 	color: var(--color-gray-light);
 	background-color: var(--color-darkest);
 	border-color: var(--color-dark);
 }
 
-body.dark-mode .rcx-message-toolbox .rcx-button--square:hover {
+body.dark-mode .message-actions__button:hover, /* threads */
+body.dark-mode .message-actions__menu:hover /* threads */
+body.dark-mode .rcx-message-toolbox .rcx-button--square:hover { /* main chat */
 	background-color: var(--color-dark);
 }
 
