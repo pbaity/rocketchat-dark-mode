@@ -116,11 +116,11 @@ body.dark-mode {
 	--rcx-color-danger-200: var(--color-dark-red);
 	--rcx-color-warning-200: var(--color-light-yellow);	
 	/* --rcx-color-foreground-hint */
-	--rcx-color-foreground-alternative: var(--color-darkest);
+	--rcx-color-foreground-alternative: var(--primary-font-color); /*var(--color-darkest);*/
 	--rcx-button-secondary-background-color: var(--color-darkest);
 	--rcx-color-foreground-default: var(--info-font-color);
-	--rcx-color-foreground-info: var(--info-font-color);
-	--rcx-color-foreground-hint: var(--info-font-color);
+	--rcx-color-foreground-info: var(--color-gray);
+	--rcx-color-foreground-hint: var(--color-gray);
 	--rcx-tag-colors-disabled-color: var(--rc-color-primary-dark);
 
 	/* Chat */
@@ -148,7 +148,9 @@ body.dark-mode {
 
 	/* Sidebar */
 	--sidebar-background: var(--color-dark);
-	--sidebar-background-hover: var(--color-darkest);
+	--sidebar-background-hover: var(--color-darkest); /* hover, focus */
+	--sidebar-background-light-hover: var(--color-darkest); /* hover, focus */
+	--sidebar-background-light-active: var(--color-dark-70);
 
 	/* Chip */
 	--chip-background: var(--color-blue);
@@ -857,22 +859,6 @@ body.dark-mode .rcx-css-10ij0kz .rcx-box { /* Panels sidebar header text and but
     color: var(--primary-font-color) !important;
 }
 
-body.dark-mode .rcx-css-1x2kh4b,
-body.dark-mode .rcx-css-1ky5rco { /* Panels sidebar item */
-    color: var(--rcx-sidebar-item-color,var(--rcx-color-foreground-hint,#9ea2a8)) !important;
-}
-
-body.dark-mode .rcx-css-1x2kh4b.active { /* Panels sidebar item selected */
-	background-color: var(--color-dark-70) !important;
-}
-
-body.dark-mode .rcx-css-1x2kh4b:hover, 
-body.dark-mode .rcx-css-1x2kh4b:focus, 
-body.dark-mode .rcx-css-1x2kh4b.active:focus, 
-body.dark-mode .rcx-css-1x2kh4b.active:hover { /* Panels sidebar item hovered */
-    background-color: var(--color-darkest);
-}
-
 /************** Account panel ******************/
 
 body.dark-mode .rcx-css-txktj6 { /* Account settings page background */
@@ -888,10 +874,6 @@ body.dark-mode .rcx-css-1wm5na { /* Account settings page header title */
 /* Admin panel page items (deployment-card) */
 body.dark-mode .rcx-css-10nb3ed {
     background-color: var(--color-darkest) !important;
-}
-
-body.dark-mode .rcx-css-xsevtx:hover {
-	background-color: var(--color-darkest) !important;
 }
 
 body.dark-mode .rcx-css-12tgzar, /* Users */
