@@ -114,8 +114,7 @@ body.dark-mode {
 	--rc-color-primary-lightest: var(--color-dark-medium);
 	--rcx-color-neutral-100: var(--rc-color-primary-dark);
 	--rcx-color-danger-200: var(--color-dark-red);
-	--rcx-color-warning-200: var(--color-light-yellow);	
-	/* --rcx-color-foreground-hint */
+	--rcx-color-warning-200: var(--color-light-yellow);
 	--rcx-color-foreground-alternative: var(--primary-font-color); /*var(--color-darkest);*/
 	--rcx-button-secondary-background-color: var(--color-darkest);
 	--rcx-color-foreground-default: var(--info-font-color);
@@ -584,15 +583,19 @@ body.dark-mode .message-actions__menu-icon:focus {
 /*	|	CSS rule			|	Location		|	Description						|
 	|-----------------------|-------------------|-----------------------------------|
 	|	.rcx-css-1bmadou	|	Right sidebar	|	Top right action buttons		|
+	|	.rcx-css-10ij0kz	|	Admin panel		|	Top left close button (X)		|
 	|	...					|	...				|	...								|
 */
 
+body.dark-mode .rcx-css-10ij0kz .rcx-button,
 body.dark-mode .rcx-css-1bmadou .rcx-button {
 	background-color: var(--color-dark) !important;
 }
+body.dark-mode .rcx-css-10ij0kz .rcx-button:hover,
 body.dark-mode .rcx-css-1bmadou .rcx-button:hover,
 body.dark-mode .rcx-css-1bmadou .rcx-button:focus {
 	background-color: var(--color-darkest) !important;
+	border-color: transparent !important;
 }
 
 /* Menu buttons on top right (threads, search, etc.) */
