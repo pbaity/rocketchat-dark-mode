@@ -114,11 +114,14 @@ body.dark-mode {
 	--rc-color-primary-lightest: var(--color-dark-medium);
 	--rcx-color-neutral-100: var(--rc-color-primary-dark);
 	--rcx-color-danger-200: var(--color-dark-red);
-	--rcx-color-warning-200: var(--color-light-yellow);
-	/* --rcx-color-foreground-alternative: var(--color-darkest); */
-	--rcx-color-foreground-default: var(--info-font-color); /*var(--primary-font-color);*/
-	--rcx-color-foreground-info: var(--info-font-color); /*var(--primary-font-color);*/
-	--rcx-color-foreground-hint: var(--info-font-color); /*var(--primary-font-color);*/
+	--rcx-color-warning-200: var(--color-light-yellow);	
+	/* --rcx-color-foreground-hint */
+	--rcx-color-foreground-alternative: var(--color-darkest);
+	--rcx-button-secondary-background-color: var(--color-darkest);
+	--rcx-color-foreground-default: var(--info-font-color);
+	--rcx-color-foreground-info: var(--info-font-color);
+	--rcx-color-foreground-hint: var(--info-font-color);
+	--rcx-tag-colors-disabled-color: var(--rc-color-primary-dark);
 
 	/* Chat */
 	--rcx-message-background-color: var(--rc-color-primary-darkest);
