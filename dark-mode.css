@@ -113,6 +113,7 @@ body.dark-mode {
 	--rc-color-primary: var(--color-gray-lightest);
 	--rc-color-primary-lightest: var(--color-dark-medium);
 	--rcx-color-neutral-100: var(--rc-color-primary-dark);
+	--rcx-color-neutral-400: var(--rc-color-primary-dark);
 	--rcx-color-danger-200: var(--color-dark-red);
 	--rcx-color-warning-200: var(--color-light-yellow);
 	--rcx-color-foreground-alternative: var(--primary-font-color); /*var(--color-darkest);*/
@@ -120,6 +121,11 @@ body.dark-mode {
 	--rcx-color-foreground-info: var(--color-gray);
 	--rcx-color-foreground-hint: var(--color-gray);
 	--rcx-tag-colors-disabled-color: var(--rc-color-primary-dark);
+	
+	/* Emojis */
+	--rcx-button-icon-background-color: transparent;
+	--rcx-message-reaction-background-color: var(--rc-color-primary-dark);
+	--rcx-message-reaction-border-color: var(--rc-color-primary-lightest);
 
 	--rcx-message-generic-preview-border-color: var(--color-darker);
 	--rcx-message-generic-preview-content-background-color: var(--color-darker);
@@ -127,7 +133,7 @@ body.dark-mode {
 
 	/* Chat */
 	--rcx-message-background-color: var(--rc-color-primary-darkest);
-	--rcx-message-divider-background-color: var(--rc-color-primary-dark);
+	--rcx-message-divider-background-color: var(--color-darker);
 	--rcx-message-divider-color: var(--primary-font-color);
 	
 	/* Forms - Button */
@@ -368,7 +374,7 @@ body.dark-mode .rcx-message-body,
 body.dark-mode .rcx-message-thread__message,
 body.dark-mode .rcx-message-header__name {
 	color: var(--primary-font-color);
-}
+}	
 
 body.dark-mode .message .reactions>li,
 body.dark-mode .border-component-color,
