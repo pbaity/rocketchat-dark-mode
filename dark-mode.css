@@ -131,6 +131,10 @@ body.dark-mode {
 	--rcx-message-generic-preview-content-background-color: var(--color-darker);
 	--rcx-message-generic-preview-content-hover-background-color: var(--color-darkest);
 
+	/* Tags */
+	--rcx-tag-colors-default-background-color: var(--color-dark-medium);
+	--rcx-tag-colors-default-color: var(--color-gray);
+
 	/* Chat */
 	--rcx-message-background-color: var(--rc-color-primary-darkest);
 	--rcx-message-divider-background-color: var(--color-darker);
@@ -369,6 +373,12 @@ body.dark-mode .rcx-message .first-unread .body:after {
 	background-color: var(--header-background-color);
 }
 */
+
+/* Fix for room tag */
+body.dark-mode .rcx-css-17cb7q7,
+body.dark-mode .rcx-css-rc5ipl {
+	color: var(--rcx-tag-colors-default-color) !important;
+}
 
 body.dark-mode .rcx-message-body,
 body.dark-mode .rcx-message-thread__message,
