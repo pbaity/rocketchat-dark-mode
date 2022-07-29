@@ -144,7 +144,8 @@ body.dark-mode {
 	--button-disabled-background: var(--color-dark-70);
 	--button-disabled-text-color: var(--color-dark-80);
 	--rcx-button-icon-hover-background-color: var(--color-dark-medium);
-	--rcx-button-secondary-background-color: var(--color-darkest);
+	--rcx-button-secondary-background-color: var(--color-darkest);	
+	--rcx-button-secondary-hover-background-color: var(--color-dark-medium);
 
 	/* Forms - Input */
 	--input-text-color: var(--color-gray-lightest);
@@ -464,7 +465,7 @@ body.dark-mode .rcx-modal__header .rcx-button--ghost.rcx-button:hover {
 }
 
 /* Temporary fix for modals where "Cancel" button is missing 'rcx-button--ghost' class */
-body.dark-mode .rcx-modal__footer .rcx-box.rcx-box--full.rcx-box--animated.rcx-button.rcx-button-group__item:first-of-type:not(.rcx-button--ghost) {
+body.dark-mode .rcx-modal__footer .rcx-box.rcx-box--full.rcx-box--animated.rcx-button.rcx-button-group__item:first-of-type:not(.rcx-button--ghost):not(.rcx-button--secondary) {
 	color: var(--rc-color-primary-lightest);
 }
 
@@ -634,7 +635,7 @@ body.dark-mode .rcx-css-136xdpx {
 	background-color: var(--color-darkest);
 }
 
-body.dark-mode .rcx-button {
+body.dark-mode .rcx-button:not(.rcx-button--secondary) {
 	color: var(--info-font-color);
 }
 
@@ -650,6 +651,10 @@ body.dark-mode .rcx-button--primary {
 body.dark-mode .rcx-button--primary:disabled {
 	color: var(--color-gray);
 	opacity: 50%;
+}
+
+body.dark-mode .rcx-button--secondary {
+	color: var(--primary-font-color);
 }
 
 /*
