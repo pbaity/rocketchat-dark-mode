@@ -121,6 +121,10 @@ body.dark-mode {
 	--rcx-color-foreground-hint: var(--color-gray);
 	--rcx-tag-colors-disabled-color: var(--rc-color-primary-dark);
 
+	--rcx-message-generic-preview-border-color: var(--color-darker);
+	--rcx-message-generic-preview-content-background-color: var(--color-darker);
+	--rcx-message-generic-preview-content-hover-background-color: var(--color-darkest);
+
 	/* Chat */
 	--rcx-message-background-color: var(--rc-color-primary-darkest);
 	--rcx-message-divider-background-color: var(--rc-color-primary-dark);
