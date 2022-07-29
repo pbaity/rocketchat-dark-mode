@@ -224,7 +224,7 @@ body.dark-mode .rcx-css-1d5cod7 {
 
 body.dark-mode .rcx-css-11c35pn > .rcx-attachment__details {
 	border-color: transparent !important;
-	border-inline-start-color: var(--primary-font-color) !important;
+	border-inline-start-color: var(--color-gray) !important;
 }
 
 body.dark-mode .rcx-css-11c35pn:hover .rcx-attachment__details,
