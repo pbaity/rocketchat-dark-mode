@@ -113,6 +113,7 @@ body.dark-mode {
 	--rc-color-primary: var(--color-gray-lightest);
 	--rc-color-primary-lightest: var(--color-dark-medium);
 	--rcx-color-neutral-100: var(--rc-color-primary-dark);
+	--rcx-color-neutral-200: var(--rc-color-primary-dark);
 	--rcx-color-neutral-400: var(--rc-color-primary-dark);
 	--rcx-color-danger-200: var(--color-dark-red);
 	--rcx-color-warning-200: var(--color-light-yellow);
