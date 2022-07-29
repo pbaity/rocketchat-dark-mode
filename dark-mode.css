@@ -400,7 +400,8 @@ body.dark-mode .message.new-day::before { /* Chat messages separator (threads) *
 }
 
 body.dark-mode .rcx-message--editing {
-	background-color: var(--color-dark-blue) !important;
+	/* RGB value for var(--color-dark-blue) */
+	background-color: rgba(23,92,196, 0.5) !important;
 }
 
 body.dark-mode .rc-message-box__container {
