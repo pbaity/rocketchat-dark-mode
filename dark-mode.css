@@ -122,6 +122,8 @@ body.dark-mode {
 	--rcx-color-foreground-info: var(--color-gray);
 	--rcx-color-foreground-hint: var(--color-gray);
 	--rcx-tag-colors-disabled-color: var(--rc-color-primary-dark);
+
+	--rcx-tabs-hover-border-color: var(--primary-font-color);
 	
 	/* Emojis */
 	--rcx-button-icon-background-color: transparent;
@@ -625,9 +627,9 @@ body.dark-mode .rcx-css-1bmadou .rcx-button:focus {
 /* Menu buttons on top right (threads, search, etc.) */
 
 body.dark-mode .rcx-css-15vvv6z:hover,
-body.dark-mode .rcx-css-ue04py:hover,
+body.dark-mode .rcx-css-ue04py:not(.rcx-tabs):hover, /* TODO REMOVE ? */
 body.dark-mode .rcx-css-15vvv6z:active,
-body.dark-mode .rcx-css-ue04py:active {
+body.dark-mode .rcx-css-ue04py:not(.rcx-tabs):active /* TODO REMOVE ? */ {
     border-color: var(--color-dark-medium) !important;
     background-color: var(--color-dark-medium) !important;
 }
