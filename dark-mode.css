@@ -916,6 +916,10 @@ body.dark-mode .rcx-css-11ki28k { /* Connectivity services */
 body.dark-mode .rcx-css-1of9j10 { /* Settings */
 	background-color: var(--color-darker) !important;
 }
+body.dark-mode .rcx-css-1rcvyx, /* Settings Header */
+body.dark-mode .rcx-css-1e1zwn9 {
+    background-color: var(--color-dark);
+}
 
 body.dark-mode .rcx-css-kyq2rf { /* Info & stats (Deployment, License, Usage) */
 	background-color: var(--color-dark) !important;
