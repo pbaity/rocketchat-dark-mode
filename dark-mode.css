@@ -768,6 +768,10 @@ body.dark-mode .emoji-picker .filter-item.active {
 	border-color: var(--color-light-blue);
 }
 
+body.dark-mode .emoji-picker .emoji-picker-item:hover {
+    background-color: var(--color-dark-70);
+}
+
 body.dark-mode .rcx-room-header hr.rcx-divider {
     border-color: var(--color-dark-medium);
 }
