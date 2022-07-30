@@ -769,7 +769,7 @@ body.dark-mode .emoji-picker .filter-item.active {
 }
 
 body.dark-mode .emoji-picker .emoji-picker-item:hover {
-    background-color: var(--color-dark-70);
+    background-color: var(--color-dark-70) !important;
 }
 
 body.dark-mode .rcx-room-header hr.rcx-divider {
