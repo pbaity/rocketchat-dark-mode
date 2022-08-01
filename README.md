@@ -30,14 +30,17 @@ If you want to "install" this dark mode, here's all you need to do:
 
 **NOTE:** This repo aims to keep the dark mode working for the latest stable release of Rocket.Chat. Older versions may or may not work.
 
-- For Rocket.Chat versions 3.2.2 - 3.3.3, use the code from the [**3.2.2** branch](https://github.com/pbaity/rocketchat-dark-mode/tree/3.2.2).
-- For Rocket.Chat versions 3.4.0 - 3.7.2, use the code from the [**3.7.2** branch](https://github.com/pbaity/rocketchat-dark-mode/tree/3.7.2).
-- For Rocket.Chat versions 3.8.0 - 3.9.1, use the code from the [**3.9.1** branch](https://github.com/pbaity/rocketchat-dark-mode/tree/3.9.1).
-- For Rocket.Chat versions 3.9.2 - 3.11.2, use the code from the [**3.11.2** branch](https://github.com/pbaity/rocketchat-dark-mode/tree/3.11.2).
-- For Rocket.Chat versions 3.11.3 - 3.18.3, use the code from the [**3.18.3** branch](https://github.com/pbaity/rocketchat-dark-mode/tree/3.18.3).
-- For Rocket.Chat versions 4.0.0 - 4.2.2, use the code from the [**4.2.2** branch](https://github.com/pbaity/rocketchat-dark-mode/tree/4.2.2).
-- For Rocket.Chat versions 4.2.3 - 4.7.4, use the code from the [**4.7.4** branch](https://github.com/pbaity/rocketchat-dark-mode/tree/4.7.4).
-- For current latest stable release, use the code from the **master** branch.
+Rocket.Chat version(s) | Branch to use
+--- | ---
+latest stable | master
+4.7.5 - 4.8.2 | [**4.8.2**](https://github.com/pbaity/rocketchat-dark-mode/tree/4.8.2)
+4.2.3 - 4.7.4 | [**4.7.4**](https://github.com/pbaity/rocketchat-dark-mode/tree/4.7.4)
+4.0.0 - 4.2.2 | [**4.2.2**](https://github.com/pbaity/rocketchat-dark-mode/tree/4.2.2)
+3.11.3 - 3.18.3 | [**3.18.3**](https://github.com/pbaity/rocketchat-dark-mode/tree/3.18.3)
+3.9.2 - 3.11.2 | [**3.11.2**](https://github.com/pbaity/rocketchat-dark-mode/tree/3.11.2)
+3.8.0 - 3.9.1 | [**3.9.1**](https://github.com/pbaity/rocketchat-dark-mode/tree/3.9.1)
+3.4.0 - 3.7.2 | [**3.7.2**](https://github.com/pbaity/rocketchat-dark-mode/tree/3.7.2)
+3.2.2 - 3.3.3 | [**3.2.2**](https://github.com/pbaity/rocketchat-dark-mode/tree/3.2.2)
 
 
 ## Contributing
