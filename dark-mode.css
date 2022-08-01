@@ -6,6 +6,7 @@
 	--primary-font-color: #444;
 	--info-font-color: #a0a0a0;
 	--color-darker: #272c33;
+	--color-light-yellow: #ffecad;
 }
 
 /* Reset global font color so that it's changable more easily */
@@ -108,15 +109,48 @@ body.dark-mode {
 
 	/* General Colors */
 	--rc-color-alert-message-warning-background: hsl(352, 83%, 20%);
+	--message-box-editing-color: var(--rc-color-alert-message-warning-background);
 	--rc-color-primary: var(--color-gray-lightest);
 	--rc-color-primary-lightest: var(--color-dark-medium);
 	--rcx-color-neutral-100: var(--rc-color-primary-dark);
-	--rcx-color-danger-200: var(--rc-color-alert);
-	--rcx-color-warning-200: var(--rc-color-alert);
+	--rcx-color-neutral-200: var(--rc-color-primary-dark);
+	/* --rcx-color-neutral-400: var(--rc-color-primary-dark); */
+	--rcx-color-danger-200: var(--color-dark-red);
+	--rcx-color-warning-200: var(--color-light-yellow);
+	--rcx-color-foreground-alternative: var(--primary-font-color); /*var(--color-darkest);*/
+	--rcx-color-foreground-default: var(--info-font-color);
+	--rcx-color-foreground-info: var(--color-gray);
+	--rcx-color-foreground-hint: var(--color-gray);
+	/* --rcx-tag-colors-disabled-color: var(--rc-color-primary-dark); */
+
+	--rcx-tabs-hover-border-color: var(--primary-font-color);
+	
+	/* Emojis */
+	--rcx-button-icon-background-color: transparent;
+	--rcx-message-reaction-background-color: var(--rc-color-primary-dark);
+	--rcx-message-reaction-hover-background-color:  var(--color-darker);
+	--rcx-message-reaction-border-color: var(--rc-color-primary-lightest);
+	--rcx-message-reaction-hover-border-color:  var(--color-darkest);
+
+	--rcx-message-generic-preview-border-color: var(--color-darker);
+	--rcx-message-generic-preview-content-background-color: var(--color-darker);
+	--rcx-message-generic-preview-content-hover-background-color: var(--color-darkest);
+
+	/* Tags */
+	--rcx-tag-colors-default-background-color: var(--color-dark-medium);
+	--rcx-tag-colors-default-color: var(--color-gray);
+
+	/* Chat */
+	--rcx-message-background-color: var(--rc-color-primary-darkest);
+	--rcx-message-divider-background-color: var(--color-darker);
+	--rcx-message-divider-color: var(--primary-font-color);
 	
 	/* Forms - Button */
 	--button-disabled-background: var(--color-dark-70);
 	--button-disabled-text-color: var(--color-dark-80);
+	--rcx-button-icon-hover-background-color: var(--color-dark-medium);
+	--rcx-button-secondary-background-color: var(--color-darkest);	
+	--rcx-button-secondary-hover-background-color: var(--color-dark-medium);
 
 	/* Forms - Input */
 	--input-text-color: var(--color-gray-lightest);
@@ -134,7 +168,9 @@ body.dark-mode {
 
 	/* Sidebar */
 	--sidebar-background: var(--color-dark);
-	--sidebar-background-hover: var(--color-darkest);
+	--sidebar-background-hover: var(--color-darkest); /* hover, focus */
+	--sidebar-background-light-hover: var(--color-darkest); /* hover, focus */
+	--sidebar-background-light-active: var(--color-dark-70);
 
 	/* Chip */
 	--chip-background: var(--color-blue);
@@ -165,12 +201,12 @@ body.dark-mode {
 	--tooltip-background: var(--color-darkest);
 	--tooltip-text-color: var(--color-white);
 
-	/* alert */
+	/* Alert */
 	--alerts-background: #1d73f5;
 	--alerts-color: var(--color-white);
 
-	--message-box-editing-color: var(--rc-color-alert-message-warning-background);
-	--rc-color-alert: var(--color-dark-red);
+	/* Toastbar */
+	--rcx-toastbar-error-color: var(--primary-font-color); /*--rcx-font-danger */
 }
 
 /******************************************
@@ -192,7 +228,7 @@ body.dark-mode .rcx-css-1d5cod7 {
 
 body.dark-mode .rcx-css-11c35pn > .rcx-attachment__details {
 	border-color: transparent !important;
-	border-inline-start-color: var(--primary-font-color) !important;
+	border-inline-start-color: var(--color-gray) !important;
 }
 
 body.dark-mode .rcx-css-11c35pn:hover .rcx-attachment__details,
@@ -218,16 +254,6 @@ body.dark-mode .rcx-message-attachment .rcx-attachment__content .rcx-box--full.r
 /* Pinned messages content */
 body.dark-mode .rcx-css-ntpg4f {
 	color: var(--rc-color-primary) !important;
-}
-
-/* Message "Beginning of conversation" */
-body.dark-mode .rcx-css-wtiuha {
-	color: var(--rc-color-primary-light-medium) !important;
-}
-
-/* Message "You joined a new private conversation with" */
-body.dark-mode .rcx-css-oyadl9 {
-	color: var(--rc-color-primary-light) !important;
 }
 
 body.dark-mode .main-content a {
@@ -312,34 +338,76 @@ body.dark-mode .content-background-color {
 	background-color: var(--header-background-color);
 }
 
-body.dark-mode .message {
+/* Chat messages separator (main chat) */
+
+body.dark-mode .rcx-message-divider__wrapper {
+    background-color: var(--rc-color-primary-dark);
+}
+
+/* Chat system messages */
+
+/* "Beginning of conversation" */
+body.dark-mode .rcx-css-wtiuha {
+	color: var(--rc-color-primary-light-medium) !important;
+}
+
+/* User joined channel, roles updates, etc */
+body.dark-mode .rcx-message-system__name {
+	color: var(--rc-color-primary-light) !important;
+}
+
+/* "You joined a new private conversation with" */
+body.dark-mode .rcx-css-oyadl9 {
+	color: var(--rc-color-primary-light) !important;
+}
+
+/* Chat messages */
+
+body.dark-mode .rcx-message {
 	background-color: var(--color-darkest);
 }
 
-body.dark-mode .message.new-day::after,
+body.dark-mode .message.active, /* old name (threads) */
+body.dark-mode .message:hover, /* old name (threads) */
+body.dark-mode .rcx-message.active, /* new name (main chat) */
+body.dark-mode .rcx-message:hover { /* new name (main chat) */
+    background-color: var(--color-darker);
+}
+
+/*
+body.dark-mode .rcx-message .first-unread .body:after {
+	background-color: var(--header-background-color);
+}
+*/
+
+/* Fix for room tag */
+body.dark-mode .rcx-css-17cb7q7,
+body.dark-mode .rcx-css-rc5ipl {
+	color: var(--rcx-tag-colors-default-color) !important;
+}
+
+body.dark-mode .rcx-message-body,
+body.dark-mode .rcx-message-thread__message,
+body.dark-mode .rcx-message-header__name {
+	color: var(--primary-font-color);
+}	
+
 body.dark-mode .message .reactions>li,
-body.dark-mode .border-component-color {
+body.dark-mode .border-component-color,
+body.dark-mode .message.new-day::after { /* Chat messages separator (threads) */
 	border-color: var(--rc-color-primary-lightest);
 }
 
 body.dark-mode .message .reactions>li,
 body.dark-mode .message .title .is-bot,
 body.dark-mode .message .title .role-tag,
-body.dark-mode .message.new-day::before {
+body.dark-mode .message.new-day::before { /* Chat messages separator (threads) */
 	background-color: var(--rc-color-primary-dark);
 }
 
-body.dark-mode .message.active,
-body.dark-mode .message:hover {
-    background-color: var(--color-darker);
-}
-
-body.dark-mode .message.editing {
-	background-color: var(--color-dark-blue);
-}
-
-body.dark-mode .message.first-unread .body:after {
-	background-color: var(--header-background-color);
+body.dark-mode .rcx-message--editing {
+	/* RGB value for var(--color-dark-blue) */
+	background-color: rgba(23,92,196, 0.5) !important;
 }
 
 body.dark-mode .rc-message-box__container {
@@ -350,15 +418,17 @@ body.dark-mode .rc-old .rc-message-box .reply-preview {
 	background-color: var(--color-dark);
 }
 
-body.dark-mode .message-actions,
+body.dark-mode .message-actions, /* threads */
+body.dark-mode .rcx-message-toolbox, /* main chat */
 body.dark-mode .rc-member-list__counter {
 	color: var(--color-gray-light);
 	background-color: var(--color-darkest);
 	border-color: var(--color-dark);
 }
 
-body.dark-mode .message-actions__button:hover,
-body.dark-mode .message-actions__menu:hover {
+body.dark-mode .message-actions__button:hover, /* threads */
+body.dark-mode .message-actions__menu:hover /* threads */
+body.dark-mode .rcx-message-toolbox .rcx-button--square:hover { /* main chat */
 	background-color: var(--color-dark);
 }
 
@@ -400,7 +470,7 @@ body.dark-mode .rcx-modal__header .rcx-button--ghost.rcx-button:hover {
 }
 
 /* Temporary fix for modals where "Cancel" button is missing 'rcx-button--ghost' class */
-body.dark-mode .rcx-modal__footer .rcx-box.rcx-box--full.rcx-box--animated.rcx-button.rcx-button-group__item:first-of-type:not(.rcx-button--ghost) {
+body.dark-mode .rcx-modal__footer .rcx-box.rcx-box--full.rcx-box--animated.rcx-button.rcx-button-group__item:first-of-type:not(.rcx-button--ghost):not(.rcx-button--secondary) {
 	color: var(--rc-color-primary-lightest);
 }
 
@@ -505,32 +575,63 @@ body.dark-mode .rcx-options .rcx-option--selected:hover {
 
 /***** Buttons *****/
 
-/* Regular button style */
-body.dark-mode .main-content .rcx-button:not(.rcx-button--ghost) { /* Default */
+/* Default style for buttons */
+
+body.dark-mode .main-content .rcx-button:not(.rcx-button--primary, .rcx-button--danger) {
+	background-color: var(--color-darkest);
+}
+body.dark-mode .main-content .rcx-button:is(.rcx-button--icon) {
+	border-color: transparent !important;
+}
+body.dark-mode .main-content .rcx-button:hover,
+body.dark-mode .main-content .rcx-button.rcx-button--icon-info { /* Replaces :focus rule */
+	background-color: var(--color-dark);
+}
+
+/* Same style, for unusual buttons/icons/etc */
+/* ----------------------------------------- */
+/*	|	CSS rule					|	Location		|	Description					|
+	|-------------------------------|-------------------|-------------------------------|
+	|	.message-actions__menu-icon	|	Right sidebar	|	Message actions menu items	|
+	|	...							|	...				|	...							|
+*/
+
+body.dark-mode .message-actions__menu-icon {
+	background-color: var(--color-darkest) !important;
+}
+body.dark-mode .message-actions__menu:hover,
+body.dark-mode .message-actions__menu-icon:hover,
+body.dark-mode .message-actions__menu-icon:focus {
+	background-color: var(--color-dark) !important;
+	border-color: transparent !important;
+}
+
+/* Inverted style, for buttons on dark backgrounds */
+/* ----------------------------------------------- */
+/*	|	CSS rule			|	Location		|	Description						|
+	|-----------------------|-------------------|-----------------------------------|
+	|	.rcx-css-1bmadou	|	Right sidebar	|	Top right action buttons		|
+	|	.rcx-css-10ij0kz	|	Admin panel		|	Top left close button (X)		|
+	|	...					|	...				|	...								|
+*/
+
+body.dark-mode .rcx-css-10ij0kz .rcx-button,
+body.dark-mode .rcx-css-1bmadou .rcx-button {
 	background-color: var(--color-dark) !important;
 }
-body.dark-mode .main-content .rcx-button:is(.rcx-button--ghost, .rcx-button):hover { /* Hovered or selected */
-	background-color: var(--color-darkest) !important;
-}
-
-/* Square (icon) button style */
-body.dark-mode .main-content .rcx-button--square:not(.rcx-button--ghost), /* Default */
-body.dark-mode .main-content .rcx-button--square:is(.rcx-button--ghost, .rcx-button):hover {  /* Hovered or selected */
+body.dark-mode .rcx-css-10ij0kz .rcx-button:hover,
+body.dark-mode .rcx-css-1bmadou .rcx-button:hover,
+body.dark-mode .rcx-css-1bmadou .rcx-button:focus {
 	background-color: var(--color-darkest) !important;
 	border-color: transparent !important;
-}
-
-body.dark-mode .main-content .rcx-button--square:is(.rcx-button--ghost, .rcx-button):focus {
-	background-color: var(--color-darkest);
-	border-color: transparent !important;
-	box-shadow: 0 0 0 .1rem var(--color-gray);
 }
 
 /* Menu buttons on top right (threads, search, etc.) */
+
 body.dark-mode .rcx-css-15vvv6z:hover,
-body.dark-mode .rcx-css-ue04py:hover,
+body.dark-mode .rcx-css-ue04py:not(.rcx-tabs):hover, /* TODO REMOVE ? */
 body.dark-mode .rcx-css-15vvv6z:active,
-body.dark-mode .rcx-css-ue04py:active {
+body.dark-mode .rcx-css-ue04py:not(.rcx-tabs):active /* TODO REMOVE ? */ {
     border-color: var(--color-dark-medium) !important;
     background-color: var(--color-dark-medium) !important;
 }
@@ -539,7 +640,7 @@ body.dark-mode .rcx-css-136xdpx {
 	background-color: var(--color-darkest);
 }
 
-body.dark-mode .rcx-button {
+body.dark-mode .rcx-button:not(.rcx-button--secondary) {
 	color: var(--info-font-color);
 }
 
@@ -554,25 +655,35 @@ body.dark-mode .rcx-button--primary {
 
 body.dark-mode .rcx-button--primary:disabled {
 	color: var(--color-gray);
+	opacity: 50%;
 }
 
+body.dark-mode .rcx-button--secondary {
+	color: var(--primary-font-color);
+}
+
+/*
 body.dark-mode .rcx-button--danger {
 	color: var(--rcx-button-colors-secondary-danger-color,var(--rcx-color-danger-500,#f5455c));
 }
+*/
 
 /***** Left sidebar *****/
 
-body.dark-mode .rcx-box.rcx-box--full.rcx-tile--elevation-2.rcx-tile {
+/* Popover menus - Top left buttons (.rcx-css-bcgm2b) */
+/* .rcx-box.rcx-box--full.rcx-tile--elevation-2.rcx-tile */
+
+body.dark-mode .rcx-css-bcgm2b.rcx-tile {
 	background-color: var(--color-dark-medium);
 	color: var(--primary-font-color);
 }
 
-body.dark-mode .rcx-box.rcx-box--full.rcx-tile--elevation-2.rcx-tile .rcx-option__title,
-body.dark-mode .rcx-box.rcx-box--full.rcx-tile--elevation-2.rcx-tile .rcx-option {
+body.dark-mode .rcx-css-bcgm2b .rcx-option__title,
+body.dark-mode .rcx-css-bcgm2b .rcx-option {
 	color: var(--primary-font-color);
 }
 
-body.dark-mode .rcx-box.rcx-box--full.rcx-tile--elevation-2.rcx-tile .rcx-option:hover {
+body.dark-mode .rcx-css-bcgm2b .rcx-option:hover {
     background-color: var(--color-dark-light);
 }
 
@@ -600,20 +711,9 @@ body.dark-mode .rcx-message-metrics__item-label {
 	color: var(--color-gray-light);
 }
 
-body.dark-mode .rcx-css-jve35a > .rcx-message > .rcx-message-container > .rcx-message-body,
-body.dark-mode .rcx-css-jve35a:hover > .rcx-message > .rcx-message-container > .rcx-message-body {
-	color: var(--primary-color);
-}
-
 /* Targets unread message indicator in threads panel. */
 body.dark-mode button.rcx-contextual-message__follow + div.rcx-box--full {
     background-color: #1d74f5 !important;
-}
-
-/***** Members list *****/
-
-body.dark-mode .rcx-option__content {
-	color: var(--color-gray-light);
 }
 
 /***** Chat file list *****/
@@ -642,17 +742,40 @@ body.dark-mode .attachments__name:hover, .attachments__name:active {
 	color: var(--color-light-blue);
 }
 
-body.dark-mode .rc-popover__item:hover {
+/* Popover menus - Chat messages buttons (message-action-menu-options) */
+/* rcx-box rcx-box--full rcx-tile--elevation-2 rcx-tile  rcx-button-group__item rcx-css-2lacg2 */
+
+body.dark-mode .rcx-button-group__item.rcx-css-2lacg2, /* main chat */
+body.dark-mode .rc-popover__item:hover { /* threads */
 	background-color: var(--popover-background-hover);
 }
 
-body.dark-mode .rc-popover__content {
+body.dark-mode .rcx-button-group__item.rcx-css-2lacg2, /* main chat */
+body.dark-mode .rc-popover__content { /* threads */
 	background-color: var(--popover-background);
 	box-shadow: 0px 0px 2px var(--color-dark-20);
 }
 
+body.dark-mode .rcx-css-2lacg2 .rcx-option:not(.rcx-option--danger) {
+	color: var(--primary-font-color);
+}
+
+body.dark-mode .rcx-css-2lacg2 .rcx-option.rcx-option--danger {
+	color: var(--rc-color-error);
+}
+
+/* --- */
+
+body.dark-mode .rcx-message-reactions__reaction {
+	border-color: var(--rc-color-primary-dark);
+}
+
 body.dark-mode .emoji-picker .filter-item.active {
 	border-color: var(--color-light-blue);
+}
+
+body.dark-mode .emoji-picker .emoji-picker-item:hover {
+    background-color: var(--color-dark-70) !important;
 }
 
 body.dark-mode .rcx-room-header hr.rcx-divider {
@@ -779,19 +902,6 @@ body.dark-mode .rcx-css-10ij0kz .rcx-box { /* Panels sidebar header text and but
     color: var(--primary-font-color) !important;
 }
 
-body.dark-mode .rcx-css-1l00c5f,
-body.dark-mode .rcx-css-1ky5rco { /* Panels sidebar item */
-    color: var(--rcx-sidebar-item-color,var(--rcx-color-foreground-hint,#9ea2a8)) !important;
-}
-
-body.dark-mode .rcx-css-1l00c5f.active { /* Panels sidebar item selected */
-    background-color: rgba(108, 114, 122, 0.3);
-}
-
-body.dark-mode .rcx-css-1l00c5f:hover, .rcx-css-1l00c5f:focus, .rcx-css-1l00c5f.active:focus, .rcx-css-1l00c5f.active:hover { /* Panels sidebar item hovered */
-    background-color: var(--color-darkest);
-}
-
 /************** Account panel ******************/
 
 body.dark-mode .rcx-css-txktj6 { /* Account settings page background */
@@ -804,26 +914,23 @@ body.dark-mode .rcx-css-1wm5na { /* Account settings page header title */
 
 /************** Admin panel ******************/
 
-body.dark-mode .rcx-css-1ky5rco,
-body.dark-mode .rcx-css-xsevtx { /* Sidebar items */
-    color: var(--primary-font-color) !important;
+/* Admin panel page items (deployment-card) */
+body.dark-mode .rcx-css-10nb3ed {
+    background-color: var(--color-darkest) !important;
 }
 
-body.dark-mode .rcx-css-xsevtx:hover {
-	background-color: var(--color-darkest) !important;
-}
-
-body.dark-mode .rcx-css-pkfs6h.active {
-	background-color: var(--color-dark-70) !important;
-}
-
+body.dark-mode .rcx-css-12tgzar, /* Users */
 body.dark-mode .rcx-css-1k9p36u,
-body.dark-mode .rcx-css-11ki28k { /* Connectivty services */
+body.dark-mode .rcx-css-11ki28k { /* Connectivity services */
 	color: var(--primary-font-color) !important;
 }
 
 body.dark-mode .rcx-css-1of9j10 { /* Settings */
 	background-color: var(--color-darker) !important;
+}
+body.dark-mode .rcx-css-1rcvyx, /* Settings Header */
+body.dark-mode .rcx-css-1e1zwn9 {
+    background-color: var(--color-dark);
 }
 
 body.dark-mode .rcx-css-kyq2rf { /* Info & stats (Deployment, License, Usage) */
@@ -850,10 +957,11 @@ body.dark-mode .sidebar-light {
 	background-color: var(--color-dark);
 }
 
-body.dark-mode .rcx-accordion-item__title,
+body.dark-mode .rcx-accordion-item__bar .rcx-accordion-item__title,
+body.dark-mode .rcx-accordion-item__bar .rcx-chevron,
 body.dark-mode .rcx-label__text,
 body.dark-mode .rcx-field__label{
-	color: var(--color-white);
+	color: var(--primary-font-color)
 }
 
 body.dark-mode .sidebar-flex__search .rc-input__element {
@@ -915,7 +1023,7 @@ body.dark-mode .permissions-manager .permission-grid .id-styler {
 }
 
 body.dark-mode .rcx-accordion-item__bar:hover {
-	background-color: var(--color-dark-30);
+	background-color: var(--color-darkest);
 }
 
 body.dark-mode .rcx-box--text-style-h1,
@@ -967,14 +1075,6 @@ body.dark-mode .rcx-tag--secondary {
 body.dark-mode .rcx-table__cell--align-end {
 	color: var(--info-font-color) !important;
 	background-color: var(--color-dark-medium) !important;
-}
-
-/* Apply info (white) font *everywhere* */
-body.dark-mode .rcx-css-ps0pgs, /* Channel name */
-body.dark-mode .rcx-room-header  .rcx-box:not(.rcx-button-group):not(.rcx-button):not(.rcx-css-1fgkscl):not(.rcx-css-4pvxx3):not(.rcx-toggle-switch__input):not(.rcx-toggle-switch__fake), /* omit buttons/icons (.rcx-css-1fgkscl is .rcx-icon parent) */
-body.dark-mode .rcx-vertical-bar .rcx-box:not(.rcx-button-group):not(.rcx-button):not(.rcx-css-1fgkscl):not(.rcx-css-4pvxx3):not(.rcx-toggle-switch__input):not(.rcx-toggle-switch__fake):not(.rcx-css-trljwa) {
-	color: var(--info-font-color) !important;
-	/*background-color: var(--color-darkest) !important;*/
 }
 
 /* body.dark-mode .main-content .rcx-box {
@@ -1067,6 +1167,11 @@ body.dark-mode .main-content  *::-webkit-scrollbar-thumb {
 
 body.dark-mode .main-content  *::-webkit-scrollbar-corner {
 	background-color: rgba(255, 255, 255, 0.05);
+}
+
+/***** Jitsi App *****/
+body.dark-mode .rcx-css-5cjxzz {
+	background-color: var(--color-dark) !important;
 }
 
 /***** Poll App *****/

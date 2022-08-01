@@ -44,7 +44,7 @@ const embeddedModeSidebarSelector = '.rcx-room-header .rcx-button-group';
 let addDarkModeToggleRetryCount = 0;
 const addDarkModeToggleRetryMax = 10;
 
-const toggleButton = `<button id="${DARK_MODE_BUTTON}" class="rcx-box rcx-box--full rcx-button--small-square rcx-button--square rcx-button--small rcx-button--ghost rcx-button rcx-button-group__item rcx-@ue04p" aria-label="${darkModeToggleText}">D</button>`;
+const toggleButton = `<button id="${DARK_MODE_BUTTON}" class="rcx-box rcx-box--full rcx-button--small-square rcx-button--square rcx-button--icon rcx-button rcx-button-group__item" aria-label="${darkModeToggleText}">D</button>`;
 
 function getDarkModeSetting() {
 	let mode = localStorage.getItem(DARK_MODE_STORAGE);
