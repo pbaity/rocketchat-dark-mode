@@ -912,6 +912,12 @@ body.dark-mode .rcx-css-1wm5na { /* Account settings page header title */
 	color: var(--primary-font-color) !important;
 }
 
+/************** New 5.1.0 homepage and Settings grid **************/
+
+body.dark-mode div.rcx-box.rcx-box--full div.rcx-css-kmnwgn { /* Change background color of new grid items */
+	background-color: var(--color-darker) !important; 
+}
+
 /************** Admin panel ******************/
 
 /* Admin panel page items (deployment-card) */
