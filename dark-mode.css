@@ -1175,6 +1175,35 @@ body.dark-mode .main-content  *::-webkit-scrollbar-corner {
 	background-color: rgba(255, 255, 255, 0.05);
 }
 
+
+/***** Apps (formerly Marketplace) (5.1+) *****/
+body.dark-mode .rcx-css-2eycu6, 
+body.dark-mode .rcx-css-15czep1, 
+body.dark-mode .rcx-css-1njby22, 
+body.dark-mode .rcx-css-1kf73wc, 
+body.dark-mode .rcx-css-1aw2eor, 
+body.dark-mode .rcx-css-1ftswnq {
+	background-color: var(--color-dark) !important;
+}
+body.dark-mode .rcx-css-11j9j9r {
+	background-color: var(--color-darker) !important;
+}
+body.dark-mode .rcx-css-1mu6dlv, 
+body.dark-mode .rcx-css-1pjqz2k, 
+body.dark-mode .rcx-css-358xm4 {
+	background-color: var(--color-darkest) !important;
+}
+body.dark-mode .rcx-css-m9e8zc, 
+body.dark-mode .rcx-css-1vtn02s, 
+body.dark-mode .rcx-option__content, 
+body.dark-mode .rcx-css-19z81xy {
+	color: var(--primary-font-color) !important;
+}
+body.dark-mode .rcx-css-1h8icge {
+	/* Note: Rocket.Chat is not CSS3 compliant here. */
+	border-block-start: var(--color-darker) !important;
+}
+
 /***** Jitsi App *****/
 body.dark-mode .rcx-css-5cjxzz {
 	background-color: var(--color-dark) !important;
