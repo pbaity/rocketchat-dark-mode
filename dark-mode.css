@@ -222,9 +222,16 @@ body.dark-mode .rcx-room-header .rcx-tag--default {
 
 /* Blockquote */
 body.dark-mode .rcx-css-1d5cod7,
-body.dark-mode .rcx-css-765mvi {
+body.dark-mode .rcx-css-765mvi,
+body.dark-mode .rcx-css-91fbdt {
 	background-color: var(--color-darkest) !important;
 	color: var(--secondary-font-color) !important;
+}
+
+body.dark-mode .rcx-css-91fbdt > blockquote {
+	background-color: var(--color-darkest) !important;
+	border-top: none;
+	border-bottom: none;
 }
 
 body.dark-mode .rcx-css-11c35pn > .rcx-attachment__details,
