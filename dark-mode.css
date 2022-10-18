@@ -931,6 +931,15 @@ body.dark-mode div.rcx-box.rcx-box--full div.rcx-css-kmnwgn { /* Change backgrou
 	background-color: var(--color-darker) !important; 
 }
 
+/************** New elements in 5.2.0 workspace **************/
+
+body.dark-mode .rcx-css-1b9c1bt,
+body.dark-mode .rcx-css-7x60rj,
+body.dark-mode .rcx-css-1xjqm16,
+body.dark-mode .rcx-css-u1rlsz {
+	background-color: var(--color-dark) !important;
+}
+
 /************** Admin panel ******************/
 
 /* Admin panel page items (deployment-card) */
