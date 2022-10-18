@@ -1195,15 +1195,23 @@ body.dark-mode .rcx-css-15czep1,
 body.dark-mode .rcx-css-1njby22, 
 body.dark-mode .rcx-css-1kf73wc, 
 body.dark-mode .rcx-css-1aw2eor, 
-body.dark-mode .rcx-css-1ftswnq {
+body.dark-mode .rcx-css-1ftswnq,
+body.dark-mode .rcx-css-1e1zwn9,
+body.dark-mode .rcx-css-3fb0q8,
+body.dark-mode .rcx-css-qc92uu > div.rcx-tabs,
+body.dark-mode .rcx-css-1cw3bhe,
+body.dark-mode .rcx-css-km4mut,
+body.dark-mode .rcx-css-1e2at5j {
 	background-color: var(--color-dark) !important;
 }
-body.dark-mode .rcx-css-11j9j9r {
+body.dark-mode .rcx-css-11j9j9r,
+body.dark-mode .rcx-css-o9zzso {
 	background-color: var(--color-darker) !important;
 }
 body.dark-mode .rcx-css-1mu6dlv, 
 body.dark-mode .rcx-css-1pjqz2k, 
-body.dark-mode .rcx-css-358xm4 {
+body.dark-mode .rcx-css-358xm4,
+body.dark-mode .rcx-css-1pjqz2k {
 	background-color: var(--color-darkest) !important;
 }
 body.dark-mode .rcx-css-m9e8zc, 
@@ -1212,9 +1220,13 @@ body.dark-mode .rcx-option__content,
 body.dark-mode .rcx-css-19z81xy {
 	color: var(--primary-font-color) !important;
 }
-body.dark-mode .rcx-css-1h8icge {
+body.dark-mode .rcx-css-1h8icge,
+body.dark-mode .rcx-css-1cw3bhe > nav.rcx.pagination {
 	/* Note: Rocket.Chat is not CSS3 compliant here. */
 	border-block-start: var(--color-darker) !important;
+}
+body.dark-mode .rcx-css-trljwa {
+	color: var(--rcx-color-foreground-hint, #9ea2a8) !important;
 }
 
 /***** Jitsi App *****/
