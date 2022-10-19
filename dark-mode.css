@@ -223,7 +223,7 @@ body.dark-mode .rcx-room-header .rcx-tag--default {
 /* Blockquote */
 body.dark-mode .rcx-css-1d5cod7,
 body.dark-mode .rcx-css-765mvi,
-body.dark-mode .rcx-css-91fbdt {
+body.dark-mode .rcx-css-765mvi .rcx-css-91fbdt {
 	background-color: var(--color-darkest) !important;
 	color: var(--secondary-font-color) !important;
 }
@@ -232,6 +232,7 @@ body.dark-mode .rcx-css-91fbdt > blockquote {
 	background-color: var(--color-darkest) !important;
 	border-top: none;
 	border-bottom: none;
+	color: var(--secondary-font-color) !important;
 }
 
 body.dark-mode .rcx-css-11c35pn > .rcx-attachment__details,
@@ -250,8 +251,14 @@ body.dark-mode .rcx-css-1q4bwy6:focus .rcx-attachment__details {
 body.dark-mode .rcx-css-11c35pn:hover .rcx-attachment__details,
 body.dark-mode .rcx-css-11c35pn:focus .rcx-attachment__details,
 body.dark-mode .rcx-css-1q4bwy6:hover .rcx-attachment__details,
-body.dark-mode .rcx-css-1q4bwy6:focus .rcx-attachment__details {
+body.dark-mode .rcx-css-1q4bwy6:focus .rcx-attachment__details,
+body.dark-mode .rcx-css-1q4bwy6:hover .rcx-attachment__details .rcx-css-91fbdt,
+body.dark-mode .rcx-css-1q4bwy6:focus .rcx-attachment__details .rcx-css-91fbdt {
 	background-color: var(--color-dark) !important;
+}
+
+body.dark-mode .rcx-css-91fbdt:hover > blockquote {
+	background-color: var(--color-darker) !important;
 }
 
 /* Attachements content */
