@@ -109,18 +109,26 @@ body.dark-mode {
 
 	/* General Colors */
 	--rc-color-alert-message-warning-background: hsl(352, 83%, 20%);
+	--message-box-color: var(--primary-font-color);
 	--message-box-editing-color: var(--rc-color-alert-message-warning-background);
 	--rc-color-primary: var(--color-gray-lightest);
 	--rc-color-primary-lightest: var(--color-dark-medium);
+	--rcx-avatar-background-color: var(--color-darkest);
+	--rcx-color-background-light: var(--color-darkest);
+	--rcx-color-background-tint: var(--rcx-primary-dark);
 	--rcx-color-neutral-100: var(--rc-color-primary-dark);
 	--rcx-color-neutral-200: var(--rc-color-primary-dark);
 	/* --rcx-color-neutral-400: var(--rc-color-primary-dark); */
 	--rcx-color-danger-200: var(--color-dark-red);
 	--rcx-color-warning-200: var(--color-light-yellow);
+	--rcx-color-font-default: var(--primary-font-color);
+	--rcx-color-font-hint: var(--rcx-color-foreground-info);
 	--rcx-color-foreground-alternative: var(--primary-font-color); /*var(--color-darkest);*/
 	--rcx-color-foreground-default: var(--info-font-color);
 	--rcx-color-foreground-info: var(--color-gray);
 	--rcx-color-foreground-hint: var(--color-gray);
+	--rcx-color-surface-light: var(--color-darker);
+	--rcx-color-surface-tint: var(--color-darkest);
 	/* --rcx-tag-colors-disabled-color: var(--rc-color-primary-dark); */
 
 	--rcx-tabs-hover-border-color: var(--primary-font-color);
@@ -228,10 +236,12 @@ body.dark-mode .rcx-css-765mvi .rcx-css-91fbdt {
 	color: var(--secondary-font-color) !important;
 }
 
-body.dark-mode .rcx-css-91fbdt > blockquote {
+body.dark-mode .rcx-css-91fbdt > blockquote,
+body.dark-mode .rcx-css-1ubdhvk > blockquote,
+body.dark-mode .rcx-css-k2y2yc > blockquote {
 	background-color: var(--color-darkest) !important;
-	border-top: none;
-	border-bottom: none;
+	border-top: none !important;
+	border-bottom: none !important;
 	color: var(--secondary-font-color) !important;
 }
 
@@ -257,7 +267,10 @@ body.dark-mode .rcx-css-1q4bwy6:focus .rcx-attachment__details .rcx-css-91fbdt {
 	background-color: var(--color-dark) !important;
 }
 
-body.dark-mode .rcx-css-91fbdt:hover > blockquote {
+body.dark-mode .rcx-css-91fbdt:hover > blockquote,
+body.dark-mode .rcx-css-1ubdhvk:hover > blockquote,
+body.dark-mode .rcx-message:hover .rcx-css-1ubdhvk > blockquote,
+body.dark-mode .rcx-message:hover .rcx-attachment__details {
 	background-color: var(--color-darker) !important;
 }
 
@@ -1244,6 +1257,18 @@ body.dark-mode .rcx-css-1cw3bhe > nav.rcx.pagination {
 body.dark-mode .rcx-css-trljwa {
 	color: var(--rcx-color-foreground-hint, #9ea2a8) !important;
 }
+/* list items */
+body.dark-mode .rcx-css-svin96:hover,
+body.dark-mode .rcx-css-svin96:focus {
+	background-color: var(--color-darker) !important;
+}
+/* category selection */
+body.dark-mode .rcx-css-w9r7qg {
+	background-color: var(--color-darkest) !important;
+}
+body.dark-mode .rcx-css-8rwzkt {
+	color: var(--primary-font-color) !important;
+}
 
 /***** Jitsi App *****/
 body.dark-mode .rcx-css-5cjxzz {
@@ -1345,6 +1370,11 @@ body.dark-mode .rcx-css-z2kk2c {
 body.dark-mode .rcx-box--with-inline-elements code, .rcx-field__description code, .rcx-field__error code, .rcx-field__hint code{
 	background-color: var(--color-dark-100) !important;
 	color: var(--primary-font-color) !important;
+}
+
+/* "Free edition" in left sidebar */
+div.rcx-css-1dumbvr {
+	color: var(--info-font-color) !important;
 }
 
 /* This CSS block is used to counter RocketChat's bug which crop the end of custom CSS. */
