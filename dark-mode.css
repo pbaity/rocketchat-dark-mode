@@ -133,6 +133,12 @@ body.dark-mode {
 
 	--rcx-tabs-hover-border-color: var(--primary-font-color);
 	
+	/* Announcements */
+	--rcx-color-announcement-text: var(--info-font-color);
+	--rcx-color-announcement-background: var(--color-dark-medium);
+	--rc-color-announcement-text-hover: var(--info-font-color);
+	--rc-color-announcement-background-hover: var(--color-dark-light);
+
 	/* Emojis */
 	--rcx-button-icon-background-color: transparent;
 	--rcx-message-reaction-background-color: var(--rc-color-primary-dark);
