@@ -130,12 +130,15 @@ body.dark-mode {
 	--rcx-color-surface-light: var(--color-darker);
 	--rcx-color-surface-tint: var(--color-darkest);
 	/* --rcx-tag-colors-disabled-color: var(--rc-color-primary-dark); */
+	--rcx-color-blue-primary: #095ad2;
+	--rcx-color-blue-primary-fade: #1a4587;
+	--rcx-color-blue-primary-light: #1d73f5;
 
 	--rcx-tabs-hover-border-color: var(--primary-font-color);
 
 	/* Buttons */
 	--rcx-button-primary-color: var(--rc-color-primary); /* var(--color-gray-lightest) */
-	--rcx-button-primary-background-color: #095ad2;
+	--rcx-button-primary-background-color: var(--rcx-color-blue-primary);
 	--rcx-button-primary-border-color: var(--rc-color-primary); /* var(--color-gray-lightest) */
 	--rcx-button-primary-disabled-color: var(--color-gray);
 	--rcx-button-primary-disabled-background-color: var(--color-dark);
@@ -151,11 +154,14 @@ body.dark-mode {
 	--rcx-button-icon-active-background-color: var(--color-darkest);
 	--rcx-button-icon-info-active-background-color: var(--color-darkest);
 	
-	/* Announcements */
+	/* Announcements & Banners */
 	--rcx-color-announcement-text: var(--info-font-color);
-	--rcx-color-announcement-background: var(--color-dark-medium);
+	--rcx-color-announcement-background: var(--rcx-color-blue-primary-fade);
 	--rc-color-announcement-text-hover: var(--info-font-color);
-	--rc-color-announcement-background-hover: var(--color-dark-light);
+	--rc-color-announcement-background-hover: var(--rcx-color-blue-primary);
+
+	--rcx-banner-colors-info-color: var(--rcx-color-blue-primary);
+	--rcx-banner-colors-info-color: var(--rcx-color-blue-primary-light);
 
 	/* Emojis */
 	--rcx-message-reaction-background-color: var(--rc-color-primary-dark);
