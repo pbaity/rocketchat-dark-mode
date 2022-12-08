@@ -148,6 +148,9 @@ body.dark-mode {
 	--rcx-button-secondary-color: var(--info-font-color); /* var(--color-gray-light) */
 	--rcx-button-secondary-background-color: var(--color-darkest);	
 	--rcx-button-secondary-hover-background-color: var(--color-dark-medium);
+	--rcx-button-secondary-hover-border-color: var(--color-dark-medium);
+	--rcx-button-secondary-active-background-color: var(--color-darkest);
+	--rcx-button-secondary-focus-background-color: var(--color-darkest);
 
 	--rcx-button-icon-background-color: transparent;
 	--rcx-button-icon-hover-background-color: var(--color-dark-medium);
