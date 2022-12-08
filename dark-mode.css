@@ -132,6 +132,22 @@ body.dark-mode {
 	/* --rcx-tag-colors-disabled-color: var(--rc-color-primary-dark); */
 
 	--rcx-tabs-hover-border-color: var(--primary-font-color);
+
+	/* Buttons */
+	--rcx-button-primary-color: var(--rc-color-primary); /* var(--color-gray-lightest) */
+	--rcx-button-primary-background-color: #095ad2;
+	--rcx-button-primary-border-color: var(--rc-color-primary); /* var(--color-gray-lightest) */
+	--rcx-button-primary-disabled-color: var(--color-gray);
+	--rcx-button-primary-disabled-background-color: var(--color-dark);
+	/*--rcx-button-primary-disabled-background-color: #095ad2c2; // Same color, lower opacity */
+	--rcx-button-primary-disabled-border-color: var(--color-gray);
+
+	--rcx-button-secondary-color: var(--info-font-color); /* var(--color-gray-light) */
+	--rcx-button-secondary-background-color: var(--color-darkest);	
+	--rcx-button-secondary-hover-background-color: var(--color-dark-medium);
+
+	--rcx-button-icon-background-color: transparent;
+	--rcx-button-icon-hover-background-color: var(--color-dark-medium);
 	
 	/* Announcements */
 	--rcx-color-announcement-text: var(--info-font-color);
@@ -140,7 +156,6 @@ body.dark-mode {
 	--rc-color-announcement-background-hover: var(--color-dark-light);
 
 	/* Emojis */
-	--rcx-button-icon-background-color: transparent;
 	--rcx-message-reaction-background-color: var(--rc-color-primary-dark);
 	--rcx-message-reaction-hover-background-color:  var(--color-darker);
 	--rcx-message-reaction-border-color: var(--rc-color-primary-lightest);
@@ -162,9 +177,6 @@ body.dark-mode {
 	/* Forms - Button */
 	--button-disabled-background: var(--color-dark-70);
 	--button-disabled-text-color: var(--color-dark-80);
-	--rcx-button-icon-hover-background-color: var(--color-dark-medium);
-	--rcx-button-secondary-background-color: var(--color-darkest);	
-	--rcx-button-secondary-hover-background-color: var(--color-dark-medium);
 
 	/* Forms - Input */
 	--input-text-color: var(--color-gray-lightest);
@@ -679,22 +691,8 @@ body.dark-mode .rcx-css-136xdpx {
 	background-color: var(--color-darkest);
 }
 
-body.dark-mode .rcx-button:not(.rcx-button--secondary) {
-	color: var(--info-font-color);
-}
-
 body.dark-mode .rcx-button--ghost:not(.rcx-button--square):hover {
 	color: var(--color-dark) !important;
-}
-
-body.dark-mode .rcx-button--primary {
-	color: var(--info-font-color);
-	background-color: #095ad2
-}
-
-body.dark-mode .rcx-button--primary:disabled {
-	color: var(--color-gray);
-	opacity: 50%;
 }
 
 body.dark-mode .rcx-button--secondary {
