@@ -363,7 +363,7 @@ body.dark-mode .rc-switch__button {
 }
 
 body.dark-mode .error-border {
-	border-color: var(--color-dark-red);
+	border-color: var(--rc-color-alert-message-warning-background);
 }
 
 body.dark-mode .background-component-color {
