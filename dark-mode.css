@@ -148,6 +148,8 @@ body.dark-mode {
 
 	--rcx-button-icon-background-color: transparent;
 	--rcx-button-icon-hover-background-color: var(--color-dark-medium);
+	--rcx-button-icon-active-background-color: var(--color-darkest);
+	--rcx-button-icon-info-active-background-color: var(--color-darkest);
 	
 	/* Announcements */
 	--rcx-color-announcement-text: var(--info-font-color);
@@ -520,11 +522,6 @@ body.dark-mode .rcx-modal__header .rcx-button--ghost.rcx-button:hover {
 	color: var(--rc-color-primary-lightest);
 }
 
-/* Temporary fix for modals where "Cancel" button is missing 'rcx-button--ghost' class */
-body.dark-mode .rcx-modal__footer .rcx-box.rcx-box--full.rcx-box--animated.rcx-button.rcx-button-group__item:first-of-type:not(.rcx-button--ghost):not(.rcx-button--secondary) {
-	color: var(--rc-color-primary-lightest);
-}
-
 /*body.dark-mode .background-info-font-color {
 	background-color: var(--color-dark-medium);
 }*/
@@ -628,15 +625,8 @@ body.dark-mode .rcx-options .rcx-option--selected:hover {
 
 /* Default style for buttons */
 
-body.dark-mode .main-content .rcx-button:not(.rcx-button--primary, .rcx-button--danger) {
-	background-color: var(--color-darkest);
-}
 body.dark-mode .main-content .rcx-button:is(.rcx-button--icon) {
 	border-color: transparent !important;
-}
-body.dark-mode .main-content .rcx-button:hover,
-body.dark-mode .main-content .rcx-button.rcx-button--icon-info { /* Replaces :focus rule */
-	background-color: var(--color-dark);
 }
 
 /* Same style, for unusual buttons/icons/etc */
