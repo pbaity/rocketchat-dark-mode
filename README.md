@@ -33,6 +33,7 @@ If you want to "install" this dark mode, here's all you need to do:
 Rocket.Chat version(s) | Branch to use
 --- | ---
 latest stable | master
+5.0.0 - 5.3.5 | [**5.3.5**](https://github.com/pbaity/rocketchat-dark-mode/tree/5.3.5)
 4.7.5 - 4.8.2 | [**4.8.2**](https://github.com/pbaity/rocketchat-dark-mode/tree/4.8.2)
 4.2.3 - 4.7.4 | [**4.7.4**](https://github.com/pbaity/rocketchat-dark-mode/tree/4.7.4)
 4.0.0 - 4.2.2 | [**4.2.2**](https://github.com/pbaity/rocketchat-dark-mode/tree/4.2.2)
