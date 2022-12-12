@@ -130,17 +130,46 @@ body.dark-mode {
 	--rcx-color-surface-light: var(--color-darker);
 	--rcx-color-surface-tint: var(--color-darkest);
 	/* --rcx-tag-colors-disabled-color: var(--rc-color-primary-dark); */
+	--rcx-color-blue-primary: #095ad2;
+	--rcx-color-blue-primary-fade: #1a4587;
+	--rcx-color-blue-primary-light: #1d73f5;
+	/* --- */
+	--rcx-color-stroke-light: var(--color-dark-30) !important;
+	--rcx-color-stroke-extra-light: var(--color-dark-70) !important;
 
 	--rcx-tabs-hover-border-color: var(--primary-font-color);
+
+	/* Buttons */
+	--rcx-button-primary-color: var(--rc-color-primary); /* var(--color-gray-lightest) */
+	--rcx-button-primary-background-color: var(--rcx-color-blue-primary);
+	--rcx-button-primary-border-color: var(--rc-color-primary); /* var(--color-gray-lightest) */
+	--rcx-button-primary-disabled-color: var(--color-gray);
+	--rcx-button-primary-disabled-background-color: var(--color-dark);
+	/*--rcx-button-primary-disabled-background-color: #095ad2c2; // Same color, lower opacity */
+	--rcx-button-primary-disabled-border-color: var(--color-gray);
+
+	--rcx-button-secondary-color: var(--info-font-color); /* var(--color-gray-light) */
+	--rcx-button-secondary-background-color: var(--color-darkest);	
+	--rcx-button-secondary-hover-background-color: var(--color-dark-medium);
+	--rcx-button-secondary-hover-border-color: var(--color-dark-medium);
+	--rcx-button-secondary-active-background-color: var(--color-darkest);
+	--rcx-button-secondary-focus-background-color: var(--color-darkest);
+
+	--rcx-button-icon-background-color: transparent;
+	--rcx-button-icon-hover-background-color: var(--color-dark-medium);
+	--rcx-button-icon-active-background-color: var(--color-darkest);
+	--rcx-button-icon-info-active-background-color: var(--color-darkest);
 	
-	/* Announcements */
+	/* Announcements & Banners */
 	--rcx-color-announcement-text: var(--info-font-color);
-	--rcx-color-announcement-background: var(--color-dark-medium);
+	--rcx-color-announcement-background: var(--rcx-color-blue-primary-fade);
 	--rc-color-announcement-text-hover: var(--info-font-color);
-	--rc-color-announcement-background-hover: var(--color-dark-light);
+	--rc-color-announcement-background-hover: var(--rcx-color-blue-primary);
+
+	--rcx-banner-colors-info-color: var(--rcx-color-blue-primary);
+	--rcx-banner-colors-info-color: var(--rcx-color-blue-primary-light);
 
 	/* Emojis */
-	--rcx-button-icon-background-color: transparent;
 	--rcx-message-reaction-background-color: var(--rc-color-primary-dark);
 	--rcx-message-reaction-hover-background-color:  var(--color-darker);
 	--rcx-message-reaction-border-color: var(--rc-color-primary-lightest);
@@ -162,9 +191,6 @@ body.dark-mode {
 	/* Forms - Button */
 	--button-disabled-background: var(--color-dark-70);
 	--button-disabled-text-color: var(--color-dark-80);
-	--rcx-button-icon-hover-background-color: var(--color-dark-medium);
-	--rcx-button-secondary-background-color: var(--color-darkest);	
-	--rcx-button-secondary-hover-background-color: var(--color-dark-medium);
 
 	/* Forms - Input */
 	--input-text-color: var(--color-gray-lightest);
@@ -235,50 +261,20 @@ body.dark-mode .rcx-room-header .rcx-tag--default {
 }
 
 /* Blockquote */
-body.dark-mode .rcx-css-1d5cod7,
-body.dark-mode .rcx-css-765mvi,
-body.dark-mode .rcx-css-765mvi .rcx-css-91fbdt {
-	background-color: var(--color-darkest) !important;
-	color: var(--secondary-font-color) !important;
+
+body.dark-mode .rcx-css-qfztfu
+{
+	border-top-width: 0.075rem !important;
+    border-bottom-width: 0.075rem !important;
 }
 
-body.dark-mode .rcx-css-91fbdt > blockquote,
-body.dark-mode .rcx-css-1ubdhvk > blockquote,
-body.dark-mode .rcx-css-k2y2yc > blockquote {
-	background-color: var(--color-darkest) !important;
-	border-top: none !important;
-	border-bottom: none !important;
-	color: var(--secondary-font-color) !important;
-}
-
-body.dark-mode .rcx-css-11c35pn > .rcx-attachment__details,
-body.dark-mode .rcx-css-1q4bwy6 > .rcx-attachment__details {
-	border-color: transparent !important;
-	border-inline-start-color: var(--color-gray) !important;
-}
-
-body.dark-mode .rcx-css-11c35pn:hover .rcx-attachment__details,
-body.dark-mode .rcx-css-11c35pn:focus .rcx-attachment__details,
-body.dark-mode .rcx-css-1q4bwy6:hover .rcx-attachment__details,
-body.dark-mode .rcx-css-1q4bwy6:focus .rcx-attachment__details {
-    border-color: var(--secondary-font-color) !important;
-}
-
-body.dark-mode .rcx-css-11c35pn:hover .rcx-attachment__details,
-body.dark-mode .rcx-css-11c35pn:focus .rcx-attachment__details,
-body.dark-mode .rcx-css-1q4bwy6:hover .rcx-attachment__details,
-body.dark-mode .rcx-css-1q4bwy6:focus .rcx-attachment__details,
-body.dark-mode .rcx-css-1q4bwy6:hover .rcx-attachment__details .rcx-css-91fbdt,
-body.dark-mode .rcx-css-1q4bwy6:focus .rcx-attachment__details .rcx-css-91fbdt {
+/*
+body.dark-mode .rcx-css-qfztfu:hover,
+body.dark-mode .rcx-css-qfztfu:focus
+{
 	background-color: var(--color-dark) !important;
 }
-
-body.dark-mode .rcx-css-91fbdt:hover > blockquote,
-body.dark-mode .rcx-css-1ubdhvk:hover > blockquote,
-body.dark-mode .rcx-message:hover .rcx-css-1ubdhvk > blockquote,
-body.dark-mode .rcx-message:hover .rcx-attachment__details {
-	background-color: var(--color-darker) !important;
-}
+*/
 
 /* Attachements content */
 body.dark-mode .rcx-message-attachment .rcx-attachment__content .rcx-box--full {
@@ -340,7 +336,7 @@ body.dark-mode .rc-switch__button {
 }
 
 body.dark-mode .error-border {
-	border-color: var(--color-dark-red);
+	border-color: var(--rc-color-alert-message-warning-background);
 }
 
 body.dark-mode .background-component-color {
@@ -508,11 +504,6 @@ body.dark-mode .rcx-modal__header .rcx-button--ghost.rcx-button:hover {
 	color: var(--rc-color-primary-lightest);
 }
 
-/* Temporary fix for modals where "Cancel" button is missing 'rcx-button--ghost' class */
-body.dark-mode .rcx-modal__footer .rcx-box.rcx-box--full.rcx-box--animated.rcx-button.rcx-button-group__item:first-of-type:not(.rcx-button--ghost):not(.rcx-button--secondary) {
-	color: var(--rc-color-primary-lightest);
-}
-
 /*body.dark-mode .background-info-font-color {
 	background-color: var(--color-dark-medium);
 }*/
@@ -616,15 +607,8 @@ body.dark-mode .rcx-options .rcx-option--selected:hover {
 
 /* Default style for buttons */
 
-body.dark-mode .main-content .rcx-button:not(.rcx-button--primary, .rcx-button--danger) {
-	background-color: var(--color-darkest);
-}
 body.dark-mode .main-content .rcx-button:is(.rcx-button--icon) {
 	border-color: transparent !important;
-}
-body.dark-mode .main-content .rcx-button:hover,
-body.dark-mode .main-content .rcx-button.rcx-button--icon-info { /* Replaces :focus rule */
-	background-color: var(--color-dark);
 }
 
 /* Same style, for unusual buttons/icons/etc */
@@ -679,22 +663,8 @@ body.dark-mode .rcx-css-136xdpx {
 	background-color: var(--color-darkest);
 }
 
-body.dark-mode .rcx-button:not(.rcx-button--secondary) {
-	color: var(--info-font-color);
-}
-
 body.dark-mode .rcx-button--ghost:not(.rcx-button--square):hover {
 	color: var(--color-dark) !important;
-}
-
-body.dark-mode .rcx-button--primary {
-	color: var(--info-font-color);
-	background-color: #095ad2
-}
-
-body.dark-mode .rcx-button--primary:disabled {
-	color: var(--color-gray);
-	opacity: 50%;
 }
 
 body.dark-mode .rcx-button--secondary {
