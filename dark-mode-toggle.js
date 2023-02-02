@@ -7,10 +7,10 @@ const DARK_MODE_CSS = 'dark-mode';
 const DARK_MODE_STORAGE = 'dark-mode';
 
 // CSS id used for Dark Mode icon
-const DARK_MODE_ICON = "icon-darkmode"; // could be `icon-${DARK_MODE_CSS}`;
+const DARK_MODE_ICON = `icon-${DARK_MODE_CSS}`;
 
 // CSS id used for Dark Mode button
-const DARK_MODE_BUTTON = "dark-mode-button"; // could be `button-${DARK_MODE_CSS}`;
+const DARK_MODE_BUTTON = `button-${DARK_MODE_CSS}`;
 
 const DARK_MODE_MODES = ["auto", "dark", "light"];
 
