@@ -129,6 +129,8 @@ body.dark-mode {
 	--rcx-color-foreground-hint: var(--color-gray);
 	--rcx-color-surface-light: var(--color-darker);
 	--rcx-color-surface-tint: var(--color-darkest);
+	--rcx-color-surface-room: var(--color-darkest);
+	--rcx-color-surface-neutral: var(--color-darkest);
 	/* --rcx-tag-colors-disabled-color: var(--rc-color-primary-dark); */
 	--rcx-color-blue-primary: #095ad2;
 	--rcx-color-blue-primary-fade: #1a4587;
@@ -207,6 +209,8 @@ body.dark-mode {
 	--tags-background: var(--color-blue);
 
 	/* Sidebar */
+	--rcx-sidebar-color-surface-selected: var(--color-dark-medium);
+	--rcx-sidebar-color-font-secondary: var(--secondary-font-color);
 	--sidebar-background: var(--color-dark);
 	--sidebar-background-hover: var(--color-darkest); /* hover, focus */
 	--sidebar-background-light-hover: var(--color-darkest); /* hover, focus */
@@ -295,7 +299,8 @@ body.dark-mode .main-content a {
 	color: var(--color-light-blue);
 }
 
-body.dark-mode .main-content .messages-box .wrapper {
+body.dark-mode .main-content .messages-box .wrapper,
+body.dark-mode .main-content .messages-box .wrapper .rc-scrollbars-container {
 	background-color: var(--color-darkest);
 }
 
